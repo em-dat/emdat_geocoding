@@ -3,4 +3,11 @@ name = "emdat-geocoding"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "geopandas>=1.1.1",
+    "matplotlib>=3.10.6",
+    "notebook>=7.4.6",
+    "pandas>=2.3.2",
+    "seaborn>=0.13.2",
+    "shapely>=2.1.2",
+]
