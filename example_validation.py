@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Params
-GEOMTYPE = "gadm"  # "gdis"
+GEOMTYPE = "gdis"  # "gadm"
 BATCH_START = 2000
 BATCH_END = 2002
 
@@ -73,7 +73,7 @@ DISNO_OFFICIAL = load_emdat_archive(
 
 def main():
     logging.info(f"Starting {GEOMTYPE} validation".upper())
-    # 1. Load GADM and EMDAT batches
+    # 1. Load GADM / GDIS batches
     logging.info(f"Loading {GEOMTYPE} batch file {GEOCODED_BATCH_FILE}")
     geocoded_gdf = load_geocoded_batch(GEOCODED_BATCH_FILE)
     logging.info(f"{len(geocoded_gdf)} records loaded")

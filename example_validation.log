@@ -24,3 +24,20 @@
 2025-09-26 20:03:25 - INFO - Starting validation of 2831 records
 2025-09-26 20:09:32 - INFO - Saving results to validation_gadm_2000_2002.csv
 2025-09-26 20:09:32 - INFO - VALIDATION COMPLETE
+2025-10-01 21:16:18 - INFO - STARTING GADM VALIDATION
+2025-10-01 21:16:18 - INFO - Loading gadm batch file data\geoloc_emdat_0002_gadm.gpkg
+2025-10-01 21:16:57 - INFO - STARTING GDIS VALIDATION
+2025-10-01 21:16:57 - INFO - Loading gdis batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-01 21:35:29 - INFO - 39953 records loaded
+2025-10-01 21:35:29 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, geometry
+2025-10-01 21:35:29 - INFO - Filtering based on Dis No.
+2025-10-02 13:36:51 - INFO - STARTING GDIS VALIDATION
+2025-10-02 13:36:51 - INFO - Loading gdis batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-02 13:37:52 - INFO - 4072 records loaded
+2025-10-02 13:37:52 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, geometry
+2025-10-02 13:37:52 - INFO - Filtering based on Dis No.
+2025-10-02 14:09:04 - INFO - STARTING GDIS VALIDATION
+2025-10-02 14:09:04 - INFO - Loading gdis batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-02 14:11:35 - INFO - 4072 records loaded
+2025-10-02 14:11:35 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, name, geometry
+2025-10-02 14:11:35 - INFO - Filtering based on Dis No.

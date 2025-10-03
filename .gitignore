@@ -2,3 +2,6 @@
 /data/geoloc_emdat_0002_gadm.gpkg
 /data/geoloc_emdat_0002_gdis.csv
 /data/geoloc_emdat_0002_gdis.gpkg
+/data/geoloc_emdat_gdis.csv
+/data/geoloc_emdat_gdis.gpkg
+**/__pycache__/ 
