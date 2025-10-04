@@ -1,7 +1,6 @@
 /data/geoemdat_2000_2002.gpkg
 /data/geoloc_emdat_0002_gadm.gpkg
-/data/geoloc_emdat_0002_gdis.csv
-/data/geoloc_emdat_0002_gdis.gpkg
-/data/geoloc_emdat_gdis.csv
-/data/geoloc_emdat_gdis.gpkg
+/data/gdis_2000_2002.gpkg
+/data/gdis.csv
+/data/gdis.gpkg
 **/__pycache__/ 

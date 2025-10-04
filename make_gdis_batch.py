@@ -1,38 +1,77 @@
 # %%
 from pathlib import Path
-from validation.io import load_geocoded_batch
+from validation.io import load_geocoded_batch, load_emdat_archive
+import numpy as np
 
-# %%
-BATCH_START = 2000
-BATCH_END = 2002
+# %% Paths
+GDIS_FILE = Path(f"data/gdis.gpkg")
+EMDAT_ARCHIVE_FILE = Path("data/241204_emdat_archive.xlsx")
 
-# %% Load GDIS File
-GEOCODED_FILE = Path(f"data/geoloc_emdat_gdis.gpkg")
-GEOCODED_BATCH_FILE = Path(f"data/geoloc_emdat_0002_gdis.gpkg")
-
-geocoded_gdf = load_geocoded_batch(GEOCODED_FILE)
-
-# %% Save GDIS File in batches
-geocoded_gdf["disasteryear"] = geocoded_gdf.disasterno.apply(lambda x: int(x[0:4]))
-year_filter = (geocoded_gdf["disasteryear"] >= BATCH_START) & (
-    geocoded_gdf["disasteryear"] <= BATCH_END
+# %% Load files
+gdis_gdf = load_geocoded_batch(GDIS_FILE)
+df_emdat = load_emdat_archive(
+    file_path=EMDAT_ARCHIVE_FILE,
+    use_columns=["ISO", "DisNo.", "Country"],
+    min_year=None,
+    max_year=None,
+    geocoded_only=True,
 )
-geocoded_gdf.rename(
+
+
+# %% Preprocess GDIS so that it is compatible with geocoded LLM file
+gdis_gdf.rename(
     columns={
         "disasterno": "DisNo.",
+        "geolocation": "name",
         "level": "admin_level",
         "adm1": "admin1",
         "adm2": "admin2",
         "adm3": "admin3",
-    }
+    },
+    inplace=True,
 )
-geocoded_gdf["name"] = geocoded_gdf["id"]
 
-# %%
-geocoded_gdf_0002 = geocoded_gdf[year_filter]
+# %% Fix GDIS disaster number so that it corresponds to EM-DAT disaster number
 
-# %%
-geocoded_gdf_0002.to_file(GEOCODED_BATCH_FILE, driver="GPKG")
+# Identify incorrect GDIS ISO's and set to nan
+iso_indicator = ~gdis_gdf["iso3"].isin(df_emdat["ISO"])
+gdis_gdf.loc[iso_indicator, "iso3"] = np.nan
+
+# Create an ISO - Country mapping based on EM-DAT
+df_emdat["ISO"] = (
+    df_emdat["ISO"]
+    .fillna(df_emdat["DisNo."].str.replace("[\W\d_]", "", regex=True))
+    .str.replace(" (the)", "")
+)
+country_iso_mapping = dict(
+    (x, y) for x, y in df_emdat.groupby(["Country", "ISO"]).apply(list).index.values
+)
+
+# Create new ISO variable and fill nans based on ISO - Country mapping
+gdis_gdf["ISO"] = gdis_gdf["iso3"].fillna(gdis_gdf["country"].map(country_iso_mapping))
+
+# Create new DisNo. variable in same format as emdat data set
+gdis_gdf["DisNo."] = gdis_gdf["disasterno"] + "-" + gdis_gdf["ISO"]
 
 
-# %%
+# %% Save GDIS File in batches
+
+# Define batch
+BATCH_START = 2000
+BATCH_END = 2002
+GDIS_BATCH_FILE = Path(f"data/gdis_{BATCH_START}_{BATCH_END}_.gpkg")
+
+# Get disasteryear from disaster number
+disasteryear = gdis_gdf.disasterno.apply(lambda x: int(x[0:4]))
+# Filter on batch years
+year_filter = (gdis_gdf["disasteryear"] >= BATCH_START) & (
+    gdis_gdf["disasteryear"] <= BATCH_END
+)
+# Filter to batch year
+gdis_gdf_batch = gdis_gdf[year_filter]
+# Only keep relevant columns
+gdis_gdf_batch = gdis_gdf_batch[
+    ["DisNo.", "name", "admin_level", "admin1", "admin2", "admin3", "geometry"]
+]
+# Save
+gdis_gdf_batch.to_file(GDIS_BATCH_FILE, driver="GPKG")

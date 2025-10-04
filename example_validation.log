@@ -41,3 +41,20 @@
 2025-10-02 14:11:35 - INFO - 4072 records loaded
 2025-10-02 14:11:35 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, name, geometry
 2025-10-02 14:11:35 - INFO - Filtering based on Dis No.
+2025-10-04 21:04:00 - INFO - STARTING GADM VALIDATION
+2025-10-04 21:04:00 - INFO - Loading gadm batch file data\geoloc_emdat_0002_gadm.gpkg
+2025-10-04 21:05:19 - INFO - 3353 records loaded
+2025-10-04 21:05:19 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-04 21:07:36 - INFO - STARTING GADM VALIDATION
+2025-10-04 21:07:36 - INFO - Loading gadm batch file data\geoloc_emdat_0002_gadm.gpkg
+2025-10-04 21:08:53 - INFO - 3353 records loaded
+2025-10-04 21:08:53 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-04 21:08:53 - INFO - Filtering based on Dis No.
+2025-10-04 21:08:53 - INFO - 2831 records filtered based on Dis No.
+2025-10-04 21:08:53 - INFO - Loading EMDAT batch file data\geoemdat_2000_2002.gpkg
+2025-10-04 21:10:13 - INFO - 1184 records loaded
+2025-10-04 21:10:13 - INFO - Columns: disno_, start_year, geometry
+2025-10-04 21:10:13 - INFO - Loading EMDAT batch file data\geoemdat_0002_gdis.gpkg
+2025-10-04 21:14:26 - INFO - Loading EMDAT batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-04 21:15:43 - INFO - 4072 records loaded
+2025-10-04 21:15:43 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, name, geometry
