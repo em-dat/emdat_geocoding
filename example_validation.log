@@ -58,3 +58,23 @@
 2025-10-04 21:14:26 - INFO - Loading EMDAT batch file data\geoloc_emdat_0002_gdis.gpkg
 2025-10-04 21:15:43 - INFO - 4072 records loaded
 2025-10-04 21:15:43 - INFO - Columns: id, country, iso3, gwno, geo_id, geolocation, level, adm1, adm2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, name, geometry
+2025-10-04 21:29:31 - INFO - Filtering based on Dis No.
+2025-10-04 21:29:31 - INFO - 2831 records filtered based on Dis No.
+2025-10-04 21:36:16 - INFO - Loading GDIS batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-04 21:38:02 - INFO - 4072 records loaded
+2025-10-04 21:38:02 - INFO - Columns: id, country, iso3, gwno, geo_id, name, admin_level, admin1, admin2, adm3, location, historical, hist_country, disastertype, disasterno, disasteryear, name, geometry, DisNo.
+2025-10-04 21:39:42 - INFO - Loading GDIS batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-04 21:41:09 - INFO - 4072 records loaded
+2025-10-04 21:41:09 - INFO - Columns: DisNo., name, name, admin_level, admin1, admin2, admin3, geometry
+2025-10-04 21:45:12 - INFO - Loading GDIS batch file data\geoloc_emdat_0002_gdis.gpkg
+2025-10-04 21:45:31 - INFO - Loading GDIS batch file data\gdis_2000_2002.gpkg
+2025-10-04 21:46:54 - INFO - 4072 records loaded
+2025-10-04 21:46:54 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-04 21:51:37 - INFO - Filtering based on Dis No.
+2025-10-04 21:51:37 - INFO - 2831 records filtered based on Dis No.
+2025-10-04 21:51:37 - INFO - 0 gdis records filtered based on Dis No.
+2025-10-04 21:51:40 - INFO - Loading EMDAT batch file data\geoemdat_2000_2002.gpkg
+2025-10-04 21:53:07 - INFO - 1184 records loaded
+2025-10-04 21:53:07 - INFO - Columns: disno_, start_year, geometry
+2025-10-04 21:56:27 - INFO - Starting GDIS validation of 2831 records
+2025-10-04 21:57:01 - INFO - Starting GDIS validation of 2831 records

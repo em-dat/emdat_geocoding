@@ -17,7 +17,6 @@ df_emdat = load_emdat_archive(
     geocoded_only=True,
 )
 
-
 # %% Preprocess GDIS so that it is compatible with geocoded LLM file
 gdis_gdf.rename(
     columns={
