@@ -5,7 +5,7 @@ from typing import Literal
 
 from validation.io import load_emdat_archive, load_geocoded_batch
 
-from validation.validation import validate
+from validation.validation import dissolve_units, validate
 
 # Define logger to track the validation process
 logging.basicConfig(
@@ -90,14 +90,28 @@ B_gdf = load_geocoded_batch(B_BATCH_FILE)
 logging.info(f"{len(B_gdf)} records loaded")
 logging.info(f"Columns: {', '.join(B_gdf.columns)}")
 
+
+# %%
+# Filter based on official disaster ids
+logging.info(f"Filtering based on Dis No.")
+# Excluding unpublished and non-geocoded disasters
+A_gdf = A_gdf[A_gdf["DisNo."].isin(DISNO_OFFICIAL)]
+logging.info(f"{len(A_gdf)} records filtered based on Dis No. in {A_BATCH_FILE}")
+B_gdf = B_gdf[B_gdf["DisNo."].isin(DISNO_OFFICIAL)]
+logging.info(f"{len(B_gdf)} records filtered based on Dis No. in {B_BATCH_FILE}")
+
+
+# %%
+if DISSOLVE_UNITS:
+    A_gdf = dissolve_units(A_gdf)
+    B_gdf = dissolve_units(B_gdf)
+
 # %%
 validate(
     A_BATCH_FILE,
     B_BATCH_FILE,
     A_gdf,
     B_gdf,
-    DISSOLVE_UNITS,
-    DISNO_OFFICIAL,
     OUTPUT_COLUMNS,
     AREA_CALCULATION_METHOD,
     OUTPUT_FILENAME,

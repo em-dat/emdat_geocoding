@@ -5,59 +5,37 @@ import pandas as pd
 from geotools.geom_indices import calculate_area_indices
 
 
+def dissolve_units(gdf):
+
+    logging.info("Dissolving units")
+    # only dissolve, if dissolvable
+    if "admin1" in gdf.columns:
+        gdf = gdf.dissolve(
+            by="DisNo.",
+            aggfunc={
+                "name": list,
+                "admin_level": list,
+                "admin1": list,
+                "admin2": list,
+            },
+        )
+        gdf = gdf.reset_index(inplace=False)
+        logging.info(f"{len(gdf)} geocoded records after dissolving")
+
+    return gdf
+
+
 def validate(
     A_BATCH_FILE: Path,
     B_BATCH_FILE: Path,
     A_gdf,
     B_gdf,
-    DISSOLVE_UNITS: bool,
-    DISNO_OFFICIAL: list,
     OUTPUT_COLUMNS: list,
     AREA_CALCULATION_METHOD: str,
     OUTPUT_FILENAME: str,
 ) -> None:
 
-    # 2. Dissolve units (optional)
-    if DISSOLVE_UNITS:
-        logging.info("Dissolving units")
-        # only dissolve, if dissolvable
-        if "admin1" in A_gdf.columns:
-            A_gdf = A_gdf.dissolve(
-                by="DisNo.",
-                aggfunc={
-                    "name": list,
-                    "admin_level": list,
-                    "admin1": list,
-                    "admin2": list,
-                },
-            )
-            A_gdf.reset_index(inplace=True)
-            logging.info(f"{len(A_gdf)} geocoded records after dissolving")
-
-        if "admin1" in B_gdf.columns:
-            # only dissolve, if dissolvable
-            logging.info("Dissolving units")
-            B_gdf = B_gdf.dissolve(
-                by="DisNo.",
-                aggfunc={
-                    "name": list,
-                    "admin_level": list,
-                    "admin1": list,
-                    "admin2": list,
-                },
-            )
-            B_gdf.reset_index(inplace=True)
-            logging.info(f"{len(B_gdf)} gdis records after dissolving")
-
-    # 3 Filter based on official disaster ids
-    logging.info(f"Filtering based on Dis No.")
-    # Excluding unpublished and non-geocoded disasters
-    A_gdf = A_gdf[A_gdf["DisNo."].isin(DISNO_OFFICIAL)]
-    logging.info(f"{len(A_gdf)} records filtered based on Dis No. in {A_BATCH_FILE}")
-    B_gdf = B_gdf[B_gdf["DisNo."].isin(DISNO_OFFICIAL)]
-    logging.info(f"{len(B_gdf)} records filtered based on Dis No. in {B_BATCH_FILE}")
-
-    # 4 Run validation
+    # Run validation
     result_df = pd.DataFrame(columns=OUTPUT_COLUMNS)
 
     # TO BE DONE: Dealing with Dis No. that are in A but not in B and vice versa. (Relevant for GDIS / EM-DAT)
