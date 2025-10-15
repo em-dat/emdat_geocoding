@@ -304,3 +304,59 @@
 2025-10-14 14:05:39 - INFO - VALIDATION COMPLETE
 2025-10-14 14:05:50 - INFO - Saving results to validation_emdat_gaul_gdis_gadm_2000_2002_dissolved.csv
 2025-10-14 14:05:50 - INFO - VALIDATION COMPLETE
+2025-10-14 14:06:42 - INFO - STARTING VALIDATION
+2025-10-14 14:06:42 - INFO - Loading data\emdat_gaul_2000_2002.gpkg batch file
+2025-10-14 14:08:02 - INFO - 1184 records loaded
+2025-10-14 14:08:02 - INFO - Columns: DisNo., start_year, geometry
+2025-10-14 14:08:02 - INFO - Loading data\gdis_gadm_2000_2002.gpkg batch file
+2025-10-14 14:09:14 - INFO - 4072 records loaded
+2025-10-14 14:09:14 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-14 14:09:14 - INFO - Filtering based on Dis No.
+2025-10-14 14:09:14 - INFO - 1184 records filtered based on Dis No. in data\emdat_gaul_2000_2002.gpkg
+2025-10-14 14:09:14 - INFO - 3892 records filtered based on Dis No. in data\gdis_gadm_2000_2002.gpkg
+2025-10-14 14:09:14 - INFO - Dissolving units
+2025-10-14 14:09:14 - INFO - Dissolving units
+2025-10-14 14:18:09 - INFO - 1000 geocoded records after dissolving
+2025-10-14 15:32:16 - INFO - STARTING VALIDATION
+2025-10-14 15:32:16 - INFO - Loading data\emdat_gaul_2000_2002.gpkg batch file
+2025-10-14 15:35:01 - INFO - 1184 records loaded
+2025-10-14 15:35:01 - INFO - Columns: DisNo., start_year, geometry
+2025-10-14 15:35:01 - INFO - Loading data\gdis_gadm_2000_2002.gpkg batch file
+2025-10-14 15:39:22 - INFO - 4072 records loaded
+2025-10-14 15:39:22 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-14 15:39:22 - INFO - Filtering based on Dis No.
+2025-10-14 15:39:22 - INFO - 1184 records filtered based on Dis No. in data\emdat_gaul_2000_2002.gpkg
+2025-10-14 15:39:22 - INFO - 3892 records filtered based on Dis No. in data\gdis_gadm_2000_2002.gpkg
+2025-10-14 15:42:31 - INFO - Dissolving units
+2025-10-14 15:42:31 - INFO - Dissolving units
+2025-10-14 16:11:54 - INFO - 1000 geocoded records after dissolving
+2025-10-14 16:30:45 - INFO - Saving results to validation_emdat_gaul_gdis_gadm_2000_2002_dissolved.csv
+2025-10-14 16:30:45 - INFO - VALIDATION COMPLETE
+2025-10-14 17:36:08 - INFO - Saving results to validation_emdat_gaul_gdis_gadm_2000_2002_dissolved.csv
+2025-10-14 17:36:08 - INFO - VALIDATION COMPLETE
+2025-10-14 19:25:58 - INFO - STARTING VALIDATION
+2025-10-14 19:25:58 - INFO - Loading data\emdat_gaul_2000_2002.gpkg batch file
+2025-10-14 19:27:45 - INFO - 1184 records loaded
+2025-10-14 19:27:45 - INFO - Columns: DisNo., start_year, geometry
+2025-10-14 19:27:45 - INFO - Loading data\gdis_gadm_2000_2002.gpkg batch file
+2025-10-14 19:29:13 - INFO - 4072 records loaded
+2025-10-14 19:29:13 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-14 19:29:13 - INFO - Filtering based on Dis No.
+2025-10-14 19:29:13 - INFO - 1184 records filtered based on Dis No. in data\emdat_gaul_2000_2002.gpkg
+2025-10-14 19:29:13 - INFO - 3892 records filtered based on Dis No. in data\gdis_gadm_2000_2002.gpkg
+2025-10-14 19:29:13 - INFO - Dissolving units
+2025-10-14 19:29:13 - INFO - Dissolving units
+2025-10-14 20:29:10 - INFO - Dissolving units
+2025-10-14 20:29:10 - INFO - Dissolving units
+2025-10-14 20:32:58 - INFO - STARTING VALIDATION
+2025-10-14 20:32:58 - INFO - Loading data\emdat_gaul_2000_2002.gpkg batch file
+2025-10-14 20:34:36 - INFO - 1184 records loaded
+2025-10-14 20:34:36 - INFO - Columns: DisNo., start_year, geometry
+2025-10-14 20:34:36 - INFO - Loading data\gdis_gadm_2000_2002.gpkg batch file
+2025-10-14 20:39:33 - INFO - 4072 records loaded
+2025-10-14 20:39:33 - INFO - Columns: DisNo., name, admin_level, admin1, admin2, admin3, geometry
+2025-10-14 20:39:33 - INFO - Filtering based on Dis No.
+2025-10-14 20:39:34 - INFO - 1184 records filtered based on Dis No. in data\emdat_gaul_2000_2002.gpkg
+2025-10-14 20:39:34 - INFO - 3892 records filtered based on Dis No. in data\gdis_gadm_2000_2002.gpkg
+2025-10-14 20:39:34 - INFO - Dissolving units
+2025-10-14 20:39:34 - INFO - Dissolving units

@@ -19,7 +19,7 @@ def dissolve_units(gdf):
                 "admin2": list,
             },
         )
-        gdf = gdf.reset_index(inplace=False)
+        gdf.reset_index(inplace=True)
         logging.info(f"{len(gdf)} geocoded records after dissolving")
 
     return gdf
@@ -37,25 +37,38 @@ def validate(
 
     # Run validation
     result_df = pd.DataFrame(columns=OUTPUT_COLUMNS)
-
+    include_admin_info = False
+    if "name" in A_gdf.columns:
+        include_admin_info = True
     # TO BE DONE: Dealing with Dis No. that are in A but not in B and vice versa. (Relevant for GDIS / EM-DAT)
     # Maybe different approaches for common disno and disno's that are only in A and only in B
     # e.g.,   common: disno = set(A_gdf["DisNo."]).intersection(set(B_gdf["DisNo."]))
     for ix, row in A_gdf.iterrows():
         disno = row["DisNo."]
         geom_a = row["geometry"]
-        if disno in B_gdf["DisNo."]:  # quick fix for now
+        if disno in set(B_gdf["DisNo."]):  # quick fix for now
             print(f"Validating {disno}")
             geom_b = B_gdf[B_gdf["DisNo."] == disno]["geometry"].iloc[0]
             indices: dict[str, float] = calculate_area_indices(geom_a, geom_b)
-            results = [
-                row["DisNo."],
-                row["name"],
-                row["admin_level"],
-                row["admin1"],
-                row["admin2"],
-                AREA_CALCULATION_METHOD,
-            ] + list(indices.values())
+            if include_admin_info:
+                results = [
+                    row["DisNo."],
+                    row["name"],
+                    row["admin_level"],
+                    row["admin1"],
+                    row["admin2"],
+                    AREA_CALCULATION_METHOD,
+                ] + list(indices.values())
+            else:
+                results = [
+                    "na",
+                    "na",
+                    "na",
+                    "na",
+                    "na",
+                    AREA_CALCULATION_METHOD,
+                ] + list(indices.values())
+
             result_df.loc[ix] = results
         else:
             result_df.loc[ix] = None

@@ -116,5 +116,3 @@ validate(
     AREA_CALCULATION_METHOD,
     OUTPUT_FILENAME,
 )
-
-# %%
