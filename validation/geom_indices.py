@@ -1,8 +1,9 @@
 from typing import Literal
 
+import numpy as np
 from pyproj import Transformer, Geod
 from shapely import make_valid
-from shapely.geometry import Polygon, MultiPolygon, base
+from shapely.geometry import Point, Polygon, MultiPolygon, base
 from shapely.ops import transform
 
 # WGS84 ellipsoid
@@ -35,12 +36,13 @@ def _check_geometry(geom: base.BaseGeometry):
     if not geom.is_valid:
         raise ValueError('Geometry is not valid.')
 
-def calculate_area_indices(
+def calculate_geom_indices(
         geom_a: Polygon | MultiPolygon,
         geom_b: Polygon | MultiPolygon,
         method: Literal["geodetic", "equal_area"] = "geodetic",
         area_crs: str = "EPSG:6933",
         shapely_make_valid: bool = True,
+        check_geometry: bool = True,
         float_precision: int | None = None,
 ) -> dict[str, float]:
     """
@@ -70,8 +72,9 @@ def calculate_area_indices(
         geom_a = make_valid(geom_a)
         geom_b = make_valid(geom_b)
 
-    _check_geometry(geom_a)
-    _check_geometry(geom_b)
+    if check_geometry:
+        _check_geometry(geom_a)
+        _check_geometry(geom_b)
 
     if method == "equal_area":
         transformer = Transformer.from_crs("EPSG:4326", area_crs,
@@ -103,7 +106,9 @@ def calculate_area_indices(
         "union_area": union_area,
         "a_in_b": a_in_b,
         "b_in_a": b_in_a,
-        "jaccard": jaccard
+        "jaccard": jaccard,
+        "b_contains_a": geom_b.contains(geom_b),
+        "b_contains_a_properly": geom_b.contains_properly(geom_b),
     }
 
     if float_precision is not None:

@@ -1,0 +1,24 @@
+[logging]
+level = "INFO"
+filename='.log'
+filemode='a+'
+style='{'
+format='{asctime} - {levelname} - {message}'
+datefmt="%Y-%m-%d %H:%M:%S"
+
+[path]
+llm_batch_dir = "Q:/Data/GEOEMDAT" # folder with Michele's batches
+llm_subbatch_dir = "data/llm_subbatches" # folder to store the subbatches
+emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
+emdat_gaul_path = "Q:/Data/EMDAT_GAUL/geoemdat_gaul.gpkg"
+validation_output_dir = "output"
+
+[index]
+# keep these colums (i.e., drop 'admin3'), while "geometry_osm",
+# "geometry_gadm", "geometry_wiki" are handled separately
+llm_columns_to_keep = ["DisNo.", "name", "admin_level", "admin1", "admin2", "iso3"]
+llm_batch_numbers = [1, 2, 3, 4, 5]
+llm_geom_columns = ["geometry_osm", "geometry_gadm", "geometry_wiki"]
+
+[geoprocessing]
+area_calculation_method = 'geodetic' # alternatively 'equal_area'
