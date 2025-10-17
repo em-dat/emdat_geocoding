@@ -1,15 +1,16 @@
 import logging
 from pathlib import Path
 from typing import Literal
-
+from dataclasses import fields
 import pandas as pd
 import geopandas as gpd
 
 from validation.io import check_geometries, load_emdat_archive, load_GAUL
-from validation.geom_indices import calculate_geom_indices
+from validation.geom_indices import calculate_geom_indices, GeomIndices
 
 logger = logging.getLogger(__name__)
 
+GEOMINDICES_FIELDS = [f.name for f in fields(GeomIndices)]
 OUTPUT_COLUMNS = [
     "dis_no",
     "name",
@@ -20,16 +21,7 @@ OUTPUT_COLUMNS = [
     "geom_type_b",
     "batch_number",
     "area_calculation_method",
-    "area_a",
-    "area_b",
-    "intersection_area",
-    "union_area",
-    "a_in_b",
-    "b_in_a",
-    "jaccard",
-    "b_contains_a",
-    "b_contains_a_properly",
-]
+] + GEOMINDICES_FIELDS
 
 LLMGeomType = Literal['gadm', 'osm', 'wiki']
 BenchmarkGeomType = Literal['GAUL', 'GDIS']
@@ -125,7 +117,7 @@ def validate_geometries(
     for ix, row in gdf_llm.iterrows():
         geom_a = row['geometry']
         geom_b = geom_dict.get(row["DisNo."])
-        indices: dict[str, float] = calculate_geom_indices(
+        indices: dict[str, float | bool] = calculate_geom_indices(
             geom_a, geom_b,
             method=area_calculation_method,
             shapely_make_valid=False,
@@ -148,9 +140,9 @@ def validate_geometries(
                        f"{'_dissolved' if dissolve_units else ''}"
                        f".csv")
     output_path = output_dir / output_filename
-    logging.info(f"Saving results to {output_path}")
+    logger.info(f"Saving results to {output_path}")
     result_df = pd.DataFrame(records, columns=OUTPUT_COLUMNS)
     result_df.to_csv(output_path, index=False)
-    logging.info(f"Validation complete".upper())
+    logger.info(f"Validation complete".upper())
 
 
