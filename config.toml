@@ -1,6 +1,6 @@
 [logging]
 level = "INFO"
-filename='.log'
+filename='.log' # may be overwritten in run_xxx.py scripts
 filemode='a+'
 style='{'
 format='{asctime} - {levelname} - {message}'
@@ -22,3 +22,7 @@ llm_geom_columns = ["geometry_osm", "geometry_gadm", "geometry_wiki"]
 
 [geoprocessing]
 area_calculation_method = 'geodetic' # alternatively 'equal_area'
+
+[validation]
+# If true, skip processing a subbatch when its expected output CSV already exists
+skip_if_output_exists = true
