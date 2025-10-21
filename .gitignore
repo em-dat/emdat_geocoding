@@ -2,3 +2,8 @@
 /data/geoloc_emdat_0002_gadm.gpkg
 /data/llm_subbatches
 /data/llm_geocoded_batches
+/data 
+ __pycache__/
+ *.pyc
+*validation/__pycache__/
+
