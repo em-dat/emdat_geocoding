@@ -1,0 +1,314 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly
+2008-0338-HTI,Sud,Admin1,Sud,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-HTI,Nippes,Admin1,Nippes,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0338-HTI,Ouest,Admin1,Ouest,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-HTI,Artibonite,Admin1,L'Artibonite,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-HTI,Nord-Ouest,Admin1,Nord-Ouest,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0338-HTI,Nord,Admin1,Nord,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-HTI,Nord-Est,Admin1,Nord-Est,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-HTI,Sud-Est,Admin1,Sud-Est,,llm_wiki,GAUL,2,geodetic,0.0,27021531964.95855,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0338-JAM,Kingston,Admin1,Kingston,,llm_wiki,GAUL,2,geodetic,0.0,10964651156.116692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0346-BRA,Santa Catarina,Admin1,Santa Catarina,,llm_wiki,GAUL,2,geodetic,0.0,367014816516.4107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0346-BRA,Rio Grande do Sul,Admin1,Rio Grande do Sul,,llm_wiki,GAUL,2,geodetic,0.0,367014816516.4107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0347-PHL,Bansalan,Admin2,Davao del Sur,Bansalan,llm_wiki,GAUL,2,geodetic,0.0,5628109510.7050905,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0350-PAK,Balochistan,Admin1,Balochistan,,llm_wiki,GAUL,2,geodetic,0.0,347784415921.67645,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-CUB,Isla de la Juventud,Admin1,Isla de la Juventud,,llm_wiki,GAUL,2,geodetic,0.0,30731965781.979103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-CUB,Pinar del Río,Admin1,Pinar del Río,,llm_wiki,GAUL,2,geodetic,0.0,30731965781.979103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-CUB,Matanzas,Admin1,Matanzas,,llm_wiki,GAUL,2,geodetic,0.0,30731965781.979103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-DOM,Santo Domingo,Admin1,Santo Domingo,,llm_wiki,GAUL,2,geodetic,0.0,1297882294.2194092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0352-HTI,Sud-Est,Admin1,Sud-Est,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-HTI,Sud,Admin1,Sud,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-HTI,Nippes,Admin1,Nippes,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0352-HTI,Ouest,Admin1,Ouest,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-HTI,Grand'Anse,Admin1,Grand'Anse,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0352-HTI,Artibonite,Admin1,L'Artibonite,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-HTI,Centre,Admin1,Centre,,llm_wiki,GAUL,2,geodetic,0.0,21186377885.12254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0352-JAM,Kingston,Admin1,Kingston,,llm_wiki,GAUL,2,geodetic,0.0,3810376857.9620256,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0360-BFA,Sahel,Admin1,Sahel,,llm_wiki,GAUL,2,geodetic,0.0,273280483713.08148,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0362-BEN,Ouinhi,Admin2,Zou,Ouinhi,llm_wiki,GAUL,2,geodetic,0.0,345055487.9252038,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0364-GIN,Dinguiraye,Admin2,Faranah,Dinguiraye,llm_wiki,GAUL,2,geodetic,0.0,29105409277.864124,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0364-GIN,Siguiri,Admin2,Kankan,Siguiri,llm_wiki,GAUL,2,geodetic,0.0,29105409277.864124,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-DOM,Monte Cristi,Admin1,Monte Cristi,,llm_wiki,GAUL,2,geodetic,0.0,3708631540.9286613,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-DOM,Puerto Plata,Admin1,Puerto Plata,,llm_wiki,GAUL,2,geodetic,0.0,3708631540.9286613,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-HTI,Sud,Admin1,Sud,,llm_wiki,GAUL,2,geodetic,0.0,11777451319.71917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-HTI,Nord,Admin1,Nord,,llm_wiki,GAUL,2,geodetic,0.0,11777451319.71917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-HTI,Sud-Est,Admin1,Sud-Est,,llm_wiki,GAUL,2,geodetic,0.0,11777451319.71917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0378-HTI,Nippes,Admin1,Nippes,,llm_wiki,GAUL,2,geodetic,0.0,11777451319.71917,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0378-HTI,Port-au-Prince,Admin2,Ouest,Port-au-Prince,llm_wiki,GAUL,2,geodetic,0.0,11777451319.71917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0383-IDN,Maluku,Admin1,Maluku,,llm_wiki,GAUL,2,geodetic,0.0,737053981138.9108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0383-IDN,Riau,Admin1,Riau,,llm_wiki,GAUL,2,geodetic,0.0,737053981138.9108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0383-IDN,Gorontalo,Admin2,Gorontalo,Gorontalo,llm_wiki,GAUL,2,geodetic,0.0,737053981138.9108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Guantánamo,Admin1,Guantánamo,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Santiago de Cuba,Admin1,Santiago de Cuba,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Camagüey,Admin1,Camagüey,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Holguín,Admin1,Holguín,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Granma,Admin1,Granma,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Las Tunas,Admin1,Las Tunas,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Ciego de Ávila,Admin1,Ciego de Ávila,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Sancti Spíritus,Admin1,Sancti Spíritus,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Pinar del Río,Admin1,Pinar del Río,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Isla de la Juventud,Admin1,Isla de la Juventud,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0384-CUB,Matanzas,Admin1,Matanzas,,llm_wiki,GAUL,2,geodetic,0.0,106840992163.8426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0385-BGD,Sirajganj,Admin2,Rajshahi,Sirajganj,llm_wiki,GAUL,2,geodetic,0.0,5420736669.740666,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0389-CHL,Los Ríos,Admin1,Los Ríos,,llm_wiki,GAUL,2,geodetic,0.0,165959716338.2541,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0389-CHL,Los Lagos,Admin1,Los Lagos,,llm_wiki,GAUL,2,geodetic,0.0,165959716338.2541,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0389-CHL,Maule,Admin1,Maule,,llm_wiki,GAUL,2,geodetic,0.0,165959716338.2541,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0392-MOZ,Manica,Admin1,Manica,,llm_wiki,GAUL,2,geodetic,0.0,233756293757.36166,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0392-MOZ,Sofala,Admin1,Sofala,,llm_wiki,GAUL,2,geodetic,0.0,233756293757.36166,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0392-MOZ,Zambezia,Admin1,Zambezia,,llm_wiki,GAUL,2,geodetic,0.0,233756293757.36166,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0409-PAN,Chiriquí,Admin1,Chiriquí,,llm_wiki,GAUL,2,geodetic,0.0,8693486211.077906,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0410-SEN,Thiès,Admin1,Thiès,,llm_wiki,GAUL,2,geodetic,0.0,35964616041.00143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0410-SEN,Diourbel,Admin1,Diourbel,,llm_wiki,GAUL,2,geodetic,0.0,35964616041.00143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0410-SEN,Saint-Louis,Admin1,Saint-Louis,,llm_wiki,GAUL,2,geodetic,0.0,35964616041.00143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0410-SEN,Kaolack,Admin1,Kaolack,,llm_wiki,GAUL,2,geodetic,0.0,35964616041.00143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0410-SEN,Dakar,Admin1,Dakar,,llm_wiki,GAUL,2,geodetic,0.0,35964616041.00143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0415-IND,Krishna,Admin2,Andhra Pradesh,Krishna,llm_wiki,GAUL,2,geodetic,0.0,43644439107.75339,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0415-IND,Guntur,Admin2,Andhra Pradesh,Guntur,llm_wiki,GAUL,2,geodetic,0.0,43644439107.75339,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0420-ITA,Milano,Admin2,Lombardia,Milano,llm_wiki,GAUL,2,geodetic,0.0,7303636996.837239,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0420-ITA,Como,Admin2,Lombardia,Como,llm_wiki,GAUL,2,geodetic,0.0,7303636996.837239,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0420-ITA,Lecco,Admin2,Lombardia,Lecco,llm_wiki,GAUL,2,geodetic,0.0,7303636996.837239,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0420-ITA,Sondrio,Admin2,Lombardia,Sondrio,llm_wiki,GAUL,2,geodetic,0.0,7303636996.837239,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0423-IND,Odisha,Admin1,Odisha,,llm_wiki,GAUL,2,geodetic,0.0,451010255668.66547,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0423-IND,Uttar Pradesh,Admin1,Uttar Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,451010255668.66547,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0423-IND,Himachal Pradesh,Admin1,Himachal Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,451010255668.66547,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0427-CRI,Puntarenas,Admin1,Puntarenas,,llm_wiki,GAUL,2,geodetic,0.0,21488926504.46803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0430-THA,Phitsanulok,Admin1,Phitsanulok,,llm_wiki,GAUL,2,geodetic,0.0,19407303579.752304,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0430-THA,Lopburi,Admin1,Lop Buri,,llm_wiki,GAUL,2,geodetic,0.0,19407303579.752304,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0430-THA,Phra Nakhon Si Ayutthaya,Admin1,Phra Nakhon Si Ayutthaya,,llm_wiki,GAUL,2,geodetic,0.0,19407303579.752304,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0439-CAF,Mambéré-Kadéï,Admin1,Mambéré-Kadéï,,llm_wiki,GAUL,2,geodetic,0.0,29467221355.318512,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0457-NIC,Granada,Admin1,Granada,,llm_wiki,GAUL,2,geodetic,0.0,18539838170.76976,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0459-BDI,Cibitoke,Admin1,Cibitoke,,llm_wiki,GAUL,2,geodetic,0.0,881863639.5081711,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0459-BDI,Ngozi,Admin1,Ngozi,,llm_wiki,GAUL,2,geodetic,0.0,881863639.5081711,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0459-BDI,Muhuta,Admin2,Bujumbura Rural,Muhuta,llm_wiki,GAUL,2,geodetic,0.0,881863639.5081711,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0459-BDI,Ngozi,Admin2,Ngozi,Ngozi,llm_wiki,GAUL,2,geodetic,0.0,881863639.5081711,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-BLZ,Belize,Admin1,Belize,,llm_wiki,GAUL,2,geodetic,0.0,15042398422.763124,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-CRI,Puntarenas,Admin1,Puntarenas,,llm_wiki,GAUL,2,geodetic,0.0,48396979875.92024,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-CRI,Alajuela,Admin1,Alajuela,,llm_wiki,GAUL,2,geodetic,0.0,48396979875.92024,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,Zacapa,Admin1,Zacapa,,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,Huehuetenango,Admin1,Huehuetenango,,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,Chimaltenango,Admin1,Chimaltenango,,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,Sayaxché,Admin2,Petén,Sayaxché,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,La Libertad,Admin2,Petén,La Libertad,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,Poptún,Admin2,Petén,Poptún,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,San Luis,Admin2,Petén,San Luis,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-GTM,San Miguel Ixtahuacán,Admin2,San Marcos,San Miguel Ixtahuacán,llm_wiki,GAUL,2,geodetic,0.0,54155810892.29917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Choluteca,Admin1,Choluteca,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Comayagua,Admin1,Comayagua,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Copán,Admin1,Copán,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Intibucá,Admin1,Intibucá,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,La Paz,Admin1,La Paz,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Ocotepeque,Admin1,Ocotepeque,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,El Paraíso,Admin1,El Paraíso,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-HND,Santa Bárbara,Admin1,Santa Bárbara,,llm_wiki,GAUL,2,geodetic,0.0,111899578507.15599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-NIC,Chinandega,Admin1,Chinandega,,llm_wiki,GAUL,2,geodetic,0.0,25382022282.79952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-NIC,Granada,Admin1,Granada,,llm_wiki,GAUL,2,geodetic,0.0,25382022282.79952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-NIC,Rivas,Admin1,Rivas,,llm_wiki,GAUL,2,geodetic,0.0,25382022282.79952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0484-SLV,Usulután,Admin1,Usulután,,llm_wiki,GAUL,2,geodetic,0.0,4243101560.210805,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Assam,Admin1,Assam,,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Muzaffarpur,Admin2,Bihar,Muzaffarpur,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Supaul,Admin2,Bihar,Supaul,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0486-IND,Patna,Admin2,Bihar,Patna,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Katihar,Admin2,Bihar,Katihar,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Nalanda,Admin2,Bihar,Nalanda,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Sheikhpura,Admin2,Bihar,Sheikhpura,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Saharsa,Admin2,Bihar,Saharsa,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Purnia,Admin2,Bihar,Purnia,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Begusarai,Admin2,Bihar,Begusarai,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Bhagalpur,Admin2,Bihar,Bhagalpur,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Madhepura,Admin2,Bihar,Madhepura,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Vaishali,Admin2,Bihar,Vaishali,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0486-IND,Khagaria,Admin2,Bihar,Khagaria,llm_wiki,GAUL,2,geodetic,0.0,118099653479.1425,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0488-AFG,Jalalabad,Admin2,Nangarhar,Jalal abad,llm_wiki,GAUL,2,geodetic,0.0,23619496.73329363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0498-MAR,Oriental,Admin1,Oriental,,llm_wiki,GAUL,2,geodetic,0.0,7002785068.946331,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0498-MAR,Nador,Admin2,Oriental,Nador,llm_wiki,GAUL,2,geodetic,0.0,7002785068.946331,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0499-YEM,Al Mahwit,Admin1,Al Mahwit,,llm_wiki,GAUL,2,geodetic,0.0,103444217793.02908,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0500-PAK,Sibi,Admin2,Balochistan,Sibi,llm_wiki,GAUL,2,geodetic,0.0,14395103781.941679,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0503-PRY,Concepción,Admin1,Concepción,,llm_wiki,GAUL,2,geodetic,0.0,112624843967.67078,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0506-SOM,Baardheere,Admin2,Gedo,Baar-Dheere,llm_wiki,GAUL,2,geodetic,0.0,15274881958.899113,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0514-CUB,Sancti Spíritus,Admin1,Sancti Spíritus,,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0514-CUB,Ciego de Ávila,Admin1,Ciego de Ávila,,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0514-CUB,Granma,Admin1,Granma,,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0514-CUB,Santa Cruz del Sur,Admin2,Camagüey,Santa Cruz del Sur,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0514-CUB,Najasa,Admin2,Camagüey,Najasa,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0514-CUB,Guáimaro,Admin2,Camagüey,Guáimaro,llm_wiki,GAUL,2,geodetic,0.0,28462919272.10884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0517-ETH,Afder,Admin2,Somali,Afder,llm_wiki,GAUL,2,geodetic,0.0,239792436357.2746,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0520-SSD,Unity,Admin1,Unity,,llm_wiki,GAUL,2,geodetic,0.0,128146568164.20451,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0520-SSD,Tonga,Admin2,Upper Nile,Tonga,llm_wiki,GAUL,2,geodetic,0.0,128146568164.20451,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0525-AUS,Logan,Admin2,Queensland,Logan,llm_wiki,GAUL,2,geodetic,0.0,8781884119.16952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0525-AUS,Gold Coast,Admin2,Queensland,Gold Coast,llm_wiki,GAUL,2,geodetic,0.0,8781884119.16952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0525-AUS,Sunshine Coast,Admin2,Queensland,Sunshine Coast,llm_wiki,GAUL,2,geodetic,0.0,8781884119.16952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0525-AUS,Moreton Bay,Admin2,Queensland,Moreton Bay,llm_wiki,GAUL,2,geodetic,0.0,8781884119.16952,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0526-IDN,Bengkulu,Admin1,Bengkulu,,llm_wiki,GAUL,2,geodetic,0.0,505435230780.6726,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0526-IDN,Jawa Tengah,Admin1,Jawa Tengah,,llm_wiki,GAUL,2,geodetic,0.0,505435230780.6726,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0526-IDN,Cianjur,Admin2,Jawa Barat,Cianjur,llm_wiki,GAUL,2,geodetic,0.0,505435230780.6726,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Bayamo,Admin2,Granma,Bayamo,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Manzanillo,Admin2,Granma,Manzanillo,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Yara,Admin2,Granma,Yara,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Frank País,Admin2,Holguín,Frak País,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Mayarí,Admin2,Holguín,Mayarí,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0532-CUB,Sagua de Tánamo,Admin2,Holguín,Sagua de Tánamo,llm_wiki,GAUL,2,geodetic,0.0,4526313475.813363,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0536-IDN,Gorontalo,Admin1,Gorontalo,,llm_wiki,GAUL,2,geodetic,0.0,15877914246.174282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0536-IDN,Buol,Admin2,Sulawesi Tengah,Buol,llm_wiki,GAUL,2,geodetic,0.0,15877914246.174282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0545-PHL,Cagayan,Admin1,Cagayan,,llm_wiki,GAUL,2,geodetic,0.0,25036717041.261875,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0545-PHL,Isabela,Admin1,Isabela,,llm_wiki,GAUL,2,geodetic,0.0,25036717041.261875,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0545-PHL,Kalinga,Admin1,Kalinga,,llm_wiki,GAUL,2,geodetic,0.0,25036717041.261875,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0546-COL,Páez,Admin2,Cauca,Páez,llm_wiki,GAUL,2,geodetic,0.0,5042648719.496226,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0546-COL,Inzá,Admin2,Cauca,Inzá,llm_wiki,GAUL,2,geodetic,0.0,5042648719.496226,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Nakhon Si Thammarat,Admin1,Nakhon Si Thammarat,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Surat Thani,Admin1,Surat Thani,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Narathiwat,Admin1,Narathiwat,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Phatthalung,Admin1,Phatthalung,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Songkhla,Admin1,Songkhla,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Trang,Admin1,Trang,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Chumphon,Admin1,Chumphon,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0547-THA,Pattani,Admin1,Pattani,,llm_wiki,GAUL,2,geodetic,0.0,56475612898.81903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-CRI,Matina,Admin2,Limón,Matina,llm_wiki,GAUL,2,geodetic,0.0,11975552636.030926,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-CRI,Siquirres,Admin2,Limón,Siquirres,llm_wiki,GAUL,2,geodetic,0.0,11975552636.030926,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-CRI,Heredia,Admin2,Heredia,Heredia,llm_wiki,GAUL,2,geodetic,0.0,11975552636.030926,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-CRI,San Isidro,Admin2,Heredia,San Isidro,llm_wiki,GAUL,2,geodetic,0.0,11975552636.030926,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0551-PAN,Chiriquí,Admin1,Chiriquí,,llm_wiki,GAUL,2,geodetic,0.0,38807177260.02418,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-PAN,Bocas del Toro,Admin1,Bocas del Toro,,llm_wiki,GAUL,2,geodetic,0.0,38807177260.02418,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0551-PAN,Darién,Admin1,Darién,,llm_wiki,GAUL,2,geodetic,0.0,38807177260.02418,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0554-SSD,Upper Nile,Admin1,Upper Nile,,llm_wiki,GAUL,2,geodetic,0.0,310207026491.39954,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0554-SSD,Warrap,Admin1,Warap,,llm_wiki,GAUL,2,geodetic,0.0,310207026491.39954,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0559-COL,Antioquia,Admin1,Antioquia,,llm_wiki,GAUL,2,geodetic,0.0,749182582771.731,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0559-COL,Arauca,Admin1,Arauca,,llm_wiki,GAUL,2,geodetic,0.0,749182582771.731,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0559-COL,Caldas,Admin1,Caldas,,llm_wiki,GAUL,2,geodetic,0.0,749182582771.731,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0559-COL,Risaralda,Admin1,Risaralda,,llm_wiki,GAUL,2,geodetic,0.0,749182582771.731,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Puducherry,Admin1,Puducherry,,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Thiruvallur,Admin2,Tamil Nadu,Thiruvallur,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-IND,Thoothukudi,Admin2,Tamil Nadu,Thoothukkudi,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Ramanathapuram,Admin2,Tamil Nadu,Ramanathapuram,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Tirunelveli,Admin2,Tamil Nadu,Tirunelveli,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Pudukkottai,Admin2,Tamil Nadu,Pudukkottai,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Nagapattinam,Admin2,Tamil Nadu,Nagappattinam,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Cuddalore,Admin2,Tamil Nadu,Cuddalore,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Chennai,Admin2,Tamil Nadu,Chennai,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Puducherry,Admin2,Puducherry,Puducherry,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-IND,Karaikal,Admin2,Puducherry,Karaikal,llm_wiki,GAUL,2,geodetic,0.0,41917541386.70055,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0570-MYS,Kelantan,Admin1,Kelantan,,llm_wiki,GAUL,2,geodetic,0.0,31093807580.713005,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0570-MYS,Terengganu,Admin1,Trengganu,,llm_wiki,GAUL,2,geodetic,0.0,31093807580.713005,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0570-MYS,Kuantan,Admin2,Pahang,Kuantan,llm_wiki,GAUL,2,geodetic,0.0,31093807580.713005,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0575-PNG,Madang,Admin1,Madang,,llm_wiki,GAUL,2,geodetic,0.0,179240609375.7626,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0575-PNG,Milne Bay,Admin1,Milne Bay,,llm_wiki,GAUL,2,geodetic,0.0,179240609375.7626,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0575-PNG,New Ireland,Admin1,New Ireland,,llm_wiki,GAUL,2,geodetic,0.0,179240609375.7626,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0579-ITA,Venezia,Admin2,Veneto,Venezia,llm_wiki,GAUL,2,geodetic,0.0,7474809083.12102,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0581-AUS,Central Highlands,Admin2,Queensland,Central Highlands,llm_wiki,GAUL,2,geodetic,0.0,118554740893.65663,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0589-GUY,Pomeroon-Supenaam,Admin1,Pomeroon-Supenaam,,llm_wiki,GAUL,2,geodetic,0.0,49556478066.58623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0589-GUY,Essequibo Islands-West Demerara,Admin1,Essequibo Islands-West Demerara,,llm_wiki,GAUL,2,geodetic,0.0,49556478066.58623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0589-GUY,Demerara-Mahaica,Admin1,Demerara-Mahaica,,llm_wiki,GAUL,2,geodetic,0.0,49556478066.58623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0589-GUY,Mahaica-Berbice,Admin1,Mahaica-Berbice,,llm_wiki,GAUL,2,geodetic,0.0,49556478066.58623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0589-GUY,East Berbice-Corentyne,Admin1,East Berbice-Corentyne,,llm_wiki,GAUL,2,geodetic,0.0,49556478066.58623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0608-PHL,Nueva Ecija,Admin1,Nueva Ecija,,llm_wiki,GAUL,2,geodetic,0.0,12908086512.981548,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0608-PHL,Pampanga,Admin1,Pampanga,,llm_wiki,GAUL,2,geodetic,0.0,12908086512.981548,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0608-PHL,Bulacan,Admin1,Bulacan,,llm_wiki,GAUL,2,geodetic,0.0,12908086512.981548,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0609-PHL,Lambayong,Admin2,Sultan Kudarat,Lambayong,llm_wiki,GAUL,2,geodetic,0.0,4669193792.1533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0609-PHL,Esperanza,Admin2,Sultan Kudarat,Esperanza,llm_wiki,GAUL,2,geodetic,0.0,4669193792.1533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0615-IND,Uttar Pradesh,Admin1,Uttar Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,340777178741.5978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0615-IND,Bihar,Admin1,Bihar,,llm_wiki,GAUL,2,geodetic,0.0,340777178741.5978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0615-IND,Jorhat,Admin2,Assam,Jorhat,llm_wiki,GAUL,2,geodetic,0.0,340777178741.5978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Uttar Pradesh,Admin1,Uttar Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Bihar,Admin1,Bihar,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Haryana,Admin1,Haryana,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Punjab,Admin1,Punjab,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Himachal Pradesh,Admin1,Himachal Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Uttarakhand,Admin1,Uttarakhand,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0616-IND,Jammu and Kashmir,Admin1,Jammu and Kashmir,,llm_wiki,GAUL,2,geodetic,0.0,721896233011.5851,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0618-IDN,Jawa Tengah,Admin1,Jawa Tengah,,llm_wiki,GAUL,2,geodetic,0.0,399048571656.82886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0618-IDN,Gorontalo,Admin1,Gorontalo,,llm_wiki,GAUL,2,geodetic,0.0,399048571656.82886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0618-IDN,Bali,Admin1,Bali,,llm_wiki,GAUL,2,geodetic,0.0,399048571656.82886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0618-IDN,Bengkulu,Admin1,Bengkulu,,llm_wiki,GAUL,2,geodetic,0.0,399048571656.82886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0618-IDN,Banten,Admin1,Banten,,llm_wiki,GAUL,2,geodetic,0.0,399048571656.82886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Nueva Era,Admin2,Ilocos Norte,Nueva Era,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Paoay,Admin2,Ilocos Norte,Paoay,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,San Nicolas,Admin2,Ilocos Norte,San Nicolas,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Bangui,Admin2,Ilocos Norte,Bangui,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Dingras,Admin2,Ilocos Norte,Dingras,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Pasuquin,Admin2,Ilocos Norte,Pasuquin,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Marcos,Admin2,Ilocos Norte,Marcos,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Piddig,Admin2,Ilocos Norte,Piddig,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Bacarra,Admin2,Ilocos Norte,Bacarra,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Sarrat,Admin2,Ilocos Norte,Sarrat,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Currimao,Admin2,Ilocos Norte,Currimao,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Pagudpud,Admin2,Ilocos Norte,Pagudpud,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0621-PHL,Luna,Admin2,La Union,Luna,llm_wiki,GAUL,2,geodetic,0.0,13828060295.488264,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0622-PHL,Pigcawayan,Admin2,North Cotabato,Pigkawayan,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Midsayap,Admin2,North Cotabato,Midsayap,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Pikit,Admin2,North Cotabato,Pikit,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Rajah Buayan,Admin2,Maguindanao,Rajah Buayan,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Mamasapano,Admin2,Maguindanao,Mamasapano,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Datu Piang,Admin2,Maguindanao,Datu Piang,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Datu Anggal Midtimbang,Admin2,Maguindanao,Datu Anggal Midtimbang,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0622-PHL,Datu Saudi Ampatuan,Admin2,Maguindanao,Datu Saudi-Ampatuan,llm_wiki,GAUL,2,geodetic,0.0,11337521245.754957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0623-PHL,Nueva Ecija,Admin1,Nueva Ecija,,llm_wiki,GAUL,2,geodetic,0.0,7254654653.3456955,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0623-PHL,Pampanga,Admin1,Pampanga,,llm_wiki,GAUL,2,geodetic,0.0,7254654653.3456955,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0625-PNG,Kainantu,Admin2,Eastern Highlands,Kainantu,llm_wiki,GAUL,2,geodetic,0.0,2879517822.415126,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0628-MOZ,Maputo,Admin1,Maputo,,llm_wiki,GAUL,2,geodetic,0.0,282307072909.38983,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0628-MOZ,Inhambane,Admin1,Inhambane,,llm_wiki,GAUL,2,geodetic,0.0,282307072909.38983,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0628-MOZ,Tete,Admin1,Tete,,llm_wiki,GAUL,2,geodetic,0.0,282307072909.38983,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0628-MOZ,Manica,Admin2,Manica,Manica,llm_wiki,GAUL,2,geodetic,0.0,282307072909.38983,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0631-MLI,Kayes,Admin1,Kayes,,llm_wiki,GAUL,2,geodetic,0.0,22769502937.370117,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-MYS,Pahang,Admin1,Pahang,,llm_wiki,GAUL,2,geodetic,0.0,188026773669.16638,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-MYS,Kelantan,Admin1,Kelantan,,llm_wiki,GAUL,2,geodetic,0.0,188026773669.16638,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-MYS,Terengganu,Admin1,Trengganu,,llm_wiki,GAUL,2,geodetic,0.0,188026773669.16638,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-MYS,Sarawak,Admin1,Sarawak,,llm_wiki,GAUL,2,geodetic,0.0,188026773669.16638,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-THA,Phatthalung,Admin1,Phatthalung,,llm_wiki,GAUL,2,geodetic,0.0,12769906546.084286,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0634-THA,Narathiwat,Admin1,Narathiwat,,llm_wiki,GAUL,2,geodetic,0.0,12769906546.084286,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0644-BGD,Dhaka,Admin1,Dhaka,,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0644-BGD,Rajshahi,Admin1,Rajshahi,,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0644-BGD,Rangpur,Admin1,Rangpur,,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0644-BGD,Sylhet,Admin1,Sylhet,,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0644-BGD,Gaibandha,Admin2,Rangpur,Gaibandha,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0644-BGD,Kurigram,Admin2,Rangpur,Kurigram,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0644-BGD,Sunamganj,Admin2,Sylhet,Sunamganj,llm_wiki,GAUL,2,geodetic,0.0,24923759407.171143,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0646-IND,Uttar Pradesh,Admin1,Uttar Pradesh,,llm_wiki,GAUL,2,geodetic,0.0,240777134954.46057,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0647-ZAF,KwaZulu-Natal,Admin1,KwaZulu-Natal,,llm_wiki,GAUL,2,geodetic,0.0,223190216542.36987,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0647-ZAF,Free State,Admin1,Free State,,llm_wiki,GAUL,2,geodetic,0.0,223190216542.36987,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0648-BGD,Patuakhali,Admin2,Barisal,Patuakhali,llm_wiki,GAUL,2,geodetic,0.0,5054191224.424192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0649-COL,Quetame,Admin2,Cundinamarca,Quetame,llm_wiki,GAUL,2,geodetic,0.0,85528291096.07289,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0653-DEU,Baden-Württemberg,Admin1,Baden-Württemberg,,llm_wiki,GAUL,2,geodetic,0.0,129133877726.99901,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0653-DEU,Hesse,Admin1,Hessen,,llm_wiki,GAUL,2,geodetic,0.0,129133877726.99901,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0653-DEU,Sachsen,Admin1,Sachsen,,llm_wiki,GAUL,2,geodetic,0.0,129133877726.99901,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9154-THA,Ang Thong,Admin1,Ang Thong,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Chaiyaphum,Admin1,Chaiyaphum,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Chiang Rai,Admin1,Chiang Rai,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Kalasin,Admin1,Kalasin,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Kamphaeng Phet,Admin1,Kamphaeng Phet,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Khon Kaen,Admin1,Khon Kaen,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Lampang,Admin1,Lampang,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Loei,Admin1,Loei,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Lopburi,Admin1,Lop Buri,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Maha Sarakham,Admin1,Maha Sarakham,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Mukdahan,Admin1,Mukdahan,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Nakhon Phanom,Admin1,Nakhon Phanom,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Nakhon Ratchasima,Admin1,Nakhon Ratchasima,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Nakhon Sawan,Admin1,Nakhon Sawan,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Nong Bua Lamphu,Admin1,Nong Bua Lam Phu,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Nong Khai,Admin1,Nong Khai,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Phayao,Admin1,Phayao,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Phichit,Admin1,Phichit,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Phitsanulok,Admin1,Phitsanulok,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Phra Nakhon Si Ayutthaya,Admin1,Phra Nakhon Si Ayutthaya,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Phrae,Admin1,Phrae,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Sakon Nakhon,Admin1,Sakon Nakhon,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Saraburi,Admin1,Saraburi,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Sukhothai,Admin1,Sukhothai,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Udon Thani,Admin1,Udon Thani,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Uthai Thani,Admin1,Uthai Thani,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9154-THA,Uttaradit,Admin1,Uttaradit,,llm_wiki,GAUL,2,geodetic,0.0,233766789877.5195,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9200-ERI,Anseba,Admin1,Anseba,,llm_wiki,GAUL,2,geodetic,0.0,86429269223.33177,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9303-DJI,Ali Sabieh,Admin2,Ali Sabieh,Ali Sabieh,llm_wiki,GAUL,2,geodetic,0.0,8642993926.132229,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9303-DJI,Dikhil,Admin2,Dikhil,Dikhil,llm_wiki,GAUL,2,geodetic,0.0,8642993926.132229,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9475-AFG,Kunduz,Admin1,Kunduz,,llm_wiki,GAUL,2,geodetic,0.0,65946013529.51355,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9475-AFG,Balkh,Admin1,Balkh,,llm_wiki,GAUL,2,geodetic,0.0,65946013529.51355,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9590-MOZ,Maputo,Admin1,Maputo,,llm_wiki,GAUL,2,geodetic,0.0,399036618056.8583,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9590-MOZ,Inhambane,Admin1,Inhambane,,llm_wiki,GAUL,2,geodetic,0.0,399036618056.8583,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9590-MOZ,Manica,Admin1,Manica,,llm_wiki,GAUL,2,geodetic,0.0,399036618056.8583,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9590-MOZ,Sofala,Admin1,Sofala,,llm_wiki,GAUL,2,geodetic,0.0,399036618056.8583,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9590-MOZ,Tete,Admin1,Tete,,llm_wiki,GAUL,2,geodetic,0.0,399036618056.8583,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9640-BDI,Kirundo,Admin1,Kirundo,,llm_wiki,GAUL,2,geodetic,0.0,10499333679.091188,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9640-BDI,Ngozi,Admin1,Ngozi,,llm_wiki,GAUL,2,geodetic,0.0,10499333679.091188,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9640-BDI,Muyinga,Admin1,Muyinga,,llm_wiki,GAUL,2,geodetic,0.0,10499333679.091188,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9640-BDI,Karuzi,Admin1,Karuzi,,llm_wiki,GAUL,2,geodetic,0.0,10499333679.091188,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9640-BDI,Ruyigi,Admin1,Ruyigi,,llm_wiki,GAUL,2,geodetic,0.0,10499333679.091188,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0036-PER,Islay,Admin2,Arequipa,Islay,llm_wiki,GAUL,2,geodetic,0.0,125988505875.98131,0.0,0.0,0.0,0.0,0.0,False,True,False,True
