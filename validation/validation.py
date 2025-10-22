@@ -122,7 +122,7 @@ def validate_geometries(
     geom_type = "_".join(metadata[:2])
     batch_number = metadata[-1]
 
-    # TO BE DONE: Not sure what to do here
+    # TODO: Not sure what to do here
     if benchmark == "GAUL":
         disnos_benchmark = list_disno_in_benchmark(benchmark, emdat_archive_path)
     elif benchmark == "GDIS":

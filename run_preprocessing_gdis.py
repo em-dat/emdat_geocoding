@@ -5,11 +5,14 @@ from validation.io import (
     load_GDIS,
     fix_GDIS_disno,
 )
+import pandas as pd
 
 # %% Config
 EMDAT_ARCHIVE_PATH = Path("data/241204_emdat_archive.xlsx")
 GDIS_PATH_RAW = Path("data/gdis_raw.gpkg")
 GDIS_PATH = Path("data/gdis.gpkg")
+GDIS_DISNO_PATH = Path("data/gdis_disnos.csv")
+
 
 emdat_columns = ["ISO", "DisNo.", "Country"]
 gdis_columns = [
@@ -26,13 +29,12 @@ gdis_columns = [
 
 # %% Load gdis and emdat
 df_emdat = load_emdat_archive(EMDAT_ARCHIVE_PATH)
-gdis_gdf = load_GDIS(GDIS_PATH, gdis_columns)
+gdis_gdf = load_GDIS(GDIS_PATH_RAW, gdis_columns)
 gdis_gdf = fix_GDIS_disno(gdis_gdf, df_emdat)
-gdis_gdf.to_file(GDIS_PATH, driver="GPKG")
+gdis_disno_df = pd.DataFrame(data=gdis_gdf["DisNo."].unique(), columns=["DisNo."])
 
-# # %% Make gdis batches based on llm csv batches
-# for batch in batches:
-#     llm_csv_batch = load_llm_csv_batch(f"{path_llm_batches}{batch}.csv", ["DisNo."])
-#     disnos = get_disnos_numbers_from_llmbatch(llm_csv_batch)
-#     gdis_gdf_batch = make_batch(gdis_gdf, disnos)
-#     save_batch(gdis_gdf_batch, path_gdis_batches, batch)
+# %% Save unique disaster numbers in GDIS
+gdis_disno_df.to_csv(GDIS_DISNO_PATH, index=False)
+
+# %% Save GDIS
+gdis_gdf.to_file(GDIS_PATH, driver="GPKG")
