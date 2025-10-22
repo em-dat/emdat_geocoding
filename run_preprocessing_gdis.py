@@ -3,18 +3,14 @@ from pathlib import Path
 from validation.io import (
     load_emdat_archive,
     load_GDIS,
-    load_llm_csv_batch,
-    get_disnos_numbers_from_llmbatch,
     fix_GDIS_disno,
-    make_batch,
-    save_batch,
 )
 
 # %% Config
 EMDAT_ARCHIVE_PATH = Path("data/241204_emdat_archive.xlsx")
+GDIS_PATH_RAW = Path("data/gdis_raw.gpkg")
 GDIS_PATH = Path("data/gdis.gpkg")
-path_llm_batches = Path("data/geoemdat_part")
-path_gdis_batches = Path("data/gdis_part")
+
 emdat_columns = ["ISO", "DisNo.", "Country"]
 gdis_columns = [
     "DisNo.",
@@ -27,17 +23,16 @@ gdis_columns = [
     "country",
     "geometry",
 ]
-batches = [1, 2, 3, 4, 5]
-
 
 # %% Load gdis and emdat
 df_emdat = load_emdat_archive(EMDAT_ARCHIVE_PATH)
 gdis_gdf = load_GDIS(GDIS_PATH, gdis_columns)
 gdis_gdf = fix_GDIS_disno(gdis_gdf, df_emdat)
+gdis_gdf.to_file(GDIS_PATH, driver="GPKG")
 
-# %% Make gdis batches based on llm csv batches
-for batch in batches:
-    llm_csv_batch = load_llm_csv_batch(f"{path_llm_batches}{batch}.csv", ["DisNo."])
-    disnos = get_disnos_numbers_from_llmbatch(llm_csv_batch)
-    gdis_gdf_batch = make_batch(gdis_gdf, disnos)
-    save_batch(gdis_gdf_batch, path_gdis_batches, batch)
+# # %% Make gdis batches based on llm csv batches
+# for batch in batches:
+#     llm_csv_batch = load_llm_csv_batch(f"{path_llm_batches}{batch}.csv", ["DisNo."])
+#     disnos = get_disnos_numbers_from_llmbatch(llm_csv_batch)
+#     gdis_gdf_batch = make_batch(gdis_gdf, disnos)
+#     save_batch(gdis_gdf_batch, path_gdis_batches, batch)

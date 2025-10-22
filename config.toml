@@ -10,7 +10,7 @@ datefmt="%Y-%m-%d %H:%M:%S"
 llm_batch_dir = "Q:/Data/GEOEMDAT" # folder with Michele's batches
 llm_subbatch_dir = "data/llm_subbatches" # folder to store the subbatches
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
-emdat_gaul_path = "Q:/Data/EMDAT_GAUL/geoemdat_gaul.gpkg"
+gdis_path = "data/gdis.gpkg"
 validation_output_dir = "output"
 
 [index]

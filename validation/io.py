@@ -169,11 +169,6 @@ def make_batch(gdf, disnos: list[str]):
     return gdf
 
 
-def save_batch(gdf, path, batch_number):
-    """Select rows from gdf that correspond to disnos"""
-    gdf.to_file(f"{path}{batch_number}.gpkg", driver="GPKG", overwrite=True)
-
-
 def fix_GDIS_disno(gdis_gdf, df_emdat: pd.DataFrame):
     """Add ISO to gdis_gdf disno and fix wrong no's based on df_emdat"""
     # Identify incorrect GDIS ISO's and set to nan
