@@ -63,6 +63,7 @@ def main():
                 config["path"]["emdat_archive_path"],
                 config["path"]["emdat_gaul_path"],
                 config["path"]["gdis_path"],
+                config["path"]["gdis_disno_path"],
                 config["path"]["validation_output_dir"],
             )
         except Exception as e:

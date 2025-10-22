@@ -43,7 +43,7 @@ def list_disno_in_benchmark(
             benchmark_path, use_columns=["DisNo."], geocoded_only=True
         )["DisNo."].to_list()
     elif benchmark_type == "GDIS":
-        raise NotImplementedError
+        disnos = pd.read_csv(benchmark_path)["DisNo."].to_list()
     else:
         raise ValueError(f"Invalid benchmark type: {benchmark_type}")
     return disnos
@@ -109,6 +109,7 @@ def validate_geometries(
     emdat_archive_path: str | Path | None = None,
     emdat_gaul_path: str | Path | None = None,
     gdis_path: str | Path | None = None,
+    gdis_disno_path: str | Path | None = None,
     output_dir: str | Path = Path("output"),
 ):
     """Validate the geometry of the GeoDataFrame."""
@@ -122,11 +123,11 @@ def validate_geometries(
     geom_type = "_".join(metadata[:2])
     batch_number = metadata[-1]
 
-    # TODO: Not sure what to do here
+    # Get disnos of benchmark file
     if benchmark == "GAUL":
         disnos_benchmark = list_disno_in_benchmark(benchmark, emdat_archive_path)
     elif benchmark == "GDIS":
-        raise NotImplementedError
+        disnos_benchmark = list_disno_in_benchmark(benchmark, gdis_disno_path)
     else:
         raise ValueError(f"Invalid benchmark type: {benchmark}")
 

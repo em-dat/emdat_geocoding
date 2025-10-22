@@ -11,6 +11,7 @@ llm_batch_dir = "Q:/Data/GEOEMDAT" # folder with Michele's batches
 llm_subbatch_dir = "data/llm_subbatches" # folder to store the subbatches
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
 gdis_path = "data/gdis.gpkg"
+gdis_disno_path = "data/gdis_disnos.csv"
 validation_output_dir = "output"
 
 [index]
