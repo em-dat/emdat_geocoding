@@ -68,3 +68,10 @@ def main():
             )
         except Exception as e:
             logging.exception(f"Exception occurred: {e}")
+
+if __name__ == '__main__':
+    logging.info(f"Running validation script...".upper())
+    try:
+        main()
+    except Exception as e:
+        logging.exception(f"Exception occurred: {e}")
