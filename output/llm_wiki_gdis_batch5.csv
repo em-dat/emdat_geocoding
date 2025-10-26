@@ -1,0 +1,1410 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly
+2017-0381-PRI,Vieques,Admin3,Puerto Rico,,llm_wiki,GDIS,5,geodetic,0.0,170446479.87093216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0381-VGB,Tortola,Admin3,British Virgin Islands,,llm_wiki,GDIS,5,geodetic,0.0,144010903.84643298,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0383-DOM,Dajabón,Admin2,Dominican Republic,Dajabón,llm_wiki,GDIS,5,geodetic,0.0,27982491208.82341,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0383-DOM,La Romana,Admin2,Dominican Republic,La Romana,llm_wiki,GDIS,5,geodetic,0.0,27982491208.82341,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0383-DOM,Puerto Plata,Admin2,Dominican Republic,San Felipe de Puerto Plata,llm_wiki,GDIS,5,geodetic,0.0,27982491208.82341,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0383-DOM,Samaná,Admin2,Dominican Republic,Santa Bárbara de Samaná,llm_wiki,GDIS,5,geodetic,0.0,27982491208.82341,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0383-DOM,San Pedro de Macorís,Admin2,Dominican Republic,San Pedro de Macorís,llm_wiki,GDIS,5,geodetic,0.0,27982491208.82341,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0383-PRI,Vieques,Admin2,Vieques,,llm_wiki,GDIS,5,geodetic,0.0,1789137874.0920198,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0384-CAF,Kouango,Admin3,Ouaka,,llm_wiki,GDIS,5,geodetic,0.0,7971993447.657914,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0406-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,14126760985.467098,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0406-PHL,Cavite,Admin2,Calabarzon,Trece Martires City,llm_wiki,GDIS,5,geodetic,0.0,14126760985.467098,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0406-PHL,Laguna,Admin2,Calabarzon,Calauan,llm_wiki,GDIS,5,geodetic,0.0,14126760985.467098,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0406-PHL,Quezon,Admin2,Calabarzon,Quezon,llm_wiki,GDIS,5,geodetic,0.0,14126760985.467098,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0406-PHL,Metro Manila,Admin3,National Capital Region,,llm_wiki,GDIS,5,geodetic,0.0,14126760985.467098,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0408-HRV,Zadar,Admin2,Zadar,Zadar,llm_wiki,GDIS,5,geodetic,0.0,284184480.9492516,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0408-HRV,Bibinje,Admin3,Zadar,,llm_wiki,GDIS,5,geodetic,0.0,284184480.9492516,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0408-HRV,Biograd na Moru,Admin3,Zadar,,llm_wiki,GDIS,5,geodetic,0.0,284184480.9492516,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0408-HRV,Sukošan,Admin3,Zadar,,llm_wiki,GDIS,5,geodetic,0.0,284184480.9492516,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0408-ITA,Livorno,Admin2,Tuscany,Livorno,llm_wiki,GDIS,5,geodetic,0.0,122952147.64427209,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0408-ITA,Rosignano Marittimo,Admin2,Tuscany,Livorno,llm_wiki,GDIS,5,geodetic,0.0,122952147.64427209,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0408-ITA,Chioma,Admin3,Tuscany,,llm_wiki,GDIS,5,geodetic,0.0,122952147.64427209,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0410-COL,San Andrés,Admin3,"San Andrés, Providencia and Santa Catalina",,llm_wiki,GDIS,5,geodetic,0.0,57978080760.456535,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0410-GTM,Cobán,Admin2,Alta Verapaz,Cobán,llm_wiki,GDIS,5,geodetic,0.0,3170537198.3502192,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0410-GTM,Ixcán,Admin2,Quiché,Ixcán,llm_wiki,GDIS,5,geodetic,0.0,3170537198.3502192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0410-GTM,San Luis,Admin2,Petén,San Luis,llm_wiki,GDIS,5,geodetic,0.0,3170537198.3502192,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0415-RWA,Huye,Admin2,Southern,Huye,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0415-RWA,Kirehe,Admin2,Eastern,Kirehe,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0415-RWA,Ngoma,Admin2,Eastern,Huye,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0415-RWA,Nyabihu,Admin2,Western,Nyaruguru,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0415-RWA,Nyamasheke,Admin2,Western,Nyamasheke,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0415-RWA,Rubavu,Admin2,Western,Rubavu,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0415-RWA,Rusizi,Admin2,Western,Nyamagabe,llm_wiki,GDIS,5,geodetic,0.0,7794161810.135107,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Albay,Admin1,Albay,,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0422-PHL,Batangas,Admin2,Calabarzon,Bauan,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Camarines Norte,Admin2,Bicol,Labo,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Camarines Sur,Admin2,Bicol,Naga City,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Laguna,Admin2,Calabarzon,Calauan,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Oriental Mindoro,Admin2,Mimaropa,Pinamalayan,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,Calapan,Admin3,Mimaropa,,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0422-PHL,Lagonoy,Admin3,Bicol,,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0422-PHL,Mercedes,Admin3,Bicol,,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0422-PHL,San Juan,Admin3,Calabarzon,,llm_wiki,GDIS,5,geodetic,0.0,3723551439.3627477,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0444-GRC,Igoumenitsa,Admin2,Epirus,Epirus,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0444-GRC,Megara,Admin2,Attica,Attica,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0444-GRC,Symi,Admin2,South Aegean,South Aegean,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0444-GRC,Ioannina,Admin3,Epirus,,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0444-GRC,Lefkimmi,Admin3,Ionian Islands,,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0444-GRC,Mandra,Admin3,Attica,,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0444-GRC,Nea Peramos,Admin3,Attica,,llm_wiki,GDIS,5,geodetic,0.0,1878997990.6731498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0446-IRQ,Erbil,Admin1,Arbil,,llm_wiki,GDIS,5,geodetic,0.0,24188593389.5882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0446-IRQ,Darbandikhan,Admin2,Sulaymaniyah,Darbandokeh,llm_wiki,GDIS,5,geodetic,0.0,24188593389.5882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0446-IRQ,Halabja,Admin2,Sulaymaniyah,Halabja,llm_wiki,GDIS,5,geodetic,0.0,24188593389.5882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0446-IRQ,Kalar,Admin2,Sulaymaniyah,Khanaqin,llm_wiki,GDIS,5,geodetic,0.0,24188593389.5882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0446-IRQ,Khanaqin,Admin2,Sulaymaniyah,Khanaqin,llm_wiki,GDIS,5,geodetic,0.0,24188593389.5882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0485-PHL,Cagayan Valley,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,12195222620.63099,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0485-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,12195222620.63099,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0490-IRL,Mountmellick,Admin3,Laois,,llm_wiki,GDIS,5,geodetic,0.0,1649291948.280384,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0508-LKA,Badulla,Admin2,Uva,Badulla,llm_wiki,GDIS,5,geodetic,0.0,11234644988.129581,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0508-LKA,Kalutara,Admin2,Western,Kalutara,llm_wiki,GDIS,5,geodetic,0.0,11234644988.129581,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0508-LKA,Nuwara Eliya,Admin2,Central,Nuwara Eliya,llm_wiki,GDIS,5,geodetic,0.0,11234644988.129581,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0508-LKA,Gampaha,Admin3,Western,,llm_wiki,GDIS,5,geodetic,0.0,11234644988.129581,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0515-IDN,East Java,Admin1,Jawa Tengah,,llm_wiki,GDIS,5,geodetic,0.0,35980336625.812065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2017-0515-IDN,Klesem,Admin3,East Java,,llm_wiki,GDIS,5,geodetic,0.0,35980336625.812065,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2017-0515-IDN,Sidomulyo,Admin3,East Java,,llm_wiki,GDIS,5,geodetic,0.0,35980336625.812065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0002-ESP,Mutriku,Admin3,Pays Basque,,llm_wiki,GDIS,5,geodetic,0.0,1979452957.5453568,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Agusan del Norte,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0004-PHL,Aklan,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Bohol,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Camiguin,Admin1,Camiguin,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Capiz,Admin1,Capiz,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Cebu,Admin1,Cebu,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Dinagat Islands,Admin1,Dinagat Islands,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Lanao del Norte,Admin1,Lanao del Norte,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Misamis Oriental,Admin1,Misamis Oriental,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0004-PHL,Surigao del Norte,Admin1,Surigao del Norte,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0004-PHL,Surigao del Sur,Admin1,Surigao del Sur,,llm_wiki,GDIS,5,geodetic,0.0,30364065306.47045,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0025-FRA,Nord,Admin1,Hauts-de-France,,llm_wiki,GDIS,5,geodetic,0.0,12457487152.381912,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0025-FRA,Pas-de-Calais,Admin2,Hauts-de-France,Pas-de-Calais,llm_wiki,GDIS,5,geodetic,0.0,12457487152.381912,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0037-FRA,Aube,Admin1,Bourgogne-Franche-Comté,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Doubs,Admin1,Bourgogne-Franche-Comté,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Essonne,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0037-FRA,Eure-et-Loir,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Haute-Marne,Admin1,Bourgogne-Franche-Comté,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Orne,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Sarthe,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0037-FRA,Seine-et-Marne,Admin1,Bourgogne-Franche-Comté,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0037-FRA,Val-de-Marne,Admin1,Île-de-France,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0037-FRA,Yvelines,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0037-FRA,Paris,Admin3,Île-de-France,,llm_wiki,GDIS,5,geodetic,0.0,12068394421.398533,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0049-IND,New Delhi,Admin3,Delhi,,llm_wiki,GDIS,5,geodetic,0.0,1502203479.7122161,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0051-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,3488409900.725955,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0051-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,3488409900.725955,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0051-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,3488409900.725955,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Java,Admin1,Banten,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0056-IDN,Blora,Admin2,Java,Blora,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Brebes,Admin2,Java,Brebes,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0056-IDN,Cilacap,Admin2,Java,Cilacap,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Cirebon,Admin2,Java,Kota Cirebon,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Purbalingga,Admin2,Java,Purbalingga,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0056-IDN,Bandung,Admin3,Java,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0056-IDN,Cepu,Admin3,Java,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0056-IDN,Pangandaran,Admin3,Java,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Pasir Panjang,Admin3,Java,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0056-IDN,Wanareja,Admin3,Java,,llm_wiki,GDIS,5,geodetic,0.0,5703832671.744606,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0064-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,16893496426.5946,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0064-MWI,Lilongwe,Admin2,Central Region,Lilongwe City,llm_wiki,GDIS,5,geodetic,0.0,16893496426.5946,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0064-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,16893496426.5946,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0064-MWI,Salima,Admin2,Central Region,Salima Town,llm_wiki,GDIS,5,geodetic,0.0,16893496426.5946,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0074-ARG,Presidencia Roque Sáenz Peña,Admin2,Chaco,Comandante Fernández,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0074-ARG,Hipólito Yrigoyen,Admin3,Chaco,,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0074-ARG,San José,Admin3,Chaco,,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0074-ARG,Santa Elena,Admin3,Chaco,,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0074-ARG,Santa Mónica,Admin3,Chaco,,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0074-ARG,Sáenz Peña,Admin3,Chaco,,llm_wiki,GDIS,5,geodetic,0.0,99764195907.20084,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0082-ALB,Fushë-Krujë,Admin3,Shkodër,,llm_wiki,GDIS,5,geodetic,0.0,3551819805.259906,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0082-ALB,Mushan,Admin3,Shkodër,,llm_wiki,GDIS,5,geodetic,0.0,3551819805.259906,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0082-ALB,Obot,Admin3,Shkodër,,llm_wiki,GDIS,5,geodetic,0.0,3551819805.259906,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0086-MDG,Analanjirofo,Admin1,Mahajanga,,llm_wiki,GDIS,5,geodetic,0.0,87980907392.06732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0086-MDG,Sofia,Admin1,Antsiranana,,llm_wiki,GDIS,5,geodetic,0.0,87980907392.06732,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0086-MDG,Mandritsara,Admin2,Sofia,Sofia,llm_wiki,GDIS,5,geodetic,0.0,87980907392.06732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0086-MDG,Masoala,Admin2,Analanjirofo,Sava,llm_wiki,GDIS,5,geodetic,0.0,87980907392.06732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0086-MDG,Soanierana Ivongo,Admin2,Analanjirofo,,llm_wiki,GDIS,5,geodetic,0.0,87980907392.06732,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0101-FJI,Nadi,Admin3,Western Division,,llm_wiki,GDIS,5,geodetic,0.0,6610564324.538275,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0103-BWA,Gweta,Admin3,Central,,llm_wiki,GDIS,5,geodetic,0.0,146579224618.69177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0103-BWA,Zoroga,Admin3,Central,,llm_wiki,GDIS,5,geodetic,0.0,146579224618.69177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0116-KEN,Nairobi,Admin3,Nairobi,,llm_wiki,GDIS,5,geodetic,0.0,712286191.4018556,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0132-KEN,Garissa,Admin2,Kenya,Garissa Township,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0132-KEN,Isiolo,Admin2,Kenya,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0132-KEN,Kisumu,Admin2,Kenya,Kisumu Central,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0132-KEN,Mandera,Admin2,Kenya,Mandera East,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0132-KEN,Samburu,Admin2,Kenya,Kinango,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0132-KEN,Tana River,Admin2,Kenya,,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0132-KEN,Turkana,Admin2,Kenya,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,278261802280.66864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0135-RWA,Gatsibo,Admin2,Eastern province,Gatsibo,llm_wiki,GDIS,5,geodetic,0.0,2610217953.235894,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0138-IND,Kolkata,Admin3,West Bengal,,llm_wiki,GDIS,5,geodetic,0.0,91615572.2874748,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0154-MMR,Hpakant,Admin3,Kachin State,,llm_wiki,GDIS,5,geodetic,0.0,50137857636.82076,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0208-RWA,Karongi,Admin2,Rwanda,Karongi,llm_wiki,GDIS,5,geodetic,0.0,69744827.16865249,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0208-RWA,Rwankuba,Admin3,Karongi,,llm_wiki,GDIS,5,geodetic,0.0,69744827.16865249,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0221-SDN,Zalingei,Admin2,Western Darfur,Zallingi,llm_wiki,GDIS,5,geodetic,0.0,62139253373.30901,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0244-GEO,Nenskra,Admin3,Samegrelo-Zemo Svaneti,,llm_wiki,GDIS,5,geodetic,0.0,5236740920.054611,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0246-SRB,Vojvodina,Admin1,Grad Beograd,,llm_wiki,GDIS,5,geodetic,0.0,7757493537.933343,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0257-IDN,Lombok,Admin3,West Nusa Tenggara,,llm_wiki,GDIS,5,geodetic,0.0,1607053599.8203387,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0257-IDN,Sumbawa,Admin3,West Nusa Tenggara,,llm_wiki,GDIS,5,geodetic,0.0,1607053599.8203387,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0278-LKA,Gampaha,Admin1,Gampaha,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0278-LKA,Kalutara,Admin1,Kalutara,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0278-LKA,Kegalle,Admin1,Kegalle,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0278-LKA,Kurunegala,Admin1,Kurunegala,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0278-LKA,Puttalam,Admin1,Puttalam,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0278-LKA,Ratnapura,Admin1,Ratnapura,,llm_wiki,GDIS,5,geodetic,0.0,16717833516.875517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0302-IDN,Lombok,Admin3,West Nusa Tenggara,,llm_wiki,GDIS,5,geodetic,0.0,1607053599.8203387,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0374-HND,Choluteca,Admin1,Choluteca,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0374-HND,Comayagua,Admin1,Comayagua,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0374-HND,El Paraíso,Admin1,El Paraíso,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0374-HND,Intibucá,Admin1,Intibucá,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0374-HND,La Paz,Admin1,La Paz,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0374-HND,Ocotepeque,Admin1,Ocotepeque,,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0374-HND,Copán,Admin2,Copán,Concepción,llm_wiki,GDIS,5,geodetic,0.0,34382579148.88276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Aude,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Hérault,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Aragon,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Berriac,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Carcassonne,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Conques-sur-Orbiel,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Floure,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Trèbes,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Villalier,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Villegailhenc,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0375-FRA,Villemoustaussou,Admin3,Aude,,llm_wiki,GDIS,5,geodetic,0.0,12484288850.964722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0384-LKA,Kalutara,Admin2,Sri Lanka,Kalutara,llm_wiki,GDIS,5,geodetic,0.0,8216340098.050133,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0384-LKA,Kegalle,Admin2,Sri Lanka,Kegalle,llm_wiki,GDIS,5,geodetic,0.0,8216340098.050133,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0390-QAT,Doha,Admin3,Ad-Dawhah,,llm_wiki,GDIS,5,geodetic,0.0,221933874.9121949,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0423-UGA,Bududa,Admin2,Eastern Region,Manjiya,llm_wiki,GDIS,5,geodetic,0.0,13811509.732547779,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0425-IDN,North Sumatra,Admin1,Aceh,,llm_wiki,GDIS,5,geodetic,0.0,6537940185.515375,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0425-IDN,Mandailing Natal,Admin2,North Sumatra,Mandailing Natal,llm_wiki,GDIS,5,geodetic,0.0,6537940185.515375,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0425-IDN,Muara Saladi,Admin3,North Sumatra,,llm_wiki,GDIS,5,geodetic,0.0,6537940185.515375,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0454-IDN,Sukabumi,Admin2,Java,Sukabumi,llm_wiki,GDIS,5,geodetic,0.0,4159898056.5846405,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0455-PHL,Calabarzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,4240323724.125778,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0455-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,4240323724.125778,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0455-PHL,Mimaropa,Admin1,Marinduque,,llm_wiki,GDIS,5,geodetic,0.0,4240323724.125778,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2018-0467-LKA,Mullaitivu,Admin2,Northern Province,Maritimepattu,llm_wiki,GDIS,5,geodetic,0.0,8955905573.942688,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0467-LKA,Kilinochchi,Admin2,Northern Province,Karachchi,llm_wiki,GDIS,5,geodetic,0.0,8955905573.942688,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0467-LKA,Mannar,Admin2,Northern Province,Mannar Town,llm_wiki,GDIS,5,geodetic,0.0,8955905573.942688,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0467-LKA,Vavuniya,Admin2,Northern Province,Vavuniya,llm_wiki,GDIS,5,geodetic,0.0,8955905573.942688,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0467-LKA,Jaffna,Admin2,Northern Province,Jaffna,llm_wiki,GDIS,5,geodetic,0.0,8955905573.942688,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2018-0479-BDI,Gatumba,Admin2,Bujumbura Rural,Mutimbuzi,llm_wiki,GDIS,5,geodetic,0.0,260577288.66915518,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0029-BGR,Sofia,Admin3,Sofia-city,,llm_wiki,GDIS,5,geodetic,0.0,7129295814.084329,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0066-PHL,Tawi-Tawi,Admin2,ARMM,Panglima Sugala,llm_wiki,GDIS,5,geodetic,0.0,1180114410.926586,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0076-ISL,Eyrarbakki,Admin3,Árnessýsla,,llm_wiki,GDIS,5,geodetic,0.0,33958537140.832138,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0076-ISL,Grímsnes,Admin3,Árnessýsla,,llm_wiki,GDIS,5,geodetic,0.0,33958537140.832138,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0076-ISL,Selfoss,Admin3,Árnessýsla,,llm_wiki,GDIS,5,geodetic,0.0,33958537140.832138,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0076-ISL,Stokkseyri,Admin3,Árnessýsla,,llm_wiki,GDIS,5,geodetic,0.0,33958537140.832138,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Amoron'i Mania,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0107-MDG,Analamanga,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0107-MDG,Analanjirofo,Admin1,Mahajanga,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0107-MDG,Atsinanana,Admin1,Antsiranana,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Menabe,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Vakinankaratra,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0107-MDG,Ambatolampy,Admin2,Vakinankaratra,Vakinankaratra,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Ambositra,Admin2,Amoron'i Mania,Amoron'i mania,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Andramasina,Admin2,Analamanga,Analamanga,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Antalaha,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0107-MDG,Antanifotsy,Admin2,Vakinankaratra,Vakinankaratra,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Brickaville,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Mahabo,Admin2,Menabe,Menabe,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Mahanoro,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Manjakandriana,Admin2,Analamanga,Analamanga,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Maroantsetra,Admin2,Analanjirofo,Analanjirofo,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Marolambo,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Morombe,Admin2,Atsimo Andrefana,Atsimo-Andrefana,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Morondava,Admin2,Menabe,Menabe,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Sambava,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Vatomandry,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0107-MDG,Vohemar,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,78715526824.12534,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0118-MWI,Central Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0118-MWI,Northern Region,Admin1,Chitipa,,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0118-MWI,Southern Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0118-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0118-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0118-MWI,Nkhotakota,Admin2,Central Region,Lake Malawi,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0118-MWI,Nsanje,Admin2,Southern Region,TA Bvumbwe,llm_wiki,GDIS,5,geodetic,0.0,23410658431.21511,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0178-MDG,Antalaha,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,37700648668.25312,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0178-MDG,Bealanana,Admin2,Sofia,Sofia,llm_wiki,GDIS,5,geodetic,0.0,37700648668.25312,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0178-MDG,Maroantsetra,Admin2,Analanjirofo,Analanjirofo,llm_wiki,GDIS,5,geodetic,0.0,37700648668.25312,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0178-MDG,Sambava,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,37700648668.25312,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0235-KAZ,Zhitikara,Admin2,Kustanayskaya,Zhitikarinskiy,llm_wiki,GDIS,5,geodetic,0.0,21799146428.009502,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0257-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,21342573225.70005,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0258-IDN,Belu,Admin2,Nusatenggara Timur,Belu,llm_wiki,GDIS,5,geodetic,0.0,2233440725.828359,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0258-IDN,Malaka Tengah,Admin3,Nusatenggara Timur,,llm_wiki,GDIS,5,geodetic,0.0,2233440725.828359,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0303-GRC,Kanali,Admin2,Ipeiros,Epirus,llm_wiki,GDIS,5,geodetic,0.0,1627353519.2761965,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0303-GRC,Mitikas,Admin2,Ipeiros,Attica,llm_wiki,GDIS,5,geodetic,0.0,1627353519.2761965,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0324-HRV,Osijek,Admin3,Osijek-Baranja,,llm_wiki,GDIS,5,geodetic,0.0,926855074.7421323,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0324-HRV,Rijeka,Admin3,Primorje-Gorski Kotar,,llm_wiki,GDIS,5,geodetic,0.0,926855074.7421323,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0324-HRV,Split,Admin3,Split-Dalmatia,,llm_wiki,GDIS,5,geodetic,0.0,926855074.7421323,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0324-HRV,Zagreb,Admin3,Zagreb,,llm_wiki,GDIS,5,geodetic,0.0,926855074.7421323,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0335-ISL,Hella,Admin3,Rangarvalla,,llm_wiki,GDIS,5,geodetic,0.0,24736064867.66459,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0356-FRA,Haute-Garonne,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,10080166592.17004,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0356-FRA,Tarn-et-Garonne,Admin1,Nouvelle-Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,10080166592.17004,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0387-NIC,Masaya,Admin2,Masaya,Masaya,llm_wiki,GDIS,5,geodetic,0.0,592708147.6145465,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0397-PHL,Cavite,Admin2,Region IV-A (Calabarzon),Trece Martires City,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0397-PHL,Iloilo,Admin2,Region VI (Western Visayas),Dingle,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0397-PHL,Negros Occidental,Admin2,Region VI (Western Visayas),La Carlota City,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0397-PHL,Caloocan,Admin3,National Capital Region,,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0397-PHL,Manila,Admin3,National Capital Region,,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0397-PHL,Quezon City,Admin3,National Capital Region,,llm_wiki,GDIS,5,geodetic,0.0,49587464038.04859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0476-NPL,Bagmati Province,Admin1,Central,,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0476-NPL,Baglung,Admin2,Western Province,Dhaualagiri,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0476-NPL,Bhojpur,Admin2,Eastern Province,Bheri,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0476-NPL,Dailekh,Admin2,Mid Western Province,Bheri,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0476-NPL,Gorkha,Admin2,Western Province,Gandaki,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0476-NPL,Lalitpur,Admin2,Central Province,Bagmati,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0476-NPL,Parsa,Admin2,Central Province,Lumbini,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0476-NPL,Rautahat,Admin2,Central Province,Sagarmatha,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0476-NPL,Salyan,Admin2,Mid Western Province,Sagarmatha,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0476-NPL,Siraha,Admin2,Eastern Province,Sagarmatha,llm_wiki,GDIS,5,geodetic,0.0,50831491137.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0490-SOM,Mogadishu,Admin3,Banadir,,llm_wiki,GDIS,5,geodetic,0.0,200782615.03525805,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0497-ETH,Dubti,Admin3,Afar,,llm_wiki,GDIS,5,geodetic,0.0,94481150183.14415,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0657-AGO,Saurimo,Admin2,Lunda-Sul,Saurimo,llm_wiki,GDIS,5,geodetic,0.0,23398731070.77811,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0708-GRC,Corfu,Admin3,Ionioi Nisoi,,llm_wiki,GDIS,5,geodetic,0.0,633051471.884779,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0715-PHL,Cagayan,Admin2,Cagayan Valley,Baggao,llm_wiki,GDIS,5,geodetic,0.0,16738157443.820942,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0715-PHL,Laguna,Admin2,Calabarzon,Calauan,llm_wiki,GDIS,5,geodetic,0.0,16738157443.820942,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0715-PHL,Nueva Vizcaya,Admin2,Cagayan Valley,Bayombong,llm_wiki,GDIS,5,geodetic,0.0,16738157443.820942,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0741-LKA,Eastern Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,13036597569.81398,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0741-LKA,North Central Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,13036597569.81398,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0741-LKA,Ampara,Admin2,Eastern Province,Ampara,llm_wiki,GDIS,5,geodetic,0.0,13036597569.81398,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0741-LKA,Batticaloa,Admin2,Eastern Province,Eravur Town,llm_wiki,GDIS,5,geodetic,0.0,13036597569.81398,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0741-LKA,Polonnaruwa,Admin2,North Central Province,Thamankaduwa,llm_wiki,GDIS,5,geodetic,0.0,13036597569.81398,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0763-PHL,Apayao,Admin2,Cordillera Administrative Region (CAR),Conner,llm_wiki,GDIS,5,geodetic,0.0,6811427072.570357,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0763-PHL,Kalinga,Admin2,Cordillera Administrative Region (CAR),Conner,llm_wiki,GDIS,5,geodetic,0.0,6811427072.570357,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0788-PHL,Autonomous Region in Muslim Mindanao,Admin1,Maguindanao,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0788-PHL,Caraga,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Central Visayas,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Davao Region,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0788-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Soccsksargen,Admin1,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0788-PHL,Zamboanga Peninsula,Admin1,Basilan,,llm_wiki,GDIS,5,geodetic,0.0,14256212803.64445,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0797-HTI,Jérémie,Admin2,Grand'Anse,Jérémie,llm_wiki,GDIS,5,geodetic,0.0,102890008.58098707,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0797-HTI,Abricots,Admin3,Grand'Anse,,llm_wiki,GDIS,5,geodetic,0.0,102890008.58098707,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Eastern Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,North Central Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Northern Province,Admin1,Anuradhapura,,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0831-LKA,Ampara,Admin2,Eastern Province,Ampara,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Anuradhapura,Admin2,North Central Province,N. Palatha East,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Batticaloa,Admin2,Eastern Province,Eravur Town,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Mannar,Admin2,Northern Province,Mannar Town,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0831-LKA,Polonnaruwa,Admin2,North Central Province,Thamankaduwa,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0831-LKA,Trincomalee,Admin2,Eastern Province,Trincomalee Town and Gravets,llm_wiki,GDIS,5,geodetic,0.0,22273895481.12956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Ambovombe-Androy,Admin2,Androy,Androy,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Amparafaravola,Admin2,Alaotra Mangoro,Alaotra-Mangoro,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Andilamena,Admin2,Alaotra Mangoro,Alaotra-Mangoro,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Antanambao Manampotsy,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-9309-MDG,Antanifotsy,Admin2,Vakinankaratra,Amoron'i mania,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-9309-MDG,Bekily,Admin2,Androy,Anosy,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Betafo,Admin2,Vakinankaratra,Vakinankaratra,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Faratsiho,Admin2,Vakinankaratra,Vakinankaratra,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Marolambo,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9309-MDG,Vatomandry,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,143844942513.30774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-9494-UZB,Karakalpakstan,Admin1,Buxoro,,llm_wiki,GDIS,5,geodetic,0.0,172127465879.97302,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0017-KAZ,Ulan,Admin2,Vostochno-Kazachstanskaya,Ulanskiy,llm_wiki,GDIS,5,geodetic,0.0,9854186417.900387,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Southern Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Blantyre,Admin2,Southern Region,Blantyre City,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Dedza,Admin2,Southern Region,Dedza Boma,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Karonga,Admin2,Southern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Kasungu,Admin2,Southern Region,Kasungu Boma,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Mangochi,Admin2,Southern Region,Mangochi Town,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Mchinji,Admin2,Southern Region,Mchinji Boma,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Mwanza,Admin2,Southern Region,Mwanza Boma,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Nkhotakota,Admin2,Southern Region,Lake Malawi,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Nsanje,Admin2,Southern Region,TA Bvumbwe,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Salima,Admin2,Southern Region,Salima Town,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Thyolo,Admin2,Southern Region,TA Nchilamwela,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0025-MWI,Zomba,Admin2,Southern Region,TA Mlumbe,llm_wiki,GDIS,5,geodetic,0.0,64722114773.40575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0031-GRC,Corinth,Admin2,Peloponnisos,Peloponnese,llm_wiki,GDIS,5,geodetic,0.0,1253985085.6572413,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0031-GRC,Zakynthos,Admin2,Ionioi Nisoi,Ionian Islands,llm_wiki,GDIS,5,geodetic,0.0,1253985085.6572413,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0031-GRC,Athens,Admin3,Attiki,,llm_wiki,GDIS,5,geodetic,0.0,1253985085.6572413,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0049-LKA,Matale,Admin2,Central Province,Matale,llm_wiki,GDIS,5,geodetic,0.0,2069467215.1209106,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0054-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Central Visayas,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Autonomous Region in Muslim Mindanao,Admin1,Maguindanao,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Zamboanga Peninsula,Admin1,Basilan,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Davao Region,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0054-PHL,Soccsksargen,Admin1,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0054-PHL,Caraga,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,23631269353.387054,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0059-PHL,Silay,Admin2,Negros Occidental,Cadiz City,llm_wiki,GDIS,5,geodetic,0.0,7838780059.760375,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0096-UKR,Khust,Admin3,Zakarpats'ka,,llm_wiki,GDIS,5,geodetic,0.0,12778148792.34738,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0096-UKR,Sasovo,Admin3,Zakarpats'ka,,llm_wiki,GDIS,5,geodetic,0.0,12778148792.34738,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0097-CAF,Bangui,Admin3,Bangui,,llm_wiki,GDIS,5,geodetic,0.0,91827559.0956498,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0209-COD,Kinshasa,Admin3,Kinshasa,,llm_wiki,GDIS,5,geodetic,0.0,10947854743.82339,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0246-YEM,Saada,Admin1,Al Jawf,,llm_wiki,GDIS,5,geodetic,0.0,12472496260.634886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0254-VUT,Paama,Admin3,Malampa,,llm_wiki,GDIS,5,geodetic,0.0,2793463233.447476,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0267-PAK,Lahore,Admin2,Punjab,Lahore,llm_wiki,GDIS,5,geodetic,0.0,16105993608.85034,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0274-WSM,Lepea,Admin2,Samoa,Faleata East,llm_wiki,GDIS,5,geodetic,0.0,483522367.7834886,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0274-WSM,Siumu,Admin2,Samoa,Siumu,llm_wiki,GDIS,5,geodetic,0.0,483522367.7834886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0314-GHA,Accra,Admin3,Greater Accra,,llm_wiki,GDIS,5,geodetic,0.0,4045493020.725784,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0314-GHA,Nsawam,Admin3,Greater Accra,,llm_wiki,GDIS,5,geodetic,0.0,4045493020.725784,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0319-PHL,Cagayan Valley,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,23260994968.576065,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0319-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,23260994968.576065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0319-PHL,Cordillera Administrative Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,23260994968.576065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0319-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,23260994968.576065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0319-PHL,Ilocos Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,23260994968.576065,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0323-FRA,Aquitaine,Admin1,Auvergne-Rhône-Alpes,,llm_wiki,GDIS,5,geodetic,0.0,20336946881.468136,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0323-FRA,Limousin,Admin1,Auvergne-Rhône-Alpes,,llm_wiki,GDIS,5,geodetic,0.0,20336946881.468136,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0323-FRA,Midi-Pyrénées,Admin1,Auvergne-Rhône-Alpes,,llm_wiki,GDIS,5,geodetic,0.0,20336946881.468136,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0323-FRA,Corrèze,Admin2,Limousin,Corrèze,llm_wiki,GDIS,5,geodetic,0.0,20336946881.468136,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0323-FRA,Dordogne,Admin2,Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,20336946881.468136,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0324-FRA,Strasbourg,Admin3,Alsace,,llm_wiki,GDIS,5,geodetic,0.0,4790255589.716578,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0328-PAK,Mansehra,Admin2,Khyber Pakhtunkhwa,Hazara,llm_wiki,GDIS,5,geodetic,0.0,4897756700.355089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0328-PAK,Chitta Katha,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,4897756700.355089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0378-ITA,Nicolosi,Admin2,Sicilia,Catania,llm_wiki,GDIS,5,geodetic,0.0,41112917.39228121,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0434-YEM,Aden,Admin1,`Adan,,llm_wiki,GDIS,5,geodetic,0.0,725832252.3937079,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0461-PHL,Albay,Admin2,Region V (Bicol),Guinobatan,llm_wiki,GDIS,5,geodetic,0.0,2513638327.3894053,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0464-ETH,Gambela,Admin1,Gambela Peoples,,llm_wiki,GDIS,5,geodetic,0.0,30628079368.020542,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0502-IND,Delhi,Admin1,Haryana,,llm_wiki,GDIS,5,geodetic,0.0,1502203479.7122161,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0583-FRA,Villeneuve-lès-Maguelone,Admin3,Languedoc-Roussillon,,llm_wiki,GDIS,5,geodetic,0.0,17798201909.193417,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0596-PHL,Zamboanga City,Admin3,Region IX,,llm_wiki,GDIS,5,geodetic,0.0,1461880797.6435137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0614-PHL,Camiguin,Admin2,Region X (Northern Mindanao),Catarman,llm_wiki,GDIS,5,geodetic,0.0,670409611.5607792,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0614-PHL,Misamis Oriental,Admin2,Region X (Northern Mindanao),Gingoog City,llm_wiki,GDIS,5,geodetic,0.0,670409611.5607792,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0642-GRC,Samos,Admin3,Voreio Aigaio,,llm_wiki,GDIS,5,geodetic,0.0,483346785.0261197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0649-MYS,Kuala Lumpur,Admin3,Kuala Lumpur,,llm_wiki,GDIS,5,geodetic,0.0,265038201.48354822,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0653-SOM,Jilib,Admin2,Juba Dhexe,Jilib,llm_wiki,GDIS,5,geodetic,0.0,5056761466.790258,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0710-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,4867622835.264909,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0717-TJK,Varzob,Admin2,Tadzhikistan Territories,Rudaki,llm_wiki,GDIS,5,geodetic,0.0,1779363795.9083216,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0739-HRV,Crnac,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0739-HRV,Kutovi,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Našice,Admin3,Osijek-Baranja,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Nova Bukovica,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Orahovica,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Slavonske Bare,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Staro Petrovo Polje,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Teodorovac,Admin3,Osijek-Baranja,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Zdenci,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Čačinci,Admin3,Virovitica-Podravina,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0739-HRV,Đurđenovac,Admin3,Osijek-Baranja,,llm_wiki,GDIS,5,geodetic,0.0,889784879.1197228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0743-FRA,Somme,Admin2,Picardie,Somme,llm_wiki,GDIS,5,geodetic,0.0,6217015355.183117,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0749-GRC,Skyros,Admin3,Sterea Ellada,,llm_wiki,GDIS,5,geodetic,0.0,234794153.70936325,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0751-PER,Cayarani,Admin2,Arequipa,Castilla,llm_wiki,GDIS,5,geodetic,0.0,1398634328.0859022,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0751-PER,Chuquibamba,Admin2,Arequipa,Camaná,llm_wiki,GDIS,5,geodetic,0.0,1398634328.0859022,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0754-PER,Antabamba,Admin3,Apurímac,,llm_wiki,GDIS,5,geodetic,0.0,3227953767.146071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0759-NOR,Kristiansand,Admin2,Vest-Agder,Kristiansand,llm_wiki,GDIS,5,geodetic,0.0,284579847.9729951,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Hyderabad District,Admin2,Sindh,Hyderabad,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Karachi South District,Admin2,Sindh,Karachi,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Sukkur District,Admin2,Sindh,Sukkur,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Hyderabad,Admin3,Sindh,,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Karachi,Admin3,Sindh,,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0766-PAK,Sukkur,Admin3,Sindh,,llm_wiki,GDIS,5,geodetic,0.0,86140921986.66296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0774-KAZ,Ulan,Admin2,Vostochno-Kazachstanskaya,Ulanskiy,llm_wiki,GDIS,5,geodetic,0.0,9854186417.900387,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0792-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,21308343609.774284,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0793-PHL,Ilocos Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,56883596478.581604,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0793-PHL,Cagayan Valley,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,56883596478.581604,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0793-PHL,Cordillera Administrative Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,56883596478.581604,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Eastern Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-9498-LKA,North Western Province,Admin1,Anuradhapura,,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Sabaragamuwa Province,Admin1,Badulla,,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Southern Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Uva Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Ampara,Admin2,Eastern Province,Ampara,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Badulla,Admin2,Uva Province,Badulla,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Hambantota,Admin2,Southern Province,Hambantota,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Kurunegala,Admin2,North Western Province,Kurunegala,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Moneragala,Admin2,Uva Province,Moneragala,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Puttalam,Admin2,North Western Province,Puttalam,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9498-LKA,Ratnapura,Admin2,Sabaragamuwa Province,Ratnapura,llm_wiki,GDIS,5,geodetic,0.0,27063558433.08705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0002-VUT,Port Vila,Admin3,Shefa,,llm_wiki,GDIS,5,geodetic,0.0,24194890.49678576,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0003-GRC,Athens,Admin3,Attiki,,llm_wiki,GDIS,5,geodetic,0.0,19443349457.78182,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0003-GRC,Euboea,Admin3,Sterea Ellada,,llm_wiki,GDIS,5,geodetic,0.0,19443349457.78182,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0004-MDG,Morombe,Admin2,Atsimo Andrefana,Atsimo-Andrefana,llm_wiki,GDIS,5,geodetic,0.0,13367441615.258165,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0004-MDG,Morondava,Admin2,Menabe,Menabe,llm_wiki,GDIS,5,geodetic,0.0,13367441615.258165,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0016-UGA,Lugazi,Admin2,Buikwe,Buikwe,llm_wiki,GDIS,5,geodetic,0.0,3408508632.6141815,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0042-RWA,Gisenyi,Admin3,West,,llm_wiki,GDIS,5,geodetic,0.0,10104274.435130956,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Central Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0083-MWI,Northern Region,Admin1,Chitipa,,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0083-MWI,Southern Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Blantyre,Admin2,Southern Region,Blantyre City,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Dedza,Admin2,Central Region,Dedza Boma,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Kasungu,Admin2,Central Region,Kasungu Boma,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Mangochi,Admin2,Southern Region,Mangochi Town,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Nkhotakota,Admin2,Central Region,Lake Malawi,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Nsanje,Admin2,Southern Region,TA Bvumbwe,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0083-MWI,Salima,Admin2,Central Region,Salima Town,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0083-MWI,Zomba,Admin2,Southern Region,TA Mlumbe,llm_wiki,GDIS,5,geodetic,0.0,57716045292.7616,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0101-BEL,Hainaut,Admin1,Vlaanderen,,llm_wiki,GDIS,5,geodetic,0.0,16899174981.953669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0101-BEL,Liège,Admin1,Wallonie,,llm_wiki,GDIS,5,geodetic,0.0,16899174981.953669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0101-BEL,Namur,Admin1,Wallonie,,llm_wiki,GDIS,5,geodetic,0.0,16899174981.953669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0176-PHL,Surigao del Norte,Admin2,Region XIII,,llm_wiki,GDIS,5,geodetic,0.0,6354867615.604799,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0176-PHL,Surigao del Sur,Admin2,Region XIII,Prosperidad,llm_wiki,GDIS,5,geodetic,0.0,6354867615.604799,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0265-KEN,Busia,Admin2,Western,Matayos,llm_wiki,GDIS,5,geodetic,0.0,35014152548.313446,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0265-KEN,Ijara,Admin2,North Eastern,Ijara,llm_wiki,GDIS,5,geodetic,0.0,35014152548.313446,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0265-KEN,Kisumu,Admin2,Nyanza,Kisumu Central,llm_wiki,GDIS,5,geodetic,0.0,35014152548.313446,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0265-KEN,Migori,Admin2,Nyanza,Suna West,llm_wiki,GDIS,5,geodetic,0.0,35014152548.313446,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0265-KEN,Thika,Admin2,Central,Thika Town,llm_wiki,GDIS,5,geodetic,0.0,35014152548.313446,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0273-RWA,Karongi,Admin2,West,Karongi,llm_wiki,GDIS,5,geodetic,0.0,2058453050.6691527,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0273-RWA,Rusizi,Admin2,West,Nyamagabe,llm_wiki,GDIS,5,geodetic,0.0,2058453050.6691527,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0273-RWA,Byumba,Admin3,North,,llm_wiki,GDIS,5,geodetic,0.0,2058453050.6691527,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0273-RWA,Rusenyi,Admin3,West,,llm_wiki,GDIS,5,geodetic,0.0,2058453050.6691527,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0315-TJK,Navobod,Admin3,Khatlon,,llm_wiki,GDIS,5,geodetic,0.0,5364973712.458378,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0325-JAM,Kingston,Admin1,Kingston,,llm_wiki,GDIS,5,geodetic,0.0,7218258987.163466,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0375-TJK,Dushanbe,Admin3,Tadzhikistan Territories,,llm_wiki,GDIS,5,geodetic,0.0,169349444.03477383,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0428-NPL,Bhojpur,Admin2,Koshi,Bheri,llm_wiki,GDIS,5,geodetic,0.0,16824151879.898947,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0428-NPL,Dhankuta,Admin2,Koshi,Koshi,llm_wiki,GDIS,5,geodetic,0.0,16824151879.898947,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0428-NPL,Kathmandu,Admin2,Bagmati,Bagmati,llm_wiki,GDIS,5,geodetic,0.0,16824151879.898947,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0428-NPL,Lalitpur,Admin2,Bagmati,Bagmati,llm_wiki,GDIS,5,geodetic,0.0,16824151879.898947,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0475-TJK,Langar,Admin3,Badakhshoni Kuni,,llm_wiki,GDIS,5,geodetic,0.0,3881576234.374667,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0492-PNG,Kimbe,Admin2,West New Britain,Talasea,llm_wiki,GDIS,5,geodetic,0.0,35738729278.07848,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0499-PHL,Negros Occidental,Admin2,Region VI,La Carlota City,llm_wiki,GDIS,5,geodetic,0.0,7873009675.68614,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0509-PAK,Peshawar,Admin2,Khyber Pakhtunkhwa,Peshawar,llm_wiki,GDIS,5,geodetic,0.0,4059743558.7515936,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0513-SVK,Banská Bystrica,Admin1,Banskobystrický,,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Bratislava,Admin1,Bratislavský,,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0513-SVK,Nitra,Admin1,Nitriansky,,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Banská Bystrica,Admin2,Banská Bystrica,Banská Bystrica,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Brezno,Admin2,Banská Bystrica,Brezno,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Levice,Admin2,Nitra,Levice,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Žarnovica,Admin2,Banská Bystrica,Turcianske Teplice,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Žiar nad Hronom,Admin2,Banská Bystrica,?iar nad Hronom,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0513-SVK,Bratislava,Admin3,Bratislava,,llm_wiki,GDIS,5,geodetic,0.0,2020768901.6237817,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0514-ZAF,East London,Admin3,Eastern Cape,,llm_wiki,GDIS,5,geodetic,0.0,205909720007.7854,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0543-PAK,Malakand,Admin2,North-West Frontier Province,Malakand,llm_wiki,GDIS,5,geodetic,0.0,10785525864.657017,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0543-PAK,Mardan,Admin2,North-West Frontier Province,Mardan,llm_wiki,GDIS,5,geodetic,0.0,10785525864.657017,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0543-PAK,Swabi,Admin2,North-West Frontier Province,Mardan,llm_wiki,GDIS,5,geodetic,0.0,10785525864.657017,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0545-EGY,Cairo,Admin1,Al Isma`iliyah,,llm_wiki,GDIS,5,geodetic,0.0,5562630036.659019,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0550-BEL,Hainaut,Admin1,Vlaanderen,,llm_wiki,GDIS,5,geodetic,0.0,7145926683.153198,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0550-BEL,Liège,Admin1,Wallonie,,llm_wiki,GDIS,5,geodetic,0.0,7145926683.153198,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0550-BEL,Namur,Admin1,Wallonie,,llm_wiki,GDIS,5,geodetic,0.0,7145926683.153198,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0584-IND,Andaman Islands,Admin2,Andaman and Nicobar,North and Middle Andaman,llm_wiki,GDIS,5,geodetic,0.0,3406526408.6123886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Anse Boileau,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Anse Etoile,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Anse Royale,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Au Cap,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Baie Lazare,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Beau Vallon,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Bel Air,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Cascade,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Cerf Island,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Glacis,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Les Mamelles,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Mont Buxton,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Mont Fleuri,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Plaisance,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Port Glaud,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Praslin,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0590-SYC,Roche Caiman,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0590-SYC,Takamaka,Admin2,Seychelles,,llm_wiki,GDIS,5,geodetic,0.0,160839118.7633186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0680-ITA,Giarre,Admin2,Sicilia,Catania,llm_wiki,GDIS,5,geodetic,0.0,302455589.46457654,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0680-ITA,Santa Venerina,Admin2,Sicilia,Catania,llm_wiki,GDIS,5,geodetic,0.0,302455589.46457654,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0680-ITA,Zafferana Etnea,Admin2,Sicilia,Catania,llm_wiki,GDIS,5,geodetic,0.0,302455589.46457654,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0681-DNK,Varde,Admin2,Ribe,Varde,llm_wiki,GDIS,5,geodetic,0.0,1248913651.3719811,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0689-KEN,Kwale,Admin2,Coast,Matuga,llm_wiki,GDIS,5,geodetic,0.0,7205233061.912601,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0689-KEN,Tana River,Admin2,Coast,,llm_wiki,GDIS,5,geodetic,0.0,7205233061.912601,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0711-KEN,Kiambu,Admin2,Central,Kiambu,llm_wiki,GDIS,5,geodetic,0.0,2593238012.5947776,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0757-GRC,Vartholomio,Admin3,Dytiki Ellada,,llm_wiki,GDIS,5,geodetic,0.0,11310718906.470535,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0764-GRC,Katerini,Admin3,Kentriki Makedonia,,llm_wiki,GDIS,5,geodetic,0.0,18968807499.53934,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0770-VUT,Merelava,Admin3,Torba,,llm_wiki,GDIS,5,geodetic,0.0,861529359.0313437,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0777-GRC,Ambelaki,Admin3,Ionioi Nisoi,,llm_wiki,GDIS,5,geodetic,0.0,14525727172.154413,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0777-GRC,Kalamaki,Admin3,Ionioi Nisoi,,llm_wiki,GDIS,5,geodetic,0.0,14525727172.154413,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0777-GRC,Laganas,Admin3,Ionioi Nisoi,,llm_wiki,GDIS,5,geodetic,0.0,14525727172.154413,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0788-LKA,Anuradhapura,Admin2,North Central province,N. Palatha East,llm_wiki,GDIS,5,geodetic,0.0,24741225458.14137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0788-LKA,Kilinochchi,Admin2,Northern province,Karachchi,llm_wiki,GDIS,5,geodetic,0.0,24741225458.14137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0788-LKA,Polonnaruwa,Admin2,North Central province,Thamankaduwa,llm_wiki,GDIS,5,geodetic,0.0,24741225458.14137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0788-LKA,Puttalam,Admin2,North Western province,Puttalam,llm_wiki,GDIS,5,geodetic,0.0,24741225458.14137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0789-EGY,Cairo,Admin1,Al Isma`iliyah,,llm_wiki,GDIS,5,geodetic,0.0,7345002867.949436,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0800-KEN,Marigat,Admin3,Rift Valley,,llm_wiki,GDIS,5,geodetic,0.0,10843586841.53162,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Central Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Northern Region,Admin1,Chitipa,,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0808-MWI,Southern Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0808-MWI,Dedza,Admin2,Central Region,Dedza Boma,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Ntcheu,Admin2,Central Region,Ntcheu Boma,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Rumphi,Admin2,Northern Region,Rumphi Boma,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0808-MWI,Salima,Admin2,Central Region,Salima Town,llm_wiki,GDIS,5,geodetic,0.0,28690237129.28419,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0811-SLB,Anuta,Admin3,Solomon Islands,,llm_wiki,GDIS,5,geodetic,0.0,5249766.4952684045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0811-SLB,Tikopia,Admin3,Solomon Islands,,llm_wiki,GDIS,5,geodetic,0.0,5249766.4952684045,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0822-IDN,Simeulue,Admin2,Nangroe Aceh Darussalam,Simeulue,llm_wiki,GDIS,5,geodetic,0.0,1837478851.249894,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0824-BRA,Angra dos Reis,Admin2,Rio de Janeiro,Angra dos Reis,llm_wiki,GDIS,5,geodetic,0.0,823907317.2562585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0831-NPL,Parsa,Admin2,Central Province,Lumbini,llm_wiki,GDIS,5,geodetic,0.0,13146562475.967415,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0831-NPL,Rautahat,Admin2,Central Province,Sagarmatha,llm_wiki,GDIS,5,geodetic,0.0,13146562475.967415,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0875-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,73188364418.64978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0875-PHL,Central Visayas,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,73188364418.64978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0875-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,73188364418.64978,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0875-PHL,Caraga,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,73188364418.64978,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0877-PHL,Calabarzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,63832592457.2669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0877-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,63832592457.2669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0878-PHL,Caraga,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0878-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0878-PHL,Central Visayas,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0878-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0878-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0878-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,128504184310.08882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0882-ITA,Palermo,Admin2,Sicilia,Palermo,llm_wiki,GDIS,5,geodetic,0.0,5003655819.359476,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Blantyre,Admin2,Southern Region,Blantyre City,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Mangochi,Admin2,Southern Region,Mangochi Town,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Mulanje,Admin2,Southern Region,Mulanje Boma,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Nsanje,Admin2,Southern Region,Nsanje Boma,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Thyolo,Admin2,Southern Region,TA Nchilamwela,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9124-MWI,Zomba,Admin2,Southern Region,Zomba City,llm_wiki,GDIS,5,geodetic,0.0,32097269187.137386,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9707-MDG,Androy,Admin1,Toliary,,llm_wiki,GDIS,5,geodetic,0.0,264816171564.5148,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9707-MDG,Anosy,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,264816171564.5148,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-9707-MDG,Haute Matsiatra,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,264816171564.5148,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9707-MDG,Ihorombe,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,264816171564.5148,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9707-MDG,Menabe,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,264816171564.5148,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9852-UGA,Abim,Admin2,Karamoja,Labwor,llm_wiki,GDIS,5,geodetic,0.0,14852662364.534584,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9852-UGA,Kaabong,Admin2,Karamoja,Dodoth,llm_wiki,GDIS,5,geodetic,0.0,14852662364.534584,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-9852-UGA,Moroto,Admin2,Karamoja,Matheniko,llm_wiki,GDIS,5,geodetic,0.0,14852662364.534584,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9852-UGA,Nakapiripirit,Admin2,Karamoja,Chekwii,llm_wiki,GDIS,5,geodetic,0.0,14852662364.534584,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-BEL,Geraardsbergen,Admin3,Vlaams Gewest,,llm_wiki,GDIS,5,geodetic,0.0,3149900729.0349774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-BEL,Ghent,Admin3,Vlaams Gewest,,llm_wiki,GDIS,5,geodetic,0.0,3149900729.0349774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-FRA,Aisne,Admin2,Picardie,Aisne,llm_wiki,GDIS,5,geodetic,0.0,20212073141.95588,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-FRA,Ardennes,Admin2,Champagne-Ardenne,Ardennes,llm_wiki,GDIS,5,geodetic,0.0,20212073141.95588,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-FRA,Oise,Admin2,Picardie,Oise,llm_wiki,GDIS,5,geodetic,0.0,20212073141.95588,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-FRA,Lisieux,Admin3,Basse-Normandie,,llm_wiki,GDIS,5,geodetic,0.0,20212073141.95588,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0001-ROU,Poiana Teiului,Admin2,Neamț,Poiana Teiului,llm_wiki,GDIS,5,geodetic,0.0,174974255.6984415,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Dedza,Admin2,Central Region,Dedza Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Lilongwe,Admin2,Central Region,Lilongwe City,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Mwanza,Admin2,Southern Region,Mwanza Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Nsanje,Admin2,Southern Region,Nsanje Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Ntcheu,Admin2,Central Region,Ntcheu Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Rumphi,Admin2,Northern Region,Rumphi Boma,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0020-MWI,Salima,Admin2,Central Region,Salima Town,llm_wiki,GDIS,5,geodetic,0.0,97741303328.92563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0033-MKD,Centar,Admin2,Skopje,,llm_wiki,GDIS,5,geodetic,0.0,2516132034.995925,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0033-MKD,Kumanovo,Admin2,Kumanovo,,llm_wiki,GDIS,5,geodetic,0.0,2516132034.995925,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0073-COD,Bandundu,Admin1,Équateur,,llm_wiki,GDIS,5,geodetic,0.0,126009560347.31038,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0177-KGZ,Kara-Taryk,Admin3,Osh,,llm_wiki,GDIS,5,geodetic,0.0,3447652717.7687974,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0179-AFG,Baghran,Admin2,Helmand,Bughran,llm_wiki,GDIS,5,geodetic,0.0,1748888557.6108718,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0179-AFG,Kajaki,Admin2,Helmand,Kajaki,llm_wiki,GDIS,5,geodetic,0.0,1748888557.6108718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0189-TJK,Dushanbe,Admin3,Tadzhikistan Territories,,llm_wiki,GDIS,5,geodetic,0.0,54733025676.90565,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0204-KEN,Kisumu,Admin2,Nyanza,Kisumu Central,llm_wiki,GDIS,5,geodetic,0.0,6226911140.364273,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0204-KEN,Migori,Admin2,Nyanza,Suna West,llm_wiki,GDIS,5,geodetic,0.0,6226911140.364273,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0204-KEN,Busia,Admin2,Western,Matayos,llm_wiki,GDIS,5,geodetic,0.0,6226911140.364273,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0218-MDG,Vatomandry,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,8494111664.40625,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0218-MDG,Brickaville,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,8494111664.40625,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0229-LKA,Kalutara,Admin2,Western province,Kalutara,llm_wiki,GDIS,5,geodetic,0.0,12204543369.923792,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0229-LKA,Nuwara Eliya,Admin2,Central province,Nuwara Eliya,llm_wiki,GDIS,5,geodetic,0.0,12204543369.923792,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0229-LKA,Ratnapura,Admin2,Sabaragamuwa province,Ratnapura,llm_wiki,GDIS,5,geodetic,0.0,12204543369.923792,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Bataan,Admin1,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Batangas,Admin1,Batangas,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Bulacan,Admin1,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Cavite,Admin1,Cavite,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Romblon,Admin1,Romblon,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Zambales,Admin1,Zambales,,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Benguet,Admin2,Cordillera Administrative Region,Tublay,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0258-PHL,Iloilo,Admin2,Region VI (Western Visayas),Dingle,llm_wiki,GDIS,5,geodetic,0.0,40442176821.575775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0259-KAZ,Zhambyl,Admin2,Jambylslkaya,Moyynkumskiy,llm_wiki,GDIS,5,geodetic,0.0,140422371617.25848,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0289-PHL,Cebu,Admin2,Region VII,Toledo City,llm_wiki,GDIS,5,geodetic,0.0,4881684273.940774,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0090-IND,Jammu and Kashmir,Admin1,Jammu and Kashmir,,llm_wiki,GDIS,5,geodetic,0.0,105660255852.5657,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0523-IRQ,Choman,Admin2,Erbil,Choman,llm_wiki,GDIS,5,geodetic,0.0,10500353662.201525,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Abim,Admin2,Northern,Labwor,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Adjumani,Admin2,Northern,East Moyo,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Kaabong,Admin2,Northern,Dodoth,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Kasese,Admin2,Western,Busongora,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Kayunga,Admin2,Central,Ntenjeru,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Kiboga,Admin2,Central,Kiboga,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Moroto,Admin2,Northern,Matheniko,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Moyo,Admin2,Northern,West Moyo,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0527-UGA,Nakapiripirit,Admin2,Northern,Chekwii,llm_wiki,GDIS,5,geodetic,0.0,28896790477.947853,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0538-COL,Medellín,Admin2,Antioquia,Medellín,llm_wiki,GDIS,5,geodetic,0.0,361372217.3556824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Benedito Novo,Admin2,Santa Catarina,Benedito Novo,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Blumenau,Admin2,Santa Catarina,Blumenau,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Garuva,Admin2,Santa Catarina,Garuva,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Gaspar,Admin2,Santa Catarina,Gaspar,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Ilhota,Admin2,Santa Catarina,Ilhota,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Itapoá,Admin2,Santa Catarina,Itapoá,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Jaraguá do Sul,Admin2,Santa Catarina,Jaraguá do Sul,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Luiz Alves,Admin2,Santa Catarina,Luiz Alves,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,Rio dos Cedros,Admin2,Santa Catarina,Rio dos Cedros,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0549-BRA,São Bonifácio,Admin2,Santa Catarina,São Bonifácio,llm_wiki,GDIS,5,geodetic,0.0,4062482117.2055693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Eastern Province,Admin1,Ampara,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Northern Province,Admin1,Anuradhapura,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Jaffna District,Admin2,Northern Province,Thenmaradchy (Chavakachcheri),llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Mannar District,Admin2,Northern Province,Manthai West,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Mullaitivu District,Admin2,Northern Province,Oddusuddan,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Trincomalee District,Admin2,Eastern Province,Morawewa,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Chankanai,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Jaffna,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Kantalai,Admin3,Eastern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Karainagar,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Karaveddy,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Kayts,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Kinniya,Admin3,Eastern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Kopay,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Madhu,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Mannar,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Maruthankerny,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Muttur,Admin3,Eastern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Nanaddan,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Oddusuddan,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Point Pedro,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Puthukkudiyiruppu,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Sandilipay,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Tellippalai,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Thampalakamam,Admin3,Eastern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0560-LKA,Thunukkai,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Uduvil,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0560-LKA,Velanai,Admin3,Northern Province,,llm_wiki,GDIS,5,geodetic,0.0,5058759391.234026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0568-BGD,Chittagong,Admin3,Chittagong,,llm_wiki,GDIS,5,geodetic,0.0,31034456908.692852,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0571-PHL,Cagayan Valley,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0571-PHL,Bicol Region,Admin1,Albay,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0571-PHL,Caraga,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0571-PHL,Davao Region,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0571-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0571-PHL,Calabarzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,111364440428.63803,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0591-PAK,Rajanpur,Admin2,Punjab,Bahawalpur,llm_wiki,GDIS,5,geodetic,0.0,7694204387.473457,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0611-PHL,Asuncion,Admin2,Davao del Norte,Asuncion,llm_wiki,GDIS,5,geodetic,0.0,349937921.25463724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0611-PHL,Gitagum,Admin2,Misamis Oriental,Gitagum,llm_wiki,GDIS,5,geodetic,0.0,349937921.25463724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0611-PHL,Initao,Admin2,Misamis Oriental,Initao,llm_wiki,GDIS,5,geodetic,0.0,349937921.25463724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0620-PHL,Braulio E. Dujali,Admin2,Davao del Norte,Braulio E. Dujali,llm_wiki,GDIS,5,geodetic,0.0,548046982.523041,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0620-PHL,Manay,Admin2,Davao Oriental,Manay,llm_wiki,GDIS,5,geodetic,0.0,548046982.523041,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Central Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Northern Region,Admin1,Chitipa,,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Southern Region,Admin1,Balaka,,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Blantyre,Admin2,Southern Region,Blantyre City,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Chikwawa,Admin2,Southern Region,Chikwawa Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Chiradzulu,Admin2,Southern Region,TA Mpama,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Kasungu,Admin2,Central Region,Kasungu Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Lilongwe,Admin2,Central Region,Lilongwe City,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Machinga,Admin2,Southern Region,SC Sitola,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Mangochi,Admin2,Southern Region,Mangochi Town,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Mchinji,Admin2,Central Region,Mchinji Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Mulanje,Admin2,Southern Region,Mulanje Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Mzimba,Admin2,Northern Region,Mzimba Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Neno,Admin2,Southern Region,TA Ngozi,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Nkhata Bay,Admin2,Northern Region,Lake Malawi,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Nkhotakota,Admin2,Central Region,Lake Malawi,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Nsanje,Admin2,Southern Region,TA Bvumbwe,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Ntcheu,Admin2,Central Region,Ntcheu Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Phalombe,Admin2,Southern Region,TA Mkhumba,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-0639-MWI,Rumphi,Admin2,Northern Region,Rumphi Boma,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Thyolo,Admin2,Southern Region,TA Nchilamwela,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0639-MWI,Zomba,Admin2,Southern Region,TA Mlumbe,llm_wiki,GDIS,5,geodetic,0.0,102277211089.97246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0659-VUT,Ambrym,Admin3,Malampa,,llm_wiki,GDIS,5,geodetic,0.0,2793463233.447476,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9302-KEN,Samburu,Admin2,Rift Valley,Kinango,llm_wiki,GDIS,5,geodetic,0.0,103742774187.7024,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9302-KEN,Turkana,Admin2,North Rift Valley,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,103742774187.7024,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9302-KEN,Marigat,Admin3,Rift Valley,,llm_wiki,GDIS,5,geodetic,0.0,103742774187.7024,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9302-KEN,Sacho,Admin3,Rift Valley,,llm_wiki,GDIS,5,geodetic,0.0,103742774187.7024,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9302-KEN,Tangulbei,Admin3,Rift Valley,,llm_wiki,GDIS,5,geodetic,0.0,103742774187.7024,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9307-UGA,Abim,Admin2,Karamoja,Labwor,llm_wiki,GDIS,5,geodetic,0.0,6123763378.901605,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9307-UGA,Nakapiripirit,Admin2,Karamoja,Chekwii,llm_wiki,GDIS,5,geodetic,0.0,6123763378.901605,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9468-SOM,Belet Weyne,Admin2,Hiraan,Beled Weyn,llm_wiki,GDIS,5,geodetic,0.0,14808934504.99404,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9644-MDG,Androy,Admin1,Toliary,,llm_wiki,GDIS,5,geodetic,0.0,115062477549.14886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-9644-MDG,Anosy,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,115062477549.14886,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2008-9644-MDG,Atsimo-Andrefana,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,115062477549.14886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0633-BEL,Leuven,Admin2,Vlaams-Brabant,Vlaams Brabant,llm_wiki,GDIS,5,geodetic,0.0,1206958947.7601438,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Aude,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Gers,Admin1,Nouvelle-Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Haute-Garonne,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Hautes-Pyrénées,Admin1,Nouvelle-Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Landes,Admin1,Nouvelle-Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Pyrénées-Atlantiques,Admin1,Nouvelle-Aquitaine,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Pyrénées-Orientales,Admin1,Occitanie,,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0014-FRA,Lot-et-Garonne,Admin2,Aquitaine,Lot-et-Garonne,llm_wiki,GDIS,5,geodetic,0.0,49964751497.58537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Camarines Norte,Admin2,Region V,Labo,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Capiz,Admin2,Region VI,Sigma,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Catanduanes,Admin2,Region V,Viga,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,La Union,Admin2,Region I,Naguilian,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Misamis Oriental,Admin2,Region X,Gingoog City,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Negros Oriental,Admin2,Region VII,La Libertad,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Northern Samar,Admin2,Region VIII,Lope de Vega,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Palawan,Admin2,Region IV,Puerto Princesa City,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Aringay,Admin3,Region I,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Bagamanoc,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Baras,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Bataraza,Admin3,Region IV,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Bato,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Bobon,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Brooke's Point,Admin3,Region IV,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Caramoran,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Catarman,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Cuartero,Admin3,Region VI,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Dao,Admin3,Region VI,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Gigmoto,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Labo,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Lope de Vega,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Mondragon,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Palapag,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Pandan,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Panganiban,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Panitan,Admin3,Region VI,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,Pontevedra,Admin3,Region VI,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,San Andres,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0023-PHL,San Roque,Admin3,Region VIII,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Sigma,Admin3,Region VI,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Viga,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0023-PHL,Virac,Admin3,Region V,,llm_wiki,GDIS,5,geodetic,0.0,14204869809.597092,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0027-PHL,Poblacion,Admin3,Region X,,llm_wiki,GDIS,5,geodetic,0.0,59720921.35657972,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0030-SRB,Belgrade,Admin3,Grad Beograd,,llm_wiki,GDIS,5,geodetic,0.0,3994592308.375898,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0030-SRB,Novi Sad,Admin3,Južno-Bački,,llm_wiki,GDIS,5,geodetic,0.0,3994592308.375898,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Analanjirofo,Admin1,Mahajanga,,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Atsinanana,Admin1,Antsiranana,,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0137-MDG,Sofia,Admin1,Antsiranana,,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0137-MDG,Amparafaravola,Admin2,Alaotra Mangoro,Alaotra-Mangoro,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Antalaha,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0137-MDG,Mampikony,Admin2,Sofia,Sofia,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Manakara,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Mananjary,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Maroantsetra,Admin2,Analanjirofo,Analanjirofo,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Moramanga,Admin2,Alaotra Mangoro,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0137-MDG,Nosy Varika,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Soanierana Ivongo,Admin2,Analanjirofo,,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0137-MDG,Vangaindrano,Admin2,Atsimo Atsinanana,Atsimo-Atsinana,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Vatomandry,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0137-MDG,Vohipeno,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,59383510053.51231,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0143-PER,Pataz,Admin2,La Libertad,Pataz,llm_wiki,GDIS,5,geodetic,0.0,6484350922.260506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0143-PER,Aricapampa,Admin3,La Libertad,,llm_wiki,GDIS,5,geodetic,0.0,6484350922.260506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0143-PER,Retamas,Admin3,La Libertad,,llm_wiki,GDIS,5,geodetic,0.0,6484350922.260506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0149-PAK,Mardan,Admin2,Khyber Pakhtunkhwa,Mardan,llm_wiki,GDIS,5,geodetic,0.0,4753801759.274965,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0176-TJK,Ismoili Somoni,Admin2,Dushanbe,Rudaki,llm_wiki,GDIS,5,geodetic,0.0,10618743636.681923,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0192-PHL,Compostela,Admin2,Davao Region,Compostela,llm_wiki,GDIS,5,geodetic,0.0,12617152117.156105,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0193-PHL,Maguindanao,Admin2,Autonomous Region in Muslim Mindanao,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,141147894.31828868,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0193-PHL,Shariff Kabunsuan,Admin2,Autonomous Region in Muslim Mindanao,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,141147894.31828868,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0194-PHL,Maguindanao,Admin2,ARMM,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,4479814905.059909,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0194-PHL,Shariff Kabunsuan,Admin2,ARMM,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,4479814905.059909,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0194-PHL,Sultan Kudarat,Admin2,Region XII,Kalamansig,llm_wiki,GDIS,5,geodetic,0.0,4479814905.059909,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0211-PNG,Finschhafen,Admin2,Morobe,Finschhafen,llm_wiki,GDIS,5,geodetic,0.0,2445096964.615237,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0243-TGO,Maritime,Admin1,Maritime,,llm_wiki,GDIS,5,geodetic,0.0,6258092303.058844,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0268-BIH,Tešanj,Admin2,Federacija Bosne i Hercegovine,Zenica-Doboj,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0268-BIH,Dobro Polje,Admin3,Federacija Bosne i Hercegovine,,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0268-BIH,Jablanica,Admin3,Federacija Bosne i Hercegovine,,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0268-BIH,Medakovo,Admin3,Federacija Bosne i Hercegovine,,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0268-BIH,Novo Selo,Admin3,Federacija Bosne i Hercegovine,,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0268-BIH,Tešanjka,Admin3,Federacija Bosne i Hercegovine,,llm_wiki,GDIS,5,geodetic,0.0,3659377290.705103,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0279-AUT,Graz,Admin3,Steiermark,,llm_wiki,GDIS,5,geodetic,0.0,136271774.32728624,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0311-PHL,Malanday,Admin3,NCR,,llm_wiki,GDIS,5,geodetic,0.0,53010870.741535515,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0335-PAK,Khyber Pakhtunkhwa,Admin1,Khyber-Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0335-PAK,Mardan,Admin2,Khyber Pakhtunkhwa,Mardan,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0335-PAK,Swabi,Admin2,Khyber Pakhtunkhwa,Mardan,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0335-PAK,Adina,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0335-PAK,Kalu Khan,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0335-PAK,Shahbaz Garhi,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,1537718242.6805465,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0336-LKA,Kalutara,Admin2,Western Province,Kalutara,llm_wiki,GDIS,5,geodetic,0.0,6970679623.001763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0336-LKA,Ratnapura,Admin2,Sabaragamuwa Province,Ratnapura,llm_wiki,GDIS,5,geodetic,0.0,6970679623.001763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0336-LKA,Vavuniya,Admin2,Northern Province,Vavuniya,llm_wiki,GDIS,5,geodetic,0.0,6970679623.001763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0366-ALB,Peshkopi,Admin2,Dibër,Dibrës,llm_wiki,GDIS,5,geodetic,0.0,3392951.1464090347,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Albay,Admin1,Albay,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Apayao,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Bataan,Admin1,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Benguet,Admin1,Benguet,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Bulacan,Admin1,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Camarines Sur,Admin1,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Masbate,Admin1,Masbate,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Nueva Ecija,Admin1,Nueva Ecija,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Pampanga,Admin1,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Pangasinan,Admin1,Pangasinan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Quirino,Admin1,Quirino,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Sorsogon,Admin1,Sorsogon,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Sultan Kudarat,Admin1,Sultan Kudarat,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Angat,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Balanga,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Baliwag,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Bocaue,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Bolinao,Admin3,Pangasinan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Bulacan,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Cabarroguis,Admin3,Quirino,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Caloocan,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Calumpit,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Dagupan,Admin3,Pangasinan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Floridablanca,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Guiguinto,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Hagonoy,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Hermosa,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Kabayan,Admin3,Benguet,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Kabugao,Admin3,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Kalamansig,Admin3,Sultan Kudarat,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Licab,Admin3,Nueva Ecija,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Lubao,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Mabalacat,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Magsaysay,Admin3,Mindoro Occidental,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Makati,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Malabon,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Malolos,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Mandaluyong,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Manila,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Marikina,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Marilao,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Mariveles,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Meycauayan,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Muntinlupa,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Naga,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Navotas,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Orani,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Parañaque,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Pasacao,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Pasay,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,Pasig,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Plaridel,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Quezon,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Fernando,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Jose,Admin3,Mindoro Occidental,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Juan,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Luis,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Pascual,Admin3,Masbate,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0414-PHL,San Simon,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Taguig,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0414-PHL,Valenzuela,Admin3,Metropolitan Manila,,llm_wiki,GDIS,5,geodetic,0.0,23211982325.88489,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0420-TON,Niuatoputapu,Admin3,Niuatoputapu island,,llm_wiki,GDIS,5,geodetic,0.0,20901646.788762078,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Cordillera Administrative Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0422-PHL,Albay,Admin2,Region V,Guinobatan,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Cagayan,Admin2,Region II,Baggao,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Camarines Sur,Admin2,Region V,Naga City,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Catanduanes,Admin2,Region V,Viga,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Isabela,Admin2,Region II,Isabela City,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0422-PHL,Negros Occidental,Admin2,Region VI,La Carlota City,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Nueva Vizcaya,Admin2,Region II,Bayombong,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Quezon,Admin2,Region IV-A,Quezon,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0422-PHL,Sorsogon,Admin2,Region V,Juban,llm_wiki,GDIS,5,geodetic,0.0,96394681359.71783,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0425-AZE,Hajigabul,Admin2,Aran,Hac?qabul,llm_wiki,GDIS,5,geodetic,0.0,1957647665.6891115,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0522-SAU,Jeddah,Admin3,Makkah,,llm_wiki,GDIS,5,geodetic,0.0,137943521512.41763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0522-SAU,Mecca,Admin3,Makkah,,llm_wiki,GDIS,5,geodetic,0.0,137943521512.41763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0551-LKA,Batticaloa,Admin2,Eastern Province,Eravur Town,llm_wiki,GDIS,5,geodetic,0.0,6944535607.442957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0551-LKA,Ampara,Admin2,Eastern Province,Ampara,llm_wiki,GDIS,5,geodetic,0.0,6944535607.442957,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0553-VUT,Gaua,Admin3,Torba,,llm_wiki,GDIS,5,geodetic,0.0,884332475.0260655,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0573-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,8742646879.286161,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0574-PHL,Camalig,Admin2,Albay,Camalig,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0574-PHL,Daraga,Admin2,Albay,Daraga,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0574-PHL,Guinobatan,Admin2,Albay,Guinobatan,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0574-PHL,Ligao,Admin2,Albay,Ligao City,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0574-PHL,Malilipot,Admin2,Albay,Malilipot,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0574-PHL,Santo Domingo,Admin2,Albay,Santo Domingo,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0574-PHL,Tabaco,Admin2,Albay,Ligao City,llm_wiki,GDIS,5,geodetic,0.0,495508297.70161724,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0614-MEX,Cuicatlán,Admin2,Oaxaca,Concepción Pápalo,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2009-0614-MEX,Chiquihuitlán de Benito Juárez,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,Cuyamecalco Villa de Zaragoza,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Andrés Teotilalpam,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Bartolomé Ayautla,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Felipe Jalapa de Díaz,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Felipe Usila,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Juan Coatzospam,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Lucas Ojitlán,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Pedro Ixcatlán,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,San Pedro Teutila,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,Santa María Tlalixtac,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0614-MEX,Teotitlán de Flores Magón,Admin3,Oaxaca,,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0009-BDI,Bujumbura,Admin1,Bujumbura Mairie,,llm_wiki,GDIS,5,geodetic,0.0,38354214.46618585,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0009-BDI,Mutimbuzi,Admin2,Bujumbura,Lake Tanganyika,llm_wiki,GDIS,5,geodetic,0.0,38354214.46618585,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0009-BDI,Gatumba,Admin3,Bujumbura,,llm_wiki,GDIS,5,geodetic,0.0,38354214.46618585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,Agusan del Norte,Admin2,Region XIII,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Agusan del Sur,Admin2,Region XIII,San Francisco,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,Dinagat Islands,Admin2,Region XIII,Cagdianao,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Surigao del Norte,Admin2,Region XIII,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Cagdianao,Admin3,Dinagat Islands,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Jabonga,Admin3,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,Las Nieves,Admin3,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,Loreto,Admin3,Dinagat Islands,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Mainit,Admin3,Surigao del Norte,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,Prosperidad,Admin3,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0020-PHL,San Francisco,Admin3,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0020-PHL,Santiago,Admin3,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,3385601096.655028,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0021-ISR,Southern District,Admin1,HaDarom,,llm_wiki,GDIS,5,geodetic,0.0,14477841072.717064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0031-PHL,Dinagat,Admin2,Region XIII (Caraga),Dinagat,llm_wiki,GDIS,5,geodetic,0.0,580887236.7653329,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0033-PHL,Naujan,Admin2,Mindoro Oriental,Naujan,llm_wiki,GDIS,5,geodetic,0.0,402024486.2964888,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0067-HTI,Cap-Haïtien,Admin3,Nord,,llm_wiki,GDIS,5,geodetic,0.0,2097647275.52557,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0073-PAK,Khyber Pakhtunkhwa,Admin1,Khyber-Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,7015781610.452079,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0073-PAK,Haran,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,7015781610.452079,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0073-PAK,Kundian,Admin3,Khyber Pakhtunkhwa,,llm_wiki,GDIS,5,geodetic,0.0,7015781610.452079,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0088-FRA,Poitou-Charentes,Admin1,Centre-Val de Loire,,llm_wiki,GDIS,5,geodetic,0.0,26825126983.70337,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0088-FRA,Charente-Maritime,Admin2,Poitou-Charentes,Charente-Maritime,llm_wiki,GDIS,5,geodetic,0.0,26825126983.70337,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0088-FRA,Deux-Sèvres,Admin2,Poitou-Charentes,Deux-Sèvres,llm_wiki,GDIS,5,geodetic,0.0,26825126983.70337,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0088-FRA,Vendée,Admin2,Pays-de-la-Loire,Vendée,llm_wiki,GDIS,5,geodetic,0.0,26825126983.70337,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0088-FRA,Vienne,Admin2,Poitou-Charentes,Vienne,llm_wiki,GDIS,5,geodetic,0.0,26825126983.70337,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Nairobi,Admin1,Nairobi,,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Isiolo,Admin2,Eastern,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Malindi,Admin2,Coast,Malindi,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Mandera,Admin2,North Eastern,Mandera East,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Maragua,Admin2,Central,Maragwa,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Marsabit,Admin2,Eastern,Saku,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0094-KEN,Moyale,Admin2,Eastern,,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Nairobi,Admin2,Nairobi,Dagoretti North,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Nakuru,Admin2,Rift Valley,Nakuru Town East,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Narok,Admin2,Rift Valley,Narok North,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0094-KEN,Samburu,Admin2,Rift Valley,Kinango,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0094-KEN,Tana River,Admin2,Coast,,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0094-KEN,Turkana,Admin2,Rift Valley,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,225284106430.2068,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0104-MDG,Ambatondrazaka,Admin2,Alaotra Mangoro,Alaotra-Mangoro,llm_wiki,GDIS,5,geodetic,0.0,47627444695.14787,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0104-MDG,Farafangana,Admin2,Atsimo Atsinanana,Atsimo-Atsinana,llm_wiki,GDIS,5,geodetic,0.0,47627444695.14787,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0104-MDG,Vangaindrano,Admin2,Atsimo Atsinanana,Atsimo-Atsinana,llm_wiki,GDIS,5,geodetic,0.0,47627444695.14787,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0127-MWI,Dedza,Admin2,Central Region,Dedza Boma,llm_wiki,GDIS,5,geodetic,0.0,5087762718.495986,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0183-YEM,Sana'a,Admin1,Amanat Al Asimah,,llm_wiki,GDIS,5,geodetic,0.0,11986028299.722284,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0191-LKA,Anuradhapura,Admin2,North Central,N. Palatha East,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0191-LKA,Jaffna,Admin2,Northern,Jaffna,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0191-LKA,Mannar,Admin2,Northern,Mannar Town,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0191-LKA,Nuwara Eliya,Admin2,Central,Nuwara Eliya,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0191-LKA,Ratnapura,Admin2,Sabaragamuwa,Ratnapura,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0191-LKA,Trincomalee,Admin2,Eastern,Trincomalee Town and Gravets,llm_wiki,GDIS,5,geodetic,0.0,31126969265.6706,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0199-RWA,Nyabihu,Admin2,West/Iburengerazuba,Nyaruguru,llm_wiki,GDIS,5,geodetic,0.0,537198163.1882026,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Aurora,Admin2,Region III (Central Luzon),Dipaculao,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Bataan,Admin2,Region III (Central Luzon),Balanga City,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Bulacan,Admin2,Region III (Central Luzon),Doña Remedios Trinidad,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Camarines Norte,Admin2,Region V (Bicol Region),Labo,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Camarines Sur,Admin2,Region V (Bicol Region),Naga City,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Catanduanes,Admin2,Region V (Bicol Region),Viga,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Pampanga,Admin2,Region III (Central Luzon),San Fernando City,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Abucay,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Bagac,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Bagamanoc,Admin3,Catanduanes,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Balanga,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Basud,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Bombon,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Capalonga,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Caramoan,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Caramoran,Admin3,Catanduanes,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Dingalan,Admin3,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Gigmoto,Admin3,Catanduanes,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Jose Panganiban,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Labo,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Lagonoy,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Limay,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Mariveles,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Masantol,Admin3,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Mercedes,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Morong,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Orani,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Pandan,Admin3,Catanduanes,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,Pasacao,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Samal,Admin3,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0308-PHL,San Lorenzo Ruiz,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Santa Elena,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Siruma,Admin3,Camarines Sur,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0308-PHL,Talisay,Admin3,Camarines Norte,,llm_wiki,GDIS,5,geodetic,0.0,18081066684.436577,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0321-IND,Delhi,Admin1,Haryana,,llm_wiki,GDIS,5,geodetic,0.0,1505062776.989305,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0371-PHL,Maguindanao,Admin2,ARMM,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0371-PHL,Sultan Kudarat,Admin2,Region XII,Kalamansig,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0371-PHL,Datu Montawal,Admin3,ARMM,,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0371-PHL,Kabacan,Admin3,Region XII,,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0371-PHL,Lambayong,Admin3,Region XII,,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0371-PHL,Pagalungan,Admin3,ARMM,,llm_wiki,GDIS,5,geodetic,0.0,11316288512.657282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0383-PHL,Malolos,Admin2,Bulacan,Bulacan,llm_wiki,GDIS,5,geodetic,0.0,26956484143.307453,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0383-PHL,Navotas,Admin2,Metropolitan Manila,Navotas,llm_wiki,GDIS,5,geodetic,0.0,26956484143.307453,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0383-PHL,Santo Rosario,Admin3,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,26956484143.307453,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0430-COL,Magüí Payán,Admin2,Nariño,Barbacoas,llm_wiki,GDIS,5,geodetic,0.0,3581559017.319395,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0463-NZL,Christchurch,Admin3,Canterbury,,llm_wiki,GDIS,5,geodetic,0.0,1485824421.2077339,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Bukidnon,Admin1,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Misamis Oriental,Admin1,Misamis Oriental,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0488-PHL,South Cotabato,Admin1,South Cotabato,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0488-PHL,Sultan Kudarat,Admin1,Sultan Kudarat,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0488-PHL,Banga,Admin3,South Cotabato,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0488-PHL,Davao City,Admin3,Davao Del Sur,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Kalilangan,Admin3,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Lambayong,Admin3,Sultan Kudarat,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Marilog,Admin3,Davao Del Sur,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0488-PHL,Tupi,Admin3,South Cotabato,,llm_wiki,GDIS,5,geodetic,0.0,12636800969.501097,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0574-SRB,Kraljevo,Admin3,Raski Province,,llm_wiki,GDIS,5,geodetic,0.0,1499962925.2926447,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0576-IDN,Toianas,Admin3,Nusatenggara Timur,,llm_wiki,GDIS,5,geodetic,0.0,3954266660.2486124,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0585-PHL,Aurora,Admin2,Region III,Dipaculao,llm_wiki,GDIS,5,geodetic,0.0,28132960534.31566,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0585-PHL,Cagayan,Admin2,Region II,Baggao,llm_wiki,GDIS,5,geodetic,0.0,28132960534.31566,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0585-PHL,Isabela,Admin2,Region II,Isabela City,llm_wiki,GDIS,5,geodetic,0.0,28132960534.31566,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0585-PHL,Kalinga,Admin2,CAR,Conner,llm_wiki,GDIS,5,geodetic,0.0,28132960534.31566,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0585-PHL,Quirino,Admin2,Region II,Quirino,llm_wiki,GDIS,5,geodetic,0.0,28132960534.31566,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0594-MNE,Andrijevica,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0594-MNE,Berane,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0594-MNE,Bijelo Polje,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0594-MNE,Danilovgrad,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0594-MNE,Nikšić,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0594-MNE,Plav,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,4630848314.922559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0606-PHL,Casiguran,Admin2,Sorsogon,Casiguran,llm_wiki,GDIS,5,geodetic,0.0,258085009.16997036,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0606-PHL,Irosin,Admin2,Sorsogon,Irosin,llm_wiki,GDIS,5,geodetic,0.0,258085009.16997036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0606-PHL,Juban,Admin2,Sorsogon,Juban,llm_wiki,GDIS,5,geodetic,0.0,258085009.16997036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0606-PHL,Magallanes,Admin2,Sorsogon,Magallanes,llm_wiki,GDIS,5,geodetic,0.0,258085009.16997036,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0615-SVK,Banská Bystrica,Admin1,Banskobystrický,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Bratislava,Admin1,Bratislavský,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Košice,Admin1,Košický,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Nitra,Admin1,Nitriansky,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Prešov,Admin1,Banskobystrický,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Trenčín,Admin1,Banskobystrický,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Trnava,Admin1,Trnavský,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0615-SVK,Žilina,Admin1,Banskobystrický,,llm_wiki,GDIS,5,geodetic,0.0,13737221560.735691,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-HRV,Kula Norinska,Admin3,Dubrovnik-Neretva,,llm_wiki,GDIS,5,geodetic,0.0,289160379.758505,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-HRV,Metković,Admin3,Dubrovnik-Neretva,,llm_wiki,GDIS,5,geodetic,0.0,289160379.758505,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-HRV,Opuzen,Admin3,Dubrovnik-Neretva,,llm_wiki,GDIS,5,geodetic,0.0,289160379.758505,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-HRV,Ploče,Admin3,Dubrovnik-Neretva,,llm_wiki,GDIS,5,geodetic,0.0,289160379.758505,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-MNE,Cetinje,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,2843120962.2092867,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-MNE,Danilovgrad,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,2843120962.2092867,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-MNE,Podgorica,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,2843120962.2092867,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-MNE,Golubovci,Admin3,Podgorica,,llm_wiki,GDIS,5,geodetic,0.0,2843120962.2092867,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0619-SRB,Loznica,Admin2,Mačvanski,Loznica,llm_wiki,GDIS,5,geodetic,0.0,603723385.758923,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0639-EGY,Alexandria,Admin1,Al Buhayrah,,llm_wiki,GDIS,5,geodetic,0.0,2872462272.1222863,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0639-EGY,Tanta,Admin2,Gharbia,Tanta 2,llm_wiki,GDIS,5,geodetic,0.0,2872462272.1222863,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0647-ESP,Córdoba,Admin1,Andalucía,,llm_wiki,GDIS,5,geodetic,0.0,14034922407.605906,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0647-ESP,Huelva,Admin1,Andalucía,,llm_wiki,GDIS,5,geodetic,0.0,14034922407.605906,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0647-ESP,Jaén,Admin1,Andalucía,,llm_wiki,GDIS,5,geodetic,0.0,14034922407.605906,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0647-ESP,Écija,Admin2,Andalucía,Córdoba,llm_wiki,GDIS,5,geodetic,0.0,14034922407.605906,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Agusan del Norte,Admin2,Region XIII (Caraga),,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0659-PHL,Agusan del Sur,Admin2,Region XIII (Caraga),San Francisco,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Albay,Admin2,Region V,Guinobatan,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Bohol,Admin2,Region VII (Central Visayas),Carmen,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Camiguin,Admin2,Region X (Northern Mindanao),Catarman,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Catanduanes,Admin2,Region V,Viga,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Cebu,Admin2,Region VII (Central Visayas),Toledo City,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Compostela,Admin2,Region XI (Davao region),Compostela,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Davao Oriental,Admin2,Region XI (Davao region),Manay,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0659-PHL,Eastern Samar,Admin2,Region VIII,Borongan City,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Lanao del Norte,Admin2,Region X (Northern Mindanao),Pantao Ragat,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Leyte,Admin2,Region VIII,Baybay City,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Maguindanao,Admin2,ARMM,Datu Odin Sinsuat,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Northern Samar,Admin2,Region VIII,Lope de Vega,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Palawan,Admin2,Region IV,Puerto Princesa City,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Samar,Admin2,Region VIII,Motiong,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Sorsogon,Admin2,Region V,Juban,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,South Cotabato,Admin2,Region XII,T'Boli,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Southern Leyte,Admin2,Region VIII,Libagon,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0659-PHL,Surigao del Norte,Admin2,Region XIII (Caraga),,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2010-0659-PHL,Surigao del Sur,Admin2,Region XIII (Caraga),Prosperidad,llm_wiki,GDIS,5,geodetic,0.0,96907331464.48071,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0660-EGY,Minya,Admin1,Al Bahr al Ahmar,,llm_wiki,GDIS,5,geodetic,0.0,47798527080.147835,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2010-0686-BGD,Mymensingh,Admin2,Dhaka,Gazipur,llm_wiki,GDIS,5,geodetic,0.0,4345179629.918124,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0022-SAU,Jeddah,Admin3,Makkah,,llm_wiki,GDIS,5,geodetic,0.0,137943521512.41763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0024-LKA,Vavuniya,Admin2,Northern,Vavuniya,llm_wiki,GDIS,5,geodetic,0.0,41532677480.711525,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0042-AFG,Herat,Admin1,Badghis,,llm_wiki,GDIS,5,geodetic,0.0,54737757892.76017,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0044-PHL,Agusan del Norte,Admin2,Region XIII,,llm_wiki,GDIS,5,geodetic,0.0,19451007059.00652,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0044-PHL,Agusan del Sur,Admin2,Region XIII,San Francisco,llm_wiki,GDIS,5,geodetic,0.0,19451007059.00652,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0044-PHL,Sulu,Admin2,ARMM,Indanan,llm_wiki,GDIS,5,geodetic,0.0,19451007059.00652,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0044-PHL,Surigao del Norte,Admin2,Region XIII,,llm_wiki,GDIS,5,geodetic,0.0,19451007059.00652,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0044-PHL,Surigao del Sur,Admin2,Region XIII,Prosperidad,llm_wiki,GDIS,5,geodetic,0.0,19451007059.00652,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Analanjirofo,Admin1,Mahajanga,,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Anosy,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Ambohidratrimo,Admin2,Analamanga,Analamanga,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Ambovombe-Androy,Admin2,Androy,Androy,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Antalaha,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Bekily,Admin2,Androy,Anosy,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Iakora,Admin2,Ihorombe,Ihorombe,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Mahajanga II,Admin2,Boeny,Boeny,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Maintirano,Admin2,Melaky,Melaky,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Mampikony,Admin2,Sofia,Sofia,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Mananjary,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Mandritsara,Admin2,Sofia,Sofia,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Manja,Admin2,Menabe,Menabe,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Miandrivazo,Admin2,Menabe,Menabe,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Morafenobe,Admin2,Melaky,Melaky,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Sambava,Admin2,Sava,Sava,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Soalala,Admin2,Boeny,,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0057-MDG,Vatomandry,Admin2,Atsinanana,Atsinanana,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0057-MDG,Vohipeno,Admin2,Vatovavy Fitovinany,Vatovavy Fitovinany,llm_wiki,GDIS,5,geodetic,0.0,150353000027.639,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0068-NZL,Christchurch,Admin3,Canterbury,,llm_wiki,GDIS,5,geodetic,0.0,1485824421.2077339,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0090-MMR,Tachileik,Admin2,Shan (E),Tarchilaik,llm_wiki,GDIS,5,geodetic,0.0,5618395350.36038,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0092-MWI,Mulanje,Admin2,Southern Region,Mulanje Boma,llm_wiki,GDIS,5,geodetic,0.0,1996424569.9188843,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0102-MWI,Karonga,Admin2,Northern Region,Karonga Town,llm_wiki,GDIS,5,geodetic,0.0,8742646879.286161,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0141-PHL,Pantukan,Admin2,Compostela Valley,Pantukan,llm_wiki,GDIS,5,geodetic,0.0,8950266367.413074,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Bulacan,Admin2,Region III,Doña Remedios Trinidad,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Eastern Samar,Admin2,Region VIII,Borongan City,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Leyte,Admin2,Region VIII,Baybay City,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Northern Samar,Admin2,Region VIII,Lope de Vega,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Samar,Admin2,Region VIII,Motiong,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0157-PHL,Zambales,Admin2,Region III,Botolan,llm_wiki,GDIS,5,geodetic,0.0,45644007520.54977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0571-UKR,Donetsk,Admin1,Donets'k,,llm_wiki,GDIS,5,geodetic,0.0,52912034789.78665,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2009-0571-UKR,Krym,Admin1,Crimea,,llm_wiki,GDIS,5,geodetic,0.0,52912034789.78665,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0159-ESP,Lorca,Admin3,Región de Murcia,,llm_wiki,GDIS,5,geodetic,0.0,11335961852.6921,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0178-KAZ,West Kazakhstan Region,Admin1,Aqtöbe,,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0178-KAZ,Akzhaik,Admin2,West Kazakhstan Region,Atyrau,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0178-KAZ,Kaztal,Admin2,West Kazakhstan Region,Kaztalovskiy,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0178-KAZ,Shyngyrlau,Admin2,West Kazakhstan Region,Chingirlauskiy,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0178-KAZ,Taskala,Admin2,West Kazakhstan Region,Taskalinskiy,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0178-KAZ,Terekti,Admin2,West Kazakhstan Region,Terektinskiy,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0178-KAZ,Oral,Admin3,West Kazakhstan Region,,llm_wiki,GDIS,5,geodetic,0.0,16333534624.080374,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0179-VCT,Georgetown,Admin3,Charlotte,,llm_wiki,GDIS,5,geodetic,0.0,141017347.89825228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0183-RWA,Nyabihu,Admin2,Western Province,Nyaruguru,llm_wiki,GDIS,5,geodetic,0.0,2405057457.311775,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0183-RWA,Rwamagana,Admin2,Eastern Province,Rwamagana,llm_wiki,GDIS,5,geodetic,0.0,2405057457.311775,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0203-PHL,Calabarzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,64978416876.78758,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0203-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,64978416876.78758,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0204-PHL,Bukidnon,Admin1,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,34978452095.932724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0204-PHL,Davao de Oro,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,34978452095.932724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0204-PHL,Maguindanao,Admin1,Maguindanao,,llm_wiki,GDIS,5,geodetic,0.0,34978452095.932724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0204-PHL,Sultan Kudarat,Admin1,Sultan Kudarat,,llm_wiki,GDIS,5,geodetic,0.0,34978452095.932724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0204-PHL,Compostela,Admin2,Davao de Oro,Compostela,llm_wiki,GDIS,5,geodetic,0.0,34978452095.932724,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Albay,Admin1,Albay,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Bataan,Admin1,Bataan,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Batangas,Admin1,Batangas,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Bulacan,Admin1,Bulacan,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,La Union,Admin1,La Union,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Pampanga,Admin1,Pampanga,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Pangasinan,Admin1,Pangasinan,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Zambales,Admin1,Zambales,,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Cotabato City,Admin2,Shariff Kabunsuan,Cotabato City,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0221-PHL,Davao City,Admin2,Davao del Sur,Davao City,llm_wiki,GDIS,5,geodetic,0.0,57291057490.42642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0243-TJK,Khujand,Admin3,Sughd,,llm_wiki,GDIS,5,geodetic,0.0,31034460714.94298,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0243-UZB,Fergana,Admin1,Farg'ona,,llm_wiki,GDIS,5,geodetic,0.0,6685228037.320436,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0244-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,9103526732.56537,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0244-PHL,Bukidnon,Admin2,Northern Mindanao,Valencia City,llm_wiki,GDIS,5,geodetic,0.0,9103526732.56537,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Calabarzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Central Visayas,Admin1,Bohol,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0272-PHL,Cordillera Administrative Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0272-PHL,Eastern Visayas,Admin1,Biliran,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0272-PHL,Western Visayas,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Cavite,Admin2,Calabarzon,Trece Martires City,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Ifugao,Admin2,Cordillera Administrative Region,Lagawe,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Iloilo,Admin2,Western Visayas,Dingle,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Leyte,Admin2,Eastern Visayas,Baybay City,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Marinduque,Admin2,Southern Tagalog,Boac,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Nueva Ecija,Admin2,Central Luzon,General Mamerto Natividad,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Quezon,Admin2,Calabarzon,Quezon,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0272-PHL,Siquijor,Admin2,Central Visayas,Siquijor,llm_wiki,GDIS,5,geodetic,0.0,46400452633.75692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0283-BEN,Littoral,Admin1,Littoral,,llm_wiki,GDIS,5,geodetic,0.0,540944709.0342262,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0283-BEN,Bopa,Admin2,Mono,Bopa,llm_wiki,GDIS,5,geodetic,0.0,540944709.0342262,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0283-BEN,Cotonou,Admin2,Littoral,Cotonou,llm_wiki,GDIS,5,geodetic,0.0,540944709.0342262,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0283-BEN,Lokossa,Admin2,Mono,Lokossa,llm_wiki,GDIS,5,geodetic,0.0,540944709.0342262,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0301-PHL,Iloilo,Admin1,Iloilo,,llm_wiki,GDIS,5,geodetic,0.0,5478059108.184547,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0301-PHL,Iloilo City,Admin2,Iloilo,Iloilo City,llm_wiki,GDIS,5,geodetic,0.0,5478059108.184547,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0305-PHL,Zambales,Admin1,Zambales,,llm_wiki,GDIS,5,geodetic,0.0,178034100.64394504,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0320-BEL,Kiewit,Admin3,Limburg,,llm_wiki,GDIS,5,geodetic,0.0,842883094.3228214,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0351-NPL,Bagmati,Admin2,Bagmati Province,Narayani,llm_wiki,GDIS,5,geodetic,0.0,32948545631.901127,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0351-NPL,Ramechhap,Admin2,Bagmati Province,Janakpur,llm_wiki,GDIS,5,geodetic,0.0,32948545631.901127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0367-PHL,South Cotabato,Admin1,South Cotabato,,llm_wiki,GDIS,5,geodetic,0.0,20698409.634466685,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0367-PHL,Polomolok,Admin2,South Cotabato,Polomolok,llm_wiki,GDIS,5,geodetic,0.0,20698409.634466685,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0367-PHL,Upper Klinan,Admin3,South Cotabato,,llm_wiki,GDIS,5,geodetic,0.0,20698409.634466685,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Angul,Admin2,Odisha,Anugul,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Balasore,Admin2,Odisha,Baleshwar,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Bhadrak,Admin2,Odisha,Bhadrak,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Boudh,Admin2,Odisha,Anugul,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Cuttack,Admin2,Odisha,Cuttack,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Deogarh,Admin2,Odisha,Debagarh,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0371-IND,Dhenkanal,Admin2,Odisha,Dhenkanal,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Jagatsinghpur,Admin2,Odisha,Jagatsinghapur,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Jajpur,Admin2,Odisha,Jajapur,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Jharsuguda,Admin2,Odisha,Jharsuguda,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Kendrapara,Admin2,Odisha,Kendrapara,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Khordha,Admin2,Odisha,Khordha,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Nayagarh,Admin2,Odisha,Nayagarh,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Nuapada,Admin2,Odisha,Nuapada,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Puri,Admin2,Odisha,Puri,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0371-IND,Sambalpur,Admin2,Odisha,Sambalpur,llm_wiki,GDIS,5,geodetic,0.0,72530172228.64612,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Buhweju,Admin2,Western Region,Buhweju,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Bulambuli,Admin2,Eastern Region,Bukedea,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0376-UGA,Butaleja,Admin2,Eastern Region,Bunyole,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Kampala,Admin2,Central Region,Kampala,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Kasese,Admin2,Western Region,Busongora,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Lwengo,Admin2,Central Region,Bukoto,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Masaka,Admin2,Central Region,Masaka,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Mitooma,Admin2,Western Region,Ruhinda,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Mpigi,Admin2,Central Region,Mawokota,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Rukungiri,Admin2,Western Region,Bufumbira,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0376-UGA,Sironko,Admin2,Eastern Region,Budadiri,llm_wiki,GDIS,5,geodetic,0.0,19806547819.063847,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0378-PHL,Cagayan Valley,Admin1,Apayao,,llm_wiki,GDIS,5,geodetic,0.0,99607330758.49072,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0378-PHL,Central Luzon,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,99607330758.49072,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0378-PHL,Cordillera Administrative Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,99607330758.49072,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0378-PHL,Ilocos Region,Admin1,Abra,,llm_wiki,GDIS,5,geodetic,0.0,99607330758.49072,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0389-IDN,Subulussalam,Admin3,Nanggroe Aceh Darussalam,,llm_wiki,GDIS,5,geodetic,0.0,75444624847.23022,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0423-KEN,Turkana,Admin2,Rift Valley,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,66368041627.909355,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0423-KEN,Kisumu,Admin3,Nyanza,,llm_wiki,GDIS,5,geodetic,0.0,66368041627.909355,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0431-COL,Manizales,Admin2,Caldas,Manizales,llm_wiki,GDIS,5,geodetic,0.0,443872405.26843816,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0439-FRA,Alpes-Maritimes,Admin2,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,llm_wiki,GDIS,5,geodetic,0.0,10388636307.57538,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0439-FRA,Hérault,Admin2,Occitanie,Hérault,llm_wiki,GDIS,5,geodetic,0.0,10388636307.57538,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0439-FRA,Pyrénées-Orientales,Admin2,Occitanie,Pyrénées-Orientales,llm_wiki,GDIS,5,geodetic,0.0,10388636307.57538,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0439-FRA,Var,Admin2,Provence-Alpes-Côte d'Azur,Var,llm_wiki,GDIS,5,geodetic,0.0,10388636307.57538,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0445-PHL,Valencia,Admin3,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,87075248.95440662,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0453-IRL,Dublin,Admin3,Leinster,,llm_wiki,GDIS,5,geodetic,0.0,3109892033.867961,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0453-IRL,Kilbride,Admin3,Leinster,,llm_wiki,GDIS,5,geodetic,0.0,3109892033.867961,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0463-GIN,Gaoual,Admin2,Boké,Gaoual,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0463-GIN,Mandiana,Admin2,Kankan,Mandiana,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0463-GIN,Matoto,Admin2,Conakry,Conakry,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0463-GIN,Kiniébakoura,Admin3,Kankan,,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0463-GIN,Labé,Admin3,Labé,,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0463-GIN,Matam,Admin3,Kankan,,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0463-GIN,Niandankoro,Admin3,Kankan,,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0463-GIN,Siguiri,Admin3,Kankan,,llm_wiki,GDIS,5,geodetic,0.0,36959842497.74978,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0468-PHL,Aklan,Admin2,Region VI,Lezo,llm_wiki,GDIS,5,geodetic,0.0,26506627514.971146,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0468-PHL,Aurora,Admin2,Region III,Dipaculao,llm_wiki,GDIS,5,geodetic,0.0,26506627514.971146,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0468-PHL,Cagayan,Admin2,Region II,Baggao,llm_wiki,GDIS,5,geodetic,0.0,26506627514.971146,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0468-PHL,Capiz,Admin2,Region VI,Sigma,llm_wiki,GDIS,5,geodetic,0.0,26506627514.971146,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0468-PHL,Isabela,Admin2,Region II,Isabela City,llm_wiki,GDIS,5,geodetic,0.0,26506627514.971146,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0476-KEN,Dadaab,Admin3,North Eastern,,llm_wiki,GDIS,5,geodetic,0.0,43837604892.439835,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0476-SOM,Banadir,Admin1,Banaadir,,llm_wiki,GDIS,5,geodetic,0.0,200782615.03525805,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0476-SOM,Banadir,Admin2,Banadir,Mogadisho,llm_wiki,GDIS,5,geodetic,0.0,200782615.03525805,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0476-SOM,Mogadishu,Admin3,Banadir,,llm_wiki,GDIS,5,geodetic,0.0,200782615.03525805,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Busia,Admin2,Western,Matayos,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Central Kisii,Admin2,Nyanza,Nyaribari Chache,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0504-KEN,Isiolo,Admin2,Eastern,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Kakamega,Admin2,Western,Lurambi,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Kisumu,Admin2,Nyanza,Kisumu Central,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0504-KEN,Marsabit,Admin2,Eastern,Saku,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Moyale,Admin2,Rift Valley,,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Samburu,Admin2,Rift Valley,Kinango,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0504-KEN,Siaya,Admin2,Nyanza,Alego Usonga,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0504-KEN,Tana River,Admin2,Coast,,llm_wiki,GDIS,5,geodetic,0.0,223300723277.68497,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0540-PHL,Agusan del Sur,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Aklan,Admin1,Aklan,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Bukidnon,Admin1,Bukidnon,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Capiz,Admin1,Capiz,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Catanduanes,Admin1,Catanduanes,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Cebu,Admin1,Cebu,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Compostela,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Dinagat,Admin1,Dinagat Islands,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Leyte,Admin1,Leyte,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Negros Occidental,Admin1,Negros Occidental,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Southern Leyte,Admin1,Southern Leyte,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0540-PHL,Surigao del Norte,Admin1,Surigao del Norte,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0540-PHL,Surigao del Sur,Admin1,Surigao del Sur,,llm_wiki,GDIS,5,geodetic,0.0,72936256775.63315,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0542-PHL,Aurora,Admin1,Aurora,,llm_wiki,GDIS,5,geodetic,0.0,19489313574.730797,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0542-PHL,Cagayan,Admin1,Cagayan,,llm_wiki,GDIS,5,geodetic,0.0,19489313574.730797,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0542-PHL,Isabela,Admin1,Isabela,,llm_wiki,GDIS,5,geodetic,0.0,19489313574.730797,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0542-PHL,Casiguran,Admin2,Aurora,Casiguran,llm_wiki,GDIS,5,geodetic,0.0,19489313574.730797,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0542-PHL,Dilasag,Admin2,Aurora,Dilasag,llm_wiki,GDIS,5,geodetic,0.0,19489313574.730797,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0543-NPL,Narjamandap,Admin3,Central province,,llm_wiki,GDIS,5,geodetic,0.0,6392105615.542203,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0564-PHL,Batangas,Admin1,Batangas,,llm_wiki,GDIS,5,geodetic,0.0,9419089599.031622,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0564-PHL,Balete,Admin2,Batangas,Balete,llm_wiki,GDIS,5,geodetic,0.0,9419089599.031622,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0564-PHL,San Nicolas,Admin2,Batangas,San Nicolas,llm_wiki,GDIS,5,geodetic,0.0,9419089599.031622,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0564-PHL,Talisay,Admin2,Batangas,Talisay,llm_wiki,GDIS,5,geodetic,0.0,9419089599.031622,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0586-BGD,Chittagong,Admin3,Chittagong Division,,llm_wiki,GDIS,5,geodetic,0.0,31034456908.692852,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0588-PHL,Zamboanga City,Admin3,Zamboanga del Sur,,llm_wiki,GDIS,5,geodetic,0.0,1461880797.6435137,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0589-MEX,Juchitán,Admin2,Oaxaca,Asunción Ixtaltepec,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0589-MEX,Juquila,Admin2,Oaxaca,San Juan Lachao,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0589-MEX,Pochutla,Admin2,Oaxaca,Candelaria Loxicha,llm_wiki,GDIS,5,geodetic,0.0,90910169935.48859,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-0590-LKA,Gampaha,Admin2,Western,Gampaha,llm_wiki,GDIS,5,geodetic,0.0,6968743267.177923,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0590-LKA,Kalutara,Admin2,Western,Kalutara,llm_wiki,GDIS,5,geodetic,0.0,6968743267.177923,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0590-LKA,Kegalle,Admin2,Sabaragamuwa,Kegalle,llm_wiki,GDIS,5,geodetic,0.0,6968743267.177923,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0592-PHL,Compostela,Admin2,Region XI,Compostela,llm_wiki,GDIS,5,geodetic,0.0,4236392888.1028857,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0633-MEX,Jalisco,Admin1,Jalisco,,llm_wiki,GDIS,5,geodetic,0.0,23218688507.15711,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9390-TUV,Funafuti,Admin2,Funafuti,,llm_wiki,GDIS,5,geodetic,0.0,4171800.4283308443,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9390-TUV,Nukulaelae,Admin2,Nukulaelae,,llm_wiki,GDIS,5,geodetic,0.0,4171800.4283308443,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-9524-BFA,Sahel,Admin1,Sahel,,llm_wiki,GDIS,5,geodetic,0.0,138939304733.26437,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9663-KEN,Mandera,Admin2,North Eastern,Mandera East,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-9663-KEN,Marsabit,Admin2,Eastern,Saku,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9663-KEN,Moyale,Admin2,Eastern,,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9663-KEN,Mwingi,Admin2,Eastern,Mwingi Central,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-9663-KEN,Tana River,Admin2,Coast,,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9663-KEN,Turkana,Admin2,Rift Valley,Isiolo North,llm_wiki,GDIS,5,geodetic,0.0,225088126654.98636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2011-9663-SDN,Abyei,Admin2,Southern Kordofan,Abyei,llm_wiki,GDIS,5,geodetic,0.0,218362933726.8243,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0002-PHL,Davao Region,Admin1,Agusan del Sur,,llm_wiki,GDIS,5,geodetic,0.0,8406550647.344482,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0002-PHL,Compostela,Admin2,Davao Region,Compostela,llm_wiki,GDIS,5,geodetic,0.0,8406550647.344482,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0002-PHL,Napnapan,Admin3,Davao Region,,llm_wiki,GDIS,5,geodetic,0.0,8406550647.344482,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0005-MWI,Nsanje,Admin2,Southern Region,Nsanje Boma,llm_wiki,GDIS,5,geodetic,0.0,1928360365.179328,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0012-SRB,Dragash,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Istog,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Kamenica,Admin2,Nisavski,Koceljeva,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0012-SRB,Klina,Admin2,Pecki,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Malisheva,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Mitrovica,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Obiliq,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Peja,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Podujeva,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Prishtina,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Prizren,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Shtime,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Skenderaj,Admin2,,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0012-SRB,Suhareka,Admin2,Prizremski,,llm_wiki,GDIS,5,geodetic,0.0,8467145436.606876,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0019-AZE,Baku,Admin2,Absheron,Bak?,llm_wiki,GDIS,5,geodetic,0.0,2193677546.444753,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Harju,Admin1,Harju,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Hiiu,Admin1,Hiiu,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Jõgeva,Admin1,Jõgeva,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Pärnu,Admin1,Pärnu,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Põlva,Admin1,Põlva,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Rapla,Admin1,Rapla,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Saare,Admin1,Saare,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Tartu,Admin1,Tartu,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Viljandi,Admin1,Viljandi,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-EST,Võru,Admin1,Võru,,llm_wiki,GDIS,5,geodetic,0.0,43724985508.58559,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Andrijevica,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Berane,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Bijelo Polje,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Cetinje,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Kolašin,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Mojkovac,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Nikšić,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Plav,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Pljevlja,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Plužine,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Rožaje,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Šavnik,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-MNE,Žabljak,Admin2,Montenegro,,llm_wiki,GDIS,5,geodetic,0.0,10407297511.957264,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0019-SVK,Šuňava,Admin3,Prešov,,llm_wiki,GDIS,5,geodetic,0.0,2020718021.9458675,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0042-PHL,Bacolod,Admin2,Lanao del Norte,Bacolod,llm_wiki,GDIS,5,geodetic,0.0,11506064687.460585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0042-PHL,Jabonga,Admin2,Agusan del Norte,Jabonga,llm_wiki,GDIS,5,geodetic,0.0,11506064687.460585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0042-PHL,Kauswagan,Admin2,Lanao del Norte,Kauswagan,llm_wiki,GDIS,5,geodetic,0.0,11506064687.460585,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0046-COD,Katanga,Admin1,Haut-Katanga,,llm_wiki,GDIS,5,geodetic,0.0,14389333074.555285,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0046-COD,Kabalo,Admin3,Katanga,,llm_wiki,GDIS,5,geodetic,0.0,14389333074.555285,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0056-MDG,Alaotra-Mangoro,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0056-MDG,Analamanga,Admin1,Antananarivo,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0056-MDG,Analanjirofo,Admin1,Mahajanga,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0056-MDG,Anosy,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0056-MDG,Atsimo-Atsinanana,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0056-MDG,Vatovavy-Fitovinany,Admin1,Fianarantsoa,,llm_wiki,GDIS,5,geodetic,0.0,22063047718.713646,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0059-KAZ,Arys,Admin2,South Kazakhstan Region,Arysskiy,llm_wiki,GDIS,5,geodetic,0.0,18233621440.52356,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0059-KAZ,Kazygurt,Admin2,South Kazakhstan Region,Kazygurtskiy,llm_wiki,GDIS,5,geodetic,0.0,18233621440.52356,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0059-KAZ,Sayram,Admin2,South Kazakhstan Region,Sayramskiy,llm_wiki,GDIS,5,geodetic,0.0,18233621440.52356,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0068-CAN,Perth-Andover,Admin3,New Brunswick,,llm_wiki,GDIS,5,geodetic,0.0,72969240216.61089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0097-IDN,Simeulue,Admin2,Nanggroe Aceh Darussalam,Simeulue,llm_wiki,GDIS,5,geodetic,0.0,1837478851.249894,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0112-TJK,Tojikobod,Admin2,Tajikistan Territories,Rasht,llm_wiki,GDIS,5,geodetic,0.0,27287001231.498768,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0112-TJK,Varzob,Admin2,Tajikistan Territories,Rudaki,llm_wiki,GDIS,5,geodetic,0.0,27287001231.498768,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0152-BGR,Pernik,Admin3,Pernik Province,,llm_wiki,GDIS,5,geodetic,0.0,2423993256.9866557,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0152-BGR,Sofia,Admin3,Sofia City Province,,llm_wiki,GDIS,5,geodetic,0.0,2423993256.9866557,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Busia,Admin2,Western province,Matayos,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Homa Bay,Admin2,Nyanza province,Homa Bay Town,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Kajiado,Admin2,Rift Valley province,Kajiado Central,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Kisumu,Admin2,Nyanza province,Kisumu Central,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Machakos,Admin2,Eastern province,Machakos Town,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Malindi,Admin2,Coast province,Malindi,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Migori,Admin2,Nyanza province,Suna West,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Nakuru,Admin2,Rift Valley province,Nakuru Town East,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Tana River,Admin2,Coast province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Thika,Admin2,Central province,Thika Town,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Athi River,Admin3,Eastern province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Bura,Admin3,Coast province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Garsen,Admin3,Coast province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Kisumu,Admin3,Nyanza province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0166-KEN,Kitengela,Admin3,Rift Valley province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0166-KEN,Ngong,Admin3,Rift Valley province,,llm_wiki,GDIS,5,geodetic,0.0,47655240218.93009,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Alvarães,Admin2,Amazonas,Alvarães,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Amaturá,Admin2,Amazonas,Amaturá,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Anamã,Admin2,Amazonas,Anamã,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Anori,Admin2,Amazonas,Anori,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Autazes,Admin2,Amazonas,Autazes,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Barcelos,Admin2,Amazonas,Barcelos,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Barreirinha,Admin2,Amazonas,Barreirinha,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Benjamin Constant,Admin2,Amazonas,Benjamin Constant,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Careiro,Admin2,Amazonas,Careiro,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Careiro da Várzea,Admin2,Amazonas,Careiro da Várzea,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Coari,Admin2,Amazonas,Coari,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Codajás,Admin2,Amazonas,Codajás,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Fonte Boa,Admin2,Amazonas,Fonte Boa,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Iranduba,Admin2,Amazonas,Iranduba,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Itacoatiara,Admin2,Amazonas,Itacoatiara,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Itapiranga,Admin2,Amazonas,Itapiranga,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Juruá,Admin2,Amazonas,Juruá,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Jutaí,Admin2,Amazonas,Jutaí,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Manacapuru,Admin2,Amazonas,Manacapuru,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Manaquiri,Admin2,Amazonas,Manaquiri,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Manaus,Admin2,Amazonas,Manaus,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Maraã,Admin2,Amazonas,Maraã,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Nhamundá,Admin2,Amazonas,Nhamundá,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Novo Airão,Admin2,Amazonas,Novo Airão,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Parintins,Admin2,Amazonas,Parintins,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Santa Isabel do Rio Negro,Admin2,Amazonas,Santa Isabel do Rio Negro,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Santo Antônio do Içá,Admin2,Amazonas,Santo Antônio do Içá,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Silves,Admin2,Amazonas,Silves,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,São Gabriel da Cachoeira,Admin2,Amazonas,São Gabriel da Cachoeira,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,São Paulo de Olivença,Admin2,Amazonas,São Paulo de Olivença,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Tabatinga,Admin2,Amazonas,Tabatinga,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Tefé,Admin2,Amazonas,Tefé,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Tonantins,Admin2,Amazonas,Tonantins,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Uarini,Admin2,Amazonas,Uarini,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Urucará,Admin2,Amazonas,Urucará,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0185-BRA,Urucurituba,Admin2,Amazonas,Urucurituba,llm_wiki,GDIS,5,geodetic,0.0,10946629565.219137,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0186-NPL,Gandaki Province,Admin1,Central,,llm_wiki,GDIS,5,geodetic,0.0,2084847510.5991762,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0250-IDN,West Java,Admin1,Banten,,llm_wiki,GDIS,5,geodetic,0.0,139222756.5904965,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0250-IDN,Pangradin,Admin3,West Java,,llm_wiki,GDIS,5,geodetic,0.0,139222756.5904965,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Maluku,Admin1,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Batu Gajah,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0266-IDN,Batu Merah,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0266-IDN,Galala,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0266-IDN,Karang Panjang,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Laha,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Lateri,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Mangga Dua,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0266-IDN,Passo,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,South Leitimur,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0266-IDN,Tawiri,Admin3,Maluku,,llm_wiki,GDIS,5,geodetic,0.0,341359239.75389296,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0296-PHL,La Union,Admin1,La Union,,llm_wiki,GDIS,5,geodetic,0.0,1483428395.771575,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0321-PHL,Northern Mindanao,Admin1,Agusan del Norte,,llm_wiki,GDIS,5,geodetic,0.0,329030640.2934336,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0321-PHL,Bukidnon,Admin2,Northern Mindanao,Valencia City,llm_wiki,GDIS,5,geodetic,0.0,329030640.2934336,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2012-0321-PHL,Maramag,Admin3,Northern Mindanao,,llm_wiki,GDIS,5,geodetic,0.0,329030640.2934336,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2012-0321-PHL,Valencia,Admin3,Northern Mindanao,,llm_wiki,GDIS,5,geodetic,0.0,329030640.2934336,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2013-0140-IND,Jammu and Kashmir,Admin1,Jammu and Kashmir,,llm_wiki,GDIS,5,geodetic,0.0,10302639252.787596,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2014-0067-PRT,Madeira,Admin1,Madeira,,llm_wiki,GDIS,5,geodetic,0.0,798809504.521448,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2014-0314-JPN,Kochi,Admin1,Kochi,,llm_wiki,GDIS,5,geodetic,0.0,7043204498.042928,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0432-DMA,Canefield,Admin3,St. Paul,,llm_wiki,GDIS,5,geodetic,0.0,187791467.11573076,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0432-DMA,Coulibistrie,Admin3,St. Joseph,,llm_wiki,GDIS,5,geodetic,0.0,187791467.11573076,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0432-DMA,Mahaut,Admin3,St. Paul,,llm_wiki,GDIS,5,geodetic,0.0,187791467.11573076,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2011-0432-DMA,Massacre,Admin3,St. Paul,,llm_wiki,GDIS,5,geodetic,0.0,187791467.11573076,0.0,0.0,0.0,0.0,0.0,False,True,False,True
