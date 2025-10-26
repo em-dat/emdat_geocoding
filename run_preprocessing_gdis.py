@@ -2,7 +2,7 @@
 from pathlib import Path
 from validation.io import (
     load_emdat_archive,
-    load_GDIS,
+    _load_GDIS,
     fix_GDIS_disno,
 )
 import pandas as pd
@@ -29,7 +29,7 @@ gdis_columns = [
 
 # %% Load gdis and emdat
 df_emdat = load_emdat_archive(EMDAT_ARCHIVE_PATH)
-gdis_gdf = load_GDIS(GDIS_PATH_RAW, gdis_columns)
+gdis_gdf = _load_GDIS(GDIS_PATH_RAW, gdis_columns)
 gdis_gdf = fix_GDIS_disno(gdis_gdf, df_emdat)
 gdis_disno_df = pd.DataFrame(data=gdis_gdf["DisNo."].unique(), columns=["DisNo."])
 

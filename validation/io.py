@@ -104,12 +104,6 @@ def load_emdat_archive(
     return df[use_columns if use_columns else df.columns]
 
 
-def check_geometries(geoseries: gpd.GeoSeries) -> None:
-    """Check if geometries are valid."""
-    if not geoseries.is_valid.all():
-        raise ValueError("Some geometries are invalid.")
-
-
 def parse_geometries(
     df: pd.DataFrame,
     geom_column: GeometryColumn,
@@ -125,8 +119,15 @@ def parse_geometries(
 
     return gdf if return_null_geom else gdf_nonnull
 
+def load_benchmark(benchmark: str, benchmark_path: str | Path, keep_columns: list[str] | None = None):
+    logger.info(f"Loading {benchmark} geometries...")
+    if benchmark == "GAUL":
+        gdf_benchmark = _load_GAUL(benchmark_path, keep_columns=keep_columns)
+    elif benchmark == "GDIS":
+        gdf_benchmark = _load_GDIS(benchmark_path, keep_columns=keep_columns)
+    return gdf_benchmark
 
-def load_GAUL(
+def _load_GAUL(
     gaul_path: str | Path,
     keep_columns: list[str] | None = None,
 ):
@@ -138,7 +139,7 @@ def load_GAUL(
     return gdf
 
 
-def load_GDIS(path: str | Path, keep_columns: list[str] | None = None):
+def _load_GDIS(path: str | Path, keep_columns: list[str] | None = None):
     """Load EM-DAT with GAUL admin units."""
     gdf = gpd.read_file(path)
     gdf.rename(
@@ -177,7 +178,7 @@ def fix_GDIS_disno(gdis_gdf, df_emdat: pd.DataFrame):
     # Create an ISO - Country mapping based on EM-DAT
     df_emdat["ISO"] = (
         df_emdat["ISO"]
-        .fillna(df_emdat["DisNo."].str.replace("[\W\d_]", "", regex=True))
+        .fillna(df_emdat["DisNo."].str.replace(r"[\W\d_]", "", regex=True))
         .str.replace(" (the)", "")
     )
     country_iso_mapping = dict(

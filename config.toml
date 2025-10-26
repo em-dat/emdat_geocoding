@@ -1,17 +1,22 @@
 [logging]
-level = "INFO"
+level = "DEBUG"
 filename='.log' # may be overwritten in run_xxx.py scripts
-filemode='a+'
+filemode='w+'
 style='{'
 format='{asctime} - {levelname} - {message}'
 datefmt="%Y-%m-%d %H:%M:%S"
 
 [path]
-llm_batch_dir = "Q:/Data/GEOEMDAT" # folder with Michele's batches
-llm_subbatch_dir = "data/llm_subbatches" # folder to store the subbatches
+# Preprocessing only
+llm_raw_data_dir = "Q:/Data/GEOEMDAT" # folder with Michele's raw data
+# Preprocessing and/or Validation
+batch_dir = "data/llm_subbatches" # folder to store the subbatches
+emdat_gaul_path = "Q:/Data/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT Benchmark
+gdis_path = "Q:/Data/GDIS/gdis.gpkg" #  GDIS benchmark or raw data for preprocessing batches
+# Ligthweight data without geometries
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
-gdis_path = "data/gdis.gpkg"
 gdis_disno_path = "data/gdis_disnos.csv"
+# Output dir
 validation_output_dir = "output"
 
 [index]

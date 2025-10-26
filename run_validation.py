@@ -9,7 +9,7 @@ with open("config.toml", "rb") as f:
 
 logging.basicConfig(
     level=config["logging"]["level"],
-    filename="validation.log",
+    filename="validation_all.log",
     filemode=config["logging"]["filemode"],
     style=config["logging"]["style"],
     format=config["logging"]["format"],
@@ -19,7 +19,7 @@ logging.basicConfig(
 
 DISSOLVE_UNITS = [True, False]
 BENCHMARKS = ["GAUL", "GDIS"]
-SUBBATCHES = list(Path(config["path"]["llm_subbatch_dir"]).glob("*.gpkg"))
+SUBBATCHES = list(Path(config["path"]["batch_dir"]).glob("*.gpkg"))
 
 
 def expected_output_path(

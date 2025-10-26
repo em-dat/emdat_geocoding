@@ -1,33 +1,33 @@
 import logging
-from pathlib import Path
-from typing import Literal
 from dataclasses import fields
-import pandas as pd
-import geopandas as gpd
+from pathlib import Path
+from typing import Literal, Callable
 
+import geopandas as gpd
+import pandas as pd
+
+from validation.geom_indices import calculate_geom_indices, GeomIndices
 from validation.io import (
     check_geometries,
     load_emdat_archive,
-    load_GAUL,
-    load_GDIS,
+    load_benchmark,
     make_batch,
 )
-from validation.geom_indices import calculate_geom_indices, GeomIndices
 
 logger = logging.getLogger(__name__)
 
 GEOMINDICES_FIELDS = [f.name for f in fields(GeomIndices)]
 OUTPUT_COLUMNS = [
-    "dis_no",
-    "name",
-    "admin_level",
-    "admin1",
-    "admin2",
-    "geom_type_a",
-    "geom_type_b",
-    "batch_number",
-    "area_calculation_method",
-] + GEOMINDICES_FIELDS
+                     "dis_no",
+                     "name",
+                     "admin_level",
+                     "admin1",
+                     "admin2",
+                     "geom_type_a",
+                     "geom_type_b",
+                     "batch_number",
+                     "area_calculation_method",
+                 ] + GEOMINDICES_FIELDS
 
 LLMGeomType = Literal["gadm", "osm", "wiki"]
 BenchmarkGeomType = Literal["GAUL", "GDIS"]
@@ -35,7 +35,8 @@ AreaCalculationMethod = Literal["geodetic", "equal_area"]
 
 
 def list_disno_in_benchmark(
-    benchmark_type: BenchmarkGeomType, benchmark_path: str | Path | None = None
+        benchmark_type: BenchmarkGeomType,
+        benchmark_path: str | Path | None = None
 ) -> list[str]:
     """Return the name of the benchmark geometry column."""
     if benchmark_type == "GAUL":
@@ -49,27 +50,24 @@ def list_disno_in_benchmark(
     return disnos
 
 
-def dissolve_units(gdf):
-
+def dissolve_units(
+    gdf: gpd.GeoDataFrame,
+    aggfunc: str | Callable | list[Callable] | dict[str, Callable] = 'first'
+) -> gpd.GeoDataFrame:
+    """Dissolve units by DisNo. in geodataframe."""
     logging.info("Dissolving units")
-    # only dissolve, if dissolvable
-    if "admin1" in gdf.columns:
-        gdf = gdf.dissolve(
-            by="DisNo.",
-            aggfunc={
-                "name": list,
-                "admin_level": list,
-                "admin1": list,
-                "admin2": list,
-            },
-        )
-        gdf.reset_index(inplace=True)
-        logging.info(f"{len(gdf)} geocoded records after dissolving")
-
+    # only dissolve, if dissolvable  # TODO
+    # if "admin1" in gdf.columns:  # TODO check if this is necessary
+    gdf = gdf.dissolve(
+        by="DisNo.",
+        aggfunc=aggfunc
+    )
+    gdf.reset_index(inplace=True)
+    logging.info(f"{len(gdf)} geocoded records after dissolving")
     return gdf
 
 
-def load_model_data(gpkg_subbatch_path: str):
+def load_gpkg_subbatch(gpkg_subbatch_path: str, output_dir: str | Path):
     gpkg_subbatch_path = Path(gpkg_subbatch_path)
     output_dir = Path(output_dir)
     output_dir.mkdir(exist_ok=True, parents=True)
@@ -79,43 +77,21 @@ def load_model_data(gpkg_subbatch_path: str):
     return gdf_llm
 
 
-def load_benchmark(benchmark: str, emdat_gaul_path: str, gdis_path: str):
-    logger.info(f"Loading {benchmark} geometries...")
-    if benchmark == "GAUL":
-        gdf_benchmark = load_GAUL(emdat_gaul_path, keep_columns=["DisNo.", "geometry"])
-    elif benchmark == "GDIS":
-        gdf_benchmark = load_GDIS(
-            gdis_path,
-            keep_columns=[
-                "DisNo.",
-                "name",
-                "admin_level",
-                "admin1",
-                "admin2",
-                "admin3",
-                "iso3",
-                "country",
-                "geometry",
-            ],
-        )
-    return gdf_benchmark
-
-
 def validate_geometries(
-    gpkg_subbatch_path: str | Path,
-    benchmark: BenchmarkGeomType = "GAUL",
-    dissolve_units: bool = False,
-    area_calculation_method: AreaCalculationMethod = "geodetic",
-    emdat_archive_path: str | Path | None = None,
-    emdat_gaul_path: str | Path | None = None,
-    gdis_path: str | Path | None = None,
-    gdis_disno_path: str | Path | None = None,
-    output_dir: str | Path = Path("output"),
+        gpkg_subbatch_path: str | Path,
+        benchmark: BenchmarkGeomType = "GAUL",
+        dissolved_units: bool = False,
+        area_calculation_method: AreaCalculationMethod = "geodetic",
+        emdat_archive_path: str | Path | None = None,
+        emdat_gaul_path: str | Path | None = None,
+        gdis_path: str | Path | None = None,
+        gdis_disno_path: str | Path | None = None,
+        output_dir: str | Path = Path("output"),
 ):
     """Validate the geometry of the GeoDataFrame."""
     logger.info(
         f"Validating geometries in {gpkg_subbatch_path} vs. {benchmark} "
-        f"(Dissolve: {dissolve_units})"
+        f"(Dissolve: {dissolved_units})"
     )
 
     # Get and use metadata
@@ -125,28 +101,39 @@ def validate_geometries(
 
     # Get disnos of benchmark file
     if benchmark == "GAUL":
-        disnos_benchmark = list_disno_in_benchmark(benchmark, emdat_archive_path)
+        benchmark_path = Path(emdat_gaul_path)
+        disnos_benchmark = list_disno_in_benchmark(benchmark,
+                                                   emdat_archive_path)
     elif benchmark == "GDIS":
+        benchmark_path = Path(gdis_path)
         disnos_benchmark = list_disno_in_benchmark(benchmark, gdis_disno_path)
     else:
         raise ValueError(f"Invalid benchmark type: {benchmark}")
 
     # Load model gdf
+    gdf_llm = gpd.read_file(gpkg_subbatch_path)
+    logger.info(f"{len(gdf_llm)} records loaded")
+
     gdf_llm = gdf_llm[gdf_llm["DisNo."].isin(disnos_benchmark)]
     logger.info(f"{len(gdf_llm)} records filtered based on Dis No.")
     check_geometries(gdf_llm["geometry"])
     disno_list = gdf_llm["DisNo."].unique().tolist()
 
     # Load benchmark gdf and make batch corresponding to gdf_llm
-    gdf_benchmark = load_benchmark(benchmark, emdat_gaul_path, gdis_path)
+    gdf_benchmark = load_benchmark(benchmark, benchmark_path,
+                                   keep_columns=["DisNo.", "geometry"])
     gdf_benchmark = make_batch(gdf_benchmark, disno_list)
     check_geometries(gdf_benchmark["geometry"])
     logger.info(f"{len(gdf_benchmark)} records loaded")
 
     # Dissolve units (functions takes care to only dissolve what is dissolvable)
-    if dissolve_units:
-        gdf_llm = dissolve_units(gdf_llm)
-        gdf_benchmark = dissolve_units(gdf_llm)
+    if dissolved_units:
+        aggfunc = {"name": list, "admin_level": list, "admin1": list,
+                   "admin2": list}
+        gdf_llm = dissolve_units(gdf_llm, aggfunc=aggfunc)
+
+    if benchmark == "GDIS":  # GAUL is already dissolved
+        gdf_benchmark = dissolve_units(gdf_benchmark)
 
     # Perform actual validation
     logging.info(f"Starting geometry validation...")
@@ -163,24 +150,25 @@ def validate_geometries(
             check_geometry=False,
         )
         results = [
-            row["DisNo."],
-            row["name"],
-            row["admin_level"],
-            row["admin1"],
-            row["admin2"],
-            geom_type,
-            benchmark,
-            batch_number,
-            area_calculation_method,
-        ] + list(indices.values())
+                      row["DisNo."],
+                      row["name"],
+                      row["admin_level"],
+                      row["admin1"],
+                      row["admin2"],
+                      geom_type,
+                      benchmark,
+                      batch_number,
+                      area_calculation_method,
+                  ] + list(indices.values())
         records.append(results)
 
     # Save validation results
     output_filename = (
         f"{geom_type}_{benchmark.lower()}_batch{batch_number}"
-        f"{'_dissolved' if dissolve_units else ''}"
+        f"{'_dissolved' if dissolved_units else ''}"
         f".csv"
     )
+    output_dir = Path(output_dir)
     output_path = output_dir / output_filename
     logger.info(f"Saving results to {output_path}")
     result_df = pd.DataFrame(records, columns=OUTPUT_COLUMNS)
