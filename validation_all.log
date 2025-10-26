@@ -1,0 +1,353 @@
+2025-10-24 18:22:38 - INFO - RUNNING VALIDATION SCRIPT...
+2025-10-24 18:22:38 - INFO - RUNNING VALIDATION SCRIPT...
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_osm_1.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_osm_gaul_batch1_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_gadm_1.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_gadm_gaul_batch1_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_wiki_1.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_wiki_gaul_batch1_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_osm_2.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_osm_gaul_batch2_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_gadm_2.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_gadm_gaul_batch2_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_wiki_2.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_wiki_gaul_batch2_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_osm_3.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_osm_gaul_batch3_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_gadm_3.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_gadm_gaul_batch3_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_wiki_3.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_wiki_gaul_batch3_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_osm_4.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_osm_gaul_batch4_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_gadm_4.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_gadm_gaul_batch4_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_wiki_4.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_wiki_gaul_batch4_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_osm_5.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_osm_gaul_batch5_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_gadm_5.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_gadm_gaul_batch5_dissolved.csv
+2025-10-24 18:22:38 - INFO - Skipping data\llm_subbatches\llm_wiki_5.gpkg (benchmark=GAUL, dissolve=True) because output exists: output\llm_wiki_gaul_batch5_dissolved.csv
+2025-10-24 18:22:38 - INFO - Validating geometries in data\llm_subbatches\llm_osm_1.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 18:23:28 - INFO - 8303 records loaded
+2025-10-24 18:23:28 - INFO - 6803 records filtered based on Dis No.
+2025-10-24 18:23:41 - INFO - Loading GDIS geometries...
+2025-10-24 18:24:54 - INFO - 7226 records loaded
+2025-10-24 18:24:54 - INFO - Dissolving units
+2025-10-24 18:28:12 - INFO - 1555 geocoded records after dissolving
+2025-10-24 18:28:12 - INFO - Dissolving units
+2025-10-24 18:36:56 - INFO - 1555 geocoded records after dissolving
+2025-10-24 18:36:56 - INFO - Starting geometry validation...
+2025-10-24 18:40:53 - INFO - Saving results to output\llm_osm_gdis_batch1_dissolved.csv
+2025-10-24 18:40:53 - INFO - VALIDATION COMPLETE
+2025-10-24 18:40:54 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_1.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 18:42:01 - INFO - 8678 records loaded
+2025-10-24 18:42:01 - INFO - 7152 records filtered based on Dis No.
+2025-10-24 18:42:36 - INFO - Loading GDIS geometries...
+2025-10-24 18:43:50 - INFO - 7301 records loaded
+2025-10-24 18:43:50 - INFO - Dissolving units
+2025-10-24 18:53:21 - INFO - 1600 geocoded records after dissolving
+2025-10-24 18:53:21 - INFO - Dissolving units
+2025-10-24 19:02:13 - INFO - 1600 geocoded records after dissolving
+2025-10-24 19:02:14 - INFO - Starting geometry validation...
+2025-10-24 19:11:45 - INFO - Saving results to output\llm_gadm_gdis_batch1_dissolved.csv
+2025-10-24 19:11:45 - INFO - VALIDATION COMPLETE
+2025-10-24 19:11:47 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_1.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 19:11:47 - INFO - 5541 records loaded
+2025-10-24 19:11:47 - INFO - 4705 records filtered based on Dis No.
+2025-10-24 19:11:47 - INFO - Loading GDIS geometries...
+2025-10-24 19:12:51 - INFO - 6463 records loaded
+2025-10-24 19:12:51 - INFO - Dissolving units
+2025-10-24 19:12:51 - INFO - 1291 geocoded records after dissolving
+2025-10-24 19:12:51 - INFO - Dissolving units
+2025-10-24 19:19:27 - INFO - 1291 geocoded records after dissolving
+2025-10-24 19:19:27 - INFO - Starting geometry validation...
+2025-10-24 19:20:29 - INFO - Saving results to output\llm_wiki_gdis_batch1_dissolved.csv
+2025-10-24 19:20:29 - INFO - VALIDATION COMPLETE
+2025-10-24 19:20:30 - INFO - Validating geometries in data\llm_subbatches\llm_osm_2.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 19:21:20 - INFO - 8424 records loaded
+2025-10-24 19:21:20 - INFO - 6397 records filtered based on Dis No.
+2025-10-24 19:21:42 - INFO - Loading GDIS geometries...
+2025-10-24 19:23:13 - INFO - 7474 records loaded
+2025-10-24 19:23:13 - INFO - Dissolving units
+2025-10-24 19:29:22 - INFO - 1270 geocoded records after dissolving
+2025-10-24 19:29:23 - INFO - Dissolving units
+2025-10-24 19:42:12 - INFO - 1270 geocoded records after dissolving
+2025-10-24 19:42:13 - INFO - Starting geometry validation...
+2025-10-24 19:48:50 - INFO - Saving results to output\llm_osm_gdis_batch2_dissolved.csv
+2025-10-24 19:48:50 - INFO - VALIDATION COMPLETE
+2025-10-24 19:48:52 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_2.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 19:50:01 - INFO - 8800 records loaded
+2025-10-24 19:50:02 - INFO - 6699 records filtered based on Dis No.
+2025-10-24 19:50:56 - INFO - Loading GDIS geometries...
+2025-10-24 19:52:45 - INFO - 7562 records loaded
+2025-10-24 19:52:45 - INFO - Dissolving units
+2025-10-24 20:08:22 - INFO - 1306 geocoded records after dissolving
+2025-10-24 20:08:23 - INFO - Dissolving units
+2025-10-24 20:21:01 - INFO - 1306 geocoded records after dissolving
+2025-10-24 20:21:02 - INFO - Starting geometry validation...
+2025-10-24 20:35:06 - INFO - Saving results to output\llm_gadm_gdis_batch2_dissolved.csv
+2025-10-24 20:35:06 - INFO - VALIDATION COMPLETE
+2025-10-24 20:35:09 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_2.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 20:35:09 - INFO - 313 records loaded
+2025-10-24 20:35:09 - INFO - 268 records filtered based on Dis No.
+2025-10-24 20:35:09 - INFO - Loading GDIS geometries...
+2025-10-24 20:35:58 - INFO - 439 records loaded
+2025-10-24 20:35:58 - INFO - Dissolving units
+2025-10-24 20:35:58 - INFO - 75 geocoded records after dissolving
+2025-10-24 20:35:58 - INFO - Dissolving units
+2025-10-24 20:36:24 - INFO - 75 geocoded records after dissolving
+2025-10-24 20:36:24 - INFO - Starting geometry validation...
+2025-10-24 20:36:27 - INFO - Saving results to output\llm_wiki_gdis_batch2_dissolved.csv
+2025-10-24 20:36:27 - INFO - VALIDATION COMPLETE
+2025-10-24 20:36:27 - INFO - Validating geometries in data\llm_subbatches\llm_osm_3.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 20:37:03 - INFO - 7021 records loaded
+2025-10-24 20:37:03 - INFO - 4811 records filtered based on Dis No.
+2025-10-24 20:37:15 - INFO - Loading GDIS geometries...
+2025-10-24 20:38:35 - INFO - 4745 records loaded
+2025-10-24 20:38:35 - INFO - Dissolving units
+2025-10-24 20:42:21 - INFO - 842 geocoded records after dissolving
+2025-10-24 20:42:22 - INFO - Dissolving units
+2025-10-24 20:52:56 - INFO - 842 geocoded records after dissolving
+2025-10-24 20:52:57 - INFO - Starting geometry validation...
+2025-10-24 20:57:35 - INFO - Saving results to output\llm_osm_gdis_batch3_dissolved.csv
+2025-10-24 20:57:35 - INFO - VALIDATION COMPLETE
+2025-10-24 20:57:36 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_3.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 20:58:35 - INFO - 6968 records loaded
+2025-10-24 20:58:35 - INFO - 4766 records filtered based on Dis No.
+2025-10-24 20:59:21 - INFO - Loading GDIS geometries...
+2025-10-24 21:00:48 - INFO - 4789 records loaded
+2025-10-24 21:00:48 - INFO - Dissolving units
+2025-10-24 21:13:51 - INFO - 850 geocoded records after dissolving
+2025-10-24 21:13:52 - INFO - Dissolving units
+2025-10-24 21:24:13 - INFO - 850 geocoded records after dissolving
+2025-10-24 21:24:13 - INFO - Starting geometry validation...
+2025-10-24 21:33:59 - INFO - Saving results to output\llm_gadm_gdis_batch3_dissolved.csv
+2025-10-24 21:33:59 - INFO - VALIDATION COMPLETE
+2025-10-24 21:34:01 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_3.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 21:34:01 - INFO - 3280 records loaded
+2025-10-24 21:34:01 - INFO - 2468 records filtered based on Dis No.
+2025-10-24 21:34:01 - INFO - Loading GDIS geometries...
+2025-10-24 21:35:03 - INFO - 3523 records loaded
+2025-10-24 21:35:03 - INFO - Dissolving units
+2025-10-24 21:35:03 - INFO - 563 geocoded records after dissolving
+2025-10-24 21:35:03 - INFO - Dissolving units
+2025-10-24 21:38:49 - INFO - 563 geocoded records after dissolving
+2025-10-24 21:38:50 - INFO - Starting geometry validation...
+2025-10-24 21:39:19 - INFO - Saving results to output\llm_wiki_gdis_batch3_dissolved.csv
+2025-10-24 21:39:19 - INFO - VALIDATION COMPLETE
+2025-10-24 21:39:20 - INFO - Validating geometries in data\llm_subbatches\llm_osm_4.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 21:39:49 - INFO - 7334 records loaded
+2025-10-24 21:39:49 - INFO - 4858 records filtered based on Dis No.
+2025-10-24 21:39:59 - INFO - Loading GDIS geometries...
+2025-10-24 21:41:21 - INFO - 4326 records loaded
+2025-10-24 21:41:21 - INFO - Dissolving units
+2025-10-24 21:43:44 - INFO - 977 geocoded records after dissolving
+2025-10-24 21:43:45 - INFO - Dissolving units
+2025-10-24 21:54:22 - INFO - 977 geocoded records after dissolving
+2025-10-24 21:54:22 - INFO - Starting geometry validation...
+2025-10-24 21:58:27 - INFO - Saving results to output\llm_osm_gdis_batch4_dissolved.csv
+2025-10-24 21:58:27 - INFO - VALIDATION COMPLETE
+2025-10-24 21:58:28 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_4.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 21:59:32 - INFO - 6708 records loaded
+2025-10-24 21:59:33 - INFO - 4458 records filtered based on Dis No.
+2025-10-24 22:00:16 - INFO - Loading GDIS geometries...
+2025-10-24 22:01:45 - INFO - 4175 records loaded
+2025-10-24 22:01:45 - INFO - Dissolving units
+2025-10-24 22:14:43 - INFO - 926 geocoded records after dissolving
+2025-10-24 22:14:43 - INFO - Dissolving units
+2025-10-24 22:25:14 - INFO - 926 geocoded records after dissolving
+2025-10-24 22:25:15 - INFO - Starting geometry validation...
+2025-10-24 22:31:18 - INFO - Saving results to output\llm_gadm_gdis_batch4_dissolved.csv
+2025-10-24 22:31:18 - INFO - VALIDATION COMPLETE
+2025-10-24 22:31:20 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_4.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 22:31:21 - INFO - 2301 records loaded
+2025-10-24 22:31:21 - INFO - 1415 records filtered based on Dis No.
+2025-10-24 22:31:21 - INFO - Loading GDIS geometries...
+2025-10-24 22:32:16 - INFO - 1816 records loaded
+2025-10-24 22:32:16 - INFO - Dissolving units
+2025-10-24 22:32:16 - INFO - 449 geocoded records after dissolving
+2025-10-24 22:32:16 - INFO - Dissolving units
+2025-10-24 22:33:56 - INFO - 449 geocoded records after dissolving
+2025-10-24 22:33:57 - INFO - Starting geometry validation...
+2025-10-24 22:34:09 - INFO - Saving results to output\llm_wiki_gdis_batch4_dissolved.csv
+2025-10-24 22:34:09 - INFO - VALIDATION COMPLETE
+2025-10-24 22:34:09 - INFO - Validating geometries in data\llm_subbatches\llm_osm_5.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 22:34:34 - INFO - 6959 records loaded
+2025-10-24 22:34:34 - INFO - 4080 records filtered based on Dis No.
+2025-10-24 22:34:41 - INFO - Loading GDIS geometries...
+2025-10-24 22:35:45 - INFO - 3804 records loaded
+2025-10-24 22:35:45 - INFO - Dissolving units
+2025-10-24 22:37:26 - INFO - 790 geocoded records after dissolving
+2025-10-24 22:37:27 - INFO - Dissolving units
+2025-10-24 22:44:36 - INFO - 790 geocoded records after dissolving
+2025-10-24 22:44:36 - INFO - Starting geometry validation...
+2025-10-24 22:47:13 - INFO - Saving results to output\llm_osm_gdis_batch5_dissolved.csv
+2025-10-24 22:47:13 - INFO - VALIDATION COMPLETE
+2025-10-24 22:47:14 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_5.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 22:48:07 - INFO - 6099 records loaded
+2025-10-24 22:48:07 - INFO - 3551 records filtered based on Dis No.
+2025-10-24 22:48:41 - INFO - Loading GDIS geometries...
+2025-10-24 22:49:50 - INFO - 3603 records loaded
+2025-10-24 22:49:50 - INFO - Dissolving units
+2025-10-24 23:00:23 - INFO - 723 geocoded records after dissolving
+2025-10-24 23:00:23 - INFO - Dissolving units
+2025-10-24 23:06:50 - INFO - 723 geocoded records after dissolving
+2025-10-24 23:06:50 - INFO - Starting geometry validation...
+2025-10-24 23:10:15 - INFO - Saving results to output\llm_gadm_gdis_batch5_dissolved.csv
+2025-10-24 23:10:15 - INFO - VALIDATION COMPLETE
+2025-10-24 23:10:16 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_5.gpkg vs. GDIS (Dissolve: True)
+2025-10-24 23:10:16 - INFO - 2431 records loaded
+2025-10-24 23:10:16 - INFO - 1409 records filtered based on Dis No.
+2025-10-24 23:10:16 - INFO - Loading GDIS geometries...
+2025-10-24 23:11:04 - INFO - 1746 records loaded
+2025-10-24 23:11:04 - INFO - Dissolving units
+2025-10-24 23:11:04 - INFO - 351 geocoded records after dissolving
+2025-10-24 23:11:04 - INFO - Dissolving units
+2025-10-24 23:11:42 - INFO - 351 geocoded records after dissolving
+2025-10-24 23:11:43 - INFO - Starting geometry validation...
+2025-10-24 23:11:49 - INFO - Saving results to output\llm_wiki_gdis_batch5_dissolved.csv
+2025-10-24 23:11:49 - INFO - VALIDATION COMPLETE
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_1.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_osm_gaul_batch1.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_gadm_1.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_gadm_gaul_batch1.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_wiki_1.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_wiki_gaul_batch1.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_2.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_osm_gaul_batch2.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_gadm_2.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_gadm_gaul_batch2.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_wiki_2.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_wiki_gaul_batch2.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_3.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_osm_gaul_batch3.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_gadm_3.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_gadm_gaul_batch3.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_wiki_3.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_wiki_gaul_batch3.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_4.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_osm_gaul_batch4.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_gadm_4.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_gadm_gaul_batch4.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_wiki_4.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_wiki_gaul_batch4.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_5.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_osm_gaul_batch5.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_gadm_5.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_gadm_gaul_batch5.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_wiki_5.gpkg (benchmark=GAUL, dissolve=False) because output exists: output\llm_wiki_gaul_batch5.csv
+2025-10-24 23:11:49 - INFO - Skipping data\llm_subbatches\llm_osm_1.gpkg (benchmark=GDIS, dissolve=False) because output exists: output\llm_osm_gdis_batch1.csv
+2025-10-24 23:11:49 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_1.gpkg vs. GDIS (Dissolve: False)
+2025-10-24 23:12:57 - INFO - 8678 records loaded
+2025-10-24 23:12:58 - INFO - 7152 records filtered based on Dis No.
+2025-10-24 23:13:54 - INFO - Loading GDIS geometries...
+2025-10-24 23:15:35 - INFO - 7301 records loaded
+2025-10-24 23:15:35 - INFO - Dissolving units
+2025-10-24 23:30:52 - INFO - 1600 geocoded records after dissolving
+2025-10-24 23:30:53 - INFO - Starting geometry validation...
+2025-10-24 23:54:31 - INFO - Saving results to output\llm_gadm_gdis_batch1.csv
+2025-10-24 23:54:31 - INFO - VALIDATION COMPLETE
+2025-10-24 23:54:34 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_1.gpkg vs. GDIS (Dissolve: False)
+2025-10-24 23:54:34 - INFO - 5541 records loaded
+2025-10-24 23:54:34 - INFO - 4705 records filtered based on Dis No.
+2025-10-24 23:54:34 - INFO - Loading GDIS geometries...
+2025-10-24 23:56:05 - INFO - 6463 records loaded
+2025-10-24 23:56:05 - INFO - Dissolving units
+2025-10-25 00:06:46 - INFO - 1291 geocoded records after dissolving
+2025-10-25 00:06:47 - INFO - Starting geometry validation...
+2025-10-25 00:12:16 - INFO - Saving results to output\llm_wiki_gdis_batch1.csv
+2025-10-25 00:12:16 - INFO - VALIDATION COMPLETE
+2025-10-25 00:12:17 - INFO - Validating geometries in data\llm_subbatches\llm_osm_2.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 00:13:07 - INFO - 8424 records loaded
+2025-10-25 00:13:07 - INFO - 6397 records filtered based on Dis No.
+2025-10-25 00:13:30 - INFO - Loading GDIS geometries...
+2025-10-25 00:15:05 - INFO - 7474 records loaded
+2025-10-25 00:15:05 - INFO - Dissolving units
+2025-10-25 00:28:28 - INFO - 1270 geocoded records after dissolving
+2025-10-25 00:28:29 - INFO - Starting geometry validation...
+2025-10-25 00:43:44 - INFO - Saving results to output\llm_osm_gdis_batch2.csv
+2025-10-25 00:43:44 - INFO - VALIDATION COMPLETE
+2025-10-25 00:43:46 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_2.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 00:44:55 - INFO - 8800 records loaded
+2025-10-25 00:44:55 - INFO - 6699 records filtered based on Dis No.
+2025-10-25 00:45:50 - INFO - Loading GDIS geometries...
+2025-10-25 00:47:36 - INFO - 7562 records loaded
+2025-10-25 00:47:36 - INFO - Dissolving units
+2025-10-25 01:01:15 - INFO - 1306 geocoded records after dissolving
+2025-10-25 01:01:16 - INFO - Starting geometry validation...
+2025-10-25 01:23:13 - INFO - Saving results to output\llm_gadm_gdis_batch2.csv
+2025-10-25 01:23:13 - INFO - VALIDATION COMPLETE
+2025-10-25 01:23:15 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_2.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 01:23:15 - INFO - 313 records loaded
+2025-10-25 01:23:15 - INFO - 268 records filtered based on Dis No.
+2025-10-25 01:23:15 - INFO - Loading GDIS geometries...
+2025-10-25 01:24:07 - INFO - 439 records loaded
+2025-10-25 01:24:07 - INFO - Dissolving units
+2025-10-25 01:24:34 - INFO - 75 geocoded records after dissolving
+2025-10-25 01:24:34 - INFO - Starting geometry validation...
+2025-10-25 01:24:45 - INFO - Saving results to output\llm_wiki_gdis_batch2.csv
+2025-10-25 01:24:45 - INFO - VALIDATION COMPLETE
+2025-10-25 01:24:45 - INFO - Validating geometries in data\llm_subbatches\llm_osm_3.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 01:25:21 - INFO - 7021 records loaded
+2025-10-25 01:25:21 - INFO - 4811 records filtered based on Dis No.
+2025-10-25 01:25:34 - INFO - Loading GDIS geometries...
+2025-10-25 01:26:58 - INFO - 4745 records loaded
+2025-10-25 01:26:58 - INFO - Dissolving units
+2025-10-25 01:38:00 - INFO - 842 geocoded records after dissolving
+2025-10-25 01:38:01 - INFO - Starting geometry validation...
+2025-10-25 01:52:38 - INFO - Saving results to output\llm_osm_gdis_batch3.csv
+2025-10-25 01:52:38 - INFO - VALIDATION COMPLETE
+2025-10-25 01:52:40 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_3.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 01:53:39 - INFO - 6968 records loaded
+2025-10-25 01:53:39 - INFO - 4766 records filtered based on Dis No.
+2025-10-25 01:54:25 - INFO - Loading GDIS geometries...
+2025-10-25 01:55:59 - INFO - 4789 records loaded
+2025-10-25 01:55:59 - INFO - Dissolving units
+2025-10-25 02:07:15 - INFO - 850 geocoded records after dissolving
+2025-10-25 02:07:17 - INFO - Starting geometry validation...
+2025-10-25 02:26:55 - INFO - Saving results to output\llm_gadm_gdis_batch3.csv
+2025-10-25 02:26:55 - INFO - VALIDATION COMPLETE
+2025-10-25 02:26:57 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_3.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 02:26:57 - INFO - 3280 records loaded
+2025-10-25 02:26:57 - INFO - 2468 records filtered based on Dis No.
+2025-10-25 02:26:57 - INFO - Loading GDIS geometries...
+2025-10-25 02:28:03 - INFO - 3523 records loaded
+2025-10-25 02:28:03 - INFO - Dissolving units
+2025-10-25 02:31:48 - INFO - 563 geocoded records after dissolving
+2025-10-25 02:31:49 - INFO - Starting geometry validation...
+2025-10-25 02:35:14 - INFO - Saving results to output\llm_wiki_gdis_batch3.csv
+2025-10-25 02:35:14 - INFO - VALIDATION COMPLETE
+2025-10-25 02:35:15 - INFO - Validating geometries in data\llm_subbatches\llm_osm_4.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 02:35:44 - INFO - 7334 records loaded
+2025-10-25 02:35:44 - INFO - 4858 records filtered based on Dis No.
+2025-10-25 02:35:54 - INFO - Loading GDIS geometries...
+2025-10-25 02:37:17 - INFO - 4326 records loaded
+2025-10-25 02:37:17 - INFO - Dissolving units
+2025-10-25 02:48:20 - INFO - 977 geocoded records after dissolving
+2025-10-25 02:48:21 - INFO - Starting geometry validation...
+2025-10-25 03:01:02 - INFO - Saving results to output\llm_osm_gdis_batch4.csv
+2025-10-25 03:01:02 - INFO - VALIDATION COMPLETE
+2025-10-25 03:01:04 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_4.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 03:02:06 - INFO - 6708 records loaded
+2025-10-25 03:02:07 - INFO - 4458 records filtered based on Dis No.
+2025-10-25 03:02:50 - INFO - Loading GDIS geometries...
+2025-10-25 03:04:20 - INFO - 4175 records loaded
+2025-10-25 03:04:20 - INFO - Dissolving units
+2025-10-25 03:15:32 - INFO - 926 geocoded records after dissolving
+2025-10-25 03:15:33 - INFO - Starting geometry validation...
+2025-10-25 03:30:18 - INFO - Saving results to output\llm_gadm_gdis_batch4.csv
+2025-10-25 03:30:18 - INFO - VALIDATION COMPLETE
+2025-10-25 03:30:20 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_4.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 03:30:20 - INFO - 2301 records loaded
+2025-10-25 03:30:20 - INFO - 1415 records filtered based on Dis No.
+2025-10-25 03:30:20 - INFO - Loading GDIS geometries...
+2025-10-25 03:31:16 - INFO - 1816 records loaded
+2025-10-25 03:31:16 - INFO - Dissolving units
+2025-10-25 03:32:55 - INFO - 449 geocoded records after dissolving
+2025-10-25 03:32:56 - INFO - Starting geometry validation...
+2025-10-25 03:33:41 - INFO - Saving results to output\llm_wiki_gdis_batch4.csv
+2025-10-25 03:33:41 - INFO - VALIDATION COMPLETE
+2025-10-25 03:33:42 - INFO - Validating geometries in data\llm_subbatches\llm_osm_5.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 03:34:07 - INFO - 6959 records loaded
+2025-10-25 03:34:07 - INFO - 4080 records filtered based on Dis No.
+2025-10-25 03:34:14 - INFO - Loading GDIS geometries...
+2025-10-25 03:35:21 - INFO - 3804 records loaded
+2025-10-25 03:35:21 - INFO - Dissolving units
+2025-10-25 03:42:23 - INFO - 790 geocoded records after dissolving
+2025-10-25 03:42:23 - INFO - Starting geometry validation...
+2025-10-25 03:51:34 - INFO - Saving results to output\llm_osm_gdis_batch5.csv
+2025-10-25 03:51:34 - INFO - VALIDATION COMPLETE
+2025-10-25 03:51:35 - INFO - Validating geometries in data\llm_subbatches\llm_gadm_5.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 03:52:29 - INFO - 6099 records loaded
+2025-10-25 03:52:29 - INFO - 3551 records filtered based on Dis No.
+2025-10-25 03:53:03 - INFO - Loading GDIS geometries...
+2025-10-25 03:54:12 - INFO - 3603 records loaded
+2025-10-25 03:54:12 - INFO - Dissolving units
+2025-10-25 04:01:00 - INFO - 723 geocoded records after dissolving
+2025-10-25 04:01:01 - INFO - Starting geometry validation...
+2025-10-25 04:10:59 - INFO - Saving results to output\llm_gadm_gdis_batch5.csv
+2025-10-25 04:10:59 - INFO - VALIDATION COMPLETE
+2025-10-25 04:11:01 - INFO - Validating geometries in data\llm_subbatches\llm_wiki_5.gpkg vs. GDIS (Dissolve: False)
+2025-10-25 04:11:01 - INFO - 2431 records loaded
+2025-10-25 04:11:01 - INFO - 1409 records filtered based on Dis No.
+2025-10-25 04:11:01 - INFO - Loading GDIS geometries...
+2025-10-25 04:11:49 - INFO - 1746 records loaded
+2025-10-25 04:11:49 - INFO - Dissolving units
+2025-10-25 04:12:27 - INFO - 351 geocoded records after dissolving
+2025-10-25 04:12:27 - INFO - Starting geometry validation...
+2025-10-25 04:13:11 - INFO - Saving results to output\llm_wiki_gdis_batch5.csv
+2025-10-25 04:13:11 - INFO - VALIDATION COMPLETE
