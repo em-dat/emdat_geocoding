@@ -19,7 +19,7 @@ logging.basicConfig(
 
 DISSOLVE_UNITS = [True, False]
 BENCHMARKS = ["GAUL", "GDIS"]
-SUBBATCHES = list(Path(config["path"]["batch_dir"]).glob("*.gpkg"))
+BATCHES = list(Path(config["path"]["batch_dir"]).glob("*.gpkg"))
 
 
 def expected_output_path(
@@ -38,25 +38,29 @@ def expected_output_path(
 
 def main():
     logging.info(f"Running validation script...".upper())
-    combination = product(DISSOLVE_UNITS, BENCHMARKS, SUBBATCHES)
+    combination = product(DISSOLVE_UNITS, BENCHMARKS, BATCHES)
     skip_if_exists = bool(
         config.get("validation", {}).get("skip_if_output_exists", False)
     )
     output_dir = Path(config["path"]["validation_output_dir"])
-    for i, (dissolve_units, benchmark, subbatch) in enumerate(combination, start=1):
+    for i, (dissolve_units, benchmark, batch) in enumerate(combination, start=1):
         try:
+            # Skip GDIS against GDIS validation
+            if str(batch).startswith("gdis") and benchmark == "GDIS":
+                continue
+            # Skip validation if output exists (optional)
             if skip_if_exists:
                 out_path = expected_output_path(
-                    Path(subbatch), benchmark, dissolve_units, output_dir
+                    Path(batch), benchmark, dissolve_units, output_dir
                 )
                 if out_path.exists():
                     logging.info(
-                        f"Skipping {subbatch} (benchmark={benchmark}, dissolve={dissolve_units}) because output exists: {out_path}"
+                        f"Skipping {batch} (benchmark={benchmark}, dissolve={dissolve_units}) because output exists: {out_path}"
                     )
                     continue
 
             v.validate_geometries(
-                subbatch,
+                batch,
                 benchmark,
                 dissolve_units,
                 config["geoprocessing"]["area_calculation_method"],
