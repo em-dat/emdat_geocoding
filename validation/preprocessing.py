@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
-from .io import load_llm_csv_batch, parse_geometries
+
+from .io import load_llm_csv_batch, parse_geometries, load_GDIS
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +37,7 @@ def make_llm_geocoded_subbatches(
         geometry_columns: str | list[str] = "geometry"
 ) -> None:
     """Create LLM-geocoded GeoPackage batches."""
-    logger.info("Starting LLM-geocoded subbatch creation...")
+    logger.info("Starting LLM-geocoded batch creation...")
 
     csv_file_dir = Path(csv_file_dir)
     csv_files = check_llm_batch_files(csv_file_dir, batch_numbers)
@@ -61,3 +62,46 @@ def make_llm_geocoded_subbatches(
             del gdf, df
 
     logger.info("LLM-geocoded subbatch creation complete.")
+
+def make_gdis_geocoded_subbatches(
+        gdis_gpkg_path: str | Path,
+        columns_to_keep: list[str] | None = None,
+        n_batch: int = 5,
+        keep_disno: list[str] | None = None,
+        output_dir: str | Path = Path("output")
+) -> None:
+    """Create GDIS GeoPackage batches."""
+    logger.info("Starting GDIS batch creation...")
+    # load GDIS
+    gdis = load_GDIS(gdis_gpkg_path, keep_columns=columns_to_keep)
+
+    # Filter DisNo if needed
+    if keep_disno is not None:
+        gdis = gdis[gdis["DisNo."].isin(keep_disno)]
+
+    dis_nos = gdis["DisNo."].unique()
+
+    # Calculate batch size
+    batch_size = len(dis_nos) // n_batch + (1 if len(dis_nos) % n_batch else 0)
+
+    # Create output directory if it doesn't exist
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Process each batch
+    for bn in range(n_batch):
+        logger.info(f"Processing batch {bn+1}/{n_batch}")
+        batch_dis_nos = dis_nos[bn * batch_size:(bn + 1) * batch_size]
+        if len(batch_dis_nos) == 0:
+            continue
+
+        batch_data = gdis[gdis["DisNo."].isin(batch_dis_nos)]
+        if columns_to_keep is not None:
+            batch_data = batch_data[columns_to_keep]
+
+        # Save batch as GeoPackage
+        output_path = output_dir / f"gdis_gadm_{bn + 1}.gpkg"
+        batch_data.to_file(output_path, driver="GPKG")
+        logger.info(f"Saved batch {bn + 1} to {output_path}")
+
+    logger.info("GDIS batch creation complete.")

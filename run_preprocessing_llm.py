@@ -9,7 +9,7 @@ with open("config.toml", "rb") as f:
 
 logging.basicConfig(
     level=config["logging"]["level"],
-    filename='preprocessing.log',
+    filename='preprocessing_llm.log',
     filemode=config["logging"]["filemode"],
     style=config["logging"]["style"],
     format=config["logging"]["format"],
@@ -27,12 +27,12 @@ def list_disno_with_gaul(emdat_archive_path: Path) -> list[str]:
 
 def main():
     disno_with_gaul = list_disno_with_gaul(config["path"]["emdat_archive_path"])
-    output_dir = Path(config["path"]["llm_subbatch_dir"])
+    output_dir = Path(config["path"]["batch_dir"])
     output_dir.mkdir(parents=True, exist_ok=True)
     pp.make_llm_geocoded_subbatches(
-        csv_file_dir=config["path"]["llm_batch_dir"],
+        csv_file_dir='Q:/Data/emdat_geocoding/GEOEMDAT',
         columns_to_keep=config["index"]["llm_columns_to_keep"],
-        batch_numbers=config["index"]["llm_batch_numbers"],
+        batch_numbers=config["index"]["batch_numbers"],
         keep_disno=disno_with_gaul,
         output_dir=output_dir,
         geometry_columns=config["index"]["llm_geom_columns"]

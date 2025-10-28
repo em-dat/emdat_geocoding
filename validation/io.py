@@ -122,12 +122,12 @@ def parse_geometries(
 def load_benchmark(benchmark: str, benchmark_path: str | Path, keep_columns: list[str] | None = None):
     logger.info(f"Loading {benchmark} geometries...")
     if benchmark == "GAUL":
-        gdf_benchmark = _load_GAUL(benchmark_path, keep_columns=keep_columns)
+        gdf_benchmark = load_GAUL(benchmark_path, keep_columns=keep_columns)
     elif benchmark == "GDIS":
-        gdf_benchmark = _load_GDIS(benchmark_path, keep_columns=keep_columns)
+        gdf_benchmark = load_GDIS(benchmark_path, keep_columns=keep_columns)
     return gdf_benchmark
 
-def _load_GAUL(
+def load_GAUL(
     gaul_path: str | Path,
     keep_columns: list[str] | None = None,
 ):
@@ -139,7 +139,7 @@ def _load_GAUL(
     return gdf
 
 
-def _load_GDIS(path: str | Path, keep_columns: list[str] | None = None):
+def load_GDIS(path: str | Path, keep_columns: list[str] | None = None):
     """Load EM-DAT with GAUL admin units."""
     gdf = gpd.read_file(path)
     gdf.rename(

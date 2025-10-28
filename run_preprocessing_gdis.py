@@ -1,40 +1,45 @@
-# %% Imports
+import tomllib
+import logging
 from pathlib import Path
-from validation.io import (
-    load_emdat_archive,
-    _load_GDIS,
-    fix_GDIS_disno,
+from validation import preprocessing as pp
+from validation.io import load_emdat_archive
+
+with open("config.toml", "rb") as f:
+    config = tomllib.load(f)
+
+logging.basicConfig(
+    level=config["logging"]["level"],
+    filename='preprocessing_gdis.log',
+    filemode=config["logging"]["filemode"],
+    style=config["logging"]["style"],
+    format=config["logging"]["format"],
+    datefmt=config["logging"]["datefmt"]
 )
-import pandas as pd
 
-# %% Config
-EMDAT_ARCHIVE_PATH = Path("data/241204_emdat_archive.xlsx")
-GDIS_PATH_RAW = Path("data/gdis_raw.gpkg")
-GDIS_PATH = Path("data/gdis.gpkg")
-GDIS_DISNO_PATH = Path("data/gdis_disnos.csv")
+def list_disno_with_gaul(emdat_archive_path: Path) -> list[str]:
+    """List disno with GAUL admin units in the EM-DAT archive."""
+    disno_with_gaul = load_emdat_archive(
+        emdat_archive_path,
+        use_columns=["DisNo."],
+        geocoded_only=True
+    )['DisNo.'].to_list()
+    return disno_with_gaul
 
+def main():
+    disno_with_gaul = list_disno_with_gaul(config["path"]["emdat_archive_path"])
+    output_dir = Path(config["path"]["batch_dir"])
+    output_dir.mkdir(parents=True, exist_ok=True)
+    pp.make_gdis_geocoded_subbatches(
+        gdis_gpkg_path=config["path"]["gdis_path"],
+        columns_to_keep=None,
+        n_batch=len(config["index"]["batch_numbers"]),
+        keep_disno=disno_with_gaul,
+        output_dir=output_dir
+    )
 
-emdat_columns = ["ISO", "DisNo.", "Country"]
-gdis_columns = [
-    "DisNo.",
-    "name",
-    "admin_level",
-    "admin1",
-    "admin2",
-    "admin3",
-    "iso3",
-    "country",
-    "geometry",
-]
-
-# %% Load gdis and emdat
-df_emdat = load_emdat_archive(EMDAT_ARCHIVE_PATH)
-gdis_gdf = _load_GDIS(GDIS_PATH_RAW, gdis_columns)
-gdis_gdf = fix_GDIS_disno(gdis_gdf, df_emdat)
-gdis_disno_df = pd.DataFrame(data=gdis_gdf["DisNo."].unique(), columns=["DisNo."])
-
-# %% Save unique disaster numbers in GDIS
-gdis_disno_df.to_csv(GDIS_DISNO_PATH, index=False)
-
-# %% Save GDIS
-gdis_gdf.to_file(GDIS_PATH, driver="GPKG")
+if __name__ == '__main__':
+    logging.info(f"Running preprocessing script...".upper())
+    try:
+        main()
+    except Exception as e:
+        logging.exception(f"Exception occurred: {e}")
