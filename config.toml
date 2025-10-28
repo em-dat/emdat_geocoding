@@ -9,7 +9,7 @@ datefmt="%Y-%m-%d %H:%M:%S"
 [path]
 # Heavy files with geometries for preprocessing and/or validation
 batch_dir = "Q:/Data/emdat_geocoding/batch_files" # folder to store the batches
-emdat_gaul_path = "Q:/Data/emdat_gecoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT Benchmark
+emdat_gaul_path = "Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT Benchmark
 gdis_path = "Q:/Data/emdat_geocoding/GDIS/gdis.gpkg" #  GDIS benchmark or raw data for preprocessing batches
 # Ligthweight data without geometries
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
