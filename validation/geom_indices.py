@@ -89,7 +89,7 @@ def calculate_geom_indices(
 ) -> GeomIndices:
     """Compute area-based indices and topology flags between two geometries.
 
-        The function returns per-geometry areas, intersection/union areas,
+        The function returns per-geometry areas, intersection and union areas,
         containment ratios, a Jaccard index, and simple containment flags.
 
         CRS and area methods
