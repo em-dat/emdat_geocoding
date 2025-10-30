@@ -1,7 +1,7 @@
 import logging
 from dataclasses import fields
 from pathlib import Path
-from typing import Literal, Callable
+from typing import Literal
 
 import geopandas as gpd
 import pandas as pd
@@ -9,9 +9,10 @@ import pandas as pd
 from validation.geom_indices import calculate_geom_indices, GeomIndices
 from validation.io import (
     check_geometries,
-    load_emdat_archive,
     load_benchmark,
     make_batch,
+    dissolve_units,
+    list_disno_in_benchmark,
 )
 
 logger = logging.getLogger(__name__)
@@ -32,39 +33,6 @@ OUTPUT_COLUMNS = [
 LLMGeomType = Literal["gadm", "osm", "wiki"]
 BenchmarkGeomType = Literal["GAUL", "GDIS"]
 AreaCalculationMethod = Literal["geodetic", "equal_area"]
-
-
-def list_disno_in_benchmark(
-        benchmark_type: BenchmarkGeomType,
-        benchmark_path: str | Path | None = None
-) -> list[str]:
-    """Return the name of the benchmark geometry column."""
-    if benchmark_type == "GAUL":
-        disnos = load_emdat_archive(
-            benchmark_path, use_columns=["DisNo."], geocoded_only=True
-        )["DisNo."].to_list()
-    elif benchmark_type == "GDIS":
-        disnos = pd.read_csv(benchmark_path)["DisNo."].to_list()
-    else:
-        raise ValueError(f"Invalid benchmark type: {benchmark_type}")
-    return disnos
-
-
-def dissolve_units(
-    gdf: gpd.GeoDataFrame,
-    aggfunc: str | Callable | list[Callable] | dict[str, Callable] = 'first'
-) -> gpd.GeoDataFrame:
-    """Dissolve units by DisNo. in geodataframe."""
-    logging.info("Dissolving units")
-    # only dissolve, if dissolvable  # TODO
-    # if "admin1" in gdf.columns:  # TODO check if this is necessary
-    gdf = gdf.dissolve(
-        by="DisNo.",
-        aggfunc=aggfunc
-    )
-    gdf.reset_index(inplace=True)
-    logging.info(f"{len(gdf)} geocoded records after dissolving")
-    return gdf
 
 
 def load_gpkg_subbatch(gpkg_subbatch_path: str, output_dir: str | Path):

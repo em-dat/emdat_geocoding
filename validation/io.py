@@ -1,13 +1,14 @@
 import logging
 from pathlib import Path
-from typing import Literal
+from typing import Literal, Callable
 
 import geopandas as gpd
+import numpy as np
 import pandas as pd
 from shapely import wkt
 from shapely.geometry.base import BaseGeometry
-from shapely.validation import explain_validity
-import numpy as np
+
+from validation.validation import BenchmarkGeomType
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +17,7 @@ BatchNumber = Literal[1, 2, 3, 4, 5]
 
 
 def load_llm_csv_batch(
-    csv_file_path: Path | str, columns_to_keep: list[str]
+        csv_file_path: Path | str, columns_to_keep: list[str]
 ) -> pd.DataFrame:
     """Load a batch CSV file and select relevant columns."""
     return pd.read_csv(csv_file_path, usecols=columns_to_keep)
@@ -53,9 +54,9 @@ def check_geometries(geoseries: gpd.GeoSeries) -> bool:
 
 
 def load_geocoded_batch(
-    file_path: str | Path,
-    use_columns: list[str] | None = None,
-    ignore_null_geom: bool = True,
+        file_path: str | Path,
+        use_columns: list[str] | None = None,
+        ignore_null_geom: bool = True,
 ) -> gpd.GeoDataFrame:
     """
     Loads and returns a geocoded batch as a GeoDataFrame from a specified .gpkg
@@ -75,11 +76,11 @@ def load_geocoded_batch(
 
 
 def load_emdat_archive(
-    file_path: str | Path,
-    use_columns: list[str] | None = None,
-    min_year: int | None = 2000,
-    max_year: int | None = None,
-    geocoded_only: bool = False,
+        file_path: str | Path,
+        use_columns: list[str] | None = None,
+        min_year: int | None = 2000,
+        max_year: int | None = None,
+        geocoded_only: bool = False,
 ) -> pd.DataFrame:
     """Loads and returns a non-geocoded EMDAT archive as pandas DataFrame."""
 
@@ -105,21 +106,24 @@ def load_emdat_archive(
 
 
 def parse_geometries(
-    df: pd.DataFrame,
-    geom_column: GeometryColumn,
-    return_null_geom: bool = False,
-    crs: str = "EPSG:4326",
+        df: pd.DataFrame,
+        geom_column: GeometryColumn,
+        return_null_geom: bool = False,
+        crs: str = "EPSG:4326",
 ) -> gpd.GeoDataFrame:
     """Parse WKT geometries and return a GeoDataFrame."""
     geoseries = df[geom_column].apply(safe_wkt_loads)
-    gdf = gpd.GeoDataFrame(df.drop(columns=[geom_column]), geometry=geoseries, crs=crs)
+    gdf = gpd.GeoDataFrame(df.drop(columns=[geom_column]), geometry=geoseries,
+                           crs=crs)
 
     gdf_nonnull = gdf[~gdf.geometry.isnull()]
     check_geometries(gdf_nonnull.geometry)
 
     return gdf if return_null_geom else gdf_nonnull
 
-def load_benchmark(benchmark: str, benchmark_path: str | Path, keep_columns: list[str] | None = None):
+
+def load_benchmark(benchmark: str, benchmark_path: str | Path,
+                   keep_columns: list[str] | None = None):
     logger.info(f"Loading {benchmark} geometries...")
     if benchmark == "GAUL":
         gdf_benchmark = load_GAUL(benchmark_path, keep_columns=keep_columns)
@@ -127,9 +131,10 @@ def load_benchmark(benchmark: str, benchmark_path: str | Path, keep_columns: lis
         gdf_benchmark = load_GDIS(benchmark_path, keep_columns=keep_columns)
     return gdf_benchmark
 
+
 def load_GAUL(
-    gaul_path: str | Path,
-    keep_columns: list[str] | None = None,
+        gaul_path: str | Path,
+        keep_columns: list[str] | None = None,
 ):
     """Load EM-DAT with GAUL admin units."""
     gdf = gpd.read_file(gaul_path)
@@ -182,7 +187,8 @@ def fix_GDIS_disno(gdis_gdf, df_emdat: pd.DataFrame):
         .str.replace(" (the)", "")
     )
     country_iso_mapping = dict(
-        (x, y) for x, y in df_emdat.groupby(["Country", "ISO"]).apply(list).index.values
+        (x, y) for x, y in
+        df_emdat.groupby(["Country", "ISO"]).apply(list).index.values
     )
     # Create new ISO variable and fill nans based on ISO - Country mapping
     gdis_gdf["ISO"] = gdis_gdf["iso3"].fillna(
@@ -193,9 +199,40 @@ def fix_GDIS_disno(gdis_gdf, df_emdat: pd.DataFrame):
     return gdis_gdf
 
 
-if __name__ == "__main__":
-    import os
+def dissolve_units(
+        gdf: gpd.GeoDataFrame,
+        aggfunc: str | Callable | list[Callable] | dict[str, Callable] = 'first'
+) -> gpd.GeoDataFrame:
+    """Dissolve units by DisNo. in geodataframe."""
+    logging.info("Dissolving units")
+    # only dissolve, if dissolvable  # TODO
+    # if "admin1" in gdf.columns:  # TODO check if this is necessary
+    gdf = gdf.dissolve(
+        by="DisNo.",
+        aggfunc=aggfunc
+    )
+    gdf.reset_index(inplace=True)
+    logging.info(f"{len(gdf)} geocoded records after dissolving")
+    return gdf
 
+
+def list_disno_in_benchmark(
+        benchmark_type: BenchmarkGeomType,
+        benchmark_path: str | Path | None = None
+) -> list[str]:
+    """Return the name of the benchmark geometry column."""
+    if benchmark_type == "GAUL":
+        disnos = load_emdat_archive(
+            benchmark_path, use_columns=["DisNo."], geocoded_only=True
+        )["DisNo."].to_list()
+    elif benchmark_type == "GDIS":
+        disnos = pd.read_csv(benchmark_path)["DisNo."].to_list()
+    else:
+        raise ValueError(f"Invalid benchmark type: {benchmark_type}")
+    return disnos
+
+
+if __name__ == "__main__":
     gdf = gpd.read_file("../data/llm_subbatches/llm_wiki_3.gpkg")
     print(gdf.info())
     print(gdf.head())
