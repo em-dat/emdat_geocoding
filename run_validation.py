@@ -1,3 +1,15 @@
+"""Batch validation driver.
+
+This script orchestrates geometry validation runs across combinations of:
+- dissolving units or not,
+- benchmark type (GAUL or GDIS), and
+- prebuilt batch input files (.gpkg) under the configured batch directory.
+
+Inputs, thresholds, and paths are read from config.toml. Outputs are CSV files
+written to the configured validation_output_dir. Logs are written to
+validation_all.log.
+"""
+
 import tomllib
 import logging
 from pathlib import Path
