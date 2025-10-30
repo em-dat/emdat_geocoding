@@ -1,3 +1,11 @@
+"""Preprocessing driver for LLM-assisted geocoding batches.
+
+This script creates batches of LLM-Geocoded data from initial CSV batch files
+to new GPKG batch files. Each GPKG batch file is specific to one type of
+LLM-Geocoded geometries, either GADM, OSM, or wikidata.
+
+"""
+
 import tomllib
 import logging
 from pathlib import Path
