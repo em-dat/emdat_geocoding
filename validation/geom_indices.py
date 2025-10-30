@@ -127,4 +127,4 @@ def calculate_geom_indices(
         b_contains_a=b_contains_a,
         a_contains_b_properly=a_contains_b_properly,
         b_contains_a_properly=b_contains_a_properly,
-    ).__dict__
+    )

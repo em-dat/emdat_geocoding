@@ -1,5 +1,5 @@
 import logging
-from dataclasses import fields
+from dataclasses import fields, asdict
 from pathlib import Path
 from typing import Literal
 
@@ -99,24 +99,25 @@ def validate_geometries(
     for ix, row in gdf_llm.iterrows():
         geom_a = row["geometry"]
         geom_b = geom_dict.get(row["DisNo."])
-        indices: dict[str, float | bool] = calculate_geom_indices(
+        indices: GeomIndices = calculate_geom_indices(
             geom_a,
             geom_b,
             method=area_calculation_method,
             shapely_make_valid=False,
             check_geometry=False,
         )
+        metrics = asdict(indices)
         results = [
-                      row["DisNo."],
-                      row["name"],
-                      row["admin_level"],
-                      row["admin1"],
-                      row["admin2"],
-                      geom_type,
-                      benchmark,
-                      batch_number,
-                      area_calculation_method,
-                  ] + list(indices.values())
+            row["DisNo."],
+            row["name"],
+            row["admin_level"],
+            row["admin1"],
+            row["admin2"],
+            geom_type,
+            benchmark,
+            batch_number,
+            area_calculation_method
+        ] + [metrics[f] for f in GEOMINDICES_FIELDS]
         records.append(results)
 
     # Save validation results
