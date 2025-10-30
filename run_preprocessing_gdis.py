@@ -1,3 +1,10 @@
+"""Preprocessing driver for GDIS-based geocoding batches.
+
+This script creates batch files of GDIS GADM data to be benchmarked against
+the EM-DAT GAUL data. Only GDIS entries whose DisNo. values have GAUL
+geometries in EM-DAT are kept in the batches.
+"""
+
 import tomllib
 import logging
 from pathlib import Path
