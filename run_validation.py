@@ -71,7 +71,7 @@ def main():
                     )
                     continue
 
-            v.validate_geometries(
+            v.compare_geometries(
                 batch,
                 benchmark,
                 dissolve_units,
