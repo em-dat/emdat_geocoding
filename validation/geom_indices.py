@@ -67,7 +67,7 @@ def calculate_geom_indices(
         method: Literal["geodetic", "equal_area"] = "geodetic",
         shapely_make_valid: bool = True,
         check_geometry: bool = True
-) -> dict[str, float | bool]:
+) -> GeomIndices:
     """
     Calculate areas and geometric indices between two geometries with a
     selectable area method. Area calculation returns 0. for Point geometries.
