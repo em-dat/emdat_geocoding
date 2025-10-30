@@ -34,17 +34,6 @@ LLMGeomType = Literal["gadm", "osm", "wiki"]
 BenchmarkGeomType = Literal["GAUL", "GDIS"]
 AreaCalculationMethod = Literal["geodetic", "equal_area"]
 
-
-def load_gpkg_subbatch(gpkg_subbatch_path: str, output_dir: str | Path):
-    gpkg_subbatch_path = Path(gpkg_subbatch_path)
-    output_dir = Path(output_dir)
-    output_dir.mkdir(exist_ok=True, parents=True)
-
-    gdf_llm = gpd.read_file(gpkg_subbatch_path)
-    logger.info(f"{len(gdf_llm)} records loaded")
-    return gdf_llm
-
-
 def validate_geometries(
         gpkg_subbatch_path: str | Path,
         benchmark: BenchmarkGeomType = "GAUL",
