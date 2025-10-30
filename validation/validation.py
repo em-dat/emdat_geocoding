@@ -10,9 +10,10 @@ from validation.geom_indices import calculate_geom_indices, GeomIndices
 from validation.io import (
     check_geometries,
     load_benchmark,
-    make_batch,
+    filter_by_disnos,
     dissolve_units,
     list_disno_in_benchmark,
+    BenchmarkGeomType,
 )
 
 logger = logging.getLogger(__name__)
@@ -31,7 +32,6 @@ OUTPUT_COLUMNS = [
                  ] + GEOMINDICES_FIELDS
 
 LLMGeomType = Literal["gadm", "osm", "wiki"]
-BenchmarkGeomType = Literal["GAUL", "GDIS"]
 AreaCalculationMethod = Literal["geodetic", "equal_area"]
 
 def validate_geometries(
@@ -79,11 +79,11 @@ def validate_geometries(
     # Load benchmark gdf and make batch corresponding to gdf_llm
     gdf_benchmark = load_benchmark(benchmark, benchmark_path,
                                    keep_columns=["DisNo.", "geometry"])
-    gdf_benchmark = make_batch(gdf_benchmark, disno_list)
+    gdf_benchmark = filter_by_disnos(gdf_benchmark, disno_list)
     check_geometries(gdf_benchmark["geometry"])
     logger.info(f"{len(gdf_benchmark)} records loaded")
 
-    # Dissolve units (functions takes care to only dissolve what is dissolvable)
+    # Dissolve units
     if dissolved_units:
         aggfunc = {"name": list, "admin_level": list, "admin1": list,
                    "admin2": list}

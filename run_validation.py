@@ -46,7 +46,7 @@ def main():
     for i, (dissolve_units, benchmark, batch) in enumerate(combination, start=1):
         try:
             # Skip GDIS against GDIS validation
-            if str(batch).startswith("gdis") and benchmark == "GDIS":
+            if batch.name.lower().startswith("gdis") and benchmark == "GDIS":
                 continue
             # Skip validation if output exists (optional)
             if skip_if_exists:
