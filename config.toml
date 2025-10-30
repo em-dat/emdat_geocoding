@@ -1,7 +1,7 @@
 [logging]
 level = "INFO"
-filename='.log' # default, may be overwritten in run_xxx.py scripts
-filemode='w+'
+filename='.log'
+filemode='a+'
 style='{'
 format='{asctime} - {levelname} - {message}'
 datefmt="%Y-%m-%d %H:%M:%S"
@@ -29,4 +29,4 @@ area_calculation_method = 'geodetic' # alternatively 'equal_area'
 
 [validation]
 # If true, skip processing a subbatch when its expected output CSV already exists
-skip_if_output_exists = true
+skip_if_output_exists = false

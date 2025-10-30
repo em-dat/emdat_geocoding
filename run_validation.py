@@ -21,7 +21,7 @@ with open("config.toml", "rb") as f:
 
 logging.basicConfig(
     level=config["logging"]["level"],
-    filename="validation_all.log",
+    filename=config["logging"]["filename"],
     filemode=config["logging"]["filemode"],
     style=config["logging"]["style"],
     format=config["logging"]["format"],

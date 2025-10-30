@@ -1,4 +1,4 @@
  __pycache__/
  *.pyc
 *validation/__pycache__/
-
+.venv
