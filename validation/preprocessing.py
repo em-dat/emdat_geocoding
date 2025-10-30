@@ -28,7 +28,7 @@ def check_llm_batch_files(csv_file_dir: Path, batch_numbers: list[int]):
     return csv_files
 
 
-def make_llm_geocoded_subbatches(
+def make_llm_geocoded_batches(
         csv_file_dir: str | Path,
         columns_to_keep: list[str],
         batch_numbers: list[int] = [1, 2, 3, 4, 5],
@@ -61,9 +61,9 @@ def make_llm_geocoded_subbatches(
             logger.info(f"Saved: {output_path}")
             del gdf, df
 
-    logger.info("LLM-geocoded subbatch creation complete.")
+    logger.info("LLM-geocoded batch creation complete.")
 
-def make_gdis_geocoded_subbatches(
+def make_gdis_geocoded_batches(
         gdis_gpkg_path: str | Path,
         columns_to_keep: list[str] | None = None,
         n_batch: int = 5,

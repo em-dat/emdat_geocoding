@@ -29,7 +29,7 @@ def main():
     disno_with_gaul = list_disno_with_gaul(config["path"]["emdat_archive_path"])
     output_dir = Path(config["path"]["batch_dir"])
     output_dir.mkdir(parents=True, exist_ok=True)
-    pp.make_gdis_geocoded_subbatches(
+    pp.make_gdis_geocoded_batches(
         gdis_gpkg_path=config["path"]["gdis_path"],
         columns_to_keep=None,
         n_batch=len(config["index"]["batch_numbers"]),

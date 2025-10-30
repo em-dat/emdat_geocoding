@@ -29,7 +29,7 @@ def main():
     disno_with_gaul = list_disno_with_gaul(config["path"]["emdat_archive_path"])
     output_dir = Path(config["path"]["batch_dir"])
     output_dir.mkdir(parents=True, exist_ok=True)
-    pp.make_llm_geocoded_subbatches(
+    pp.make_llm_geocoded_batches(
         csv_file_dir='Q:/Data/emdat_geocoding/GEOEMDAT',
         columns_to_keep=config["index"]["llm_columns_to_keep"],
         batch_numbers=config["index"]["batch_numbers"],
