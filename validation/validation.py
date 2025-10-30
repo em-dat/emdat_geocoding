@@ -35,7 +35,7 @@ BenchmarkGeomType = Literal["GAUL", "GDIS"]
 AreaCalculationMethod = Literal["geodetic", "equal_area"]
 
 def validate_geometries(
-        gpkg_subbatch_path: str | Path,
+        gpkg_batch_path: str | Path,
         benchmark: BenchmarkGeomType = "GAUL",
         dissolved_units: bool = False,
         area_calculation_method: AreaCalculationMethod = "geodetic",
@@ -47,12 +47,12 @@ def validate_geometries(
 ):
     """Validate the geometry of the GeoDataFrame."""
     logger.info(
-        f"Validating geometries in {gpkg_subbatch_path} vs. {benchmark} "
+        f"Validating geometries in {gpkg_batch_path} vs. {benchmark} "
         f"(Dissolve: {dissolved_units})"
     )
-
+    gpkg_batch_path = Path(gpkg_batch_path)
     # Get and use metadata
-    metadata = gpkg_subbatch_path.stem.split("_")
+    metadata = gpkg_batch_path.stem.split("_")
     geom_type = "_".join(metadata[:2])
     batch_number = metadata[-1]
 
@@ -68,7 +68,7 @@ def validate_geometries(
         raise ValueError(f"Invalid benchmark type: {benchmark}")
 
     # Load model gdf
-    gdf_llm = gpd.read_file(gpkg_subbatch_path)
+    gdf_llm = gpd.read_file(gpkg_batch_path)
     logger.info(f"{len(gdf_llm)} records loaded")
 
     gdf_llm = gdf_llm[gdf_llm["DisNo."].isin(disnos_benchmark)]
