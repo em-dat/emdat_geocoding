@@ -1,4 +1,4 @@
-# EM-DAT Geocoding — Validation and Comparison Toolkit
+# EM-DAT Geocoding — Validation and Comparison
 
 Code repository associated with the paper: <ADD PAPER REFERENCE>
 
