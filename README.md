@@ -1,32 +1,95 @@
 # EM-DAT Geocoding — Validation and Comparison Toolkit
 
-NOTE: this README has been AI-generated and still need to be reviewed and updated. 
-
 Code repository associated with the paper: <ADD PAPER REFERENCE>
 
-This repository contains the code for the validation and comparison of 
-LLM-assisted described in the paper.
-A small, reproducible toolkit to preprocess, geocode (incl. LLM‑assisted disambiguation), and validate EM‑DAT location geometries against two benchmarks:
+This repository contains the code for the validation and comparison of
+LLM-assisted geocoded EM-DAT disaster described in the paper.
 
+#TODO: edit to include LLM-geocoding workflow
+
+LLM-geocoded location geometries are validated against two benchmarks:
 - GDIS: a GADM‑based geocoding benchmark
 - EM‑DAT GAUL: official EM‑DAT geometries
 
-It also compares GDIS and EM‑DAT GAUL together for additional insights. Geometric comparisons are primarily area‑based.
+It also compares GDIS and EM‑DAT GAUL together for additional insights.
+Geometric comparisons are primarily area‑based.
 
+The LLM-geocoded units are compared both individually or dissolved 
+by the EM-DAT `DisNo.` disaster event identifier to compare the entire 
+geocoded disaster impact footprint.
 
 ## Key features
+
 - Batch preprocessing for GDIS and LLM‑assisted EM‑DAT locations
 - Geometry indices: geodetic area, containment ratios, Jaccard (IoU)
 - Vectorized operations with geometry hygiene (validity, dissolve when needed)
 - Config‑driven paths/parameters via `config.toml`
 - Structured logging and reproducible outputs with config snapshots
 
+## Workflow diagram
+
+The diagram below shows the main steps of the workflow. The `run_all.py`
+orchestrates the steps.
+
+```mermaid
+flowchart TD
+%% Inputs
+    A["GDIS GADM\n<i>benchark</i>"]:::data
+    B["EM-DAT GAUL\n<i>benchark</i>"]:::data
+    C["GDIS GADM batches"]:::batch
+    D["LLM-geocoded data\n<i>main paper outcome</i>"]:::data
+    E["LLM-geocoded batches\n<i>GADM, OSM, Wikidata</i>"]:::batch
+    O["CSV metrics\n<i>batch vs benchmark</i>"]:::output
+    CFG["config.toml\npaths, logging, options"]:::config
+    V["validation\n<i>package<i>"]:::script
+%% Steps
+    PG["run_preprocessing_gdis.py"]:::script
+    PL["run_preprocessing_llm.py"]:::script
+    RV["run_validation.py"]:::script
+    A --> PG --> C
+    D --> PL --> E
+    A --> RV
+    B --> RV
+    C --> RV
+    E --> RV -->|dissolve: True/False| O
+    CFG --> PG
+    CFG --> PL
+    CFG --> RV
+    V --> PG
+    V --> PL
+    V --> RV
+    
+%% Styles (optional)
+    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
+    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
+    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
+```
+
+```mermaid
+flowchart TD
+%%legend
+    LEG1["Scripts"]:::script
+    LEG2["Input data\n<i>not shared</i>"]:::data
+    LEG3["Batch files\n<i>not shared</i>"]:::batch
+    LEG4["Outputs"]:::output
+    LEG5["Config"]:::config
+    
+%% Styles (optional)
+    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
+    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
+    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
+
+```
 
 ## Project structure
+
 - `config.toml` — central configuration (paths, logging, options)
-- `validation/geom_indices.py` — area/overlap metrics (geodetic or equal‑area)
+- `validation/geom_indices.py` — area/overlap metrics
+- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
 - `validation/validation.py` — batch comparison pipelines and metrics
-- `validation/io.py` — IO helpers for archives, GPKG batches, CSVs
+
 - `run_preprocessing_gdis.py` — prepare GDIS batches
 - `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
 - `run_validation.py` — run validations between sources
@@ -36,111 +99,69 @@ It also compares GDIS and EM‑DAT GAUL together for additional insights. Geomet
 
 See also: `comparison_figures.ipynb` for exploration.
 
-
 ## Installation
+
 - Python 3.13+
 - Dependencies listed in `pyproject.toml` (and locked in `uv.lock`)
 
 Example using pip:
+
 ```bash
 python -m venv .venv
 . .venv/Scripts/Activate.ps1  # Windows PowerShell
 pip install -e .
 ```
+
 Or, if you use uv:
+
 ```bash
 uv sync
 ```
 
+## Input data
 
-## Configuration
-All tunables live in `config.toml`.
-
-- `[path]`
-  - `batch_dir` — folder for generated batches (heavy geometries)
-  - `emdat_gaul_path` — EM‑DAT GAUL benchmark GPKG
-  - `gdis_path` — GDIS GPKG (source or benchmark)
-  - `emdat_archive_path` — EM‑DAT Excel archive (lightweight; no geometries)
-  - `gdis_disno_path` — CSV with GDIS `DisNo.` mapping
-  - `validation_output_dir` — where CSV outputs and logs are written
-- `[geoprocessing]`
-  - `area_calculation_method` — `'geodetic'` (default) or `'equal_area'`
-    - For equal‑area, the code reprojects to an equal‑area CRS (e.g., EPSG:6933). This is documented inline in code comments.
-- `[index]`
-  - `llm_columns_to_keep` — non‑geometry columns kept from LLM preprocessing
-  - `llm_geom_columns` — expected geometry columns (OSM/GADM/Wikidata)
-  - `batch_numbers` — integers to select sub‑batches for processing
-- `[validation]`
-  - `skip_if_output_exists` — skip sub‑batches if the expected output CSV exists
-- `[logging]` — level, filename, format; can be overridden in `run_*.py`
-
-Adjust these paths to your local environment before running.
-
-
-## Inputs
-Placeholders — replace with your locations if different.
+Because of the size of the data, it is not included in the repository, except
+for the following lightweight data inputs:
 
 - EM‑DAT Excel archive (lightweight):
-  - Default: `data/241204_emdat_archive.xlsx`
-  - Source/DOI: doi:10.14428/DVN/I0LTPH
+    - Path: `data/241204_emdat_archive.xlsx`
+    - Description: EM-DAT FAIR Archive covering the 1900-2023 period.
+    - Source/DOI: https://doi.org/10.14428/DVN/I0LTPH
+    - Refer to the source for terms of use and redistribution.
+- GDIS DisNo. CSV mapping:
+    - Path: `data/gdis_disnos.csv`
+    - Description: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
+    - Source/DOI: https://doi.org/10.7927/ZZ3B-8Y61
+    - Refer to the source for terms of use and redistribution.
+
+In addition, the following data is required for the full workflow:
+
+- The complete GDIS dataset, including GADM version 3.6. geometries,
+  downloadable from the above DOI.
+- The GAUL version 2015, which can be joined by
+  attributes to the EM-DAT data.
+  See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
+  for details.
+
 - GDIS geometries (GPKG):
-  - Example path: `Q:/Data/emdat_geocoding/GDIS/gdis.gpkg`
+    - Example path: `Q:/Data/emdat_geocoding/GDIS/gdis.gpkg`
 - EM‑DAT GAUL geometries (GPKG):
-  - Example path: `Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg`
+    - Example path: `Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg`
 - Batch directory for generated heavy files:
-  - Example path: `Q:/Data/emdat_geocoding/batch_files`
+    - Example path: `Q:/Data/emdat_geocoding/batch_files`
 - Optional: GDIS `DisNo.` CSV mapping:
-  - Default: `data/gdis_disnos.csv`
-
-If your inputs live elsewhere or require credentials, insert your own paths or instructions here: <ADD LOCAL/REMOTE ACCESS INSTRUCTIONS>.
-
-
-## Workflows
-You can run individual steps or the full pipeline. All scripts honor `config.toml` and write logs to the repo root or `output/`.
-
-### 1) Preprocess GDIS batches
-Prepares GDIS data for validation (geometries, attributes, batching):
-```bash
-python run_preprocessing_gdis.py
-```
-- Reads from `gdis_path`
-- Writes batches under `batch_dir`
-- Log file: `.log` (overridden to a task‑specific name by the script)
-
-### 2) Preprocess LLM‑assisted EM‑DAT batches
-Creates candidate geometries per EM‑DAT location string using OSM/GADM/Wikidata and an LLM for disambiguation ranking. Stores chosen geometry and candidate set when needed.
-```bash
-python run_preprocessing_llm.py
-```
-- Reads EM‑DAT archive and any cached sources
-- Writes batches under `batch_dir`
-- Log: see `.log` or `output/preprocessing_llm_*.log`
-
-### 3) Validation and comparison
-Runs the geometric comparison between sources (GDIS vs EM‑DAT GAUL, LLM vs EM‑DAT GAUL, etc.).
-```bash
-python run_validation.py
-```
-- Outputs CSVs under `validation_output_dir` with run‑stamped names
-- Writes a run log, e.g., `validation_all.log`
-
-### 4) End‑to‑end
-```bash
-python run_all.py
-```
-Runs the sequence above with sensible defaults.
-
+    - Default: `data/gdis_disnos.csv`
 
 ## Geometry and CRS conventions
-- Storage CRS: EPSG:4326 unless otherwise stated
-- Area computations:
-  - Default: geodetic area calculations (spheroid‑aware)
-  - Alternative: reproject to an equal‑area CRS (e.g., EPSG:6933) before area; choice is explained in code comments
-- Geometry hygiene: enforce validity, dissolve multipart features where appropriate, and favor topology‑safe operations
 
+- Storage CRS: EPSG:4326
+- Area computations: geodetic area calculations (used default)
 
-## Validation metrics
-Computed in `validation/geom_indices.py`. For each pair of geometries A (candidate) and B (benchmark):
+## Validation metrics and outputs
+
+Computed in `validation/geom_indices.py`.
+
+For each pair of geometries A (candidate) and B (benchmark):
 
 - `area_a`, `area_b` — areas (square meters)
 - `intersection_area`, `union_area`
@@ -148,39 +169,18 @@ Computed in `validation/geom_indices.py`. For each pair of geometries A (candida
 - `b_in_a` = |A ∩ B| / |B| — containment of B by A
 - `jaccard` = |A ∩ B| / |A ∪ B| — Intersection over Union
 
-Two modes are typically reported:
-- Per‑unit containment (|A ∩ B| / |A|)
-- Dissolved “disaster footprint” Jaccard (|A ∩ B| / |A ∪ B|)
+Calculated metrics are stored in the `output/` directory, with the following
+naming convention:
 
-When helpful, we also report |A ∩ B| / |B| to detect GAUL‑within‑GADM cases.
+> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>.csv
 
+when no dissolve operation is applied to merge geometries by DisNo.
+disaster identifiers, or
 
-## Outputs
-- CSV files in `output/` (or the configured `validation_output_dir`):
-  - Examples: `validation_gadm_2000_2002_*.csv`, `validation_all_YYYYMMDD_HHMM.csv`
-- Logs in the repo root or `output/`, e.g., `preprocessing_gdis.log`, `preprocessing_llm.log`, `validation_all.log`
-- Optionally, figures in `comparison_figures.ipynb`
+> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>_dissolved.csv
 
-Each export should include a config snapshot and ideally a commit hash for reproducibility. If yours are missing, add placeholders: <ADD COMMIT HASH/CONFIG SNAPSHOT STEP>.
+when dissolve operation is applied.
 
+## License
 
-## Reproducibility
-- Keep `config.toml` under version control and avoid hard‑coded paths in code
-- When randomness is used (e.g., sampling), set and document seeds
-- Stamp outputs by date/time; store logs alongside the outputs
-
-
-## Troubleshooting
-- Geometry validity errors: ensure inputs are valid; consider buffering by 0 or using topology‑preserving fixing before area/overlay
-- CRS mismatches: verify inputs are in EPSG:4326 or explicitly reproject
-- Memory/performance: process in batches (`batch_numbers`); cache expensive lookups
-- Paths on Windows: prefer forward‑portable paths via `config.toml`; avoid hard‑coding drive letters in code
-
-
-## Citation
-If you use this toolkit in a publication, please cite EM‑DAT and GDIS appropriately, and reference this repository. Add your preferred citation text here: <ADD CITATION>.
-
-
-## License and contribution
-- License: <ADD LICENSE>
-- Contributions are welcome. Please match existing patterns and idioms, add type hints, and use numpydoc docstrings when modifying or adding functions/classes.
+<ADD LICENSE>
