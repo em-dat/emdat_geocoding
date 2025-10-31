@@ -143,14 +143,7 @@ In addition, the following data is required for the full workflow:
   See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
   for details.
 
-- GDIS geometries (GPKG):
-    - Example path: `Q:/Data/emdat_geocoding/GDIS/gdis.gpkg`
-- EM‑DAT GAUL geometries (GPKG):
-    - Example path: `Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg`
-- Batch directory for generated heavy files:
-    - Example path: `Q:/Data/emdat_geocoding/batch_files`
-- Optional: GDIS `DisNo.` CSV mapping:
-    - Default: `data/gdis_disnos.csv`
+#TODO: add any other data with respect to the geocoding worklow?
 
 ## Geometry and CRS conventions
 
