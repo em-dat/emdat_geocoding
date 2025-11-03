@@ -2,3 +2,16 @@
  *.pyc
 *validation/__pycache__/
 .venv
+data/emdat_gaul_2000_2002.gpkg
+data/gdis_emdat.csv
+data/gdis_gadm_2000_2002.gpkg
+data/gdis_raw.gpkg
+data/gdis.csv
+data/gdis.gpkg
+data/geoemdat_part1.csv
+data/geoemdat_part2.csv
+data/geoemdat_part3.csv
+data/geoemdat_part4.csv
+data/geoemdat_part5.csv
+data/llm_gadm_2000_2002.gpkg
+data/pend-gdis-1960-2018-disasterlocations.csv
