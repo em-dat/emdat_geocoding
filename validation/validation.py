@@ -1,3 +1,30 @@
+"""Validation pipeline to compare LLM/GDIS geometries against benchmarks.
+
+This module orchestrates the geometry comparison used in the project’s
+validation step. It loads a batch of model geometries, aligns them with a
+chosen benchmark (GAUL or GDIS), optionally dissolves units, and computes
+area-based overlap indices using `validation.geom_indices`.
+
+Highlights
+----------
+- Supports two area computation methods: "geodetic" (ellipsoidal, default)
+  and "equal_area" (planar after projecting to EPSG:6933).
+- Can dissolve model units before comparison to match benchmark granularity.
+- Writes a tidy CSV with per-disaster metrics and metadata for downstream
+  analysis and plotting.
+
+Inputs & Dependencies
+---------------------
+- Expects batches produced by preprocessing utilities (GeoPackage files).
+- Benchmark data is loaded via `validation.io.load_benchmark` and filtered to
+  the DisNo present in the model batch.
+- Basic geometry checks are delegated to `validation.io.check_geometries`.
+
+Outputs
+-------
+- A CSV file is written to `output_dir` with columns described by
+  `OUTPUT_COLUMNS`, including all fields of the `GeomIndices` dataclass.
+"""
 import logging
 from dataclasses import fields, asdict
 from pathlib import Path

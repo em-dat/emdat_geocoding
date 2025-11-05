@@ -1,5 +1,4 @@
-"""
-Geometric overlap indices and basic topology checks for validation.
+"""Geometric overlap indices and basic topology checks for validation.
 
 This module computes area-based indices between two geometries to compare
 geocoding results against reference geometries. It supports two area

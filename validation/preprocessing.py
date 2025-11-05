@@ -1,3 +1,19 @@
+"""Preprocessing utilities to build LLM-Geocoded or GDIS GeoPackage batches
+
+Conventions
+-----------
+- File I/O is logged via the module logger; callers can configure logging level
+  and handlers at the application entry points.
+- Geometry parsing is delegated to `validation.io.parse_geometries` and GDIS
+  loading to `validation.io.load_gdis` to keep responsibilities separated.
+- All paths can be provided as strings or `pathlib.Path` objects.
+
+Outputs
+-------
+- LLM batches are written as GeoPackages named like `llm_<suffix>_<n>.gpkg` in
+  the chosen `output_dir`.
+- GDIS batches are written as `gdis_gadm_<n>.gpkg` in `output_dir`.
+"""
 import logging
 from pathlib import Path
 
