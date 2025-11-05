@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2009-0522-SAU,['Mecca'],['Admin3'],['Makkah'],[None],llm_osm,GAUL,5,geodetic,3851715007.04124,138133056365.92883,3851715007.04124,138133056365.92883,1.0,0.0278840931227761,0.0278840931227761,False,True,False,True,True
