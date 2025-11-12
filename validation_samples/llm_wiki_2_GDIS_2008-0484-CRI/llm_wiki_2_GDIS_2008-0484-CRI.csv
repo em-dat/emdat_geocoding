@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2008-0484-CRI,"['Puntarenas', 'Alajuela']","['Admin1', 'Admin1']","['Puntarenas', 'Alajuela']","[None, None]",llm_wiki,GDIS,2,geodetic,0.0,4586927642.602789,0.0,4586927642.602789,0.0,0.0,0.0,False,False,False,False,True

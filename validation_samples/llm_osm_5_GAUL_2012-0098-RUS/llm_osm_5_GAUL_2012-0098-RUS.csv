@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2012-0098-RUS,"['Amur Oblast', 'Tygda']","['Admin1', 'Admin3']","['Amur', 'Amur Oblast']","[None, None]",llm_osm,GAUL,5,geodetic,362554043206.3023,361095169677.6496,359234544728.2625,364414668155.6893,0.9908441278197224,0.9948472726703932,0.9857850852885712,False,False,False,False,True

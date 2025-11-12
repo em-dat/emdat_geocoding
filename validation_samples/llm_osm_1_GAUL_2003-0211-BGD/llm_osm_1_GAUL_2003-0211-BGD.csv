@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2003-0211-BGD,['Chittagong'],['Admin1'],['Chittagong'],[None],llm_osm,GAUL,1,geodetic,46825920933.28946,1914252941.4961607,1885309189.2328,46854864685.55282,0.040262084581715,0.9848798705563234,0.0402372134011116,False,False,False,False,True

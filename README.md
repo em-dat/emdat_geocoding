@@ -1,57 +1,179 @@
-# emdat_geocoding
+# EM-DAT Geocoding — Validation and Comparison
 
-Scripts for validating and comparing EM-DAT geocoded geometries
+Code repository associated with the paper: <ADD PAPER REFERENCE>
 
-## Extra data
+This repository contains the code for the validation and comparison of
+LLM-assisted geocoded EM-DAT disaster described in the paper.
 
-To be able to run the example, you need to download the data batch files
-(expired on Sept 29, 2025):
+#TODO: edit to include LLM-geocoding workflow
 
-- https://we.tl/t-8QWc2x2pH6
+LLM-geocoded location geometries are validated against two benchmarks:
+- GDIS: a GADM‑based geocoding benchmark
+- EM‑DAT GAUL: official EM‑DAT geometries
 
-## Repository and File Descriptions
+It also compares GDIS and EM‑DAT GAUL together for additional insights.
+Geometric comparisons are primarily area‑based.
 
-### Overview
-A small toolkit to validate and compare EM-DAT geocoded geometries (GADM/OSM) against official EM-DAT/GAUL footprints.
+The LLM-geocoded units are compared both individually or dissolved 
+by the EM-DAT `DisNo.` disaster event identifier to compare the entire 
+geocoded disaster impact footprint.
 
-- Core: geotools/geom_indices.py — computes geodetic areas, containment, and Jaccard; supports geodetic or equal-area.
-- IO: validation/io.py — loads .gpkg batches and the EM-DAT Excel archive.
-- Pipeline: example_validation.py — runs validation and writes a CSV (+ log).
-- Optional: example_figures.ipynb for exploration.
+## Key features
 
-### Data (expected paths)
-- data/geoloc_emdat_0002_<gadm|osm>.gpkg
-- data/geoemdat_<YYYY_START>_<YYYY_END>.gpkg
-- data/241204_emdat_archive.xlsx
+- Batch preprocessing for GDIS and LLM‑assisted EM‑DAT locations
+- Geometry indices: geodetic area, containment ratios, Jaccard (IoU)
+- Vectorized operations with geometry hygiene (validity, dissolve when needed)
+- Config‑driven paths/parameters via `config.toml`
+- Structured logging and reproducible outputs with config snapshots
 
-### Outputs
-- validation_gadm_2000_2002*.csv
+## Workflow diagram
 
-### Installation
+The diagram below shows the main steps of the workflow. The `run_all.py`
+orchestrates the steps.
+
+```mermaid
+flowchart TD
+%% Inputs
+    A["GDIS GADM\n<i>benchark</i>"]:::data
+    B["EM-DAT GAUL\n<i>benchark</i>"]:::data
+    C["GDIS GADM batches"]:::batch
+    D["LLM-geocoded data\n<i>main paper outcome</i>"]:::data
+    E["LLM-geocoded batches\n<i>GADM, OSM, Wikidata</i>"]:::batch
+    O["CSV metrics\n<i>batch vs benchmark</i>"]:::output
+    CFG["config.toml\npaths, logging, options"]:::config
+    V["validation\n<i>package<i>"]:::script
+%% Steps
+    PG["run_preprocessing_gdis.py"]:::script
+    PL["run_preprocessing_llm.py"]:::script
+    RV["run_validation.py"]:::script
+    A --> PG --> C
+    D --> PL --> E
+    A --> RV
+    B --> RV
+    C --> RV
+    E --> RV -->|dissolve: True/False| O
+    CFG --> PG
+    CFG --> PL
+    CFG --> RV
+    V --> PG
+    V --> PL
+    V --> RV
+    
+%% Styles (optional)
+    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
+    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
+    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
+```
+
+```mermaid
+flowchart TD
+%%legend
+    LEG1["Scripts"]:::script
+    LEG2["Input data\n<i>not shared</i>"]:::data
+    LEG3["Batch files\n<i>not shared</i>"]:::batch
+    LEG4["Outputs"]:::output
+    LEG5["Config"]:::config
+    
+%% Styles (optional)
+    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
+    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
+    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
+    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
+
+```
+
+## Project structure
+
+- `config.toml` — central configuration (paths, logging, options)
+- `validation/geom_indices.py` — area/overlap metrics
+- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
+- `validation/validation.py` — batch comparison pipelines and metrics
+
+- `run_preprocessing_gdis.py` — prepare GDIS batches
+- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
+- `run_validation.py` — run validations between sources
+- `run_all.py` — orchestrate end‑to‑end runs
+- `output/` — results, logs; per‑run stamped filenames
+- `data/` — lightweight inputs (no geometries)
+
+See also: `comparison_figures.ipynb` for exploration.
+
+## Installation
+
 - Python 3.13+
-- see requirements in pyproject.toml
+- Dependencies listed in `pyproject.toml` (and locked in `uv.lock`)
 
-### Quick start
-1) Put example data under data/.
-2) Optionally adjust params in example_validation.py.
-3) Run: python example_validation.py
-4) Outputs: CSV + example_validation.log
+Example using pip:
 
-## Validation summary
+```bash
+python -m venv .venv
+. .venv/Scripts/Activate.ps1  # Windows PowerShell
+pip install -e .
+```
 
-- Two modes: per-unit (containment |A∩B|/|A|) and dissolved disaster (Jaccard |A∩B|/|A∪B|).
-- Also report |A∩B|/|B| to detect GAUL-within-GADM cases.
-- Natural hazards only; GAUL footprints from EM-DAT 1900–2023.
+Or, if you use uv:
 
-Returned indices: area_a, area_b, intersection_area, union_area, a_in_b, b_in_a, jaccard. See geotools/geom_indices.py for details.
+```bash
+uv sync
+```
 
+## Input data
 
-| Index                                                                                       | Label                     | Description                                                     |
-|---------------------------------------------------------------------------------------------|---------------------------|-----------------------------------------------------------------|
-| ![equation](https://latex.codecogs.com/png.latex?\|A\|)                                     | "area_a"                  | The area of A, in square meters.                                |
-| ![equation](https://latex.codecogs.com/png.latex?\|B\|)                                     | "area_b"                  | The area of B, in square meters.                                |
-| ![equation](https://latex.codecogs.com/png.latex?\|A%20\cap%20B\|)                          | "intersection_area"       | The area of intersection between $A$ and $B$, in square meters. |
-| ![equation](https://latex.codecogs.com/png.latex?\|A%20\cup%20B\|)                          | "union_area"              | The area of union between $A$ and $B$, in square meters.        |
-| ![equation](https://latex.codecogs.com/png.latex?\frac{\|A%20\cap%20B\|}{\|A\|})            | "a_in_b"                  | The ratio of the intersection area to $A$.                      |
-| ![equation](https://latex.codecogs.com/png.latex?\frac{\|A%20\cap%20B\|}{\|B\|})            | "b_in_a"                  | The ratio of the intersection area to $B$ .                     |
-| ![equation](https://latex.codecogs.com/png.latex?\frac{\|A%20\cap%20B\|}{\|A%20\cup%20B\|}) | "jaccard"                 | Intersection over Union, a.k.a., the Jaccard Index.             |
+Because of the size of the data, it is not included in the repository, except
+for the following lightweight data inputs:
+
+- EM‑DAT Excel archive (lightweight):
+    - Path: `data/241204_emdat_archive.xlsx`
+    - Description: EM-DAT FAIR Archive covering the 1900-2023 period.
+    - Source/DOI: https://doi.org/10.14428/DVN/I0LTPH
+    - Refer to the source for terms of use and redistribution.
+- GDIS DisNo. CSV mapping:
+    - Path: `data/gdis_disnos.csv`
+    - Description: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
+    - Source/DOI: https://doi.org/10.7927/ZZ3B-8Y61
+    - Refer to the source for terms of use and redistribution.
+
+In addition, the following data is required for the full workflow:
+
+- The complete GDIS dataset, including GADM version 3.6. geometries,
+  downloadable from the above DOI.
+- The GAUL version 2015, which can be joined by
+  attributes to the EM-DAT data.
+  See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
+  for details.
+
+#TODO: add any other data with respect to the geocoding worklow?
+
+## Geometry and CRS conventions
+
+- Storage CRS: EPSG:4326
+- Area computations: geodetic area calculations (used default)
+
+## Validation metrics and outputs
+
+Computed in `validation/geom_indices.py`.
+
+For each pair of geometries A (candidate) and B (benchmark):
+
+- `area_a`, `area_b` — areas (square meters)
+- `intersection_area`, `union_area`
+- `a_in_b` = |A ∩ B| / |A| — containment of A by B
+- `b_in_a` = |A ∩ B| / |B| — containment of B by A
+- `jaccard` = |A ∩ B| / |A ∪ B| — Intersection over Union
+
+Calculated metrics are stored in the `output/` directory, with the following
+naming convention:
+
+> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>.csv
+
+when no dissolve operation is applied to merge geometries by DisNo.
+disaster identifiers, or
+
+> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>_dissolved.csv
+
+when dissolve operation is applied.
+
+## License
+
+<ADD LICENSE>

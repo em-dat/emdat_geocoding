@@ -1,3 +1,15 @@
+"""Batch validation driver.
+
+This script orchestrates geometry validation runs across combinations of:
+- dissolving units or not,
+- benchmark type (GAUL or GDIS), and
+- prebuilt batch input files (.gpkg) under the configured batch directory.
+
+Inputs, thresholds, and paths are read from config.toml. Outputs are CSV files
+written to the configured validation_output_dir. Logs are written to
+validation_all.log.
+"""
+
 import tomllib
 import logging
 from pathlib import Path
@@ -9,7 +21,7 @@ with open("config.toml", "rb") as f:
 
 logging.basicConfig(
     level=config["logging"]["level"],
-    filename="validation_all.log",
+    filename=config["logging"]["filename"],
     filemode=config["logging"]["filemode"],
     style=config["logging"]["style"],
     format=config["logging"]["format"],
@@ -19,7 +31,7 @@ logging.basicConfig(
 
 DISSOLVE_UNITS = [True, False]
 BENCHMARKS = ["GAUL", "GDIS"]
-SUBBATCHES = list(Path(config["path"]["batch_dir"]).glob("*.gpkg"))
+BATCHES = list(Path(config["path"]["batch_dir"]).glob("*.gpkg"))
 
 
 def expected_output_path(
@@ -38,25 +50,29 @@ def expected_output_path(
 
 def main():
     logging.info(f"Running validation script...".upper())
-    combination = product(DISSOLVE_UNITS, BENCHMARKS, SUBBATCHES)
+    combination = product(DISSOLVE_UNITS, BENCHMARKS, BATCHES)
     skip_if_exists = bool(
         config.get("validation", {}).get("skip_if_output_exists", False)
     )
     output_dir = Path(config["path"]["validation_output_dir"])
-    for i, (dissolve_units, benchmark, subbatch) in enumerate(combination, start=1):
+    for i, (dissolve_units, benchmark, batch) in enumerate(combination, start=1):
         try:
+            # Skip GDIS against GDIS validation
+            if batch.name.lower().startswith("gdis") and benchmark == "GDIS":
+                continue
+            # Skip validation if output exists (optional)
             if skip_if_exists:
                 out_path = expected_output_path(
-                    Path(subbatch), benchmark, dissolve_units, output_dir
+                    Path(batch), benchmark, dissolve_units, output_dir
                 )
                 if out_path.exists():
                     logging.info(
-                        f"Skipping {subbatch} (benchmark={benchmark}, dissolve={dissolve_units}) because output exists: {out_path}"
+                        f"Skipping {batch} (benchmark={benchmark}, dissolve={dissolve_units}) because output exists: {out_path}"
                     )
                     continue
 
-            v.validate_geometries(
-                subbatch,
+            v.compare_geometries(
+                batch,
                 benchmark,
                 dissolve_units,
                 config["geoprocessing"]["area_calculation_method"],

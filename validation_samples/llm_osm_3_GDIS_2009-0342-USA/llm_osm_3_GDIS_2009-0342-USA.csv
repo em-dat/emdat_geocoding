@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2009-0342-USA,['Maine'],['Admin1'],['Maine'],[None],llm_osm,GDIS,3,geodetic,91687963975.18082,84363310133.48657,84261283520.58438,91789990588.083,0.9190004867312052,0.9987906281446192,0.9179789972821276,False,False,False,False,True

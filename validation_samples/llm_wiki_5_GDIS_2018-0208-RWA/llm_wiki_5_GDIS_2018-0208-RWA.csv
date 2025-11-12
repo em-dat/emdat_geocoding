@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2018-0208-RWA,"['Karongi', 'Rwankuba']","['Admin2', 'Admin3']","['Rwanda', 'Karongi']","['Karongi', None]",llm_wiki,GDIS,5,geodetic,0.0,69744827.16865249,0.0,69744827.16865249,0.0,0.0,0.0,False,False,False,False,True

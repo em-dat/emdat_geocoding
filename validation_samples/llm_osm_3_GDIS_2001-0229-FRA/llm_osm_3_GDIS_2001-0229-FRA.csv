@@ -1,0 +1,2 @@
+dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_calculation_method,area_a,area_b,intersection_area,union_area,a_in_b,b_in_a,jaccard,a_contains_b,b_contains_a,a_contains_b_properly,b_contains_a_properly,dissolved
+2001-0229-FRA,['Somme'],['Admin2'],['Hauts-de-France'],['Somme'],llm_osm,GDIS,3,geodetic,6192329648.76624,4088319654.672643,4033734038.0852704,6246915265.353613,0.6514081560384873,0.9866483980710792,0.6457161441675064,False,False,False,False,True
