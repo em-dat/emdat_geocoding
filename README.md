@@ -1,11 +1,14 @@
 # EM-DAT Geocoding — Validation and Comparison
 
-Code repository associated with the paper: <ADD PAPER REFERENCE>
+Code repository associated with the paper: 
 
-This repository contains the code for the validation and comparison of
-LLM-assisted geocoded EM-DAT disaster described in the paper.
+> Ronco, M., Delforge, D., Jäger, W. S., & Corbane, C. (2025, November 14). 
+> Subnational geocoding of global disasters using large language models. 
+> arXiv (preprint). https://arxiv.org/abs/2511.xxxxx
 
-#TODO: edit to include LLM-geocoding workflow
+This repository contains the code used for LLM-assisted geocoding in the above 
+reference, and the validation and comparison of LLM-assisted geocoded EM-DAT 
+disaster described in the paper.
 
 LLM-geocoded location geometries are validated against two benchmarks:
 - GDIS: a GADM‑based geocoding benchmark
@@ -28,20 +31,24 @@ geocoded disaster impact footprint.
 
 ## Workflow diagram
 
-The diagram below shows the main steps of the workflow. The `run_all.py`
+For the geocoding workflow, shared in `geocoding\run_geolocation.py`, we refer 
+to the aforementioned reference for implementation details.
+
+For the comparison and validation workflow, the diagram below shows its main 
+steps of the workflow. The `run_all.py`
 orchestrates the steps.
 
 ```mermaid
 flowchart TD
 %% Inputs
-    A["GDIS GADM\n<i>benchark</i>"]:::data
-    B["EM-DAT GAUL\n<i>benchark</i>"]:::data
+    A["GDIS GADM<br/><i>benchark</i>"]:::data
+    B["EM-DAT GAUL<br/><i>benchark</i>"]:::data
     C["GDIS GADM batches"]:::batch
-    D["LLM-geocoded data\n<i>main paper outcome</i>"]:::data
-    E["LLM-geocoded batches\n<i>GADM, OSM, Wikidata</i>"]:::batch
-    O["CSV metrics\n<i>batch vs benchmark</i>"]:::output
-    CFG["config.toml\npaths, logging, options"]:::config
-    V["validation\n<i>package<i>"]:::script
+    D["LLM-geocoded data<br/><i>main paper outcome</i>"]:::data
+    E["LLM-geocoded batches<br/><i>GADM, OSM, Wikidata</i>"]:::batch
+    O["CSV metrics<br/><i>batch vs benchmark</i>"]:::output
+    CFG["config.toml<br/>paths, logging, options"]:::config
+    V["validation<i>package<i>"]:::script
 %% Steps
     PG["run_preprocessing_gdis.py"]:::script
     PL["run_preprocessing_llm.py"]:::script
@@ -85,6 +92,12 @@ flowchart TD
 
 ## Project structure
 
+### Geocoding workflow
+
+- `geocoding/run_geolocation.py` — geocoding workflow (independent code)
+
+### Validation/comparison workflow
+
 - `config.toml` — central configuration (paths, logging, options)
 - `validation/geom_indices.py` — area/overlap metrics
 - `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
@@ -97,26 +110,15 @@ flowchart TD
 - `output/` — results, logs; per‑run stamped filenames
 - `data/` — lightweight inputs (no geometries)
 
-See also: `comparison_figures.ipynb` for exploration.
+See also: 
+- `comparison_figures.ipynb` for a statistical synthesis of the results.
+- `visual_validation.ipynb` and the `validation_samples` folder for random 
+  result samples and visualizations.
 
 ## Installation
 
 - Python 3.13+
 - Dependencies listed in `pyproject.toml` (and locked in `uv.lock`)
-
-Example using pip:
-
-```bash
-python -m venv .venv
-. .venv/Scripts/Activate.ps1  # Windows PowerShell
-pip install -e .
-```
-
-Or, if you use uv:
-
-```bash
-uv sync
-```
 
 ## Input data
 
@@ -142,8 +144,10 @@ In addition, the following data is required for the full workflow:
   attributes to the EM-DAT data.
   See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
   for details.
+- GADM version 4.1 is available from the GADM website: 
+  https://gadm.org/data.html
 
-#TODO: add any other data with respect to the geocoding worklow?
+For reuse, we refer to the above sources for terms of use and redistribution.
 
 ## Geometry and CRS conventions
 
@@ -161,6 +165,13 @@ For each pair of geometries A (candidate) and B (benchmark):
 - `a_in_b` = |A ∩ B| / |A| — containment of A by B
 - `b_in_a` = |A ∩ B| / |B| — containment of B by A
 - `jaccard` = |A ∩ B| / |A ∪ B| — Intersection over Union
+- `a_contains_b` = 1 if A contains B, 0 otherwise
+- `b_contains_a` = 1 if B contains A, 0 otherwise
+- `a_contains_b_properly` = 1 if A strictly contains B, 0 otherwise
+- `b_contains_a_properly` = 1 if B strictly contains A, 0 otherwise
+
+We refer to the `shapely` and `geopandas` documentation for further 
+geoprocessing details.
 
 Calculated metrics are stored in the `output/` directory, with the following
 naming convention:
@@ -173,7 +184,3 @@ disaster identifiers, or
 > <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>_dissolved.csv
 
 when dissolve operation is applied.
-
-## License
-
-<ADD LICENSE>
