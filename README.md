@@ -47,8 +47,8 @@ flowchart TD
     D["LLM-geocoded data<br/><i>main paper outcome</i>"]:::data
     E["LLM-geocoded batches<br/><i>GADM, OSM, Wikidata</i>"]:::batch
     O["CSV metrics<br/><i>batch vs benchmark</i>"]:::output
-    CFG["config.toml<br/>paths, logging, options"]:::config
-    V["validation<i>package<i>"]:::script
+    CFG["config.toml<br/><i>paths, logging, options</i>"]:::config
+    V["validation<br/><i>package<i>"]:::script
 %% Steps
     PG["run_preprocessing_gdis.py"]:::script
     PL["run_preprocessing_llm.py"]:::script
