@@ -1,0 +1,34 @@
+[logging]
+level = "DEBUG"
+filename='.log' # may be overwritten in run_xxx.py scripts
+filemode='w+'
+style='{'
+format='{asctime} - {levelname} - {message}'
+datefmt="%Y-%m-%d %H:%M:%S"
+
+[path]
+# Preprocessing only
+llm_raw_data_dir = "Q:/Data/GEOEMDAT" # folder with Michele's raw data
+# Preprocessing and/or Validation
+batch_dir = "data/llm_subbatches" # folder to store the subbatches
+emdat_gaul_path = "Q:/Data/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT Benchmark
+gdis_path = "Q:/Data/GDIS/gdis.gpkg" #  GDIS benchmark or raw data for preprocessing batches
+# Ligthweight data without geometries
+emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
+gdis_disno_path = "data/gdis_disnos.csv"
+# Output dir
+validation_output_dir = "output"
+
+[index]
+# keep these colums (i.e., drop 'admin3'), while "geometry_osm",
+# "geometry_gadm", "geometry_wiki" are handled separately
+llm_columns_to_keep = ["DisNo.", "name", "admin_level", "admin1", "admin2", "iso3"]
+llm_batch_numbers = [1, 2, 3, 4, 5]
+llm_geom_columns = ["geometry_osm", "geometry_gadm", "geometry_wiki"]
+
+[geoprocessing]
+area_calculation_method = 'geodetic' # alternatively 'equal_area'
+
+[validation]
+# If true, skip processing a subbatch when its expected output CSV already exists
+skip_if_output_exists = true
