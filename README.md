@@ -2,13 +2,16 @@
 
 Code repository associated with the paper: 
 
-> Ronco, M., Delforge, D., Jäger, W. S., & Corbane, C. (2025, November 14). 
-> Subnational geocoding of global disasters using large language models. 
-> arXiv (preprint). https://arxiv.org/abs/2511.xxxxx
+> Ronco, M., Delforge, D., Jäger, W. S., & Corbane, C. (2025). 
+> Subnational Geocoding of Global Disasters Using Large Language Models 
+> (No. arXiv:2511.14788). arXiv. https://doi.org/10.48550/arXiv.2511.14788
+
+and the data repository: https://doi.org/10.5281/zenodo.17544931
 
 This repository contains the code used for LLM-assisted geocoding in the above 
 reference, and the validation and comparison of LLM-assisted geocoded EM-DAT 
-disaster described in the paper.
+disaster data (LLMGeoDis) described in the paper and available from the data 
+repository. 
 
 LLM-geocoded location geometries are validated against two benchmarks:
 - GDIS: a GADM‑based geocoding benchmark
@@ -144,6 +147,7 @@ In addition, the following data is required for the full workflow:
   attributes to the EM-DAT data.
   See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
   for details.
+- LLMGeoDis is available from the data repository: https://doi.org/10.5281/zenodo.17544931
 - GADM version 4.1 is available from the GADM website: 
   https://gadm.org/data.html
 
