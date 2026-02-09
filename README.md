@@ -18,7 +18,7 @@ LLM-geocoded location geometries are validated against two benchmarks:
 It also compares GDIS and EM‑DAT GAUL together for additional insights.
 Geometric comparisons are primarily area‑based.
 
-The LLM-geocoded units are compared both individually or dissolved 
+The LLM-geocoded units are compared both individually and dissolved 
 by the EM-DAT `DisNo.` disaster event identifier to compare the entire 
 geocoded disaster impact footprint.
 
@@ -97,7 +97,7 @@ main manuscript: <ANONYMIZED>
 
 #### Workflow diagram
 
-For the comparison and validation workflow, the diagram below shows its main 
+For the comparison and validation workflow, the diagram below shows the main 
 steps of the workflow. The `run_all.py`
 orchestrates the steps.
 
@@ -201,4 +201,8 @@ We recommend using ...
 
 [TO WRITE]
 
-### How to Run the Validation Workflows
+### How to Run the Geoparsing Validation Workflow
+
+[TO WRITE]
+
+### How to Run the Geometry Comparison Workflows
