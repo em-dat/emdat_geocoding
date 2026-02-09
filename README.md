@@ -217,4 +217,13 @@ We recommend using ...
 
 ### How to Run the Geometry Comparison Workflows
 
+[TO WRITE]
+
+### Figure and Table Reproducibility
+
+[TO WRITE]
+
+### Additional Support 
+
+[Optional: e.g., refer to code doscstring documentation]
 
