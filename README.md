@@ -24,12 +24,13 @@ geocoded disaster impact footprint.
 
 ## Project structure
 
+[NOTE: This section should be modified to be fully aligned with Zenodo repository
+content. A table might be a good alternative to the text below.] 
+
 ### I/O
 
 - `output/` — results, logs; per‑run stamped filenames
 - `data/` — input and third-party data
-
-[NOTE: we may need to restructure while merging with the Zenodo repository] 
 
 #### Geocoding Input Data
 
