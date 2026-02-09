@@ -9,6 +9,8 @@ the data repository.
 
 [TODO: ADD ONE OR TWO-SENTENCE SUMMARY FOR THE GEOCODING WORKFLOW]
 
+[TODO: ADD ONE OR TWO-SENTENCE SUMMARY FOR THE GEOPARSING VALIDATION WORKFLOW]
+
 LLM-geocoded location geometries are validated against two benchmarks:
 - GDIS: a GADM‑based geocoding benchmark
 - EM‑DAT GAUL: official EM‑DAT geometries
@@ -87,7 +89,11 @@ For reuse, we refer to the above sources for terms of use and redistribution.
 For a comprehensive overview of the geocoding workflow, we refer to the
 main manuscript: <ANONYMIZED>
 
-### Validation Workflow
+### Geoparsing Validation
+
+[To write]
+
+### Geometry Comparison Workflow
 
 #### Workflow diagram
 
