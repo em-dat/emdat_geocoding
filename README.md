@@ -1,17 +1,13 @@
-# EM-DAT Geocoding — Validation and Comparison
+# EM-DAT Geocoding — Supporting Code and Data
 
-Code repository associated with the paper: 
+Code repository associated with the paper: <ANONIMIZED>
 
-> Ronco, M., Delforge, D., Jäger, W. S., & Corbane, C. (2025). 
-> Subnational Geocoding of Global Disasters Using Large Language Models 
-> (No. arXiv:2511.14788). arXiv. https://doi.org/10.48550/arXiv.2511.14788
+This repository contains the data and code used for LLM-assisted geocoding in 
+the above reference, and the validation and comparison of LLM-assisted geocoded 
+EM-DAT disaster data (LLMGeoDis) described in the paper and available from 
+the data repository. 
 
-and the data repository: https://doi.org/10.5281/zenodo.17544931
-
-This repository contains the code used for LLM-assisted geocoding in the above 
-reference, and the validation and comparison of LLM-assisted geocoded EM-DAT 
-disaster data (LLMGeoDis) described in the paper and available from the data 
-repository. 
+[TODO: ADD ONE OR TWO-SENTENCE SUMMARY FOR THE GEOCODING WORKFLOW]
 
 LLM-geocoded location geometries are validated against two benchmarks:
 - GDIS: a GADM‑based geocoding benchmark
@@ -24,18 +20,76 @@ The LLM-geocoded units are compared both individually or dissolved
 by the EM-DAT `DisNo.` disaster event identifier to compare the entire 
 geocoded disaster impact footprint.
 
-## Key features
+## Project structure
 
-- Batch preprocessing for GDIS and LLM‑assisted EM‑DAT locations
-- Geometry indices: geodetic area, containment ratios, Jaccard (IoU)
-- Vectorized operations with geometry hygiene (validity, dissolve when needed)
-- Config‑driven paths/parameters via `config.toml`
-- Structured logging and reproducible outputs with config snapshots
+### Geocoding workflow
 
-## Workflow diagram
+- `geocoding/run_geolocation.py` — geocoding workflow
 
-For the geocoding workflow, shared in `geocoding\run_geolocation.py`, we refer 
-to the aforementioned reference for implementation details.
+### Validation/comparison workflow
+
+- `config.toml` — central configuration (paths, logging, options)
+- `validation/geom_indices.py` — area/overlap metrics
+- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
+- `validation/validation.py` — batch comparison pipelines and metrics
+
+- `run_preprocessing_gdis.py` — prepare GDIS batches
+- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
+- `run_validation.py` — run validations between sources
+- `run_all.py` — orchestrate end‑to‑end runs
+- `output/` — results, logs; per‑run stamped filenames
+- `data/` — input, intermediate, or output data supporting
+  reproducibility (see below)
+
+See also: 
+- `comparison_figures.ipynb` for a statistical synthesis of the results.
+
+### Data
+
+#### Geocoding Input Data
+
+- `input_emdat.csv`: [ADD DESC]
+- [MAYBE Refer to GADM 4.1 HERE as well as instruction on how to access query OSM and WIKIDAT]
+
+#### Geocoding Output Data
+
+- `LLMGeoDis_part1.zip': [ADD DESC, including unzipped format]
+- `LLMGeoDis_part2.zip': [ADD DESC]
+- `LLMGeoDis_part3.zip': [ADD DESC]
+- `LLMGeoDis_part4.zip': [ADD DESC]
+- `LLMGeoDis_part5.zip': [ADD DESC]
+
+##### Third-Party Data Used for Validation and Reporting
+
+- `241204_emdat_archive.xlsx`: EM-DAT FAIR Archive covering the 1900-2023 period (doi: 10.14428/DVN/I0LTPH).
+- `gdis_disnos.csv`: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
+    - Source/DOI: https://doi.org/10.7927/ZZ3B-8Y61
+    - Refer to the source for terms of use and redistribution.
+
+In addition, the following data is required for the full workflow:
+
+- The complete GDIS dataset, including GADM version 3.6. geometries,
+  downloadable from the above DOI.
+- The GAUL version 2015, which can be joined by
+  attributes to the EM-DAT data.
+  See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
+  for details.
+- LLMGeoDis is available from the data repository: https://doi.org/10.5281/zenodo.17544931
+- GADM version 4.1 is available from the GADM website: 
+  https://gadm.org/data.html
+
+For reuse, we refer to the above sources for terms of use and redistribution.
+
+## Workflow Overview
+
+### Geocoding Workflow
+
+For a comprehensive overview of the geocoding workflow, we refer to the
+main manuscript: <ANONYMIZED>
+
+### Validation Workflow
+
+#### Workflow diagram
 
 For the comparison and validation workflow, the diagram below shows its main 
 steps of the workflow. The `run_all.py`
@@ -93,72 +147,12 @@ flowchart TD
 
 ```
 
-## Project structure
-
-### Geocoding workflow
-
-- `geocoding/run_geolocation.py` — geocoding workflow (independent code)
-
-### Validation/comparison workflow
-
-- `config.toml` — central configuration (paths, logging, options)
-- `validation/geom_indices.py` — area/overlap metrics
-- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
-- `validation/validation.py` — batch comparison pipelines and metrics
-
-- `run_preprocessing_gdis.py` — prepare GDIS batches
-- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
-- `run_validation.py` — run validations between sources
-- `run_all.py` — orchestrate end‑to‑end runs
-- `output/` — results, logs; per‑run stamped filenames
-- `data/` — lightweight inputs (no geometries)
-
-See also: 
-- `comparison_figures.ipynb` for a statistical synthesis of the results.
-- `visual_validation.ipynb` and the `validation_samples` folder for random 
-  result samples and visualizations.
-
-## Installation
-
-- Python 3.13+
-- Dependencies listed in `pyproject.toml` (and locked in `uv.lock`)
-
-## Input data
-
-Because of the size of the data, it is not included in the repository, except
-for the following lightweight data inputs:
-
-- EM‑DAT Excel archive (lightweight):
-    - Path: `data/241204_emdat_archive.xlsx`
-    - Description: EM-DAT FAIR Archive covering the 1900-2023 period.
-    - Source/DOI: https://doi.org/10.14428/DVN/I0LTPH
-    - Refer to the source for terms of use and redistribution.
-- GDIS DisNo. CSV mapping:
-    - Path: `data/gdis_disnos.csv`
-    - Description: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
-    - Source/DOI: https://doi.org/10.7927/ZZ3B-8Y61
-    - Refer to the source for terms of use and redistribution.
-
-In addition, the following data is required for the full workflow:
-
-- The complete GDIS dataset, including GADM version 3.6. geometries,
-  downloadable from the above DOI.
-- The GAUL version 2015, which can be joined by
-  attributes to the EM-DAT data.
-  See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
-  for details.
-- LLMGeoDis is available from the data repository: https://doi.org/10.5281/zenodo.17544931
-- GADM version 4.1 is available from the GADM website: 
-  https://gadm.org/data.html
-
-For reuse, we refer to the above sources for terms of use and redistribution.
-
-## Geometry and CRS conventions
+#### Geometry and CRS Conventions
 
 - Storage CRS: EPSG:4326
 - Area computations: geodetic area calculations (used default)
 
-## Validation metrics and outputs
+#### Validation Metrics and Outputs
 
 Computed in `validation/geom_indices.py`.
 
@@ -188,3 +182,17 @@ disaster identifiers, or
 > <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>_dissolved.csv
 
 when dissolve operation is applied.
+
+## Installation and Reuse Instructions
+
+### Python Requirements
+
+We recommend using ...
+
+[TODO: make sure that packages used in the geocoding workflow are in the uv lock file and pyproject toml file]
+
+### How to Run the Geocoding Workflow
+
+[TO WRITE]
+
+### How to Run the Validation Workflows
