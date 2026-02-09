@@ -61,7 +61,7 @@ See also:
 - `LLMGeoDis_part4.zip`: [ADD DESC]
 - `LLMGeoDis_part5.zip`: [ADD DESC]
 
-##### Third-Party Data Used for Validation and Reporting
+#### Third-Party Data Used for Validation and Reporting
 
 - `241204_emdat_archive.xlsx`: EM-DAT FAIR Archive covering the 1900-2023 period (doi: 10.14428/DVN/I0LTPH).
 - `gdis_disnos.csv`: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
