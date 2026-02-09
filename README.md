@@ -85,7 +85,7 @@ For reuse, we refer to the above sources for terms of use and redistribution.
 - `run_all.py` — orchestrate end‑to‑end runs
   reproducibility (see below)
 
-### Reporting and Vizualisation
+### Reporting and Visualization
 - `comparison_figures.ipynb` for a statistical synthesis of the results.
 
 
@@ -104,9 +104,11 @@ main manuscript: <ANONYMIZED>
 
 #### Workflow diagram
 
-For the comparison and validation workflow, the diagram below shows the main 
+For the geometry comparison workflow, the diagram below shows the main 
 steps of the workflow. The `run_all.py`
 orchestrates the steps.
+
+[TODO: COMPLEMENT DESCRIPTION BRIEFLY]
 
 ```mermaid
 flowchart TD
@@ -213,3 +215,5 @@ We recommend using ...
 [TO WRITE]
 
 ### How to Run the Geometry Comparison Workflows
+
+
