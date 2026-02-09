@@ -55,11 +55,11 @@ See also:
 
 #### Geocoding Output Data
 
-- `LLMGeoDis_part1.zip': [ADD DESC, including unzipped format]
-- `LLMGeoDis_part2.zip': [ADD DESC]
-- `LLMGeoDis_part3.zip': [ADD DESC]
-- `LLMGeoDis_part4.zip': [ADD DESC]
-- `LLMGeoDis_part5.zip': [ADD DESC]
+- `LLMGeoDis_part1.zip`: [ADD DESC, including unzipped format]
+- `LLMGeoDis_part2.zip`: [ADD DESC]
+- `LLMGeoDis_part3.zip`: [ADD DESC]
+- `LLMGeoDis_part4.zip`: [ADD DESC]
+- `LLMGeoDis_part5.zip`: [ADD DESC]
 
 ##### Third-Party Data Used for Validation and Reporting
 
