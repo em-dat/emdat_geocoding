@@ -24,29 +24,12 @@ geocoded disaster impact footprint.
 
 ## Project structure
 
-### Geocoding workflow
+### I/O
 
-- `geocoding/run_geolocation.py` — geocoding workflow
-
-### Validation/comparison workflow
-
-- `config.toml` — central configuration (paths, logging, options)
-- `validation/geom_indices.py` — area/overlap metrics
-- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
-- `validation/validation.py` — batch comparison pipelines and metrics
-
-- `run_preprocessing_gdis.py` — prepare GDIS batches
-- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
-- `run_validation.py` — run validations between sources
-- `run_all.py` — orchestrate end‑to‑end runs
 - `output/` — results, logs; per‑run stamped filenames
-- `data/` — input, intermediate, or output data supporting
-  reproducibility (see below)
+- `data/` — input and third-party data
 
-See also: 
-- `comparison_figures.ipynb` for a statistical synthesis of the results.
-
-### Data
+[NOTE: we may need to restructure while merging with the Zenodo repository] 
 
 #### Geocoding Input Data
 
@@ -81,6 +64,30 @@ In addition, the following data is required for the full workflow:
   https://gadm.org/data.html
 
 For reuse, we refer to the above sources for terms of use and redistribution.
+
+### Geocoding Workflow
+
+- `geocoding/run_geolocation.py` — geocoding workflow
+
+### Geoparsing Validation Workflow
+
+[TO ADD]
+
+### Geometry Comparison Workflow
+
+- `config.toml` — central configuration (paths, logging, options)
+- `validation/geom_indices.py` — area/overlap metrics
+- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
+- `validation/validation.py` — batch comparison pipelines and metrics
+- `run_preprocessing_gdis.py` — prepare GDIS batches
+- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
+- `run_validation.py` — run validations between sources
+- `run_all.py` — orchestrate end‑to‑end runs
+  reproducibility (see below)
+
+### Reporting and Vizualisation
+- `comparison_figures.ipynb` for a statistical synthesis of the results.
+
 
 ## Workflow Overview
 
