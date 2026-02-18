@@ -29,7 +29,7 @@ def read_admin(path_admin,adl):
     
     return adms
 
-gadm1 = read_admin("/eos/jeodpp/data/projects/ML4FS/HFID/GADM",1)
+gadm1 = read_admin("./GADM",1)
 
 
 csv_folder = "geolocated_files"
@@ -119,4 +119,4 @@ def fill_gadm(df, gadm1):
 
 
 concatenated_output_cleaned = fill_gadm(concatenated_output_cleaned, gadm1)
-concatenated_output_cleaned.to_csv("./data/LLMGaoDis.csv", index=False)
+concatenated_output_cleaned.to_csv("./data/LLMGeoDis.csv", index=False)
