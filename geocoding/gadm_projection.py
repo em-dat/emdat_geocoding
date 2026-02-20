@@ -1,12 +1,14 @@
-import os 
-import pandas as pd
+import os
+import tomllib
+
 import geopandas as gpd
+import pandas as pd
+import pycountry
 from shapely import wkt
-import pycountry 
 from shapely.validation import make_valid
-from shapely.ops import nearest_points
 
-
+with open("config.toml", "rb") as f:
+    config = tomllib.load(f)
 
 def read_admin(path_admin,adl):
     adms=gpd.read_file(os.path.join(path_admin, "gadm_410_L%s.shp"%str(adl)))
@@ -29,10 +31,10 @@ def read_admin(path_admin,adl):
     
     return adms
 
-gadm1 = read_admin("./GADM",1)
+gadm1 = read_admin(config["geocoding"]["gadm_path"],1)
 
 
-csv_folder = "geolocated_files"
+csv_folder = config["geocoding"]["geolocated_files_dir"]
 all_dataframes = []
 
 for filename in os.listdir(csv_folder):

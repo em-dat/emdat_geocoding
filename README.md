@@ -1,229 +1,153 @@
-# EM-DAT Geocoding — Supporting Code and Data
-
-Code repository associated with the paper: <ANONIMIZED>
-
-This repository contains the data and code used for LLM-assisted geocoding in 
-the above reference, and the validation and comparison of LLM-assisted geocoded 
-EM-DAT disaster data (LLMGeoDis) described in the paper and available from 
-the data repository. 
-
-[TODO: ADD ONE OR TWO-SENTENCE SUMMARY FOR THE GEOCODING WORKFLOW]
-
-[TODO: ADD ONE OR TWO-SENTENCE SUMMARY FOR THE GEOPARSING VALIDATION WORKFLOW]
-
-LLM-geocoded location geometries are validated against two benchmarks:
-- GDIS: a GADM‑based geocoding benchmark
-- EM‑DAT GAUL: official EM‑DAT geometries
-
-It also compares GDIS and EM‑DAT GAUL together for additional insights.
-Geometric comparisons are primarily area‑based.
-
-The LLM-geocoded units are compared both individually and dissolved 
-by the EM-DAT `DisNo.` disaster event identifier to compare the entire 
-geocoded disaster impact footprint.
-
-## Project structure
-
-[NOTE: This section should be modified to be fully aligned with Zenodo repository
-content. A table might be a good alternative to the text below.] 
-
-### I/O
-
-- `output/` — results, logs; per‑run stamped filenames
-- `data/` — input and third-party data
-
-#### Geocoding Input Data
-
-- `input_emdat.csv`: [ADD DESC]
-- [MAYBE Refer to GADM 4.1 HERE as well as instruction on how to access query OSM and WIKIDAT]
-
-#### Geocoding Output Data
-
-- `LLMGeoDis_part1.zip`: [ADD DESC, including unzipped format]
-- `LLMGeoDis_part2.zip`: [ADD DESC]
-- `LLMGeoDis_part3.zip`: [ADD DESC]
-- `LLMGeoDis_part4.zip`: [ADD DESC]
-- `LLMGeoDis_part5.zip`: [ADD DESC]
-
-#### Third-Party Data Used for Validation and Reporting
-
-- `241204_emdat_archive.xlsx`: EM-DAT FAIR Archive covering the 1900-2023 period (doi: 10.14428/DVN/I0LTPH).
-- `gdis_disnos.csv`: List of EM-DAT DisNo. disaster identifiers geocoded by GDIS.
-    - Source/DOI: https://doi.org/10.7927/ZZ3B-8Y61
-    - Refer to the source for terms of use and redistribution.
-
-In addition, the following data is required for the full workflow:
-
-- The complete GDIS dataset, including GADM version 3.6. geometries,
-  downloadable from the above DOI.
-- The GAUL version 2015, which can be joined by
-  attributes to the EM-DAT data.
-  See [this tutorial](https://doc.emdat.be/docs/additional-resources-and-tutorials/tutorials/python_tutorial_2/)
-  for details.
-- LLMGeoDis is available from the data repository: https://doi.org/10.5281/zenodo.17544931
-- GADM version 4.1 is available from the GADM website: 
-  https://gadm.org/data.html
-
-For reuse, we refer to the above sources for terms of use and redistribution.
-
-### Geocoding Workflow
-
-- `geocoding/run_geolocation.py` — geocoding workflow
-
-### Geoparsing Validation Workflow
-
-[TO ADD]
-
-### Geometry Comparison Workflow
-
-- `config.toml` — central configuration (paths, logging, options)
-- `validation/geom_indices.py` — area/overlap metrics
-- `validation/io.py` — IO helpers for file parsing, GPKG batches, CSVs
-- `validation/validation.py` — batch comparison pipelines and metrics
-- `run_preprocessing_gdis.py` — prepare GDIS batches
-- `run_preprocessing_llm.py` — prepare LLM‑assisted EM‑DAT batches
-- `run_validation.py` — run validations between sources
-- `run_all.py` — orchestrate end‑to‑end runs
-  reproducibility (see below)
-
-### Reporting and Visualization
-- `comparison_figures.ipynb` for a statistical synthesis of the results.
-
-
-## Workflow Overview
-
-### Geocoding Workflow
-
-For a comprehensive overview of the geocoding workflow, we refer to the
-main manuscript: <ANONYMIZED>
-
-### Geoparsing Validation
-
-[To write]
-
-### Geometry Comparison Workflow
-
-#### Workflow diagram
-
-For the geometry comparison workflow, the diagram below shows the main 
-steps of the workflow. The `run_all.py`
-orchestrates the steps.
-
-[TODO: COMPLEMENT DESCRIPTION BRIEFLY]
-
-```mermaid
-flowchart TD
-%% Inputs
-    A["GDIS GADM<br/><i>benchark</i>"]:::data
-    B["EM-DAT GAUL<br/><i>benchark</i>"]:::data
-    C["GDIS GADM batches"]:::batch
-    D["LLM-geocoded data<br/><i>main paper outcome</i>"]:::data
-    E["LLM-geocoded batches<br/><i>GADM, OSM, Wikidata</i>"]:::batch
-    O["CSV metrics<br/><i>batch vs benchmark</i>"]:::output
-    CFG["config.toml<br/><i>paths, logging, options</i>"]:::config
-    V["validation<br/><i>package<i>"]:::script
-%% Steps
-    PG["run_preprocessing_gdis.py"]:::script
-    PL["run_preprocessing_llm.py"]:::script
-    RV["run_validation.py"]:::script
-    A --> PG --> C
-    D --> PL --> E
-    A --> RV
-    B --> RV
-    C --> RV
-    E --> RV -->|dissolve: True/False| O
-    CFG --> PG
-    CFG --> PL
-    CFG --> RV
-    V --> PG
-    V --> PL
-    V --> RV
-    
-%% Styles (optional)
-    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
-    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
-    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
-    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
-```
-
-```mermaid
-flowchart TD
-%%legend
-    LEG1["Scripts"]:::script
-    LEG2["Input data\n<i>not shared</i>"]:::data
-    LEG3["Batch files\n<i>not shared</i>"]:::batch
-    LEG4["Outputs"]:::output
-    LEG5["Config"]:::config
-    
-%% Styles (optional)
-    classDef data fill:#e3f2fd,stroke:#1565c0,color:#0d47a1;
-    classDef batch fill:#80f9c0,stroke:#008958,color:#2d3a43;
-    classDef config fill:#fff3e0,stroke:#ef6c00,color:#e65100;
-    classDef output fill:#f1f8e9,stroke:#2e7d32,color:#1b5e20;
-
-```
-
-#### Geometry and CRS Conventions
-
-- Storage CRS: EPSG:4326
-- Area computations: geodetic area calculations (used default)
-
-#### Validation Metrics and Outputs
-
-Computed in `validation/geom_indices.py`.
-
-For each pair of geometries A (candidate) and B (benchmark):
-
-- `area_a`, `area_b` — areas (square meters)
-- `intersection_area`, `union_area`
-- `a_in_b` = |A ∩ B| / |A| — containment of A by B
-- `b_in_a` = |A ∩ B| / |B| — containment of B by A
-- `jaccard` = |A ∩ B| / |A ∪ B| — Intersection over Union
-- `a_contains_b` = 1 if A contains B, 0 otherwise
-- `b_contains_a` = 1 if B contains A, 0 otherwise
-- `a_contains_b_properly` = 1 if A strictly contains B, 0 otherwise
-- `b_contains_a_properly` = 1 if B strictly contains A, 0 otherwise
-
-We refer to the `shapely` and `geopandas` documentation for further 
-geoprocessing details.
-
-Calculated metrics are stored in the `output/` directory, with the following
-naming convention:
-
-> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>.csv
-
-when no dissolve operation is applied to merge geometries by DisNo.
-disaster identifiers, or
-
-> <BATCH_NAME>_<BENCHMARK_NAME>_<BATH_NUMBER>_dissolved.csv
-
-when dissolve operation is applied.
-
-## Installation and Reuse Instructions
-
-### Python Requirements
-
-We recommend using ...
-
-[TODO: make sure that packages used in the geocoding workflow are in the uv lock file and pyproject toml file]
-
-### How to Run the Geocoding Workflow
-
-[TO WRITE]
-
-### How to Run the Geoparsing Validation Workflow
-
-[TO WRITE]
-
-### How to Run the Geometry Comparison Workflows
-
-[TO WRITE]
-
-### Figure and Table Reproducibility
-
-[TO WRITE]
-
-### Additional Support 
-
-[Optional: e.g., refer to code doscstring documentation]
+# EM‑DAT Geocoding — Code and Data (LLM‑GeoDis)
+
+This repository contains the code and lightweight inputs to reproduce the
+LLM‑assisted geocoding (LLM‑GeoDis) and the geometry comparison/validation
+workflows described in the associated manuscript. The full dataset is
+archived on Zenodo: https://zenodo.org/records/18486021 (DOI:
+https://doi.org/10.5281/zenodo.18486021).
+
+Goals:
+- Geoparse EM‑DAT textual locations with GPT‑4o into GADM 4.1, OSM and
+  Wikidata administrative units and points.
+- Project and harmonize geometries to GADM 4.1.
+- Compare and validate against GDIS (GADM‑based) and EM‑DAT GAUL 2015 benchmarks.
+
+## Repository layout
+
+The repository is organized following the logical workflow of the project, from geocoding to validation and reporting.
+
+### 1. Geocoding (Reference)
+*Located in `geocoding/`. These scripts were used to generate the LLM‑GeoDis dataset.*
+- `run_geolocation.py`: Main workflow for LLM‑assisted geoparsing using GPT‑4o. It extracts location names from EM‑DAT and maps them to administrative units.
+- `gadm_projection.py`: Handles the projection and harmonization of coordinates and administrative names to the GADM 4.1 reference.
+
+### 2. Preprocessing & Batching
+*Scripts to prepare data for validation.*
+- `run_preprocessing_llm.py`: Converts the raw LLM‑GeoDis CSV parts (from Zenodo) into standardized GeoPackage (GPKG) batches for comparison.
+- `run_preprocessing_gdis.py`: Prepares GDIS data into comparable GPKG batches, filtered to match the disaster events present in the EM‑DAT benchmarks.
+- `validation/preprocessing.py`: Underlying utilities for batching and spatial data cleaning.
+
+### 3. Geometry Comparison & Validation
+*The core validation pipeline.*
+- `run_validation.py`: The driver script that iterates through all batches, benchmarks (GAUL/GDIS), and processing options (dissolved vs. individual units).
+- `validation/validation.py`: Orchestrates the comparison logic: aligning model outputs with benchmarks and invoking metric calculations.
+- `validation/geom_indices.py`: Implementation of spatial metrics (Jaccard index, containment, geodetic area calculations).
+- `validation/io.py`: Robust I/O helpers for reading and writing spatial formats (GPKG, CSV).
+- `run_all.py`: A master script to run the entire preprocessing and validation sequence end‑to‑end.
+
+### 4. Reporting & Visualization
+*Notebooks for statistical analysis and figure generation.*
+- `main_figures.ipynb`: Generates descriptive statistics and figures regarding the LLM‑GeoDis dataset (e.g., coverage, reliability).
+- `comparison_figures.ipynb`: Analyzes validation outputs from the `output/` folder and generates comparative performance plots.
+- `compute_reliability.ipynb`: Focuses on reliability metrics and consensus between different geocoding sources.
+- `validate_geoparsing.ipynb`: Detailed check of the geoparsing accuracy.
+
+## Figure and Table Reproducibility
+
+To reproduce the figures and tables presented in the manuscript, follow the mapping below:
+
+| Figure/Table | Source Notebook | Input Data / Requirements |
+| :--- | :--- | :--- |
+| **Dataset Statistics** (Coverage, Counts) | `main_figures.ipynb` | `LLMGeoDis` CSV parts, `input_emdat.csv`, `reliability_db.csv` |
+| **Yearly Trends** (Geometry counts) | `main_figures.ipynb` | `reliability_db.csv` |
+| **Comparison Metrics** (Jaccard, Overlap) | `comparison_figures.ipynb` | CSV files in `output/` (generated by `run_all.py`) |
+| **Reliability Analysis** | `compute_reliability.ipynb` | `reliability_db.csv`, `LLMGeoDis` batches |
+| **Geoparsing Validation** | `validate_geoparsing.ipynb` | `input_emdat.csv`, LLM outputs |
+
+*Note: Ensure all Zenodo data files are placed in the `data/` folder as described below before running the notebooks.*
+
+## Data files (put under `data/`)
+
+- `241204_emdat_archive.xlsx` — EM‑DAT FAIR Archive 1900–2023 (DOI:
+  10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
+- `gdis_disnos.csv` — EM‑DAT `DisNo.` identifiers geocoded by GDIS (from
+  https://doi.org/10.7927/ZZ3B‑8Y61). Terms of use: see source.
+- `LLMGeoDis_part1.zip` … `LLMGeoDis_part5.zip` — the LLM‑GeoDis database
+  split into five ZIPs. After download, unzip all into a single folder such as
+  `data/LLMGeoDis/`. The unzipped content consists of CSV files grouped by
+  batch and provider (GADM/OSM/Wikidata) with columns including
+  `DisNo.`, `name`, `admin_level`, `admin1`, `admin2`, `iso3` and one or more
+  geometry columns (e.g., `geometry_gadm`, `geometry_osm`, `geometry_wiki`).
+- `geoemdat_gaul.gpkg` — EM‑DAT GAUL 2015 geometries (benchmark). Point
+  `path.emdat_gaul_path` to this file.
+- `pend-gdis-1960-2018-disasterlocations.csv` — GDIS reference. You may need to
+  convert to GPKG aligned to GADM to use as `path.gdis_path`, or rely on
+  external GDIS distributions that provide a GADM‑based GPKG.
+- `input_emdat.csv` — EM‑DAT input used during LLM geoparsing (for reference).
+- `reliability_db.csv` — reliability annotations for geoparsing (for reference).
+- `synthetic_EMDAT_locations.csv` — synthetic examples used during development
+  (for reference/testing).
+
+External sources (not redistributed here):
+- GADM 4.1 geometries: https://gadm.org/data.html
+- Full GDIS dataset: https://doi.org/10.7927/ZZ3B‑8Y61
+
+## Python requirements
+
+1) Install Python and dependencies
+- Python: 3.13 or newer (see `pyproject.toml`)
+- We recommend `uv` for fast, reproducible envs:
+  - Install uv: https://docs.astral.sh/uv/getting-started/installation/
+  - Create and sync env:
+    - `uv venv`
+    - `uv sync`
+
+2) Place data and configure paths
+- Put all input data under `data/` (see “Data files” below).
+- Edit `config.toml`:
+  - `path.batch_dir`: folder for generated batch GPKGs (local path you control).
+  - `path.csv_file_dir`: folder where you unzipped the `LLMGeoDis_part*.zip` CSV parts (e.g., `data/LLMGeoDis`).
+  - `path.emdat_gaul_path`: path to EM-DAT GAUL geometries (e.g. `data/geoemdat_gaul.gpkg`).
+  - `path.gdis_path`: path to GDIS geometries (GADM-based).
+  - `path.emdat_archive_path`: `data/241204_emdat_archive.xlsx` (provided).
+  - `path.gdis_disno_path`: `data/gdis_disnos.csv` (provided).
+  - `geocoding.api_key`, `geocoding.base_url`: API credentials and OpenAI-compatible endpoint. Change both to switch providers (e.g., Mistral, OpenRouter, Azure OpenAI).
+  - `geocoding.model`: chat/completions model name (e.g., `gpt-4o`, `mistral-large-latest`).
+  - `geocoding.temperature`, `geocoding.max_tokens`: optional generation controls for the geocoding prompt.
+  - `geocoding.gadm_path`: path to GADM 4.1 shapefiles for the geocoding workflow.
+  - `geocoding.input_dir`: folder containing the original EM-DAT Excel files to geocode (e.g. `original_files`).
+  - `geocoding.geolocated_files_dir`: output folder for geocoded CSVs (e.g. `geolocated_files`).
+  - `geocoding.log_dir`: folder for geocoding logs and skipped rows (e.g. `geolocated_logs`).
+
+Tip — Switching model/provider:
+- Keep the same code. Set `geocoding.base_url` and `geocoding.api_key` to your provider, and set `geocoding.model` accordingly.
+  - Examples: 
+    - OpenAI (or compatible): base_url like `https://api.openai.com/v1`, model `gpt-4o`.
+    - Mistral: base_url `https://api.mistral.ai/v1` (OpenAI-compatible route), model `mistral-large-latest`.
+    - Azure OpenAI: your deployment’s `endpoint` as `base_url`, model = your deployment name.
+
+3) Run the comparison workflow
+- `python run_all.py`
+  - Runs, in order: LLM preprocessing → GDIS preprocessing → validation.
+  - Outputs CSV metrics to `output/`.
+
+## Running the workflows
+
+- Configure `config.toml` with your local paths and settings.
+- Then run:
+  - `python run_all.py`
+- Outputs written to `output/`:
+  - `<batch>_<benchmark>_<n>.csv`
+  - `<batch>_<benchmark>_<n>_dissolved.csv` (when dissolving by `DisNo.`)
+
+Notes
+- Storage CRS: EPSG:4326. Area computations use geodetic areas by default (see
+  `config.toml` and `validation/geom_indices.py`).
+- Batch control: `index.batch_numbers` in `config.toml` (default: [1..5]).
+- Skipping existing outputs: `validation.skip_if_output_exists` in `config.toml`.
+
+## Reuse, licensing and citation
+
+- Code: see `LICENSE` in this repository.
+- Data: see individual sources for terms of use (EM‑DAT FAIR Archive, GDIS,
+  GADM, Wikidata, OSM, and the Zenodo dataset are subject to their own
+  licenses/terms). The Zenodo record lists CC-BY 4.0 for LLM‑GeoDis.
+
+## Known limitations / to‑dos
+
+- If you rely on the CSV‑based GDIS distribution, you may need a small adapter
+  to produce a GPKG aligned to GADM levels 1–2 for best comparability.
+
+If anything is unclear or you need a ready‑to‑run config for your environment,
+please open an issue or contact the authors.
 

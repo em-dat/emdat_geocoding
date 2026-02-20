@@ -38,7 +38,7 @@ def main():
     output_dir = Path(config["path"]["batch_dir"])
     output_dir.mkdir(parents=True, exist_ok=True)
     pp.make_llm_geocoded_batches(
-        csv_file_dir='Q:/Data/emdat_geocoding/GEOEMDAT',
+        csv_file_dir=config["path"]["csv_file_dir"],
         columns_to_keep=config["index"]["llm_columns_to_keep"],
         batch_numbers=config["index"]["batch_numbers"],
         keep_disno=disno_with_gaul,

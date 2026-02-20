@@ -1,32 +1,31 @@
-import pandas as pd
-import numpy as np
-import unicodedata
-from rapidfuzz import fuzz, process
-from openai import OpenAI
 import json
-import re
-import osmnx as osm
+import os
+import random
 import re
 import time
-from SPARQLWrapper import SPARQLWrapper, JSON
-from shapely.geometry import Point
-from geopy.distance import geodesic
-import random
-import geopandas as gpd
-import os 
-import pycountry
+import tomllib
 from pathlib import Path
-from shapely import wkt
+
 import geopandas as gpd
-import math
+import osmnx as osm
+import pandas as pd
+import pycountry
+import unicodedata
+from SPARQLWrapper import SPARQLWrapper, JSON
+from geopy.distance import geodesic
+from openai import OpenAI
+from rapidfuzz import fuzz, process
 from shapely import wkt as sh_wkt
+from shapely.geometry import Point
 
+with open("config.toml", "rb") as f:
+    config = tomllib.load(f)
 
-TOKEN = "your_token"
+TOKEN = config["geocoding"]["api_key"]
 
 client = OpenAI(
     api_key=TOKEN,
-    base_url="https://api-gpt.jrc.ec.europa.eu/v1",
+    base_url=config["geocoding"]["base_url"],
 )
 
 
@@ -131,9 +130,11 @@ Country: "{country}"
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model=config["geocoding"].get("model", "gpt-4o"),
+            messages=[{"role": "user", "content": prompt}],
+            temperature=config["geocoding"].get("temperature", 0.0),
+            max_tokens=config["geocoding"].get("max_tokens", 512),
             stream=False,
-            messages=[{"role": "user", "content": prompt}]
         )
         # GPT returns text, parse as JSON
         gpt_output = clean_gpt_json(response.choices[0].message.content.strip())
@@ -566,8 +567,8 @@ def merge_location_geometries_strict(osm_json, wiki_json, gadm_json):
         ])
     return df
 
-gadm1 = read_admin("/path_to_gadm/GADM",1)
-gadm2 = read_admin("/path_to_gadm/GADM",2)
+gadm1 = read_admin(config["geocoding"]["gadm_path"], 1)
+gadm2 = read_admin(config["geocoding"]["gadm_path"], 2)
 
 
 final_rows = []
@@ -601,9 +602,9 @@ def store_cached_row(level, row_dict, admin1=None, admin2=None, admin3=None, cou
 
 
 # --- Folders ---
-input_dir = Path("original_files")
-output_dir = Path("geolocated_files")
-log_dir = Path("geolocated_logs")
+input_dir = Path(config["geocoding"].get("input_dir", "original_files"))
+output_dir = Path(config["geocoding"].get("geolocated_files_dir", "geolocated_files"))
+log_dir = Path(config["geocoding"].get("log_dir", "geolocated_logs"))
 output_dir.mkdir(exist_ok=True)
 log_dir.mkdir(exist_ok=True)
 
