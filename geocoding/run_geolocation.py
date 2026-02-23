@@ -29,26 +29,34 @@ client = OpenAI(
 )
 
 
-def read_admin(path_admin,adl):
-    adms=gpd.read_file(os.path.join(path_admin, "gadm_410_L%s.shp"%str(adl)))
-    
-    adms = adms.rename(columns={'GID_0': 'iso3'})
-    iso3_mapping = {'Z01':'IND', 'Z02':'CHN', 'Z03':'CHN', 'Z04':'IND', 'Z05':'IND', 'Z06':'PAK', 'Z07':'IND', 'Z08':'CHN', 'Z09':'IND'}
-    adms["iso3"] = adms["iso3"].replace(iso3_mapping)
-    adms = adms[~adms["iso3"].isin(["XKO",None])]
-    pyi3=[pycountry.countries.get(alpha_3=i3) for i3 in adms.iso3]
-    adms=adms[[x is not None for x in pyi3]] # som admin2 will be deleted belonging to ['China', 'India', 'Pakistan', 'Kosovo'] as they are in conflicted areas
-    adms["iso2"]=[pycountry.countries.get(alpha_3=i3).alpha_2 for i3 in adms.iso3]
+def read_admin(path_admin, adl):
+    # GADM GPKG layers are typically named 'ADM_0', 'ADM_1', etc.
+    # or 'gadm_410_0', 'gadm_410_1' depending on the exact version/download
+    # For the world GPKG, they are usually 'ADM_0', 'ADM_1', ...
+    layer_name = f"ADM_{adl}"
+    adms = gpd.read_file(path_admin, layer=layer_name)
 
-    adms["ADMIN0"]=adms["COUNTRY"]
-    if adl ==1:
-        adms["ADMIN1"]=adms["NAME_1"]
-    elif adl ==2:
-        adms["ADMIN1"]=adms["NAME_1"]
-        adms["ADMIN2"]=adms["NAME_2"]
-    
-    
+    adms = adms.rename(columns={'GID_0': 'iso3'})
+    iso3_mapping = {'Z01': 'IND', 'Z02': 'CHN', 'Z03': 'CHN', 'Z04': 'IND',
+                    'Z05': 'IND', 'Z06': 'PAK', 'Z07': 'IND', 'Z08': 'CHN',
+                    'Z09': 'IND'}
+    adms["iso3"] = adms["iso3"].replace(iso3_mapping)
+    adms = adms[~adms["iso3"].isin(["XKO", None])]
+    pyi3 = [pycountry.countries.get(alpha_3=i3) for i3 in adms.iso3]
+    adms = adms[[x is not None for x in
+                 pyi3]]  # som admin2 will be deleted belonging to ['China', 'India', 'Pakistan', 'Kosovo'] as they are in conflicted areas
+    adms["iso2"] = [pycountry.countries.get(alpha_3=i3).alpha_2 for i3 in
+                    adms.iso3]
+
+    adms["ADMIN0"] = adms["COUNTRY"]
+    if adl == 1:
+        adms["ADMIN1"] = adms["NAME_1"]
+    elif adl == 2:
+        adms["ADMIN1"] = adms["NAME_1"]
+        adms["ADMIN2"] = adms["NAME_2"]
+
     return adms
+
 
 def normalize_string(s):
     """
@@ -70,7 +78,7 @@ def clean_gpt_json(raw_text):
     match = re.search(r"\{.*\}", raw_text, flags=re.DOTALL)
     if not match:
         raise ValueError("No JSON object found in GPT response.")
-    
+
     json_str = match.group(0)
 
     # Replace smart quotes with normal quotes
@@ -127,7 +135,6 @@ Now parse this location string: "{location_string}"
 Country: "{country}"
 """
 
-
     try:
         response = client.chat.completions.create(
             model=config["geocoding"].get("model", "gpt-4o"),
@@ -138,14 +145,14 @@ Country: "{country}"
         )
         # GPT returns text, parse as JSON
         gpt_output = clean_gpt_json(response.choices[0].message.content.strip())
-        #print(gpt_output)
-        #parsed_json = json.loads(gpt_output)
+        # print(gpt_output)
+        # parsed_json = json.loads(gpt_output)
         return gpt_output
     except Exception as e:
         print(f"Error parsing location with GPT: {e}")
         return None
 
-    
+
 def clean_location_name(name: str) -> str:
     """
     Clean a location name:
@@ -162,16 +169,26 @@ def clean_location_name(name: str) -> str:
 
     # Generic keywords to remove
     keywords = [
-        "region", "regions", "province", "provinces", "state", "states", "division", "divisions",
-        "territory", "territories", "department", "departments", "departement", "departements",
-        "departamento", "departamentos", "governorate", "governorates", "district", "districts",
-        "municipality", "municipalities", "municipal", "municipal district", "municipal districts",
-        "city", "cities", "county", "counties", "prefecture", "prefectures", "borough", "boroughs",
-        "commune", "communes", "parish", "parishes", "ward", "wards", "sector", "sectors", "zone","tower",
-        "zones", "subdistrict", "subdistricts", "subdivision", "subdivisions", "locality", "localities",
-        "township", "townships", "town", "towns", "village", "villages", "hamlet", "hamlets",
-        "regency", "regencies", "area", "areas", "island", "islands", "isl\\.", "lake", "lakes",
-        "river", "rivers", "mount", "mounts", "mountain", "mountains", "valley", "valleys",
+        "region", "regions", "province", "provinces", "state", "states",
+        "division", "divisions",
+        "territory", "territories", "department", "departments", "departement",
+        "departements",
+        "departamento", "departamentos", "governorate", "governorates",
+        "district", "districts",
+        "municipality", "municipalities", "municipal", "municipal district",
+        "municipal districts",
+        "city", "cities", "county", "counties", "prefecture", "prefectures",
+        "borough", "boroughs",
+        "commune", "communes", "parish", "parishes", "ward", "wards", "sector",
+        "sectors", "zone", "tower",
+        "zones", "subdistrict", "subdistricts", "subdivision", "subdivisions",
+        "locality", "localities",
+        "township", "townships", "town", "towns", "village", "villages",
+        "hamlet", "hamlets",
+        "regency", "regencies", "area", "areas", "island", "islands", "isl\\.",
+        "lake", "lakes",
+        "river", "rivers", "mount", "mounts", "mountain", "mountains", "valley",
+        "valleys",
         "peninsula", "peninsulas"
     ]
     pattern = r"\b(" + "|".join(keywords) + r")\b"
@@ -184,7 +201,8 @@ def clean_location_name(name: str) -> str:
     name = name.strip(", ").strip()
 
     # Remove any leftover 'None' or empty segments
-    parts = [p.strip() for p in name.split(",") if p.strip() and p.strip().lower() != "none"]
+    parts = [p.strip() for p in name.split(",") if
+             p.strip() and p.strip().lower() != "none"]
     return ", ".join(parts) if parts else None
 
 
@@ -203,11 +221,12 @@ def try_geocode(name: str, pause: float = 0.5):
             try:
                 return osm.geocode_to_gdf(cleaned)["geometry"].iloc[0]
             except Exception as e2:
-                #print(f"OSM geocode failed for '{name}' and '{cleaned}': {e2}")
+                # print(f"OSM geocode failed for '{name}' and '{cleaned}': {e2}")
                 return None
         else:
-            #print(f"OSM geocode failed for '{name}': {e1}")
+            # print(f"OSM geocode failed for '{name}': {e1}")
             return None
+
 
 def geolocate_hierarchical(parsed_json, country):
     """
@@ -293,7 +312,8 @@ def wikidata_geocode(place_name):
     for r in results["results"]["bindings"]:
         coord = r.get("coord", {}).get("value")
         if coord:
-            lon, lat = map(float, coord.replace("Point(", "").replace(")", "").split())
+            lon, lat = map(float,
+                           coord.replace("Point(", "").replace(")", "").split())
             matches.append({
                 "qid": r["item"]["value"].split("/")[-1],
                 "label": r["itemLabel"]["value"],
@@ -301,6 +321,7 @@ def wikidata_geocode(place_name):
                 "coord": Point(lon, lat)
             })
     return matches
+
 
 # --- Candidate selection function ---
 def select_closest_candidate(candidates, parent_point=None, emdat_country=None):
@@ -313,7 +334,8 @@ def select_closest_candidate(candidates, parent_point=None, emdat_country=None):
     if emdat_country:
         emdat_norm = normalize_string(emdat_country)
         # Keep only candidates in the correct country
-        candidates = [c for c in candidates if normalize_string(c.get("country", "")) == emdat_norm]
+        candidates = [c for c in candidates if
+                      normalize_string(c.get("country", "")) == emdat_norm]
         if not candidates:
             # No candidates in EM-DAT country
             return None
@@ -329,6 +351,7 @@ def select_closest_candidate(candidates, parent_point=None, emdat_country=None):
     ).km)
     return closest
 
+
 # --- Safe wrapper for Wikidata geocoding ---
 def safe_wikidata_geocode(name, retries=3, delay=5, base_wait=1):
     """
@@ -341,13 +364,14 @@ def safe_wikidata_geocode(name, retries=3, delay=5, base_wait=1):
         except Exception as e:
             if "429" in str(e) or "Too Many Requests" in str(e):
                 wait = delay + random.uniform(0, 2)
-                #print(f"Rate limited on '{name}', retrying in {wait:.1f}s (attempt {attempt+1}/{retries})")
+                # print(f"Rate limited on '{name}', retrying in {wait:.1f}s (attempt {attempt+1}/{retries})")
                 time.sleep(wait)
             else:
-                #print(f"Wikidata geocode failed for '{name}': {e}")
+                # print(f"Wikidata geocode failed for '{name}': {e}")
                 return []
-    #print(f"Giving up on '{name}' after {retries} retries.")
+    # print(f"Giving up on '{name}' after {retries} retries.")
     return []
+
 
 # --- Hierarchical geolocation using Wikidata ---
 def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
@@ -360,15 +384,18 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
     # --- Admin1 ---
     for admin1_name in parsed_json.get("Admin1", []):
         candidates = safe_wikidata_geocode(admin1_name)
-        selected = select_closest_candidate(candidates, parent_point=None, emdat_country=emdat_country)
+        selected = select_closest_candidate(candidates, parent_point=None,
+                                            emdat_country=emdat_country)
         geom = selected["coord"] if selected else None
         result["Admin1"].append({"name": admin1_name, "geometry": geom})
 
     # --- Admin2 ---
     for admin2 in parsed_json.get("Admin2", []):
-        parent = next((a["geometry"] for a in result["Admin1"] if a["name"] == admin2["Admin1"]), None)
+        parent = next((a["geometry"] for a in result["Admin1"] if
+                       a["name"] == admin2["Admin1"]), None)
         candidates = safe_wikidata_geocode(admin2["name"])
-        selected = select_closest_candidate(candidates, parent_point=parent, emdat_country=emdat_country)
+        selected = select_closest_candidate(candidates, parent_point=parent,
+                                            emdat_country=emdat_country)
         geom = selected["coord"] if selected else None
         result["Admin2"].append({
             "name": admin2["name"],
@@ -378,10 +405,12 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
 
     # --- Admin3 ---
     for admin3 in parsed_json.get("Admin3", []):
-        parent = next((a["geometry"] for a in result["Admin2"] 
-                       if a["name"] == admin3["name"] and a["Admin1"] == admin3["Admin1"]), None)
+        parent = next((a["geometry"] for a in result["Admin2"]
+                       if a["name"] == admin3["name"] and a["Admin1"] == admin3[
+                           "Admin1"]), None)
         candidates = safe_wikidata_geocode(admin3["name"])
-        selected = select_closest_candidate(candidates, parent_point=parent, emdat_country=emdat_country)
+        selected = select_closest_candidate(candidates, parent_point=parent,
+                                            emdat_country=emdat_country)
         geom = selected["coord"] if selected else None
         result["Admin3"].append({
             "name": admin3["name"],
@@ -390,7 +419,6 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
         })
 
     return result
-
 
 
 def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
@@ -409,7 +437,8 @@ def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
 
     # --- Admin1 matching ---
     for admin1_name in parsed_json.get("Admin1", []):
-        gadm1_country = gadm1[gadm1["COUNTRY"].map(normalize_string) == normalize_string(country)]
+        gadm1_country = gadm1[
+            gadm1["COUNTRY"].map(normalize_string) == normalize_string(country)]
         if gadm1_country.empty:
             continue
 
@@ -422,7 +451,7 @@ def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
         if score > 85:
             row = gadm1_country[
                 gadm1_country["ADMIN1"].map(normalize_string) == match
-            ].iloc[0]
+                ].iloc[0]
             results["Admin1"].append({
                 "name": admin1_name,
                 "gadm_admin1": row["ADMIN1"],
@@ -434,14 +463,16 @@ def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
         admin2_name = admin2["name"]
         admin1_name = admin2["Admin1"]
 
-        gadm2_country = gadm2[gadm2["COUNTRY"].map(normalize_string) == normalize_string(country)]
+        gadm2_country = gadm2[
+            gadm2["COUNTRY"].map(normalize_string) == normalize_string(country)]
         if gadm2_country.empty:
             continue
 
         # constrain inside Admin1
         gadm2_admin1 = gadm2_country[
-            gadm2_country["ADMIN1"].map(normalize_string) == normalize_string(admin1_name)
-        ]
+            gadm2_country["ADMIN1"].map(normalize_string) == normalize_string(
+                admin1_name)
+            ]
         if gadm2_admin1.empty:
             continue
 
@@ -454,7 +485,7 @@ def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
         if score > 85:
             row = gadm2_admin1[
                 gadm2_admin1["ADMIN2"].map(normalize_string) == match
-            ].iloc[0]
+                ].iloc[0]
             results["Admin2"].append({
                 "name": admin2_name,
                 "Admin1": admin1_name,
@@ -473,10 +504,12 @@ def gadm_geolocate_hierarchy(parsed_json, emdat_country, gadm1, gadm2):
     Admin3 remains empty since we don't have GADM3.
     """
     # Match Admin1/Admin2
-    gadm_result = match_location_to_gadm(parsed_json, gadm1, gadm2, emdat_country)
+    gadm_result = match_location_to_gadm(parsed_json, gadm1, gadm2,
+                                         emdat_country)
 
     # Prepare structured output
-    result = {"Admin1": [], "Admin2": [], "Admin3": []}  # keep Admin3 key for compatibility
+    result = {"Admin1": [], "Admin2": [],
+              "Admin3": []}  # keep Admin3 key for compatibility
 
     # --- Admin1 ---
     for admin1 in gadm_result.get("Admin1", []):
@@ -527,9 +560,15 @@ def merge_location_geometries_strict(osm_json, wiki_json, gadm_json):
 
         for name in sorted(names):
             # find matching entries (first match) in each source
-            gadm_entry = next((e for e in gadm_json.get(level, []) if e.get("name") == name), None)
-            osm_entry = next((e for e in osm_json.get(level, []) if e.get("name") == name), None)
-            wiki_entry = next((e for e in wiki_json.get(level, []) if e.get("name") == name), None)
+            gadm_entry = next(
+                (e for e in gadm_json.get(level, []) if e.get("name") == name),
+                None)
+            osm_entry = next(
+                (e for e in osm_json.get(level, []) if e.get("name") == name),
+                None)
+            wiki_entry = next(
+                (e for e in wiki_json.get(level, []) if e.get("name") == name),
+                None)
 
             geom_gadm = gadm_entry.get("geometry") if gadm_entry else None
             geom_osm = osm_entry.get("geometry") if osm_entry else None
@@ -539,8 +578,11 @@ def merge_location_geometries_strict(osm_json, wiki_json, gadm_json):
             admin1 = None
             admin2 = None
             if gadm_entry:
-                admin1 = gadm_entry.get("gadm_admin1") if "gadm_admin1" in gadm_entry else (gadm_entry.get("name") if level == "Admin1" else None)
-                admin2 = gadm_entry.get("gadm_admin2") if "gadm_admin2" in gadm_entry else None
+                admin1 = gadm_entry.get(
+                    "gadm_admin1") if "gadm_admin1" in gadm_entry else (
+                    gadm_entry.get("name") if level == "Admin1" else None)
+                admin2 = gadm_entry.get(
+                    "gadm_admin2") if "gadm_admin2" in gadm_entry else None
             else:
                 # try to pull Admin1 from OSM or Wiki entries (they sometimes include Admin1)
                 if osm_entry:
@@ -567,25 +609,33 @@ def merge_location_geometries_strict(osm_json, wiki_json, gadm_json):
         ])
     return df
 
+
 gadm1 = read_admin(config["geocoding"]["gadm_path"], 1)
 gadm2 = read_admin(config["geocoding"]["gadm_path"], 2)
-
 
 final_rows = []
 geocode_cache = {}  # key -> full cached row dict
 
-def make_cache_key(level, name, admin1=None, admin2=None, admin3=None, country=None):
+
+def make_cache_key(level, name, admin1=None, admin2=None, admin3=None,
+                   country=None):
     return (level, name, admin1, admin2, admin3, country)
 
-def get_cached_row(level, name, admin1=None, admin2=None, admin3=None, country=None):
+
+def get_cached_row(level, name, admin1=None, admin2=None, admin3=None,
+                   country=None):
     key = make_cache_key(level, name, admin1, admin2, admin3, country)
     return geocode_cache.get(key)
 
-def store_cached_row(level, row_dict, admin1=None, admin2=None, admin3=None, country=None):
+
+def store_cached_row(level, row_dict, admin1=None, admin2=None, admin3=None,
+                     country=None):
     """
     Store a copy of the row in cache as a plain dict for robustness.
     """
-    key = make_cache_key(level, row_dict.get("name") if isinstance(row_dict, dict) else row_dict["name"],
+    key = make_cache_key(level,
+                         row_dict.get("name") if isinstance(row_dict, dict) else
+                         row_dict["name"],
                          admin1, admin2, admin3, country)
     # convert pandas Series -> dict if needed
     if hasattr(row_dict, "to_dict"):
@@ -603,13 +653,15 @@ def store_cached_row(level, row_dict, admin1=None, admin2=None, admin3=None, cou
 
 # --- Folders ---
 input_dir = Path(config["geocoding"].get("input_dir", "original_files"))
-output_dir = Path(config["geocoding"].get("geolocated_files_dir", "geolocated_files"))
+output_dir = Path(
+    config["geocoding"].get("geolocated_files_dir", "geolocated_files"))
 log_dir = Path(config["geocoding"].get("log_dir", "geolocated_logs"))
 output_dir.mkdir(exist_ok=True)
 log_dir.mkdir(exist_ok=True)
 
 
-def retry_parse_emdat_location(location_string, country, retries=5, base_wait=1, max_wait=30):
+def retry_parse_emdat_location(location_string, country, retries=5, base_wait=1,
+                               max_wait=30):
     """
     Retry wrapper that treats a None response as failure and retries with exponential backoff.
     Returns parsed JSON or None after exhausted retries.
@@ -621,19 +673,23 @@ def retry_parse_emdat_location(location_string, country, retries=5, base_wait=1,
                 return resp
             else:
                 wait_time = min(base_wait * (2 ** attempt), max_wait)
-                print(f"[parse] empty/None response for '{location_string[:60]}...' attempt {attempt+1}/{retries}, retrying in {wait_time:.1f}s")
+                print(
+                    f"[parse] empty/None response for '{location_string[:60]}...' attempt {attempt + 1}/{retries}, retrying in {wait_time:.1f}s")
                 time.sleep(wait_time)
         except Exception as e:
             errstr = str(e)
             if "429" in errstr or "Too Many Requests" in errstr:
-                wait_time = min(base_wait * (2 ** attempt) + random.uniform(0, 2), max_wait)
-                print(f"[parse] rate limited on attempt {attempt+1}/{retries} — waiting {wait_time:.1f}s")
+                wait_time = min(
+                    base_wait * (2 ** attempt) + random.uniform(0, 2), max_wait)
+                print(
+                    f"[parse] rate limited on attempt {attempt + 1}/{retries} — waiting {wait_time:.1f}s")
                 time.sleep(wait_time)
                 continue
             else:
                 print(f"[parse] error parsing location: {e}")
                 return None
-    print(f"[parse] giving up after {retries} retries for: {location_string[:80]}")
+    print(
+        f"[parse] giving up after {retries} retries for: {location_string[:80]}")
     return None
 
 
@@ -650,7 +706,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
 
     required_cols = {"Location", "Country", "DisNo."}
     if not required_cols.issubset(emdat.columns):
-        print(f"Skipping {file.name}, missing columns {required_cols - set(emdat.columns)}")
+        print(
+            f"Skipping {file.name}, missing columns {required_cols - set(emdat.columns)}")
         return
 
     # Use all rows in the file (already filtered externally)
@@ -670,7 +727,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
             # Step 1: parse the EM-DAT location (with retries)
             emdat_json = retry_parse_emdat_location(location_str, country)
             if emdat_json is None:
-                print(f"[WARN] Could not parse location for DisNo {dis_no}. Skipping.")
+                print(
+                    f"[WARN] Could not parse location for DisNo {dis_no}. Skipping.")
                 skipped_disnos_new.append(dis_no)
                 continue
 
@@ -689,7 +747,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
                         name_val = loc
                         admin1_val = admin2_val = admin3_val = None
 
-                    cached_row = get_cached_row(level, name_val, admin1_val, admin2_val, admin3_val, country)
+                    cached_row = get_cached_row(level, name_val, admin1_val,
+                                                admin2_val, admin3_val, country)
                     if cached_row:
                         cached_rows[level].append(cached_row)
                     else:
@@ -698,13 +757,17 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
             # Step 3: geocode only if needed
             if not cached_all:
                 osm_json = geolocate_hierarchical(emdat_json, country)
-                gadm_json = gadm_geolocate_hierarchy(emdat_json, country, gadm1, gadm2)
+                gadm_json = gadm_geolocate_hierarchy(emdat_json, country, gadm1,
+                                                     gadm2)
                 wiki_json = wikidata_geolocate_hierarchy(emdat_json, country)
 
-                location_df = merge_location_geometries_strict(osm_json, wiki_json, gadm_json)
+                location_df = merge_location_geometries_strict(osm_json,
+                                                               wiki_json,
+                                                               gadm_json)
 
                 if location_df.empty:
-                    print(f"[WARN] No geocoding results for DisNo {dis_no}. Skipping.")
+                    print(
+                        f"[WARN] No geocoding results for DisNo {dis_no}. Skipping.")
                     skipped_disnos_new.append(dis_no)
                     continue
 
@@ -728,7 +791,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
                 if rows_list:
                     location_df = pd.DataFrame(rows_list)
                 else:
-                    print(f"[WARN] cached_all True but no cached rows found for DisNo {dis_no}.")
+                    print(
+                        f"[WARN] cached_all True but no cached rows found for DisNo {dis_no}.")
                     skipped_disnos_new.append(dis_no)
                     continue
 
@@ -755,7 +819,9 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
                 final_df[c] = None
 
         for col in ["geometry_osm", "geometry_gadm", "geometry_wiki"]:
-            final_df[col] = final_df[col].apply(lambda g: (g.wkt if hasattr(g, "wkt") else (g if isinstance(g, str) else None)))
+            final_df[col] = final_df[col].apply(lambda g: (
+                g.wkt if hasattr(g, "wkt") else (
+                    g if isinstance(g, str) else None)))
 
         csv_file = output_dir / f"{prefix}{file.stem}.csv"
         final_df.to_csv(csv_file, index=False)
@@ -768,8 +834,10 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
         ]:
             if final_df[geom_col].notna().any():
                 gdf = gpd.GeoDataFrame(
-                    final_df.drop(columns=["geometry_osm", "geometry_gadm", "geometry_wiki"]),
-                    geometry=final_df[geom_col].apply(lambda x: sh_wkt.loads(x) if pd.notna(x) else None),
+                    final_df.drop(columns=["geometry_osm", "geometry_gadm",
+                                           "geometry_wiki"]),
+                    geometry=final_df[geom_col].apply(
+                        lambda x: sh_wkt.loads(x) if pd.notna(x) else None),
                     crs="EPSG:4326"
                 )
                 gpkg_file = output_dir / f"{prefix}{file.stem}{suffix}"
@@ -787,7 +855,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
         with open(skip_file, "w") as f:
             for dis in skipped_disnos_new:
                 f.write(str(dis) + "\n")
-        print(f"Skipped {len(skipped_disnos_new)} rows, saved to {skip_file.name}")
+        print(
+            f"Skipped {len(skipped_disnos_new)} rows, saved to {skip_file.name}")
 
 
 # --- Process all remaining .xlsx files directly ---

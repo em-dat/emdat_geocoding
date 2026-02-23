@@ -10,9 +10,10 @@ from shapely.validation import make_valid
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
 
-def read_admin(path_admin,adl):
-    adms=gpd.read_file(os.path.join(path_admin, "gadm_410_L%s.shp"%str(adl)))
-    
+def read_admin(path_admin, adl):
+    # For world GPKG, layers are typically ADM_1, ADM_2...
+    adms = gpd.read_file(path_admin, layer=f"ADM_{adl}")
+
     adms = adms.rename(columns={'GID_0': 'iso3'})
     iso3_mapping = {'Z01':'IND', 'Z02':'CHN', 'Z03':'CHN', 'Z04':'IND', 'Z05':'IND', 'Z06':'PAK', 'Z07':'IND', 'Z08':'CHN', 'Z09':'IND'}
     adms["iso3"] = adms["iso3"].replace(iso3_mapping)

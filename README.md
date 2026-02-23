@@ -19,6 +19,37 @@ Code and data allow reproducing the following steps:
 The repository is organized following the logical workflow of the project, from
 geocoding to validation and reporting.
 
+### Data files (put under `data/`)
+
+This repository contains both raw and preprocessed data, enabling to run part 
+of the workflow.
+
+- `241204_emdat_archive.xlsx` — EM‑DAT FAIR Archive 1900–2023 (DOI:
+  10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
+- `gdis_disnos.csv` — EM‑DAT `DisNo.` identifiers geocoded by GDIS (from
+  https://doi.org/10.7927/ZZ3B‑8Y61). Terms of use: see source.
+- `LLMGeoDis_part1.zip` … `LLMGeoDis_part5.zip` — the LLM‑GeoDis database
+  split into five ZIPs. After download, unzip all into a single folder such as
+  `data/LLMGeoDis/`. The unzipped content consists of CSV files grouped by
+  batch and provider (GADM/OSM/Wikidata) with columns including
+  `DisNo.`, `name`, `admin_level`, `admin1`, `admin2`, `iso3` and one or more
+  geometry columns (e.g., `geometry_gadm`, `geometry_osm`, `geometry_wiki`).
+- `geoemdat_gaul.gpkg` — EM‑DAT GAUL 2015 geometries (benchmark). Point
+  `path.emdat_gaul_path` to this file.
+- `pend-gdis-1960-2018-disasterlocations.csv` — GDIS reference. You may need to
+  convert to GPKG aligned to GADM to use as `path.gdis_path`, or rely on
+  external GDIS distributions that provide a GADM‑based GPKG.
+- `input_emdat.csv` — EM‑DAT input used during LLM geoparsing (for reference).
+- `reliability_db.csv` — reliability annotations for geoparsing (for reference).
+- `synthetic_EMDAT_locations.csv` — synthetic examples used during development
+  (for reference/testing).
+
+External sources (not redistributed here):
+
+- GADM 4.1 geometries (GeoPackage format required): https://gadm.org/download_world.html (Direct link: [gadm_410-gpkg.zip](https://geodata.ucdavis.edu/gadm/gadm4.1/gadm_410-gpkg.zip)). Unzip and place the `.gpkg` file in `data/`.
+- Full GDIS dataset: https://doi.org/10.7927/ZZ3B‑8Y61
+
+
 ### 1. Geocoding (Reference)
 
 *Located in `geocoding/`. These scripts were used to generate the LLM‑GeoDis
@@ -84,33 +115,6 @@ mapping below:
 *Note: Ensure all Zenodo data files are placed in the `data/` folder as
 described below before running the notebooks.*
 
-## Data files (put under `data/`)
-
-- `241204_emdat_archive.xlsx` — EM‑DAT FAIR Archive 1900–2023 (DOI:
-  10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
-- `gdis_disnos.csv` — EM‑DAT `DisNo.` identifiers geocoded by GDIS (from
-  https://doi.org/10.7927/ZZ3B‑8Y61). Terms of use: see source.
-- `LLMGeoDis_part1.zip` … `LLMGeoDis_part5.zip` — the LLM‑GeoDis database
-  split into five ZIPs. After download, unzip all into a single folder such as
-  `data/LLMGeoDis/`. The unzipped content consists of CSV files grouped by
-  batch and provider (GADM/OSM/Wikidata) with columns including
-  `DisNo.`, `name`, `admin_level`, `admin1`, `admin2`, `iso3` and one or more
-  geometry columns (e.g., `geometry_gadm`, `geometry_osm`, `geometry_wiki`).
-- `geoemdat_gaul.gpkg` — EM‑DAT GAUL 2015 geometries (benchmark). Point
-  `path.emdat_gaul_path` to this file.
-- `pend-gdis-1960-2018-disasterlocations.csv` — GDIS reference. You may need to
-  convert to GPKG aligned to GADM to use as `path.gdis_path`, or rely on
-  external GDIS distributions that provide a GADM‑based GPKG.
-- `input_emdat.csv` — EM‑DAT input used during LLM geoparsing (for reference).
-- `reliability_db.csv` — reliability annotations for geoparsing (for reference).
-- `synthetic_EMDAT_locations.csv` — synthetic examples used during development
-  (for reference/testing).
-
-External sources (not redistributed here):
-
-- GADM 4.1 geometries: https://gadm.org/data.html
-- Full GDIS dataset: https://doi.org/10.7927/ZZ3B‑8Y61
-
 ## Python requirements and configuration instructions
 
 ### Install Python and dependencies
@@ -142,8 +146,8 @@ External sources (not redistributed here):
       `mistral-large-latest`).
     - `geocoding.temperature`, `geocoding.max_tokens`: optional generation
       controls for the geocoding prompt.
-    - `geocoding.gadm_path`: path to GADM 4.1 shapefiles for the geocoding
-      workflow.
+    - `geocoding.gadm_path`: path to GADM 4.1 GeoPackage file for the
+      geocoding workflow (e.g. `data/gadm_410-gpkg.gpkg`).
     - `geocoding.input_dir`: folder containing the original EM-DAT Excel files
       to geocode (e.g. `original_files`).
     - `geocoding.geolocated_files_dir`: output folder for geocoded CSVs (e.g.
