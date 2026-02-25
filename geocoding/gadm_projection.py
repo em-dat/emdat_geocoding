@@ -32,7 +32,11 @@ def read_admin(path_admin, adl):
     
     return adms
 
-gadm1 = read_admin(config["geocoding"]["gadm_path"],1)
+gadm_path = config["geocoding"].get("gadm_preprocessed_path") or config["geocoding"].get("gadm_path")
+if not gadm_path:
+    raise ValueError("GADM path not found in config.toml ([geocoding].gadm_preprocessed_path or [geocoding].gadm_path)")
+
+gadm1 = read_admin(gadm_path, 1)
 
 
 csv_folder = config["geocoding"]["geolocated_files_dir"]

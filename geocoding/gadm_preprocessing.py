@@ -143,14 +143,17 @@ def preprocess_gadm_flat_table(src_path: str, out_path: str) -> None:
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Prepare GADM GPKG with ADM_1 and ADM_2 layers expected by the geocoding pipeline.")
     parser.add_argument("--input", "-i", help="Path to source GADM .gpkg (flat table or layered). If omitted, uses geocoding.gadm_path from config.toml")
-    parser.add_argument("--output", "-o", help="Path to output processed .gpkg. If omitted, writes alongside input as <name>_adm.gpkg and prints path.")
+    parser.add_argument("--output", "-o", help="Path to output processed .gpkg. If omitted, uses geocoding.gadm_preprocessed_path (or <name>_adm.gpkg) and prints path.")
     parser.add_argument("--config", "-c", default="config.toml", help="Path to config.toml (default: config.toml)")
 
     args = parser.parse_args(argv)
 
     cfg = load_config(Path(args.config))
 
-    src = args.input or cfg["geocoding"]["gadm_path"]
+    src = args.input or cfg["geocoding"].get("gadm_path")
+    if not src:
+        print("ERROR: No GADM source path provided (via --input or config.toml [geocoding].gadm_path).", file=sys.stderr)
+        sys.exit(1)
     src = os.path.abspath(src)
 
     if not os.path.exists(src):
@@ -159,6 +162,8 @@ def main(argv=None):
 
     if args.output:
         out = args.output
+    elif cfg["geocoding"].get("gadm_preprocessed_path"):
+        out = cfg["geocoding"]["gadm_preprocessed_path"]
     else:
         p = Path(src)
         out = str(p.with_name(p.stem + "_adm.gpkg"))
@@ -166,7 +171,7 @@ def main(argv=None):
     preprocess_gadm_flat_table(src, out)
 
     print("\nIMPORTANT:")
-    print("- Update config.toml -> [geocoding].gadm_path to point to the processed file if needed:")
+    print("- Ensure config.toml -> [geocoding].gadm_preprocessed_path points to the processed file:")
     print(f"  {out}")
 
 

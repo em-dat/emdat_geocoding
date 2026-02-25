@@ -22,6 +22,7 @@ with open("config.toml", "rb") as f:
     config = tomllib.load(f)
 
 TOKEN = config["geocoding"]["api_key"]
+LIMIT_LOCATIONS = config["geocoding"].get("limit_locations")
 
 client = OpenAI(
     api_key=TOKEN,
@@ -610,8 +611,12 @@ def merge_location_geometries_strict(osm_json, wiki_json, gadm_json):
     return df
 
 
-gadm1 = read_admin(config["geocoding"]["gadm_path"], 1)
-gadm2 = read_admin(config["geocoding"]["gadm_path"], 2)
+gadm_path = config["geocoding"].get("gadm_preprocessed_path") or config["geocoding"].get("gadm_path")
+if not gadm_path:
+    raise ValueError("GADM path not found in config.toml ([geocoding].gadm_preprocessed_path or [geocoding].gadm_path)")
+
+gadm1 = read_admin(gadm_path, 1)
+gadm2 = read_admin(gadm_path, 2)
 
 final_rows = []
 geocode_cache = {}  # key -> full cached row dict
@@ -652,7 +657,7 @@ def store_cached_row(level, row_dict, admin1=None, admin2=None, admin3=None,
 
 
 # --- Folders ---
-input_dir = Path(config["geocoding"].get("input_dir", "original_files"))
+location_file_path = Path(config["geocoding"].get("location_file_path"))
 output_dir = Path(
     config["geocoding"].get("geolocated_files_dir", "geolocated_files"))
 log_dir = Path(config["geocoding"].get("log_dir", "geolocated_logs"))
@@ -699,7 +704,7 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
     The file already contains only the remaining (unprocessed) EM-DAT entries.
     """
     try:
-        emdat = pd.read_excel(file)
+        emdat = pd.read_csv(file)
     except Exception as e:
         print(f"Could not read {file.name}: {e}")
         return
@@ -712,6 +717,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
 
     # Use all rows in the file (already filtered externally)
     emdat_filtered = emdat.copy()
+    if LIMIT_LOCATIONS is not None:
+        emdat_filtered = emdat_filtered.head(LIMIT_LOCATIONS)
     print(f"Processing {file.name}, {len(emdat_filtered)} rows.")
 
     final_rows = []
@@ -859,9 +866,6 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
             f"Skipped {len(skipped_disnos_new)} rows, saved to {skip_file.name}")
 
 
-# --- Process all remaining .xlsx files directly ---
-print("Processing remaining EM-DAT files from:", input_dir)
-
-for xlsx_file_path in input_dir.glob("*.xlsx"):
-    print(f"Processing {xlsx_file_path.name}")
-    process_skipped_rows(xlsx_file_path)
+# --- Process location file directly ---
+print("Processing EM-DAT files from:", location_file_path)
+process_skipped_rows(location_file_path)
