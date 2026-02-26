@@ -7,22 +7,22 @@ workflows described in the associated manuscript: [Anonymized]
 ## Overview
 
 Code and data allow reproducing the following steps:
-- Geoparse EM-DAT textual locations with GPT-4o into GADM 4.1, OSM and
+- Geoparse EM-DAT textual locations with GPT-4o into GADM 4.1, OSM, and
   Wikidata administrative units and points.
 - Project and harmonize geometries to GADM 4.1.
 - Compare and validate against GDIS (GADM-based) and EM-DAT GAUL 2015
   benchmarks.
 - Generate descriptive statistics and figures.
 
-## Repository layout
+## Repository Layout
 
 The repository is organized following the logical workflow of the project, from
 geocoding to validation and reporting.
 
-### 0. Data files (put under `data/`)
+### 0. Data Files 
 
-This repository contains both raw and preprocessed data, enabling you to run part 
-of the workflow.
+*Located under `data/` folder. The folder contains both raw and preprocessed 
+data, enabling you to run or resume part of the workflow.*
 
 - `241204_emdat_archive.xlsx` - EM-DAT FAIR Archive 1900-2023 (DOI:
   10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
@@ -50,10 +50,10 @@ External sources (not redistributed here):
 - Full GDIS dataset: https://doi.org/10.7927/ZZ3B-8Y61
 
 
-### 1. Geocoding (Reference)
+### 1. Geocoding
 
 *Located in `geocoding/`. These scripts were used to generate the LLM-GeoDis
-dataset.*
+dataset. See the main manuscript for more details.*
 
 - `gadm_preprocessing.py`: preprocess the GADM data to create the administrative 
   layers expected by the pipeline for performance reasons.
@@ -62,7 +62,7 @@ dataset.*
 - `gadm_projection.py`: Handles the projection and harmonization of coordinates
   and administrative names to the GADM 4.1 reference.
 
-### 2. Preprocessing & Batching
+### 2. Preprocessing & Batching for Geometry Comparison & Validation
 
 *Scripts to prepare data for validation.*
 
@@ -101,7 +101,7 @@ dataset.*
   between different geocoding sources.
 - `validate_geoparsing.ipynb`: Detailed check of the geoparsing accuracy.
 
-## Figure and Table Reproducibility
+##### Figure and Table Reproducibility
 
 To reproduce the figures and tables presented in the manuscript, follow the
 mapping below:
@@ -117,9 +117,9 @@ mapping below:
 *Note: Ensure all Zenodo data files are placed in the `data/` folder as
 described below before running the notebooks.*
 
-## Python requirements and configuration instructions
+## Python Requirements and Configuration Instructions
 
-### Install Python and dependencies
+### Install Python and Dependencies
 
 - Python: 3.13 or newer (see `pyproject.toml`)
 - We recommend `uv` for fast, reproducible envs:
@@ -128,15 +128,15 @@ described below before running the notebooks.*
         - `uv venv`
         - `uv sync`
 
-### Place data and configure paths
+### Place Data and Configure Paths
 
 - Check all input data under `data/` (see "Data files" above).
 - Edit `config.toml` for required paths and API settings. Each parameter is
   documented inline in that file.
 
-## Execution workflows
+## Execution Workflows
 
-### 1. Geocoding workflow (Reference)
+### 1. Geocoding Workflow
 
 If you wish to reproduce the geocoding from raw EM-DAT files:
 1.  Configure the `[geocoding]` section in `config.toml` (API keys, input/output directories, GADM path).
@@ -153,7 +153,7 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
     python geocoding/gadm_projection.py
     ```
 
-### 2. Comparison workflow
+### 2. Comparison Workflow
 
 Provided that the LLM-GeoDis CSV parts have been unzipped into `data/LLMGeoDis/` (or generated via the workflow above):
 
@@ -171,18 +171,19 @@ Provided that the LLM-GeoDis CSV parts have been unzipped into `data/LLMGeoDis/`
     - `<provider>_<benchmark>_batch<n>.csv`
     - `<provider>_<benchmark>_batch<n>_dissolved.csv` (when dissolving by `DisNo.`)
 
-## Reproducing figures and tables
+### 3. Reproducing Figures and Tables
 
 Once the comparison workflow is complete and the `validation_outputs/` folder is populated:
 1.  Launch Jupyter Notebook: `jupyter notebook`
 2.  Open and run the relevant notebooks (e.g., `main_figures.ipynb`, `comparison_figures.ipynb`) as mapped in the [Figure and Table Reproducibility](#figure-and-table-reproducibility) section.
 
-## Miscellaneous notes
+## Miscellaneous Notes
 
-- Storage CRS: EPSG:4326. Area computations use geodetic areas by default (see
+- Coordinate Reference System (CRS): EPSG:4326. 
+- Area computations use geodetic areas by default (see
   `config.toml` and `validation/geom_indices.py`).
 
-## Reuse, licensing and citation
+## Reuse, Licensing, and Citation
 
 - Code: see `LICENSE` in this repository.
 - Data: see individual sources for terms of use (EM-DAT FAIR Archive, GDIS,
