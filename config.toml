@@ -2,50 +2,50 @@
 
 [geocoding]
 # API configuration (OpenAI-compatible). Switch provider by changing base_url and api_key.
-api_key = "" # <-- INSERT YOUR API KEY HERE
-base_url = "" # <-- SELECT API ENDPOINT HERE
-model = "" # <-- SELECT MODEL HERE
-temperature = 0.0
-max_tokens = 1024
+api_key = "" # Insert your API key
+base_url = "" # API endpoint for your provider
+model = "" # Chat/completions model name
+temperature = 0.0 # Sampling temperature
+max_tokens = 1024 # Max tokens for the response
 # Paths for geocoding workflow
-limit_locations = 5 # Set to a number to limit the number of locations to process, or comment out for no limit
-gadm_path = "Q:/Data/emdat_geocoding/GADM/gadm_410.gpkg"
-gadm_preprocessed_path = "Q:/Data/emdat_geocoding/GADM/gadm_410_adm.gpkg"
-location_file_path = "data/input_emdat.csv"
-geolocated_files_dir = "geolocated_files"
-log_dir = "geolocation_logs"
+limit_locations = 5 # Limit number of locations processed; comment out for no limit
+gadm_path = "Q:/Data/emdat_geocoding/GADM/gadm_410.gpkg" # Raw GADM 4.1 GeoPackage
+gadm_preprocessed_path = "Q:/Data/emdat_geocoding/GADM/gadm_410_adm.gpkg" # Preprocessed GADM ADM_1/ADM_2 layers
+location_file_path = "data/input_emdat.csv" # Input EM-DAT locations CSV
+geolocated_files_dir = "geolocated_files" # Output folder for geocoded CSVs (created if needed)
+log_dir = "geolocation_logs" # Geocoding logs and skipped rows (created if needed)
 
 # Validation workflows configuration
 
 [logging]
-level = "INFO"
-filename='.log'
-filemode='a+'
-style='{'
-format='{asctime} - {levelname} - {message}'
-datefmt="%Y-%m-%d %H:%M:%S"
+level = "INFO" # Logging level
+filename='.log' # Log file name
+filemode='a+' # Append mode
+style='{' # Python logging style
+format='{asctime} - {levelname} - {message}' # Log format
+datefmt="%Y-%m-%d %H:%M:%S" # Timestamp format
 
 [path]
 # Heavy files with geometries for preprocessing and/or validation
-batch_dir = "Q:/Data/emdat_geocoding/batch_files" # folder to store the batches
-emdat_gaul_path = "Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT Benchmark
-gdis_path = "Q:/Data/emdat_geocoding/GDIS/gdis.gpkg" #  GDIS benchmark or raw data for preprocessing batches
-csv_file_dir = 'Q:/Data/emdat_geocoding/GEOEMDAT' # folder containing unzipped LLM-GeoDis CSV parts
-# Ligthweight data without geometries
-emdat_archive_path = "data/241204_emdat_archive.xlsx" # doi:10.14428/DVN/I0LTPH
-gdis_disno_path = "data/gdis_disnos.csv"
+batch_dir = "Q:/Data/emdat_geocoding/batch_files" # Folder to store generated GPKG batches
+emdat_gaul_path = "Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT GAUL benchmark
+gdis_path = "Q:/Data/emdat_geocoding/GDIS/gdis.gpkg" # GDIS benchmark (GADM-aligned)
+csv_file_dir = 'Q:/Data/emdat_geocoding/GEOEMDAT' # Folder containing unzipped LLM-GeoDis CSV parts
+# Lightweight data without geometries
+emdat_archive_path = "data/241204_emdat_archive.xlsx" # DOI: 10.14428/DVN/I0LTPH
+gdis_disno_path = "data/gdis_disnos.csv" # GDIS DisNo list
 # Output dir
 validation_output_dir = "validation_outputs"
 
 [index]
-# keep these colums (i.e., drop 'admin3'), while "geometry_osm",
+# Keep these columns (i.e., drop 'admin3'), while "geometry_osm",
 # "geometry_gadm", "geometry_wiki" are handled separately
 llm_columns_to_keep = ["DisNo.", "name", "admin_level", "admin1", "admin2", "iso3"]
 llm_geom_columns = ["geometry_osm", "geometry_gadm", "geometry_wiki"]
-batch_numbers = [1, 2, 3, 4, 5]
+batch_numbers = [1, 2, 3, 4, 5] # Expected batch count
 
 [geoprocessing]
-area_calculation_method = 'geodetic' # alternatively 'equal_area'
+area_calculation_method = 'geodetic' # Alternatively 'equal_area'
 
 [validation]
 # If true, skip processing a subbatch when its expected output CSV already exists
