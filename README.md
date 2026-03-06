@@ -169,12 +169,12 @@ populated:
   redistribution rights with data richness:
     - `241204_emdat_archive.xlsx`: A **FAIR archived version** (limited to 2023)
       used as the stable benchmark for geometry validation (Figures 5, D1, D2).
-      It ensures future research uses the same baseline.
-    - `input_emdat.csv` / `LLMGeoDis.csv`: These include more recent geocoding (
-      extending to 2024) based on a version that cannot be redistributed in
-      full downloaded from the EM-DAT data portal. These are used for the main
-      geoparsing reference and coverage
-      analysis (Figures 3, 4).
+      It ensures future research uses the same baseline. Comparison is therefore
+      limited to the same events and time period.
+    - `input_emdat.csv`: These include more recent locations extracted from
+      EM-DAT (extending to 2024) based on a version that cannot be redistributed
+      in full downloaded from the EM-DAT data portal. These are used for the main
+      geoparsing/geocoding workflows.
 
 ## Reuse, Licensing, and Citation
 
