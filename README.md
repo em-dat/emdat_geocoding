@@ -7,6 +7,7 @@ workflows described in the associated manuscript: [Anonymized]
 ## Overview
 
 Code and data allow reproducing the following steps:
+
 - Geoparse EM-DAT textual locations with GPT-4o into GADM 4.1, OSM, and
   Wikidata administrative units and points.
 - Project and harmonize geometries to GADM 4.1.
@@ -16,106 +17,74 @@ Code and data allow reproducing the following steps:
 
 ## Repository Layout
 
-The repository is organized following the logical workflow of the project, from
-geocoding to validation and reporting.
+```text
+.
+├── data/                  # Raw and preprocessed input data
+├── geocoding/             # Scripts for LLM-assisted geoparsing
+├── validation/            # Core validation and spatial metric logic
+├── validation_outputs/    # Results from geometry comparisons
+├── geolocated_files/      # Intermediate outputs from geocoding
+├── geolocation_logs/      # Logs from the geocoding process
+├── cache/                 # Temporary data cache
+├── run_*.py               # Main driver scripts for the workflow
+└── *.ipynb                # Notebooks for analysis and visualization
+```
 
-### 0. Data Files 
+### 0. Data Files (`data/`)
 
-*Located under `data/` folder. The folder contains both raw and preprocessed 
-data, enabling you to run or resume part of the workflow.*
+*Contains raw and preprocessed data. Key files:*
 
-- `241204_emdat_archive.xlsx` - EM-DAT FAIR Archive 1900-2023 (DOI:
-  10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
-- `gdis_disnos.csv` - EM-DAT `DisNo.` identifiers geocoded by GDIS (from
-  https://doi.org/10.7927/ZZ3B-8Y61). Terms of use: see source.
-- `LLMGeoDis_part1.zip` ... `LLMGeoDis_part5.zip` - the LLM-GeoDis database
-  split into five ZIPs. After download, unzip all into a single folder such as
-  `data/LLMGeoDis/`. The unzipped content consists of CSV files grouped by
-  batch and provider (GADM/OSM/Wikidata) with columns including
-  `DisNo.`, `name`, `admin_level`, `admin1`, `admin2`, `iso3` and one or more
-  geometry columns (e.g., `geometry_gadm`, `geometry_osm`, `geometry_wiki`).
-- `geoemdat_gaul.gpkg` - EM-DAT GAUL 2015 geometries (benchmark). Point
-  `path.emdat_gaul_path` to this file.
-- `pend-gdis-1960-2018-disasterlocations.csv` - GDIS reference. You may need to
-  convert to GPKG aligned to GADM to use as `path.gdis_path`, or rely on
-  external GDIS distributions that provide a GADM-based GPKG.
-- `input_emdat.csv` - EM-DAT input used during LLM geoparsing (for reference).
-- `reliability_db.csv` - reliability annotations for geoparsing (for reference).
-- `synthetic_EMDAT_locations.csv` - synthetic examples used during development
-  (for reference/testing).
+- `241204_emdat_archive.xlsx`: EM-DAT Archive with GAUL geometries.
+- `gdis_disnos.csv`: EM-DAT identifiers geocoded by GDIS.
+- `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
+- `input_emdat.csv`: EM-DAT input used for geoparsing reference.
+- `reliability_db.csv`: Database with source counts and spatial agreement used for reliability and coverage analysis.
 
-External sources (not redistributed here):
+### 1. Geocoding (`geocoding/`)
 
-- GADM 4.1 geometries (GeoPackage format required): https://gadm.org/download_world.html (Direct link: [gadm_410-gpkg.zip](https://geodata.ucdavis.edu/gadm/gadm4.1/gadm_410-gpkg.zip)). Unzip and place the `.gpkg` file in `data/`.
-- Full GDIS dataset: https://doi.org/10.7927/ZZ3B-8Y61
+*Workflow to generate the LLM-GeoDis dataset:*
 
+- `run_geolocation.py`: Main GPT-4o geoparsing script.
+- `gadm_preprocessing.py`: Prepares GADM layers for the pipeline.
+- `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1.
 
-### 1. Geocoding
+### 2. Preprocessing & Validation
 
-*Located in `geocoding/`. These scripts were used to generate the LLM-GeoDis
-dataset. See the main manuscript for more details.*
+*Scripts and modules to prepare data and run comparisons:*
 
-- `gadm_preprocessing.py`: preprocess the GADM data to create the administrative 
-  layers expected by the pipeline for performance reasons.
-- `run_geolocation.py`: Main workflow for LLM-assisted geoparsing using GPT-4o.
-  It extracts location names from EM-DAT and maps them to administrative units.
-- `gadm_projection.py`: Handles the projection and harmonization of coordinates
-  and administrative names to the GADM 4.1 reference.
+- `run_preprocessing_llm.py` & `run_preprocessing_gdis.py`: Convert raw data to
+  standardized batches.
+- `run_validation.py`: Driver for the geometry comparison pipeline.
+- `run_all.py`: Master script for end-to-end execution.
+- `validation/`: Package containing spatial metrics (`geom_indices.py`),
+  comparison logic (`validation.py`), and I/O helpers (`io.py`).
 
-### 2. Preprocessing & Batching for Geometry Comparison & Validation
+### 3. Reporting & Visualization
 
-*Scripts to prepare data for validation.*
+*Notebooks for generating manuscript figures and statistics:*
 
-- `run_preprocessing_llm.py`: Converts the raw LLM-GeoDis CSV parts (from
-  Zenodo) into standardized GeoPackage (GPKG) batches for comparison.
-- `run_preprocessing_gdis.py`: Prepares GDIS data into comparable GPKG batches,
-  filtered to match the disaster events present in the EM-DAT benchmarks.
-- `validation/preprocessing.py`: Underlying utilities for batching and spatial
-  data cleaning.
-
-### 3. Geometry Comparison & Validation
-
-*The core validation pipeline.*
-
-- `run_validation.py`: The driver script that iterates through all batches,
-  benchmarks (GAUL/GDIS), and processing options (dissolved vs. individual
-  units).
-- `validation/validation.py`: Orchestrates the comparison logic: aligning model
-  outputs with benchmarks and invoking metric calculations.
-- `validation/geom_indices.py`: Implementation of spatial metrics (Jaccard
-  index, containment, geodetic area calculations).
-- `validation/io.py`: Robust I/O helpers for reading and writing spatial
-  formats (GPKG, CSV).
-- `run_all.py`: A master script to run the entire preprocessing and validation
-  sequence end-to-end.
-
-### 4. Reporting & Visualization
-
-*Notebooks for statistical analysis and figure generation.*
-
-- `main_figures.ipynb`: Generates descriptive statistics and figures regarding
-  the LLM-GeoDis dataset (e.g., coverage, reliability).
-- `comparison_figures.ipynb`: Analyzes validation outputs from the `validation_outputs/`
-  folder and generates comparative performance plots.
-- `compute_reliability.ipynb`: Focuses on reliability metrics and consensus
-  between different geocoding sources.
-- `validate_geoparsing.ipynb`: Detailed check of the geoparsing accuracy.
+- `main_figures.ipynb`: Dataset coverage and yearly trends.
+- `comparison_figures.ipynb`: Validation results analysis.
+- `compute_reliability.ipynb`: Reliability metrics and consensus.
+- `validate_geoparsing.ipynb`: Geoparsing accuracy checks.
 
 ##### Figure and Table Reproducibility
 
 To reproduce the figures and tables presented in the manuscript, follow the
 mapping below:
 
-| Figure/Table                              | Source Notebook             | Input Data / Requirements                                      |
-|:------------------------------------------|:----------------------------|:---------------------------------------------------------------|
-| **Dataset Statistics** (Coverage, Counts) | `main_figures.ipynb`        | `LLMGeoDis` CSV parts, `input_emdat.csv`, `reliability_db.csv` |
-| **Yearly Trends** (Geometry counts)       | `main_figures.ipynb`        | `reliability_db.csv`                                           |
-| **Comparison Metrics** (Jaccard, Overlap) | `comparison_figures.ipynb`  | CSV files in `validation_outputs/` (generated by `run_all.py`)             |
-| **Reliability Analysis**                  | `compute_reliability.ipynb` | `reliability_db.csv`, `LLMGeoDis` batches                      |
-| **Geoparsing Validation**                 | `validate_geoparsing.ipynb` | `input_emdat.csv`, LLM outputs                                 |
+| Figure/Table                        | Source Notebook             | Input Data / Requirements                   |
+|:------------------------------------|:----------------------------|:--------------------------------------------|
+| Table 1, Figure 1, Figure 2         | N.A.                        | Descriptive table/figure generated manually |
+| Figure 3, 4, A1, A2, B1, B2, B3, B4 | `main_figures.ipynb`        | `input_emdat.csv`, `LLMGeoDis.csv` (or parts), `reliability_db.csv`, GADM 4.1 layers |
+| Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv` |
+| Figure 6                            | `validate_geoparsing.ipynb` | GADM 4.1 layers (for synthetic sample generation) |
+| Figure C1, C2                       | `compute_reliability.ipynb` | `reliability_db.csv`, GADM 4.1 layers |
 
 *Note: Ensure all Zenodo data files are placed in the `data/` folder as
-described below before running the notebooks.*
+described below before running the notebooks. GADM 4.1 layers refers to a 
+processed GeoPackage containing `ADM_1` and `ADM_2` layers, which can be 
+generated from raw GADM 4.1 data using `geocoding/gadm_preprocessing.py`.*
 
 ## Python Requirements and Configuration Instructions
 
@@ -139,47 +108,58 @@ described below before running the notebooks.*
 ### 1. Geocoding Workflow
 
 If you wish to reproduce the geocoding from raw EM-DAT files:
-1.  Configure the `[geocoding]` section in `config.toml` (API keys, input/output directories, GADM path).
-2.  Preprocess the GADM data to create the administrative layers expected by the pipeline:
-    ```bash
-    python geocoding/gadm_preprocessing.py
-    ```
-3.  Run the LLM-assisted geoparsing:
-    ```bash
-    python geocoding/run_geolocation.py
-    ```
-4.  Project and harmonize results to GADM 4.1:
-    ```bash
-    python geocoding/gadm_projection.py
-    ```
+
+1. Configure the `[geocoding]` section in `config.toml` (API keys, input/output
+   directories, GADM path).
+2. Preprocess the GADM data to create the administrative layers expected by the
+   pipeline:
+   ```bash
+   python geocoding/gadm_preprocessing.py
+   ```
+3. Run the LLM-assisted geoparsing:
+   ```bash
+   python geocoding/run_geolocation.py
+   ```
+4. Project and harmonize results to GADM 4.1:
+   ```bash
+   python geocoding/gadm_projection.py
+   ```
 
 ### 2. Comparison Workflow
 
-Provided that the LLM-GeoDis CSV parts have been unzipped into `data/LLMGeoDis/` (or generated via the workflow above):
+Provided that the LLM-GeoDis CSV parts have been unzipped into
+`data/LLMGeoDis/` (or generated via the workflow above):
 
-1.  Configure the `[path]` section in `config.toml` (point to unzipped CSVs, benchmarks, and batch directory).
-2.  Run the full validation pipeline:
-    ```bash
-    python run_all.py
-    ```
-    Alternatively, you can run the steps separately:
+1. Configure the `[path]` section in `config.toml` (point to unzipped CSVs,
+   benchmarks, and batch directory).
+2. Run the full validation pipeline:
+   ```bash
+   python run_all.py
+   ```
+   Alternatively, you can run the steps separately:
     - `python run_preprocessing_llm.py` (create GPKG batches from LLM CSVs)
     - `python run_preprocessing_gdis.py` (create GPKG batches from GDIS)
     - `python run_validation.py` (run geometry comparison)
 
-3.  Outputs are written to `validation_outputs/`:
+3. Outputs are written to `validation_outputs/`:
     - `<provider>_<benchmark>_batch<n>.csv`
-    - `<provider>_<benchmark>_batch<n>_dissolved.csv` (when dissolving by `DisNo.`)
+    - `<provider>_<benchmark>_batch<n>_dissolved.csv` (when dissolving by
+      `DisNo.`)
 
 ### 3. Reproducing Figures and Tables
 
-Once the comparison workflow is complete and the `validation_outputs/` folder is populated:
-1.  Launch Jupyter Notebook: `jupyter notebook`
-2.  Open and run the relevant notebooks (e.g., `main_figures.ipynb`, `comparison_figures.ipynb`) as mapped in the [Figure and Table Reproducibility](#figure-and-table-reproducibility) section.
+Once the comparison workflow is complete and the `validation_outputs/` folder is
+populated:
+
+1. Launch Jupyter Notebook: `jupyter notebook`
+2. Open and run the relevant notebooks (e.g., `main_figures.ipynb`,
+   `comparison_figures.ipynb`) as mapped in
+   the [Figure and Table Reproducibility](#figure-and-table-reproducibility)
+   section.
 
 ## Miscellaneous Notes
 
-- Coordinate Reference System (CRS): EPSG:4326. 
+- Coordinate Reference System (CRS): EPSG:4326.
 - Area computations use geodetic areas by default (see
   `config.toml` and `validation/geom_indices.py`).
 
