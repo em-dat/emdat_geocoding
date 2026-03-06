@@ -30,7 +30,7 @@ datefmt="%Y-%m-%d %H:%M:%S" # Timestamp format
 batch_dir = "Q:/Data/emdat_geocoding/batch_files" # Folder to store generated GPKG batches
 emdat_gaul_path = "Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT GAUL benchmark
 gdis_path = "Q:/Data/emdat_geocoding/GDIS/gdis.gpkg" # GDIS benchmark (GADM-aligned)
-csv_file_dir = 'Q:/Data/emdat_geocoding/GEOEMDAT' # Folder containing unzipped LLM-GeoDis CSV parts
+csv_file_dir = 'data/LLMGeoDis' # Folder containing unzipped LLM-GeoDis CSV parts
 # Lightweight data without geometries
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # DOI: 10.14428/DVN/I0LTPH
 gdis_disno_path = "data/gdis_disnos.csv" # GDIS DisNo list
