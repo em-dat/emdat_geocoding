@@ -34,14 +34,22 @@ on the configuration settings in `config.toml`.
 
 *Contains raw and preprocessed data. Key files:*
 
-- `241204_emdat_archive.xlsx`: EM-DAT Archive with GAUL id codes.
-- `gdis_disnos.csv`: EM-DAT identifiers geocoded by GDIS.
+- `241204_emdat_archive.xlsx`: EM-DAT FAIR Archive 1900-2023 (DOI:
+  10.14428/DVN/I0LTPH). Used to list `DisNo.` with GAUL geometries.
+- `gdis_disnos.csv`: EEM-DAT `DisNo.` identifiers geocoded by GDIS (from
+  https://doi.org/10.7927/ZZ3B-8Y61). Terms of use: see source.
 - `geoemdat_gaul.gpkg`: GeoPackage with EM-DAT-GAUL geometries.
 - `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts
   `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
 - `input_emdat.csv`: EM-DAT input used for geoparsing reference.
-- `reliability_db.csv`: Database with source counts and spatial agreement used
-  for reliability and coverage analysis.
+- `reliability_db.csv`: reliability annotations for geoparsing (for reference).
+- `synthetic_EMDAT_locations.csv` - synthetic examples used during development
+  (for reference/testing).
+
+**Note—External sources (not redistributed here)**
+
+- GADM 4.1 geometries (GeoPackage format required): https://gadm.org/download_world.html (Direct link: [gadm_410-gpkg.zip](https://geodata.ucdavis.edu/gadm/gadm4.1/gadm_410-gpkg.zip)). Unzip and place the `.gpkg` file in `data/`.
+- Full GDIS dataset: https://doi.org/10.7927/ZZ3B-8Y61
 
 ### 1. Geocoding (`geocoding/`)
 
