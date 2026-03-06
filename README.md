@@ -23,12 +23,12 @@ Code and data allow reproducing the following steps:
 ├── geocoding/             # Scripts for LLM-assisted geoparsing
 ├── validation/            # Core validation and spatial metric logic
 ├── validation_outputs/    # Results from geometry comparisons
-├── geolocated_files/      # Intermediate outputs from geocoding
-├── geolocation_logs/      # Logs from the geocoding process
-├── cache/                 # Temporary data cache
 ├── run_*.py               # Main driver scripts for the workflow
 └── *.ipynb                # Notebooks for analysis and visualization
 ```
+
+Some additional repository folders are created while running the workflow, based
+on the configuration settings in `config.toml`.
 
 ### 0. Data Files (`data/`)
 
@@ -36,9 +36,11 @@ Code and data allow reproducing the following steps:
 
 - `241204_emdat_archive.xlsx`: EM-DAT Archive with GAUL geometries.
 - `gdis_disnos.csv`: EM-DAT identifiers geocoded by GDIS.
-- `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
+- `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts
+  `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
 - `input_emdat.csv`: EM-DAT input used for geoparsing reference.
-- `reliability_db.csv`: Database with source counts and spatial agreement used for reliability and coverage analysis.
+- `reliability_db.csv`: Database with source counts and spatial agreement used
+  for reliability and coverage analysis.
 
 ### 1. Geocoding (`geocoding/`)
 
@@ -73,17 +75,17 @@ Code and data allow reproducing the following steps:
 To reproduce the figures and tables presented in the manuscript, follow the
 mapping below:
 
-| Figure/Table                        | Source Notebook             | Input Data / Requirements                   |
-|:------------------------------------|:----------------------------|:--------------------------------------------|
-| Table 1, Figure 1, Figure 2         | N.A.                        | Descriptive table/figure generated manually |
+| Figure/Table                        | Source Notebook             | Input Data / Requirements                                                            |
+|:------------------------------------|:----------------------------|:-------------------------------------------------------------------------------------|
+| Table 1, Figure 1, Figure 2         | N.A.                        | Descriptive table/figure generated manually                                          |
 | Figure 3, 4, A1, A2, B1, B2, B3, B4 | `main_figures.ipynb`        | `input_emdat.csv`, `LLMGeoDis.csv` (or parts), `reliability_db.csv`, GADM 4.1 layers |
-| Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv` |
-| Figure 6                            | `validate_geoparsing.ipynb` | GADM 4.1 layers (for synthetic sample generation) |
-| Figure C1, C2                       | `compute_reliability.ipynb` | `reliability_db.csv`, GADM 4.1 layers |
+| Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv`                              |
+| Figure 6                            | `validate_geoparsing.ipynb` | GADM 4.1 layers (for synthetic sample generation)                                    |
+| Figure C1, C2                       | `compute_reliability.ipynb` | `reliability_db.csv`, GADM 4.1 layers                                                |
 
 *Note: Ensure all Zenodo data files are placed in the `data/` folder as
-described below before running the notebooks. GADM 4.1 layers refers to a 
-processed GeoPackage containing `ADM_1` and `ADM_2` layers, which can be 
+described below before running the notebooks. GADM 4.1 layers refers to a
+processed GeoPackage containing `ADM_1` and `ADM_2` layers, which can be
 generated from raw GADM 4.1 data using `geocoding/gadm_preprocessing.py`.*
 
 ## Python Requirements and Configuration Instructions
