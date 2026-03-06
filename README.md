@@ -20,10 +20,10 @@ Code and data allow reproducing the following steps:
 ```text
 .
 ├── data/                  # Raw and preprocessed input data
-├── geocoding/             # Scripts for LLM-assisted geoparsing
-├── validation/            # Core validation and spatial metric logic
+├── geocoding/             # Scripts for LLM-assisted geoparsing and geocoding
+├── validation/            # Scripts for validation and spatial metric logic
 ├── validation_outputs/    # Results from geometry comparisons
-├── run_*.py               # Main driver scripts for the workflow
+├── run_*.py               # Main driver scripts for the comparison workflow
 └── *.ipynb                # Notebooks for analysis and visualization
 ```
 
