@@ -55,8 +55,8 @@ on the configuration settings in `config.toml`.
 
 *Workflow to generate the LLM-GeoDis dataset:*
 
-- `run_geolocation.py`: Main GPT-4o geoparsing script.
 - `gadm_preprocessing.py`: Prepares GADM layers for the pipeline.
+- `run_geolocation.py`: Main GPT-4o geoparsing script.
 - `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1.
 
 ### 2. Preprocessing & Validation
