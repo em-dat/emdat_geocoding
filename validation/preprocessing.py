@@ -30,7 +30,7 @@ def llm_batch_filenames(
 ) -> None:
     """Generate LLM-geocoded CSV files from the EM-DAT archive."""
     for bn in batch_numbers:
-        yield f"geoemdat_part{bn}.csv"
+        yield f"LLMGeoDis_part{bn}.csv "
 
 
 def check_llm_batch_files(csv_file_dir: Path, batch_numbers: list[int]):
