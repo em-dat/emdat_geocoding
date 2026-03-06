@@ -34,8 +34,9 @@ on the configuration settings in `config.toml`.
 
 *Contains raw and preprocessed data. Key files:*
 
-- `241204_emdat_archive.xlsx`: EM-DAT Archive with GAUL geometries.
+- `241204_emdat_archive.xlsx`: EM-DAT Archive with GAUL id codes.
 - `gdis_disnos.csv`: EM-DAT identifiers geocoded by GDIS.
+- `geoemdat_gaul.gpkg`: GeoPackage with EM-DAT-GAUL geometries.
 - `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts
   `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
 - `input_emdat.csv`: EM-DAT input used for geoparsing reference.
@@ -164,6 +165,16 @@ populated:
 - Coordinate Reference System (CRS): EPSG:4326.
 - Area computations use geodetic areas by default (see
   `config.toml` and `validation/geom_indices.py`).
+- EM-DAT Data Versions: This repository uses two versions of EM-DAT to balance
+  redistribution rights with data richness:
+    - `241204_emdat_archive.xlsx`: A **FAIR archived version** (limited to 2023)
+      used as the stable benchmark for geometry validation (Figures 5, D1, D2).
+      It ensures future research uses the same baseline.
+    - `input_emdat.csv` / `LLMGeoDis.csv`: These include more recent geocoding (
+      extending to 2024) based on a version that cannot be redistributed in
+      full downloaded from the EM-DAT data portal. These are used for the main
+      geoparsing reference and coverage
+      analysis (Figures 3, 4).
 
 ## Reuse, Licensing, and Citation
 
