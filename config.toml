@@ -13,6 +13,7 @@ gadm_path = "Q:/Data/emdat_geocoding/GADM/gadm_410.gpkg" # Raw GADM 4.1 GeoPacka
 gadm_preprocessed_path = "Q:/Data/emdat_geocoding/GADM/gadm_410_adm.gpkg" # Preprocessed GADM ADM_1/ADM_2 layers
 location_file_path = "data/input_emdat.csv" # Input EM-DAT locations CSV
 geolocated_files_dir = "geolocated_files" # Output folder for geocoded CSVs (created if needed)
+projected_files_dir = "data/LLMGeoDis" # Output folder for GADM-projected CSVs of gadm_projection.py (created if needed)
 log_dir = "geolocation_logs" # Geocoding logs and skipped rows (created if needed)
 
 # Validation workflows configuration

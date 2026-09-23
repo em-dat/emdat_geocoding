@@ -4,10 +4,12 @@ import tomllib
 import geopandas as gpd
 import pandas as pd
 import pycountry
+from rapidfuzz import fuzz
 from shapely import wkt
 from shapely.validation import make_valid
 
-from gadm_utils import read_admin
+from gadm_utils import (EMDAT_TO_GADM_ISO3, match_location_to_gadm,
+                        normalize_string, read_admin)
 
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
@@ -17,39 +19,106 @@ if not gadm_path:
     raise ValueError("GADM path not found in config.toml ([geocoding].gadm_preprocessed_path or [geocoding].gadm_path)")
 
 gadm1 = read_admin(gadm_path, 1)
+gadm2 = read_admin(gadm_path, 2)
 
 
 csv_folder = config["geocoding"]["geolocated_files_dir"]
-all_dataframes = []
+output_folder = config["geocoding"]["projected_files_dir"]
 
-for filename in os.listdir(csv_folder):
-    if filename.endswith(".csv"):
-        filepath = os.path.join(csv_folder, filename)
-        df = pd.read_csv(filepath)
-        all_dataframes.append(df)
+CHUNKSIZE = 2000  # rows read at a time; the LLM-GeoDis parts are several GB each
+NAME_MATCH_THRESHOLD = 85  # same threshold as in match_location_to_gadm
 
-# Concatenate all dataframes
-concatenated_output = pd.concat(all_dataframes, ignore_index=True)
+_admin1_matches = {}
+_admin2_matches = {}
+_gadm2_names = {}
 
-print(len(concatenated_output["DisNo."].unique()))
 
-nan_rows = concatenated_output[['geometry_osm', 'geometry_wiki', 'geometry_gadm']].isna().all(axis=1)
+def admin1_match(name, iso3):
+    key = (iso3, name)
+    if key not in _admin1_matches:
+        hits = match_location_to_gadm({"Admin1": [name]}, gadm1, gadm2, iso3)["Admin1"]
+        _admin1_matches[key] = hits[0] if hits else None
+    return _admin1_matches[key]
 
-# Count the number of such rows
-nan_count = nan_rows.sum()
 
-# Remove those rows from the DataFrame
-concatenated_output_cleaned = concatenated_output[~nan_rows]
+def admin2_matches(name, iso3):
+    """GADM Admin2 units matching `name`, searched in every Admin1 of the
+    country (the parent Admin1 parsed by GPT is not kept in the output)."""
+    key = (iso3, name)
+    if key not in _admin2_matches:
+        gadm_iso3 = EMDAT_TO_GADM_ISO3.get(iso3, iso3)
+        if gadm_iso3 not in _gadm2_names:
+            country = gadm2[gadm2['iso3'] == gadm_iso3]
+            _gadm2_names[gadm_iso3] = (country['ADMIN2'].map(normalize_string).tolist(),
+                                       country['ADMIN1'].tolist())
+        names, parents = _gadm2_names[gadm_iso3]
+        query = normalize_string(name)
+        candidate_parents = sorted({p for n, p in zip(names, parents)
+                                    if fuzz.ratio(query, n) > NAME_MATCH_THRESHOLD})
+        parsed_json = {"Admin2": [{"name": name, "Admin1": p} for p in candidate_parents]}
+        _admin2_matches[key] = match_location_to_gadm(parsed_json, gadm1, gadm2, iso3)["Admin2"]
+    return _admin2_matches[key]
 
-print(len(nan_rows))
-print(len(concatenated_output_cleaned))
 
-concatenated_output_cleaned['iso3'] = concatenated_output_cleaned['DisNo.'].str[-3:]
+def pick_by_overlap(candidates, geom):
+    """Among same-name GADM units, keep the one overlapping `geom` most
+    (the only one containing it if `geom` is a point)."""
+    if not hasattr(geom, "geom_type"):
+        return None
+    if not geom.is_valid:
+        geom = make_valid(geom)
+    if geom.geom_type == 'Point':
+        containing = [c for c in candidates if c['geometry'].intersects(geom)]
+        return containing[0] if len(containing) == 1 else None
+    areas = [geom.intersection(c['geometry']).area for c in candidates]
+    best = max(range(len(candidates)), key=areas.__getitem__)
+    return candidates[best] if areas[best] > 0 else None
 
-for col in ['geometry_wiki', 'geometry_osm', 'geometry_gadm']:
-    concatenated_output_cleaned[col] = concatenated_output_cleaned[col].apply(
-        lambda x: wkt.loads(x) if isinstance(x, str) else x)
 
+def rematch_gadm(df):
+    """Derive the GADM unit of each Admin1/Admin2 row from its name.
+
+    Names are matched with match_location_to_gadm. The parent Admin1 parsed
+    by GPT is not kept in the output, so Admin2 names are searched in every
+    Admin1 of the country; same-name units are resolved with the location's
+    OSM (or Wikidata) geometry, otherwise with the stored Admin1. Rows without
+    a name match, and Admin3 rows (GADM Admin3 units are not used), get no
+    GADM unit here and are left to fill_gadm.
+    """
+    df = df.copy()
+    df['gadm_source'] = None
+    for col in ['admin1', 'admin2', 'geometry_gadm', 'gadm_source']:
+        df[col] = df[col].astype(object)
+
+    for index, row in df.iterrows():
+        level = row['admin_level']
+        hit = None
+        if level == 'Admin1':
+            hit = admin1_match(row['name'], row['iso3'])
+        elif level == 'Admin2':
+            candidates = admin2_matches(row['name'], row['iso3'])
+            if len(candidates) == 1:
+                hit = candidates[0]
+            elif candidates:
+                geom = row['geometry_osm'] if pd.notna(row['geometry_osm']) else row['geometry_wiki']
+                hit = pick_by_overlap(candidates, geom)
+                if hit is None:
+                    same_parent = [c for c in candidates if c['gadm_admin1'] == row['admin1']]
+                    hit = same_parent[0] if len(same_parent) == 1 else None
+        elif level != 'Admin3':
+            continue
+
+        if hit:
+            df.at[index, 'admin1'] = hit['gadm_admin1']
+            df.at[index, 'admin2'] = hit.get('gadm_admin2')
+            df.at[index, 'geometry_gadm'] = hit['geometry']
+            df.at[index, 'gadm_source'] = 'name_match'
+        else:
+            if level != 'Admin3':
+                df.at[index, 'admin1'] = None
+                df.at[index, 'admin2'] = None
+            df.at[index, 'geometry_gadm'] = None
+    return df
 
 
 def fill_gadm(df, gadm1):
@@ -105,5 +174,50 @@ def fill_gadm(df, gadm1):
     return df
 
 
-concatenated_output_cleaned = fill_gadm(concatenated_output_cleaned, gadm1)
-concatenated_output_cleaned.to_csv("./data/LLMGeoDis.csv", index=False)
+def load_wkt(x):
+    """Parse a WKT string; unparsable strings (a few geometries in the
+    published files are truncated) are treated as missing."""
+    global n_unparsable
+    if not isinstance(x, str):
+        return x
+    try:
+        return wkt.loads(x)
+    except Exception:
+        n_unparsable += 1
+        return None
+
+
+def project_file(filepath, output_path):
+    """Re-match, then project to GADM, one geocoded CSV, chunk by chunk."""
+    n_rows = n_kept = 0
+    for i, chunk in enumerate(pd.read_csv(filepath, chunksize=CHUNKSIZE)):
+        n_rows += len(chunk)
+
+        # Remove rows without any geometry
+        nan_rows = chunk[['geometry_osm', 'geometry_wiki', 'geometry_gadm']].isna().all(axis=1)
+        chunk = chunk[~nan_rows].copy()
+        n_kept += len(chunk)
+
+        chunk['iso3'] = chunk['DisNo.'].str[-3:]
+
+        for col in ['geometry_wiki', 'geometry_osm', 'geometry_gadm']:
+            chunk[col] = chunk[col].apply(load_wkt)
+
+        chunk = rematch_gadm(chunk)
+        missing_before = chunk['geometry_gadm'].isna()
+        chunk = fill_gadm(chunk, gadm1)
+        chunk.loc[missing_before & chunk['geometry_gadm'].notna(), 'gadm_source'] = 'overlap'
+
+        chunk.to_csv(output_path, mode='w' if i == 0 else 'a', header=(i == 0), index=False)
+    print(f"{os.path.basename(filepath)}: {n_rows} rows read, {n_kept} written to {output_path}")
+
+
+n_unparsable = 0
+
+
+os.makedirs(output_folder, exist_ok=True)
+for filename in sorted(os.listdir(csv_folder)):
+    if filename.endswith(".csv"):
+        project_file(os.path.join(csv_folder, filename),
+                     os.path.join(output_folder, filename))
+print(f"{n_unparsable} unparsable WKT geometries treated as missing")
