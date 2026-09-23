@@ -1,13 +1,19 @@
 """GADM helpers shared by the geocoding scripts.
 
-Moved unchanged from ``run_geolocation.py`` so that ``gadm_projection.py`` can
-reuse them without running the geocoding pipeline on import.
+Used by ``run_geolocation.py`` and ``gadm_projection.py``; kept in a separate
+module so they can be imported without running the geocoding pipeline.
 """
 import unicodedata
 
 import geopandas as gpd
 import pycountry
 from rapidfuzz import fuzz, process
+
+# EM-DAT ISO codes whose territory GADM files under another ISO3 code
+EMDAT_TO_GADM_ISO3 = {
+    "SPI": "ESP",  # Canary Islands
+    "SCG": "SRB",  # Serbia Montenegro
+}
 
 
 def read_admin(path_admin, adl):
@@ -51,24 +57,24 @@ def normalize_string(s):
     return s.strip()
 
 
-def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
+def match_location_to_gadm(parsed_json, gadm1, gadm2, iso3):
     """
     Match GPT-parsed disaster locations to GADM Admin1 and Admin2 units.
     
     Args:
         parsed_json: dict with keys Admin1, Admin2, Admin3 from GPT
         gadm1, gadm2: GeoDataFrames containing GADM data
-        country: str, country name from EM-DAT
+        iso3: str, ISO3 code of the country from EM-DAT (column ISO)
     
     Returns:
         dict with matched GADM names and geometries (Admin1/Admin2 only)
     """
     results = {"Admin1": [], "Admin2": []}
+    iso3 = EMDAT_TO_GADM_ISO3.get(iso3, iso3)
 
     # --- Admin1 matching ---
     for admin1_name in parsed_json.get("Admin1", []):
-        gadm1_country = gadm1[
-            gadm1["COUNTRY"].map(normalize_string) == normalize_string(country)]
+        gadm1_country = gadm1[gadm1["iso3"] == iso3]
         if gadm1_country.empty:
             continue
 
@@ -93,8 +99,7 @@ def match_location_to_gadm(parsed_json, gadm1, gadm2, country):
         admin2_name = admin2["name"]
         admin1_name = admin2["Admin1"]
 
-        gadm2_country = gadm2[
-            gadm2["COUNTRY"].map(normalize_string) == normalize_string(country)]
+        gadm2_country = gadm2[gadm2["iso3"] == iso3]
         if gadm2_country.empty:
             continue
 

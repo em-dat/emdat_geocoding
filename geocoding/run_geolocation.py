@@ -383,7 +383,7 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
     return result
 
 
-def gadm_geolocate_hierarchy(parsed_json, emdat_country, gadm1, gadm2):
+def gadm_geolocate_hierarchy(parsed_json, emdat_iso3, gadm1, gadm2):
     """
     Hierarchically match GPT-parsed JSON to GADM1/GADM2 only.
     Returns matched names and geometries in a structured dict.
@@ -391,7 +391,7 @@ def gadm_geolocate_hierarchy(parsed_json, emdat_country, gadm1, gadm2):
     """
     # Match Admin1/Admin2
     gadm_result = match_location_to_gadm(parsed_json, gadm1, gadm2,
-                                         emdat_country)
+                                         emdat_iso3)
 
     # Prepare structured output
     result = {"Admin1": [], "Admin2": [],
@@ -649,8 +649,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
             # Step 3: geocode only if needed
             if not cached_all:
                 osm_json = geolocate_hierarchical(emdat_json, country)
-                gadm_json = gadm_geolocate_hierarchy(emdat_json, country, gadm1,
-                                                     gadm2)
+                gadm_json = gadm_geolocate_hierarchy(emdat_json, row["ISO"],
+                                                     gadm1, gadm2)
                 wiki_json = wikidata_geolocate_hierarchy(emdat_json, country)
 
                 location_df = merge_location_geometries_strict(osm_json,
