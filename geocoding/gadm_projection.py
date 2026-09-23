@@ -7,30 +7,10 @@ import pycountry
 from shapely import wkt
 from shapely.validation import make_valid
 
+from gadm_utils import read_admin
+
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
-
-def read_admin(path_admin, adl):
-    # For world GPKG, layers are typically ADM_1, ADM_2...
-    adms = gpd.read_file(path_admin, layer=f"ADM_{adl}")
-
-    adms = adms.rename(columns={'GID_0': 'iso3'})
-    iso3_mapping = {'Z01':'IND', 'Z02':'CHN', 'Z03':'CHN', 'Z04':'IND', 'Z05':'IND', 'Z06':'PAK', 'Z07':'IND', 'Z08':'CHN', 'Z09':'IND'}
-    adms["iso3"] = adms["iso3"].replace(iso3_mapping)
-    adms = adms[~adms["iso3"].isin(["XKO",None])]
-    pyi3=[pycountry.countries.get(alpha_3=i3) for i3 in adms.iso3]
-    adms=adms[[x is not None for x in pyi3]] # som admin2 will be deleted belonging to ['China', 'India', 'Pakistan', 'Kosovo'] as they are in conflicted areas
-    adms["iso2"]=[pycountry.countries.get(alpha_3=i3).alpha_2 for i3 in adms.iso3]
-
-    adms["ADMIN0"]=adms["COUNTRY"]
-    if adl ==1:
-        adms["ADMIN1"]=adms["NAME_1"]
-    elif adl ==2:
-        adms["ADMIN1"]=adms["NAME_1"]
-        adms["ADMIN2"]=adms["NAME_2"]
-    
-    
-    return adms
 
 gadm_path = config["geocoding"].get("gadm_preprocessed_path") or config["geocoding"].get("gadm_path")
 if not gadm_path:
