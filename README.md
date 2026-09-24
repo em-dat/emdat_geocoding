@@ -45,6 +45,8 @@ on the configuration settings in `config.toml`.
 - `reliability_db.csv`: reliability annotations for geoparsing (for reference).
 - `synthetic_EMDAT_locations.csv` - synthetic examples used during development
   (for reference/testing).
+- `geonames_points.csv`: GeoNames points of the EM-DAT locations of the
+  validation subset (Teber et al. method), used by the GeoNames benchmark.
 
 **Note—External sources (not redistributed here)**
 
@@ -57,7 +59,16 @@ on the configuration settings in `config.toml`.
 
 - `gadm_preprocessing.py`: Prepares GADM layers for the pipeline.
 - `run_geolocation.py`: Main GPT-4o geoparsing script.
-- `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1.
+- `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1: derives the
+  GADM unit of each Admin1/Admin2 location from its name, then assigns the
+  remaining locations to the GADM unit they overlap most.
+- `gadm_utils.py`: GADM helpers shared by the scripts above.
+
+*GeoNames benchmark (conventional method of Teber et al.):*
+
+- `run_geonames_geocoding.py`: Cleans EM-DAT location strings
+  (`geonames_cleaning.py`) and geocodes them with GeoNames
+  (`geonames_client.py`).
 
 ### 2. Preprocessing & Validation
 
@@ -66,6 +77,8 @@ on the configuration settings in `config.toml`.
 - `run_preprocessing_llm.py` & `run_preprocessing_gdis.py`: Convert raw data to
   standardized batches.
 - `run_validation.py`: Driver for the geometry comparison pipeline.
+- `run_geonames_benchmark.py`: Compares GeoNames points and LLM-GeoDis GADM
+  units against the EM-DAT GAUL and GDIS footprints.
 - `run_all.py`: Master script for end-to-end execution.
 - `validation/`: Package containing spatial metrics (`geom_indices.py`),
   comparison logic (`validation.py`), and I/O helpers (`io.py`).
@@ -135,6 +148,9 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
    ```bash
    python geocoding/gadm_projection.py
    ```
+   The script reads the CSVs in `geolocated_files_dir` and writes them, under
+   the same names, to `projected_files_dir`. It can also be run on the
+   published `LLMGeoDis_part*.csv` files to recompute their GADM columns.
 
 ### 2. Comparison Workflow
 
@@ -167,6 +183,32 @@ populated:
    `comparison_figures.ipynb`) as mapped in
    the [Figure and Table Reproducibility](#figure-and-table-reproducibility)
    section.
+
+### 4. GeoNames Benchmark
+
+The benchmark follows the automated part of the Geo-Disasters method (Teber et
+al.): EM-DAT location strings are cleaned and split with regular expressions,
+then each location is searched in GeoNames within the event's country.
+
+1. The GeoNames points of the validation subset are provided in
+   `data/geonames_points.csv`. To regenerate them, set `[geonames].username` in
+   `config.toml` (a GeoNames account with web services enabled) and run:
+   ```bash
+   python geocoding/run_geonames_geocoding.py
+   ```
+   The free GeoNames service allows about 1,000 requests per hour, so the run
+   takes days; it saves its progress and resumes where it stopped.
+2. Compare GeoNames and LLM-GeoDis against the EM-DAT GAUL and GDIS footprints:
+   ```bash
+   python run_geonames_benchmark.py
+   ```
+   Outputs are written to `validation_outputs/`:
+    - `geonames_benchmark_geonames_points.csv` and
+      `geonames_benchmark_llm_points.csv`: one row per location, with whether
+      its point falls inside each benchmark footprint of the same event
+    - `geonames_benchmark_summary.csv`: shares of points inside the footprints,
+      per method and benchmark, over all events and over the events located by
+      both methods
 
 ## Miscellaneous Notes
 
