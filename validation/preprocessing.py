@@ -54,9 +54,15 @@ def make_llm_geocoded_batches(
         batch_numbers: list[int] = [1, 2, 3, 4, 5],
         keep_disno: list[str] | None = None,
         output_dir: str | Path = Path("output"),
-        geometry_columns: str | list[str] = "geometry"
+        geometry_columns: str | list[str] = "geometry",
+        chunksize: int = 2000
 ) -> None:
-    """Create LLM-geocoded GeoPackage batches."""
+    """Create LLM-geocoded GeoPackage batches.
+
+    Each CSV file is read `chunksize` rows at a time, filtered on `keep_disno`
+    and appended to the GeoPackage, so that CSV files larger than memory can be
+    processed.
+    """
     logger.info("Starting LLM-geocoded batch creation...")
 
     csv_file_dir = Path(csv_file_dir)
@@ -68,18 +74,23 @@ def make_llm_geocoded_batches(
         if isinstance(geometry_columns, str):
             geometry_columns = [geometry_columns]
         for geom_column in geometry_columns:
-            df = load_llm_csv_batch(
-                csv_file_path=csv_file_dir / csv_file,
-                columns_to_keep=columns_to_keep + [geom_column]
-            )
-            if keep_disno is not None:
-                df = df[df["DisNo."].isin(keep_disno)]
-            gdf = parse_geometries(df, geom_column)
             suffix = geom_column.split("_")[-1]
             output_path = output_dir / f"llm_{suffix}_{bn}.gpkg"
-            gdf.to_file(output_path)
-            logger.info(f"Saved: {output_path}")
-            del gdf, df
+            output_path.unlink(missing_ok=True)
+            n_records = 0
+            for df in load_llm_csv_batch(
+                csv_file_path=csv_file_dir / csv_file,
+                columns_to_keep=columns_to_keep + [geom_column],
+                chunksize=chunksize
+            ):
+                if keep_disno is not None:
+                    df = df[df["DisNo."].isin(keep_disno)]
+                gdf = parse_geometries(df, geom_column)
+                if gdf.empty:
+                    continue
+                gdf.to_file(output_path, mode="a" if n_records else "w")
+                n_records += len(gdf)
+            logger.info(f"Saved: {output_path} ({n_records} records)")
 
     logger.info("LLM-geocoded batch creation complete.")
 

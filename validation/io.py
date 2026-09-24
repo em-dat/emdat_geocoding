@@ -17,7 +17,7 @@ Conventions
 
 import logging
 from pathlib import Path
-from typing import Literal, Callable
+from typing import Callable, Iterator, Literal
 
 import geopandas as gpd
 import pandas as pd
@@ -252,8 +252,10 @@ def list_disno_in_benchmark(
 
 
 def load_llm_csv_batch(
-        csv_file_path: Path | str, columns_to_keep: list[str]
-) -> pd.DataFrame:
+        csv_file_path: Path | str,
+        columns_to_keep: list[str],
+        chunksize: int | None = None,
+) -> pd.DataFrame | Iterator[pd.DataFrame]:
     """Loads a LLM-geocoded batch of data from a CSV file.
 
     Parameters
@@ -264,13 +266,20 @@ def load_llm_csv_batch(
     columns_to_keep : list of str
         A list of column names to retain in the dataframe. Only these columns
         will be included in the resulting dataframe.
+    chunksize : int, optional
+        If given, the file is read in chunks of this many rows, all columns as
+        strings, so that files larger than memory can be processed.
 
     Returns
     -------
-    pd.DataFrame
+    pd.DataFrame or iterator of pd.DataFrame
         A pandas DataFrame containing the data loaded from the CSV file,
-        filtered to include only the specified columns.
+        filtered to include only the specified columns, or an iterator of such
+        DataFrames if `chunksize` is given.
     """
+    if chunksize is not None:
+        return pd.read_csv(csv_file_path, usecols=columns_to_keep,
+                           dtype=str, chunksize=chunksize)
     return pd.read_csv(csv_file_path, usecols=columns_to_keep)
 
 
