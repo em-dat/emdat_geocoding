@@ -160,7 +160,8 @@ def compare_geometries(
 
     # Load benchmark gdf and make batch corresponding to gdf_llm
     gdf_benchmark = load_benchmark(benchmark, benchmark_path,
-                                   keep_columns=["DisNo.", "geometry"])
+                                   keep_columns=["DisNo.", "geometry"],
+                                   disnos=disno_list)
     gdf_benchmark = filter_by_disnos(gdf_benchmark, disno_list)
     check_geometries(gdf_benchmark["geometry"])
     logger.info(f"{len(gdf_benchmark)} records loaded")

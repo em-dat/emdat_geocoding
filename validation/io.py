@@ -21,6 +21,7 @@ from typing import Callable, Iterator, Literal
 
 import geopandas as gpd
 import pandas as pd
+import pyogrio
 from shapely import wkt
 from shapely.geometry.base import BaseGeometry
 
@@ -346,10 +347,27 @@ def load_emdat_archive(
     return df[use_columns if use_columns else df.columns]
 
 
+def _read_gpkg(path: Path, disnos: list[str] | None = None) -> gpd.GeoDataFrame:
+    """Reads a GeoPackage, only the features of `disnos` if given.
+
+    The selection is done by the file reader, so that only the selected
+    features are loaded in memory.
+    """
+    if disnos is None:
+        return gpd.read_file(path)
+    fields = pyogrio.read_info(path)["fields"]
+    field = next((f for f in ("DisNo.", "disno_", "disasterno") if f in fields), None)
+    if field is None:
+        raise KeyError(f"No DisNo. field found in {path}")
+    values = ",".join("'" + str(d).replace("'", "''") + "'" for d in disnos)
+    return gpd.read_file(path, where=f'"{field}" IN ({values or "NULL"})')
+
+
 def load_benchmark(
         benchmark: BenchmarkGeomType,
         benchmark_path: str | Path,
-        keep_columns: list[str] | None = None
+        keep_columns: list[str] | None = None,
+        disnos: list[str] | None = None
 ) -> gpd.GeoDataFrame:
     """Loads benchmark geometries from the specified benchmark type and path.
 
@@ -362,6 +380,8 @@ def load_benchmark(
     keep_columns : list of str, optional
         A list of column names to retain in the resulting GeoDataFrame. If None, all
         columns are kept by default.
+    disnos : list of str, optional
+        If given, only the benchmark geometries of these DisNo. are loaded.
 
     Returns
     -------
@@ -370,9 +390,11 @@ def load_benchmark(
     """
     logger.info(f"Loading {benchmark} geometries...")
     if benchmark == "GAUL":
-        gdf_benchmark = load_gaul(benchmark_path, keep_columns=keep_columns)
+        gdf_benchmark = load_gaul(benchmark_path, keep_columns=keep_columns,
+                                  disnos=disnos)
     elif benchmark == "GDIS":
-        gdf_benchmark = load_gdis(benchmark_path, keep_columns=keep_columns)
+        gdf_benchmark = load_gdis(benchmark_path, keep_columns=keep_columns,
+                                  disnos=disnos)
     else:
         raise ValueError(f"Invalid benchmark type: {benchmark}")
     return gdf_benchmark
@@ -381,6 +403,7 @@ def load_benchmark(
 def load_gaul(
         gaul_path: str | Path,
         keep_columns: list[str] | None = None,
+        disnos: list[str] | None = None,
 ) -> gpd.GeoDataFrame:
     """Loads a GeoPackage file containing EM-DAT GAUL data into a GeoDataFrame.
 
@@ -394,6 +417,9 @@ def load_gaul(
         A list of column names to retain in the resulting GeoDataFrame. If not
         provided, all columns will be included.
 
+    disnos : list of str, optional
+        If given, only the features of these DisNo. are loaded.
+
     Returns
     -------
     gpd.GeoDataFrame
@@ -401,7 +427,7 @@ def load_gaul(
         the columns specified in 'keep_columns', if provided.
     """
     _check_file_path(gaul_path, (".gpkg",))
-    gdf = gpd.read_file(gaul_path)
+    gdf = _read_gpkg(gaul_path, disnos)
     if "DisNo." not in gdf.columns:
         if "disno_" in gdf.columns:
             gdf.rename(columns={"disno_": "DisNo."}, inplace=True)
@@ -415,7 +441,8 @@ def load_gaul(
 
 def load_gdis(
         path: str | Path,
-        keep_columns: list[str] | None = None
+        keep_columns: list[str] | None = None,
+        disnos: list[str] | None = None
 ) -> gpd.GeoDataFrame:
     """
     Load a GeoPackage file containing GDIS GADM data into a GeoDataFrame.
@@ -428,6 +455,8 @@ def load_gdis(
     keep_columns : list[str] or None, optional
         List of column names to retain in the resulting GeoDataFrame. If None,
         all columns will be included.
+    disnos : list[str] or None, optional
+        If given, only the features of these DisNo. are loaded.
 
     Returns
     -------
@@ -437,7 +466,7 @@ def load_gdis(
 
     """
     _check_file_path(path, (".gpkg",))
-    gdf = gpd.read_file(path)
+    gdf = _read_gpkg(path, disnos)
     gdf.rename(
         columns={
             "disasterno": "DisNo.",
