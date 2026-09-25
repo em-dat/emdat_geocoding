@@ -3,7 +3,8 @@
 Run all workflows in sequence:
 1. run_preprocessing_llm.py
 2. run_preprocessing_gdis.py
-3. run_validation.py
+3. run_preprocessing_geonames.py
+4. run_validation.py
 
 - Uses the same Python interpreter that's running this script.
 - Stops immediately if any step fails (non‑zero exit code).
@@ -21,6 +22,7 @@ ROOT = Path(__file__).resolve().parent
 STEPS = [
     ("LLM preprocessing", "run_preprocessing_llm.py"),
     ("GDIS preprocessing", "run_preprocessing_gdis.py"),
+    ("GeoNames preprocessing", "run_preprocessing_geonames.py"),
     ("Validation", "run_validation.py"),
 ]
 

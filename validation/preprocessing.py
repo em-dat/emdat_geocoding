@@ -13,10 +13,12 @@ Outputs
 - LLM batches are written as GeoPackages named like `llm_<suffix>_<n>.gpkg` in
   the chosen `output_dir`.
 - GDIS batches are written as `gdis_gadm_<n>.gpkg` in `output_dir`.
+- The GeoNames batch is written as `geonames_points_1.gpkg` in `output_dir`.
 """
 import logging
 from pathlib import Path
 
+import geopandas as gpd
 import numpy as np
 import pandas as pd
 
@@ -137,6 +139,40 @@ def make_gdis_geocoded_batches(
         logger.info(f"Saved batch {bn + 1} to {output_path}")
 
     logger.info("GDIS batch creation complete.")
+
+
+def make_geonames_batch(
+        points_path: str | Path,
+        keep_disno: list[str] | None = None,
+        output_dir: str | Path = Path("output")
+) -> None:
+    """Create the GeoNames point batch.
+
+    The GeoNames points of geocoding/run_geonames_geocoding.py (one per
+    location) are written in the layout of the LLM-geocoded batches, as
+    `geonames_points_1.gpkg`, so that they can be compared with the benchmarks
+    like the Wikidata points. Locations without a GeoNames point are dropped.
+    """
+    logger.info("Starting GeoNames batch creation...")
+    df = pd.read_csv(points_path, dtype={"DisNo.": str})
+    df = df[df["lat"].notna() & df["lng"].notna()]
+    if keep_disno is not None:
+        df = df[df["DisNo."].isin(keep_disno)]
+    gdf = gpd.GeoDataFrame(
+        {
+            "DisNo.": df["DisNo."].to_numpy(),
+            "name": df["input_location"].to_numpy(),
+            "admin_level": None,
+            "admin1": df["admin1_name"].to_numpy(),
+            "admin2": None,
+            "iso3": df["DisNo."].str[-3:].to_numpy(),
+        },
+        geometry=gpd.points_from_xy(df["lng"], df["lat"]),
+        crs="EPSG:4326",
+    )
+    output_path = Path(output_dir) / "geonames_points_1.gpkg"
+    gdf.to_file(output_path)
+    logger.info(f"Saved: {output_path} ({len(gdf)} records)")
 
 
 def fix_GDIS_disno(gdis_gdf, df_emdat: pd.DataFrame):
