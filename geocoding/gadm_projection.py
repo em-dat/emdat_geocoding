@@ -174,19 +174,6 @@ def fill_gadm(df, gadm1):
     return df
 
 
-def load_wkt(x):
-    """Parse a WKT string; unparsable strings (a few geometries in the
-    published files are truncated) are treated as missing."""
-    global n_unparsable
-    if not isinstance(x, str):
-        return x
-    try:
-        return wkt.loads(x)
-    except Exception:
-        n_unparsable += 1
-        return None
-
-
 def project_file(filepath, output_path):
     """Re-match, then project to GADM, one geocoded CSV, chunk by chunk."""
     n_rows = n_kept = 0
@@ -201,7 +188,8 @@ def project_file(filepath, output_path):
         chunk['iso3'] = chunk['DisNo.'].str[-3:]
 
         for col in ['geometry_wiki', 'geometry_osm', 'geometry_gadm']:
-            chunk[col] = chunk[col].apply(load_wkt)
+            chunk[col] = chunk[col].apply(
+                lambda x: wkt.loads(x) if isinstance(x, str) else x)
 
         chunk = rematch_gadm(chunk)
         missing_before = chunk['geometry_gadm'].isna()
@@ -212,12 +200,8 @@ def project_file(filepath, output_path):
     print(f"{os.path.basename(filepath)}: {n_rows} rows read, {n_kept} written to {output_path}")
 
 
-n_unparsable = 0
-
-
 os.makedirs(output_folder, exist_ok=True)
 for filename in sorted(os.listdir(csv_folder)):
     if filename.endswith(".csv"):
         project_file(os.path.join(csv_folder, filename),
                      os.path.join(output_folder, filename))
-print(f"{n_unparsable} unparsable WKT geometries treated as missing")
