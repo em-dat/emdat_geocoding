@@ -62,6 +62,8 @@ on the configuration settings in `config.toml`.
 - `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1: derives the
   GADM unit of each Admin1/Admin2 location from its name, then assigns the
   remaining locations to the GADM unit they overlap most.
+- `compute_reliability_db.py`: Builds `reliability_db.csv`, the inputs of the
+  reliability score (source availability and agreement between sources).
 - `gadm_utils.py`: GADM helpers shared by the scripts above.
 
 *GeoNames benchmark (conventional method of Teber et al.):*
@@ -151,6 +153,10 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
    The script reads the CSVs in `geolocated_files_dir` and writes them, under
    the same names, to `projected_files_dir`. It can also be run on the
    published `LLMGeoDis_part*.csv` files to recompute their GADM columns.
+5. Compute the inputs of the reliability score (`reliability_db_path`):
+   ```bash
+   python geocoding/compute_reliability_db.py
+   ```
 
 ### 2. Comparison Workflow
 

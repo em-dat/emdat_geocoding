@@ -14,6 +14,7 @@ gadm_preprocessed_path = "Q:/Data/emdat_geocoding/GADM/gadm_410_adm.gpkg" # Prep
 location_file_path = "data/input_emdat.csv" # Input EM-DAT locations CSV
 geolocated_files_dir = "geolocated_files" # Output folder for geocoded CSVs (created if needed)
 projected_files_dir = "data/LLMGeoDis" # Output folder for GADM-projected CSVs of gadm_projection.py (created if needed)
+reliability_db_path = "data/reliability_db.csv" # Reliability inputs written by compute_reliability_db.py
 log_dir = "geolocation_logs" # Geocoding logs and skipped rows (created if needed)
 
 # GeoNames benchmark configuration (Teber et al. method)
