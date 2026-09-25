@@ -1,0 +1,7 @@
+method,events_in_scope,events_located,locations_attempted,locations_located,event_rate,location_rate
+LLM-GeoDis (any source),5855,5663,,28607,0.9672075149444919,
+LLM-GeoDis (GADM),5855,5663,,28607,0.9672075149444919,
+"LLM-GeoDis (GADM, matched by name)",5855,4745,,22835,0.8104184457728437,
+LLM-GeoDis (OSM),5855,5432,,26950,0.9277540563620836,
+LLM-GeoDis (Wiki),5855,2728,,10265,0.4659265584970111,
+GeoDisasters (GeoNames),5855,4296,35935.0,23804,0.7337318531169941,0.6624182551829693

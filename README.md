@@ -199,6 +199,11 @@ Provided that the LLM-GeoDis CSV parts have been unzipped into
     - `<provider>_<benchmark>_batch<n>_dissolved.csv` (when dissolving by
       `DisNo.`)
 
+   `comparison_figures.ipynb` also writes the values behind the Figure 5
+   histograms to `validation_outputs/`: `figure5_statistics.csv` (n, median,
+   mean, share >= 0.9, share of zeros) and `figure5_histogram_bins.csv`
+   (percentage in each bin).
+
 ### 3. Reproducing Figures and Tables
 
 Once the comparison workflow is complete and the `validation_outputs/` folder is
@@ -235,6 +240,12 @@ then each location is searched in GeoNames within the event's country.
     - `geonames_benchmark_summary.csv`: shares of points inside the footprints,
       per method and benchmark, over all events and over the events located by
       both methods
+3. Compute the share of events located by each method (LLM-GeoDis sources and
+   GeoNames), on the events attempted by both, 2000-2018:
+   ```bash
+   python run_coverage_statistics.py
+   ```
+   Output: `validation_outputs/coverage_by_method.csv`.
 
 ## Miscellaneous Notes
 
