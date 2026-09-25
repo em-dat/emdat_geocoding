@@ -71,6 +71,7 @@ def compare_geometries(
         gdis_path: str | Path | None = None,
         gdis_disno_path: str | Path | None = None,
         output_dir: str | Path | None = Path("output"),
+        block_size: int = 500,
 ):
     """
     Compare the geometries from a batch of GeoPackages against a chosen
@@ -110,6 +111,9 @@ def compare_geometries(
         Path to a DisNo-specific dataset for GDIS benchmark geometry.
     output_dir : str or Path, optional, default=Path("output")
         Directory where validation results will be saved as a CSV file.
+    block_size : int, optional, default=500
+        Number of events dissolved and compared at a time. Results do not
+        depend on it; it bounds the memory used to dissolve the geometries.
 
     Raises
     ------
@@ -166,42 +170,54 @@ def compare_geometries(
     check_geometries(gdf_benchmark["geometry"])
     logger.info(f"{len(gdf_benchmark)} records loaded")
 
-    # Dissolve units
-    if dissolved_units:
-        aggfunc = {"name": list, "admin_level": list, "admin1": list,
-                   "admin2": list}
-        gdf_llm = dissolve_units(gdf_llm, aggfunc=aggfunc)
-
-    if benchmark == "GDIS":  # GAUL is already dissolved
-        gdf_benchmark = dissolve_units(gdf_benchmark)
-
-    # Perform actual validation
+    # Dissolve units and perform the validation by blocks of events: an
+    # event's results only depend on its own geometries, and dissolving the
+    # geometries of all events at once can exceed the available memory.
+    aggfunc = {"name": list, "admin_level": list, "admin1": list,
+               "admin2": list}
     logger.info(f"Starting geometry validation...")
-    records = []
-    geom_dict = dict(zip(gdf_benchmark["DisNo."], gdf_benchmark["geometry"]))
-    for ix, row in gdf_llm.iterrows():
-        geom_a = row["geometry"]
-        geom_b = geom_dict.get(row["DisNo."])
-        indices: GeomIndices = calculate_geom_indices(
-            geom_a,
-            geom_b,
-            method=area_calculation_method,
-            shapely_make_valid=False,
-            check_geometry=False,
-        )
-        metrics = asdict(indices)
-        results = [
-            row["DisNo."],
-            row["name"],
-            row["admin_level"],
-            row["admin1"],
-            row["admin2"],
-            geom_type,
-            benchmark,
-            batch_number,
-            area_calculation_method
-        ] + [metrics[f] for f in GEOMINDICES_FIELDS]
-        records.append(results)
+    keyed_records = []
+    for start in range(0, len(disno_list), block_size):
+        block = disno_list[start:start + block_size]
+        block_llm = gdf_llm[gdf_llm["DisNo."].isin(block)]
+        block_benchmark = gdf_benchmark[gdf_benchmark["DisNo."].isin(block)]
+
+        # Dissolve units
+        if dissolved_units:
+            block_llm = dissolve_units(block_llm, aggfunc=aggfunc)
+
+        if benchmark == "GDIS":  # GAUL is already dissolved
+            block_benchmark = dissolve_units(block_benchmark)
+
+        geom_dict = dict(zip(block_benchmark["DisNo."],
+                             block_benchmark["geometry"]))
+        for ix, row in block_llm.iterrows():
+            geom_a = row["geometry"]
+            geom_b = geom_dict.get(row["DisNo."])
+            indices: GeomIndices = calculate_geom_indices(
+                geom_a,
+                geom_b,
+                method=area_calculation_method,
+                shapely_make_valid=False,
+                check_geometry=False,
+            )
+            metrics = asdict(indices)
+            results = [
+                row["DisNo."],
+                row["name"],
+                row["admin_level"],
+                row["admin1"],
+                row["admin2"],
+                geom_type,
+                benchmark,
+                batch_number,
+                area_calculation_method
+            ] + [metrics[f] for f in GEOMINDICES_FIELDS]
+            # Keep the order of a single pass: dissolved results by DisNo.,
+            # others in the order of the batch
+            keyed_records.append(
+                (row["DisNo."] if dissolved_units else ix, results))
+    records = [r for _, r in sorted(keyed_records, key=lambda kr: kr[0])]
 
     # Save validation results
     output_filename = (
