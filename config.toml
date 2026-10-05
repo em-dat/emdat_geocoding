@@ -9,11 +9,14 @@ temperature = 0.0 # Sampling temperature
 max_tokens = 1024 # Max tokens for the response
 # Paths for geocoding workflow
 limit_locations = 5 # Limit number of locations processed; comment out for no limit
-gadm_path = "Q:/Data/emdat_geocoding/GADM/gadm_410.gpkg" # Raw GADM 4.1 GeoPackage
-gadm_preprocessed_path = "Q:/Data/emdat_geocoding/GADM/gadm_410_adm.gpkg" # Preprocessed GADM ADM_1/ADM_2 layers
+gadm_path = "data/emdat_geocoding/GADM" # Raw GADM 4.1 GeoPackage
+gadm_preprocessed_path = "data/emdat_geocoding/GADM" # Preprocessed GADM ADM_1/ADM_2 layers
 location_file_path = "data/input_emdat.csv" # Input EM-DAT locations CSV
 geolocated_files_dir = "geolocated_files" # Output folder for geocoded CSVs (created if needed)
 log_dir = "geolocation_logs" # Geocoding logs and skipped rows (created if needed)
+
+
+
 
 # Validation workflows configuration
 
@@ -27,9 +30,9 @@ datefmt="%Y-%m-%d %H:%M:%S" # Timestamp format
 
 [path]
 # Heavy files with geometries for preprocessing and/or validation
-batch_dir = "Q:/Data/emdat_geocoding/batch_files" # Folder to store generated GPKG batches
-emdat_gaul_path = "Q:/Data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT GAUL benchmark
-gdis_path = "Q:/Data/emdat_geocoding/GDIS/gdis.gpkg" # GDIS benchmark (GADM-aligned)
+batch_dir = "data/emdat_geocoding/batch_files" # Folder to store generated GPKG batches
+emdat_gaul_path = "data/emdat_geocoding/EMDAT_GAUL/geoemdat_gaul.gpkg" # EM-DAT GAUL benchmark
+gdis_path = "data/emdat_geocoding/GDIS/gdis.gpkg" # GDIS benchmark (GADM-aligned)
 csv_file_dir = 'data/LLMGeoDis' # Folder containing unzipped LLM-GeoDis CSV parts
 # Lightweight data without geometries
 emdat_archive_path = "data/241204_emdat_archive.xlsx" # DOI: 10.14428/DVN/I0LTPH
