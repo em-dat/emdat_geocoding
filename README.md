@@ -4,6 +4,20 @@ This repository contains the code and inputs to reproduce the
 LLM-assisted geocoding (LLM-GeoDis) and the geometry comparison/validation
 workflows described in the associated manuscript: [Anonymized]
 
+## Changes in this version
+
+This version corrects the GADM columns of LLM-GeoDis. In the previous
+version, about 30% of the Admin1/Admin2 locations (13,579 of 45,256 with a
+GADM geometry) carried the name and polygon of a neighbouring GADM unit,
+because GADM units were selected by country name, which differs between
+EM-DAT and GADM for 26 countries. GADM units are now selected by ISO3 code and
+derived from the location names; locations without a name match are assigned
+to the unit they overlap most (new column `gadm_source`). Location names,
+administrative levels, and OSM and Wikidata geometries are unchanged. The
+validation outputs, `reliability_db.csv` and the figures are updated
+accordingly, and a conventional benchmark (GeoDisasters method with GeoNames)
+is added. Details are in the commit history and in the Zenodo record.
+
 ## Overview
 
 Code and data allow reproducing the following steps:
@@ -40,11 +54,17 @@ on the configuration settings in `config.toml`.
   https://doi.org/10.7927/ZZ3B-8Y61). Terms of use: see source.
 - `geoemdat_gaul.gpkg`: GeoPackage with EM-DAT-GAUL geometries.
 - `LLMGeoDis.csv`: Pre-processed dataset (or unzipped parts
-  `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo).
+  `LLMGeoDis_part1.csv` to `part5.csv` from Zenodo). Column `gadm_source` tells
+  whether the GADM unit was matched by name (`name_match`) or assigned by
+  largest overlap with the OSM or Wikidata geometry (`overlap`).
 - `input_emdat.csv`: EM-DAT input used for geoparsing reference.
-- `reliability_db.csv`: reliability annotations for geoparsing (for reference).
+- `reliability_db.csv`: inputs of the reliability score (source availability
+  and agreement between sources), built by `geocoding/compute_reliability_db.py`.
 - `synthetic_EMDAT_locations.csv` - synthetic examples used during development
   (for reference/testing).
+- `geonames_points.csv`: GeoNames points of the EM-DAT locations of the
+  validation subset (GeoDisasters method of Teber et al.), used by the GeoNames
+  benchmark and shown in Figure 5 as "GeoDisasters (GeoNames)".
 
 **Note—External sources (not redistributed here)**
 
@@ -57,15 +77,28 @@ on the configuration settings in `config.toml`.
 
 - `gadm_preprocessing.py`: Prepares GADM layers for the pipeline.
 - `run_geolocation.py`: Main GPT-4o geoparsing script.
-- `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1.
+- `gadm_projection.py`: Harmonizes coordinates/names to GADM 4.1: derives the
+  GADM unit of each Admin1/Admin2 location from its name, then assigns the
+  remaining locations to the GADM unit they overlap most.
+- `compute_reliability_db.py`: Builds `reliability_db.csv`, the inputs of the
+  reliability score (source availability and agreement between sources).
+- `gadm_utils.py`: GADM helpers shared by the scripts above.
+
+*GeoNames benchmark (conventional method of Teber et al.):*
+
+- `run_geonames_geocoding.py`: Cleans EM-DAT location strings
+  (`geonames_cleaning.py`) and geocodes them with GeoNames
+  (`geonames_client.py`).
 
 ### 2. Preprocessing & Validation
 
 *Scripts and modules to prepare data and run comparisons:*
 
-- `run_preprocessing_llm.py` & `run_preprocessing_gdis.py`: Convert raw data to
-  standardized batches.
+- `run_preprocessing_llm.py`, `run_preprocessing_gdis.py` &
+  `run_preprocessing_geonames.py`: Convert raw data to standardized batches.
 - `run_validation.py`: Driver for the geometry comparison pipeline.
+- `run_geonames_benchmark.py`: Compares GeoNames points and LLM-GeoDis GADM
+  units against the EM-DAT GAUL and GDIS footprints.
 - `run_all.py`: Master script for end-to-end execution.
 - `validation/`: Package containing spatial metrics (`geom_indices.py`),
   comparison logic (`validation.py`), and I/O helpers (`io.py`).
@@ -88,7 +121,7 @@ mapping below:
 |:------------------------------------|:----------------------------|:-------------------------------------------------------------------------------------|
 | Table 1, Figure 1, Figure 2         | N.A.                        | Descriptive table/figure generated manually                                          |
 | Figure 3, 4, A1, A2, B1, B2, B3, B4 | `main_figures.ipynb`        | `input_emdat.csv`, `LLMGeoDis.csv` (or parts), `reliability_db.csv`, GADM 4.1 layers |
-| Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv`                              |
+| Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv` (incl. GeoNames outputs)     |
 | Figure 6                            | `validate_geoparsing.ipynb` | GADM 4.1 layers (for synthetic sample generation)                                    |
 | Figure C1, C2                       | `compute_reliability.ipynb` | `reliability_db.csv`, GADM 4.1 layers                                                |
 
@@ -135,6 +168,13 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
    ```bash
    python geocoding/gadm_projection.py
    ```
+   The script reads the CSVs in `geolocated_files_dir` and writes them, under
+   the same names, to `projected_files_dir`. It can also be run on the
+   published `LLMGeoDis_part*.csv` files to recompute their GADM columns.
+5. Compute the inputs of the reliability score (`reliability_db_path`):
+   ```bash
+   python geocoding/compute_reliability_db.py
+   ```
 
 ### 2. Comparison Workflow
 
@@ -150,12 +190,19 @@ Provided that the LLM-GeoDis CSV parts have been unzipped into
    Alternatively, you can run the steps separately:
     - `python run_preprocessing_llm.py` (create GPKG batches from LLM CSVs)
     - `python run_preprocessing_gdis.py` (create GPKG batches from GDIS)
+    - `python run_preprocessing_geonames.py` (create a GPKG batch from the
+      GeoNames points)
     - `python run_validation.py` (run geometry comparison)
 
 3. Outputs are written to `validation_outputs/`:
     - `<provider>_<benchmark>_batch<n>.csv`
     - `<provider>_<benchmark>_batch<n>_dissolved.csv` (when dissolving by
       `DisNo.`)
+
+   `comparison_figures.ipynb` also writes the values behind the Figure 5
+   histograms to `validation_outputs/`: `figure5_statistics.csv` (n, median,
+   mean, share >= 0.9, share of zeros) and `figure5_histogram_bins.csv`
+   (percentage in each bin).
 
 ### 3. Reproducing Figures and Tables
 
@@ -167,6 +214,38 @@ populated:
    `comparison_figures.ipynb`) as mapped in
    the [Figure and Table Reproducibility](#figure-and-table-reproducibility)
    section.
+
+### 4. GeoNames Benchmark
+
+The benchmark follows the automated part of the Geo-Disasters method (Teber et
+al.): EM-DAT location strings are cleaned and split with regular expressions,
+then each location is searched in GeoNames within the event's country.
+
+1. The GeoNames points of the validation subset are provided in
+   `data/geonames_points.csv`. To regenerate them, set `[geonames].username` in
+   `config.toml` (a GeoNames account with web services enabled) and run:
+   ```bash
+   python geocoding/run_geonames_geocoding.py
+   ```
+   The free GeoNames service allows about 1,000 requests per hour, so the run
+   takes days; it saves its progress and resumes where it stopped.
+2. Compare GeoNames and LLM-GeoDis against the EM-DAT GAUL and GDIS footprints:
+   ```bash
+   python run_geonames_benchmark.py
+   ```
+   Outputs are written to `validation_outputs/`:
+    - `geonames_benchmark_geonames_points.csv` and
+      `geonames_benchmark_llm_points.csv`: one row per location, with whether
+      its point falls inside each benchmark footprint of the same event
+    - `geonames_benchmark_summary.csv`: shares of points inside the footprints,
+      per method and benchmark, over all events and over the events located by
+      both methods
+3. Compute the share of events located by each method (LLM-GeoDis sources and
+   GeoNames), on the events attempted by both, 2000-2018:
+   ```bash
+   python run_coverage_statistics.py
+   ```
+   Output: `validation_outputs/coverage_by_method.csv`.
 
 ## Miscellaneous Notes
 
