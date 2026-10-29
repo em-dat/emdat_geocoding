@@ -20,6 +20,9 @@ data/geoemdat_part3.csv
 data/geoemdat_part4.csv
 data/geoemdat_part5.csv
 data/llm_gadm_2000_2002.gpkg
+data/llmGeodis_nogeom.csv
+
 data/pend-gdis-1960-2018-disasterlocations.csv
 .log
 api_key
+

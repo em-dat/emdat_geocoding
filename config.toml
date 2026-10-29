@@ -10,7 +10,7 @@ max_tokens = 1024 # Max tokens for the response
 # Paths for geocoding workflow
 limit_locations = 5 # Limit number of locations processed; comment out for no limit
 gadm_path = "data/emdat_geocoding/GADM" # Raw GADM 4.1 GeoPackage
-gadm_preprocessed_path = "data/emdat_geocoding/GADM" # Preprocessed GADM ADM_1/ADM_2 layers
+gadm_preprocessed_path = "C:/Users/wja209/Git/emdat_geocoding/data/emdat_geocoding/GADM/gadm_410-levels.gpkg" # Preprocessed GADM ADM_1/ADM_2 layers
 location_file_path = "data/input_emdat.csv" # Input EM-DAT locations CSV
 geolocated_files_dir = "geolocated_files" # Output folder for geocoded CSVs (created if needed)
 projected_files_dir = "data/LLMGeoDis" # Output folder for GADM-projected CSVs of gadm_projection.py (created if needed)
