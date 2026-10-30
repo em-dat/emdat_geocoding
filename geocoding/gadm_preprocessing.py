@@ -49,6 +49,7 @@ essential_fields = [
     "GID_0",      # country alpha-3 per GADM naming
     "COUNTRY",    # country name used to build ADMIN0
     "NAME_1",     # admin1 name
+    "VARNAME_1",  # admin1 alternative names ('|'-separated), used to match Admin1 names
     "NAME_2",     # admin2 name
 ]
 
@@ -96,7 +97,7 @@ def preprocess_gadm_flat_table(src_path: str, out_path: str) -> None:
         adm1 = dissolve_level(
             base,
             by_field="GID_1",
-            keep_fields=["GID_0", "COUNTRY", "NAME_1"],
+            keep_fields=["GID_0", "COUNTRY", "NAME_1", "VARNAME_1"],
         )
         # Ensure NAME_1 is present
         if "NAME_1" not in adm1.columns and "NAME_1" in base.columns:
@@ -115,6 +116,8 @@ def preprocess_gadm_flat_table(src_path: str, out_path: str) -> None:
     # Trim to minimal set expected later
     def trim(gdf: gpd.GeoDataFrame, level: int) -> gpd.GeoDataFrame:
         base_cols = ["GID_0", "COUNTRY", "NAME_1"]
+        if level == 1:
+            base_cols += ["VARNAME_1"]
         if level == 2:
             base_cols += ["NAME_2"]
         cols = [c for c in base_cols if c in gdf.columns]

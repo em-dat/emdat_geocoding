@@ -26,7 +26,7 @@ csv_folder = config["geocoding"]["geolocated_files_dir"]
 output_folder = config["geocoding"]["projected_files_dir"]
 
 CHUNKSIZE = 2000  # rows read at a time; the LLM-GeoDis parts are several GB each
-NAME_MATCH_THRESHOLD = 85  # same threshold as in match_location_to_gadm
+NAME_MATCH_THRESHOLD = 85  # same threshold as the Admin2 matching of match_location_to_gadm
 
 _admin1_matches = {}
 _admin2_matches = {}
