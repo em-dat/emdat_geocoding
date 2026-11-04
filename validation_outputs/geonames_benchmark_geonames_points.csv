@@ -9945,17 +9945,17 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2000-0277-RUS,voronezhskaya oblast,Voronezh Oblast,50.96667,40.23333,Voronezh Oblast,RU,472039.0,,1.0,1.0
 2000-0277-RUS,"yaroslavskaya oblast, central",,,,,,,,,
 2000-0278-RUS,aginskiy buryatskiy a. okrug,Aginskiy Buryatskiy Okrug,51.0,114.5,Zabaykalskiy (Transbaikal) Kray,RU,2028094.0,0.0,1.0,1.0
-2000-0278-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,1.0
-2000-0278-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,1.0
+2000-0278-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,1.0
+2000-0278-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,1.0
 2000-0278-RUS,buryatiya rep.,,,,,,,,,
 2000-0278-RUS,chitinskaya oblast,Orenburg Oblast,51.64167,55.6,Orenburg Oblast,RU,515001.0,0.0,0.0,0.0
 2000-0278-RUS,irkutskaya oblast,Irkutsk Oblast,57.1,106.36667,Irkutsk Oblast,RU,2023468.0,0.0,1.0,1.0
-2000-0278-RUS,kemerovskaya oblast,Kuzbass,54.78333,87.20833,Kuzbass,RU,1503900.0,1.0,1.0,1.0
+2000-0278-RUS,kemerovskaya oblast,Kuzbass,54.78333,87.20833,Kuzbass,RU,1503900.0,0.0,1.0,1.0
 2000-0278-RUS,khakasiya rep.,,,,,,,,,
 2000-0278-RUS,krasnoyarskiy kray,Krasnoyarsk Krai,67.5,96.03333,Krasnoyarsk Krai,RU,1502020.0,0.0,0.0,1.0
 2000-0278-RUS,novosibirskaya oblast,Novosibirsk Oblast,55.275,79.76667,Novosibirsk Oblast,RU,1496745.0,0.0,1.0,1.0
 2000-0278-RUS,omskaya oblast,Omsk Oblast,56.1,73.34167,Omsk Oblast,RU,1496152.0,0.0,1.0,1.0
-2000-0278-RUS,tomskaya oblast,Tomsk Oblast,58.49167,82.14167,Tomsk Oblast,RU,1489421.0,0.0,1.0,1.0
+2000-0278-RUS,tomskaya oblast,Tomsk Oblast,58.49167,82.14167,Tomsk Oblast,RU,1489421.0,1.0,1.0,1.0
 2000-0278-RUS,tyva rep.,,,,,,,,,
 2000-0278-RUS,ustordynskiy buryatskiy okrug,,,,,,,,,
 2000-0281-TUR,"carsamba, samsun",Çarşamba,41.19889,36.72194,Samsun,TR,749704.0,1.0,1.0,1.0
@@ -10949,7 +10949,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2000-0788-PHL,"eastern visayas, eastern visayas",Eastern Visayas,11.51649,124.96204,Eastern Visayas,PH,7521307.0,0.0,1.0,0.0
 2000-0788-PHL,"zamboanga peninsula, zamboanga peninsula",Zamboanga Peninsula,7.89603,123.13477,Zamboanga Peninsula,PH,7521308.0,0.0,1.0,0.0
 2000-0788-PHL,"northern mindanao, northern mindanao",Northern Mindanao,8.5262,125.22669,Northern Mindanao,PH,7521295.0,1.0,1.0,0.0
-2000-0788-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2000-0788-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2000-0788-PHL,"soccsksargen, soccsksargen",Malingao,7.16083,124.475,Soccsksargen,PH,1978681.0,1.0,1.0,0.0
 2000-0788-PHL,"caraga, caraga   central philippines",,,,,,,,,
 2000-0790-TZA,mwanza,Mwanza,-2.51667,32.9,Mwanza,TZ,152224.0,1.0,1.0,1.0
@@ -11466,7 +11466,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2001-0054-PHL,"autonomous    muslim mindanao, armm",,,,,,,,,
 2001-0054-PHL,"zamboanga peninsula, zamboanga peninsula",Zamboanga Peninsula,7.89603,123.13477,Zamboanga Peninsula,PH,7521308.0,0.0,1.0,0.0
 2001-0054-PHL,"northern mindanao, northern mindanao",Northern Mindanao,8.5262,125.22669,Northern Mindanao,PH,7521295.0,1.0,1.0,0.0
-2001-0054-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2001-0054-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2001-0054-PHL,"soccsksargen, soccsksargen",Malingao,7.16083,124.475,Soccsksargen,PH,1978681.0,1.0,1.0,0.0
 2001-0054-PHL,"caraga, caraga",Caraga,9.0,125.74167,Caraga,PH,7521299.0,1.0,1.0,0.0
 2001-0059-PHL,"silay, negros occidental",,,,,,,,,
@@ -11907,7 +11907,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2001-0318-VNM,tuyen quang,Tuyên Quang,21.82356,105.21424,Tuyen Quang,VN,1563287.0,1.0,1.0,1.0
 2001-0318-VNM,vinh phuc,Vĩnh Phúc Province,21.33333,105.56667,Vĩnh Phúc Province,VN,1905856.0,0.0,1.0,1.0
 2001-0319-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,0.0
-2001-0319-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2001-0319-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2001-0319-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,0.0
 2001-0319-PHL,"southern tagalog, southern tagalog",,,,,,,,,
 2001-0319-PHL,"eastern visayas, eastern visayas",Eastern Visayas,11.51649,124.96204,Eastern Visayas,PH,7521307.0,0.0,1.0,0.0
@@ -12701,7 +12701,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2001-0782-LAO,attapu,Attapu,14.81071,106.83184,Attapu,LA,1665046.0,1.0,1.0,1.0
 2001-0792-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,1.0
 2001-0793-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,1.0
-2001-0793-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2001-0793-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2001-0793-PHL,"cordillera administrative, car",,,,,,,,,
 2001-0794-IND,"saran, bihar",Chāpra,25.78031,84.74709,Bihar,IN,1274353.0,1.0,1.0,1.0
 2001-0794-IND,"gopalganj, bihar",Gopālganj,26.46734,84.44041,Bihar,IN,1270965.0,1.0,1.0,1.0
@@ -16796,8 +16796,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2004-0172-RUS,"krapivino, kemerovskaya oblast",,,,,,,,,
 2004-0172-RUS,"biisk, altayskiy kray",,,,,,,,,
 2004-0172-RUS,"abaz, khakasiya rep.",,,,,,,,,
-2004-0172-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,0.0
-2004-0172-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,0.0
+2004-0172-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,0.0
+2004-0172-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,0.0
 2004-0172-RUS,tomskaya oblast,Tomsk Oblast,58.49167,82.14167,Tomsk Oblast,RU,1489421.0,1.0,1.0,1.0
 2004-0173-IDN,"bandung, bandung",Bandung,-6.92222,107.60694,West Java,ID,1650357.0,1.0,0.0,0.0
 2004-0173-IDN,"bandung, jawa barat",,,,,,,,,
@@ -19085,7 +19085,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2005-0375-IND,"birbhum, west bengal",Bīrbhūm District,24.0,87.58333,West Bengal,IN,1275525.0,1.0,1.0,1.0
 2005-0375-NPL,"banke, bheri",Bānke,28.16667,81.83333,Mid Western,NP,1283676.0,1.0,1.0,1.0
 2005-0375-NPL,mid western  ),Mid Western,29.05977,82.31335,Mid Western,NP,7289706.0,1.0,1.0,1.0
-2005-0375-NPL,"sunsari, koshi",Dharān,26.81436,87.27972,Koshi,NP,1283460.0,0.0,1.0,1.0
+2005-0375-NPL,"sunsari, koshi",Dharān,26.81436,87.27972,Koshi,NP,1283460.0,1.0,1.0,1.0
 2005-0375-NPL,eastern  ),,,,,,,,,
 2005-0378-HTI,"saint marc, artibonite",,,,,,,,,
 2005-0381-CHN,"wenzhou shi, wenzhou",Wenzhou,27.99942,120.66682,Zhejiang,CN,1791388.0,1.0,1.0,1.0
@@ -20123,8 +20123,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2005-0713-ROU,vrancea,Vrancea,45.75,26.91667,Vrancea,RO,662447.0,1.0,1.0,1.0
 2005-0713-RUS,moskva,Moscow,55.75204,37.61781,Moscow,RU,524901.0,0.0,1.0,0.0
 2005-0713-RUS,moskovskaya oblast,Moscow Oblast,55.81363,36.71631,Moscow Oblast,RU,524925.0,1.0,1.0,1.0
-2005-0713-RUS,sankt peterburg,St Petersburg,59.93863,30.31413,St.-Petersburg,RU,498817.0,1.0,1.0,1.0
-2005-0713-RUS,leningradskaya oblast,Leningradskaya Oblast',60.01667,31.71667,Leningradskaya Oblast',RU,536199.0,0.0,1.0,1.0
+2005-0713-RUS,sankt peterburg,St Petersburg,59.93863,30.31413,St.-Petersburg,RU,498817.0,0.0,1.0,1.0
+2005-0713-RUS,leningradskaya oblast,Leningradskaya Oblast',60.01667,31.71667,Leningradskaya Oblast',RU,536199.0,1.0,1.0,1.0
 2005-0713-RUS,chitinskaya oblast,Orenburg Oblast,51.64167,55.6,Orenburg Oblast,RU,515001.0,0.0,0.0,0.0
 2005-0713-RUS,aginskiy buryatskiy a. okrug,Aginskiy Buryatskiy Okrug,51.0,114.5,Zabaykalskiy (Transbaikal) Kray,RU,2028094.0,0.0,1.0,1.0
 2005-0713-RUS,magadanskaya oblast,Magadan Oblast,62.7,154.0,Magadan Oblast,RU,2123627.0,0.0,1.0,1.0
@@ -21565,11 +21565,11 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2006-0473-NPL,chitwan,Chitwan,27.61796,84.45318,Bagmati Province,NP,12095461.0,1.0,1.0,0.0
 2006-0473-NPL,"makwanpur  s, narayani",,,,,,,,,
 2006-0473-NPL,central  ),,,,,,,,,
-2006-0473-NPL,"tanahun, gandaki",Tanahun,27.93548,84.22325,Gandaki Pradesh,NP,12095527.0,0.0,1.0,1.0
+2006-0473-NPL,"tanahun, gandaki",Tanahun,27.93548,84.22325,Gandaki Pradesh,NP,12095527.0,1.0,1.0,1.0
 2006-0473-NPL,western  ),,,,,,,,,
 2006-0473-NPL,"tehrathum, koshi",Terhathum,27.1268,87.5368,Koshi,NP,1282699.0,1.0,1.0,1.0
 2006-0473-NPL,eastern  ),,,,,,,,,
-2006-0473-NPL,"nawalparasi, lumbini",Nawalparasi,27.52,83.738,Lumbini Province,NP,12095531.0,0.0,1.0,1.0
+2006-0473-NPL,"nawalparasi, lumbini",Nawalparasi,27.52,83.738,Lumbini Province,NP,12095531.0,1.0,1.0,1.0
 2006-0475-CHN,"doushazhen village, yanjin xian",,,,,,,,,
 2006-0475-CHN,"doushazhen village, zhaotong",,,,,,,,,
 2006-0475-CHN,"doushazhen village, yunnan sheng",,,,,,,,,
@@ -21620,7 +21620,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2006-0517-PHL,"cordillera administrative, car",,,,,,,,,
 2006-0517-PHL,"national capital, ncr",,,,,,,,,
 2006-0517-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,0.0
-2006-0517-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,0.0
+2006-0517-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,0.0
 2006-0517-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,0.0
 2006-0517-PHL,"southern tagalog, southern tagalog",,,,,,,,,
 2006-0517-PHL,"calabarzon, calabarzon",Calabarzon,14.31,121.09,Calabarzon,PH,7521303.0,0.0,1.0,0.0
@@ -23117,7 +23117,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2007-0307-NPL,"jhapa, mechi",Jhāpā,26.58333,87.91667,Eastern Region,NP,1283307.0,1.0,1.0,1.0
 2007-0307-NPL,eastern  ),,,,,,,,,
 2007-0307-NPL,"sunsari, koshi",Dharān,26.81436,87.27972,Koshi,NP,1283460.0,1.0,1.0,1.0
-2007-0307-NPL,nawalparasi,Nawalparasi,27.65399,84.03213,Gandaki Pradesh,NP,12095496.0,0.0,1.0,1.0
+2007-0307-NPL,nawalparasi,Nawalparasi,27.65399,84.03213,Gandaki Pradesh,NP,12095496.0,1.0,1.0,1.0
 2007-0307-NPL,"gulmi  s, lumbini",,,,,,,,,
 2007-0307-NPL,western  ),,,,,,,,,
 2007-0307-NPL,"dang, rapti",Rapti,27.86838,82.71858,Lumbini Province,NP,12095847.0,1.0,1.0,1.0
@@ -24630,7 +24630,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0132-LKA,"puttalam, north western",,,,,,,,,
 2008-0132-LKA,uva,Uva Province,6.98472,81.05639,Uva Province,LK,1225265.0,0.0,1.0,1.0
 2008-0132-LKA,eastern,,,,,,,,,
-2008-0139-COD,kasai occidental,Kasaï-Occidental,-5.33333,21.58333,Kasaï-Occidental,CD,214139.0,1.0,1.0,1.0
+2008-0139-COD,kasai occidental,Kasaï-Occidental,-5.33333,21.58333,Kasaï-Occidental,CD,214139.0,0.0,1.0,1.0
 2008-0139-COD,bandundu,Bandundu Province,-3.31687,17.38063,Kwilu,CD,2317397.0,0.0,1.0,0.0
 2008-0140-CHN,"huocheng, ili kazakh",,,,,,,,,
 2008-0140-CHN,"huocheng, xinjiang uygur zizhiqu",,,,,,,,,
@@ -24640,7 +24640,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0155-PHL,"autonomous    muslim mindanao, armm",,,,,,,,,
 2008-0155-PHL,"zamboanga peninsula, zamboanga peninsula",Zamboanga Peninsula,7.89603,123.13477,Zamboanga Peninsula,PH,7521308.0,0.0,1.0,0.0
 2008-0155-PHL,"northern mindanao, northern mindanao",Northern Mindanao,8.5262,125.22669,Northern Mindanao,PH,7521295.0,1.0,1.0,0.0
-2008-0155-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2008-0155-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2008-0155-PHL,"soccsksargen, soccsksargen",Malingao,7.16083,124.475,Soccsksargen,PH,1978681.0,1.0,1.0,0.0
 2008-0155-PHL,"caraga, caraga",Caraga,9.0,125.74167,Caraga,PH,7521299.0,1.0,1.0,0.0
 2008-0162-IDN,"sikka, nusatenggara timur",,,,,,,,,
@@ -25125,7 +25125,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0369-CHN,"guangzhou, guangdong",Guangzhou,23.11667,113.25,Guangdong,CN,1809858.0,1.0,1.0,1.0
 2008-0369-CHN,"shenzhen, guangdong",Shenzhen,22.54554,114.0683,Guangdong,CN,1795565.0,1.0,1.0,1.0
 2008-0369-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,1.0
-2008-0369-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2008-0369-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2008-0369-PHL,"cordillera administrative, car",,,,,,,,,
 2008-0373-VNM,ha giang,Hà Giang Province,22.75,105.0,Hà Giang Province,VN,1581030.0,1.0,1.0,1.0
 2008-0374-CHN,"huili, liangshan yi",,,,,,,,,
@@ -25552,7 +25552,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0540-PHL,"western visayas, western visayas",Western Visayas,11.13,122.53,Western Visayas,PH,7521304.0,1.0,1.0,0.0
 2008-0540-PHL,"central visayas, central visayas",Central Visayas,10.35815,123.87085,Central Visayas,PH,7521306.0,1.0,1.0,0.0
 2008-0540-PHL,"eastern visayas, eastern visayas",Eastern Visayas,11.51649,124.96204,Eastern Visayas,PH,7521307.0,0.0,1.0,0.0
-2008-0540-VNM,ho chi minh,Ho Chi Minh City,10.82302,106.62965,Ho Chi Minh City (HCMC),VN,1566083.0,0.0,1.0,1.0
+2008-0540-VNM,ho chi minh,Ho Chi Minh City,10.82302,106.62965,Ho Chi Minh City (HCMC),VN,1566083.0,1.0,1.0,1.0
 2008-0545-PHL,alcala,Alcala,15.84722,120.52417,Ilocos,PH,1731598.0,0.0,0.0,0.0
 2008-0545-PHL,amulung,Amulung,17.8357,121.72375,Cagayan Valley,PH,1730958.0,1.0,1.0,1.0
 2008-0545-PHL,enrile,Enrile,17.5596,121.6974,Cagayan Valley,PH,1713859.0,1.0,1.0,1.0
@@ -25744,10 +25744,10 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0570-MYS,"cherating, pahang",Cherating,4.12557,103.39388,Pahang,MY,6951104.0,0.0,1.0,1.0
 2008-0570-MYS,kelantan,Kelantan,5.33333,102.0,Kelantan,MY,1733044.0,1.0,1.0,1.0
 2008-0570-MYS,terengganu,Terengganu,5.0,103.0,Terengganu,MY,1733036.0,1.0,1.0,1.0
-2008-0571-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2008-0571-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2008-0571-PHL,"bicol, bicol",Bicol Region,13.31389,123.56389,Bicol Region,PH,7521310.0,0.0,1.0,1.0
 2008-0571-PHL,"caraga, caraga",Caraga,9.0,125.74167,Caraga,PH,7521299.0,1.0,1.0,0.0
-2008-0571-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2008-0571-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2008-0571-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,1.0
 2008-0571-PHL,"calabarzon, calabarzon",Calabarzon,14.31,121.09,Calabarzon,PH,7521303.0,0.0,1.0,1.0
 2008-0571-PHL,"southern tagalog, southern tagalog",,,,,,,,,
@@ -25758,7 +25758,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2008-0575-PNG,morobe,Morobe Province,-7.0106,146.9672,Morobe Province,PG,2090468.0,1.0,1.0,1.0
 2008-0575-PNG,new ireland,New Ireland,-3.0,151.5,New Ireland,PG,2089693.0,1.0,1.0,1.0
 2008-0575-PNG,northern solomons,Bougainville,-6.0,155.0,Bougainville,PG,2089470.0,0.0,1.0,1.0
-2008-0575-PNG,west sepik,Sandaun Province,-3.5,142.0,Sandaun Province,PG,2087246.0,0.0,1.0,1.0
+2008-0575-PNG,west sepik,Sandaun Province,-3.5,142.0,Sandaun Province,PG,2087246.0,1.0,1.0,1.0
 2008-0579-ITA,"roma, lazio",Rome,41.89193,12.51133,Lazio,IT,3169070.0,1.0,1.0,1.0
 2008-0579-ITA,"venezia, veneto",Venice,45.43713,12.33265,Veneto,IT,3164603.0,1.0,1.0,1.0
 2008-0580-VEN,miranda,Miranda,10.25,-66.41667,Miranda,VE,3632191.0,0.0,1.0,0.0
@@ -27608,7 +27608,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2009-0434-NPL,"banke  s, bheri",,,,,,,,,
 2009-0434-NPL,mid western  ),Mid Western,29.05977,82.31335,Mid Western,NP,7289706.0,1.0,1.0,0.0
 2009-0434-NPL,"dang, rapti",Rapti,27.86838,82.71858,Lumbini Province,NP,12095847.0,1.0,1.0,1.0
-2009-0434-NPL,"myagdi, dhawalagiri",Dhaulagiri,28.69669,83.49257,Gandaki Pradesh,NP,1283457.0,0.0,1.0,1.0
+2009-0434-NPL,"myagdi, dhawalagiri",Dhaulagiri,28.69669,83.49257,Gandaki Pradesh,NP,1283457.0,1.0,1.0,1.0
 2009-0434-NPL,western  ),,,,,,,,,
 2009-0434-NPL,jumla,Jumla,29.2387,82.19872,Karnali Pradesh,NP,12095478.0,1.0,1.0,1.0
 2009-0434-NPL,"kalikot  s, karnali",,,,,,,,,
@@ -28670,8 +28670,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2010-0050-ROU,botosani,Botoșani,47.75,26.66667,Botoșani County,RO,684039.0,1.0,1.0,1.0
 2010-0050-RUS,moskva,Moscow,55.75204,37.61781,Moscow,RU,524901.0,0.0,1.0,0.0
 2010-0050-RUS,moskovskaya oblast,Moscow Oblast,55.81363,36.71631,Moscow Oblast,RU,524925.0,1.0,1.0,1.0
-2010-0050-RUS,sankt peterburg,St Petersburg,59.93863,30.31413,St.-Petersburg,RU,498817.0,1.0,1.0,1.0
-2010-0050-RUS,leningradskaya oblast,Leningradskaya Oblast',60.01667,31.71667,Leningradskaya Oblast',RU,536199.0,0.0,1.0,1.0
+2010-0050-RUS,sankt peterburg,St Petersburg,59.93863,30.31413,St.-Petersburg,RU,498817.0,0.0,1.0,1.0
+2010-0050-RUS,leningradskaya oblast,Leningradskaya Oblast',60.01667,31.71667,Leningradskaya Oblast',RU,536199.0,1.0,1.0,1.0
 2010-0050-RUS,orlovskaya oblast,Oryol oblast,53.0,36.25,Oryol oblast,RU,514801.0,1.0,1.0,1.0
 2010-0050-RUS,chuvashiya rep.,,,,,,,,,
 2010-0050-SRB,"zacejar, zajecarski",Zaječar,43.90358,22.26405,Central Serbia,RS,784024.0,1.0,1.0,1.0
@@ -29042,7 +29042,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2010-0177-IND,uttar pradesh,Uttar Pradesh,27.25,80.75,Uttar Pradesh,IN,1253626.0,1.0,1.0,1.0
 2010-0177-IND,bihar,Bihar,25.75,85.75,Bihar,IN,1275715.0,1.0,1.0,1.0
 2010-0179-CHN,chongqing shi,Chongqing,30.08333,107.83333,Chongqing,CN,1814905.0,1.0,1.0,1.0
-2010-0183-YEM,sana'a,Sanaa,15.35452,44.20646,Amanat Alasimah,YE,71137.0,1.0,0.0,0.0
+2010-0183-YEM,sana'a,Sanaa,15.35452,44.20646,Amanat Alasimah,YE,71137.0,0.0,0.0,0.0
 2010-0186-KEN,"kitony village, marakwet",,,,,,,,,
 2010-0186-KEN,"kitony village, rift valley",,,,,,,,,
 2010-0187-USA,alabama,Alabama,32.75041,-86.75026,Alabama,US,4829764.0,1.0,1.0,1.0
@@ -30710,8 +30710,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2010-9318-RUS,krasnodarskiy kray,Krasnoyarsk Krai,67.5,96.03333,Krasnoyarsk Krai,RU,1502020.0,0.0,0.0,0.0
 2010-9318-RUS,kurskaya oblast,Kursk Oblast,51.68333,36.1,Kursk Oblast,RU,538555.0,1.0,1.0,1.0
 2010-9318-RUS,lipetskaya oblast,Lipetsk Oblast,52.64167,39.15,Lipetsk Oblast,RU,535120.0,1.0,1.0,1.0
-2010-9318-RUS,moskovskaya oblast,Moscow Oblast,55.81363,36.71631,Moscow Oblast,RU,524925.0,1.0,1.0,1.0
-2010-9318-RUS,moskva,Moscow,55.75204,37.61781,Moscow,RU,524901.0,0.0,1.0,0.0
+2010-9318-RUS,moskovskaya oblast,Moscow Oblast,55.81363,36.71631,Moscow Oblast,RU,524925.0,0.0,1.0,1.0
+2010-9318-RUS,moskva,Moscow,55.75204,37.61781,Moscow,RU,524901.0,1.0,1.0,0.0
 2010-9318-RUS,name unknown,,,,,,,,,
 2010-9318-RUS,orenburgskaya oblast,Orenburg Oblast,51.64167,55.6,Orenburg Oblast,RU,515001.0,1.0,1.0,0.0
 2010-9318-RUS,orlovskaya oblast,Oryol oblast,53.0,36.25,Oryol oblast,RU,514801.0,1.0,1.0,1.0
@@ -31716,7 +31716,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2011-0376-UGA,kampala,Kampala,0.31628,32.58219,Central Region,UG,232422.0,1.0,1.0,1.0
 2011-0378-PHL,"cordillera administrative, car",,,,,,,,,
 2011-0378-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,1.0
-2011-0378-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2011-0378-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2011-0378-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,1.0
 2011-0379-CHN,guangxi zhuangzu zizhiqu,Guangxi,24.0,109.0,Guangxi,CN,1809867.0,1.0,1.0,1.0
 2011-0379-CHN,hainan sheng,Hainan,19.25,109.75,Hainan,CN,1809054.0,1.0,1.0,1.0
@@ -31732,7 +31732,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2011-0379-PHL,"cordillera administrative, car",,,,,,,,,
 2011-0379-PHL,"national capital, ncr",,,,,,,,,
 2011-0379-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,1.0
-2011-0379-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2011-0379-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2011-0379-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,1.0
 2011-0379-PHL,"calabarzon, calabarzon",Calabarzon,14.31,121.09,Calabarzon,PH,7521303.0,0.0,1.0,1.0
 2011-0380-PHL,"bobuntogan village, jasaan",,,,,,,,,
@@ -32594,7 +32594,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2011-9663-SOM,juba,Gobwen,-0.24913,42.60241,Lower Juba,SO,58222.0,0.0,1.0,1.0
 2011-9663-SOM,hiraan,Hiiraan,4.0,45.5,Hiiraan,SO,57060.0,1.0,1.0,1.0
 2012-0002-PHL,"napnapan village, compostela",,,,,,,,,
-2012-0002-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,0.0,0.0
+2012-0002-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,0.0,0.0
 2012-0005-MOZ,nicoadala,Nicoadala,-17.60806,36.81972,Zambezia Province,MZ,1029901.0,1.0,1.0,0.0
 2012-0005-MOZ,cidade de quelimane,,,,,,,,,
 2012-0005-MOZ,chinde,Chinde,-18.58111,36.45861,Zambezia Province,MZ,1024697.0,1.0,1.0,1.0
@@ -34295,7 +34295,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2012-0499-PAN,el munoz,El Muñoz,7.67623,-80.32063,Los Santos Province,PA,3710377.0,1.0,1.0,1.0
 2012-0499-PAN,"san jos  s, las tablas",,,,,,,,,
 2012-0499-PAN,los santos  ),Los Santos Province,7.58333,-80.33333,Los Santos Province,PA,3704961.0,1.0,1.0,1.0
-2012-0500-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,0.0
+2012-0500-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,0.0
 2012-0502-IRN,zohan,Zohān,33.41471,59.7989,South Khorasan Province,IR,66089.0,1.0,1.0,1.0
 2012-0502-IRN,"ghayen villages, gaenat",,,,,,,,,
 2012-0502-IRN,khorasan  ),Khorāsān,34.0,56.0,South Khorasan Province,IR,127377.0,0.0,0.0,0.0
@@ -34467,7 +34467,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2012-0558-IDN,jawa tengah,Central Java,-7.5,110.0,Central Java,ID,1642669.0,1.0,1.0,1.0
 2012-0558-IDN,jawa timur,East Java,-7.7394,112.5099,East Java,ID,1642668.0,1.0,1.0,1.0
 2012-0558-IDN,jawa barat,West Java,-6.75,107.5,West Java,ID,1642672.0,1.0,1.0,1.0
-2012-0559-CHN,xizang zizhiqu,Tibet,31.66667,88.0,Tibet,CN,1279685.0,0.0,1.0,1.0
+2012-0559-CHN,xizang zizhiqu,Tibet,31.66667,88.0,Tibet,CN,1279685.0,1.0,1.0,1.0
 2012-0561-IDN,sulawesi selatan,South Sulawesi,-4.33333,120.25,South Sulawesi,ID,1626232.0,1.0,1.0,1.0
 2012-0561-IDN,sumatera utara,North Sumatra,2.0,99.0,North Sumatra,ID,1213642.0,1.0,1.0,1.0
 2012-0563-AFG,nuristan,Nuristan,35.3,70.83333,Nuristan,AF,1444363.0,1.0,1.0,1.0
@@ -34503,7 +34503,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2012-0602-PHL,"autonomous    muslim mindanao, armm",,,,,,,,,
 2012-0602-PHL,"zamboanga peninsula, zamboanga peninsula",Zamboanga Peninsula,7.89603,123.13477,Zamboanga Peninsula,PH,7521308.0,0.0,1.0,1.0
 2012-0602-PHL,"northern mindanao, northern mindanao",Northern Mindanao,8.5262,125.22669,Northern Mindanao,PH,7521295.0,1.0,1.0,1.0
-2012-0602-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2012-0602-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2012-0602-PHL,"soccsksargen, soccsksargen",Malingao,7.16083,124.475,Soccsksargen,PH,1978681.0,1.0,1.0,1.0
 2012-0603-CHN,shaanxi sheng,Shanxi,37.66667,112.25,Shanxi,CN,1795912.0,0.0,0.0,0.0
 2012-0604-CHN,xinjiang uygur zizhiqu,Xinjiang,41.5,85.5,Xinjiang,CN,1529047.0,,1.0,1.0
@@ -35579,7 +35579,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2013-0272-CHN,guangdong sheng,Guangdong,23.5,113.25,Guangdong,CN,1809935.0,1.0,1.0,1.0
 2013-0272-CHN,hainan sheng,Hainan,19.25,109.75,Hainan,CN,1809054.0,1.0,1.0,1.0
 2013-0272-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,1.0
-2013-0272-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2013-0272-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2013-0272-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,1.0
 2013-0273-CHN,qinghai sheng,Qinghai,36.0,96.0,Qinghai,CN,1280239.0,1.0,1.0,1.0
 2013-0273-CHN,nei mongol zizhiqu,Inner Mongolia,43.5,114.75,Inner Mongolia,CN,2035607.0,0.0,1.0,1.0
@@ -35803,7 +35803,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2013-0340-PHL,"autonomous    muslim mindanao, armm",,,,,,,,,
 2013-0340-PHL,"zamboanga peninsula, zamboanga peninsula",Zamboanga Peninsula,7.89603,123.13477,Zamboanga Peninsula,PH,7521308.0,0.0,1.0,1.0
 2013-0340-PHL,"northern mindanao, northern mindanao",Northern Mindanao,8.5262,125.22669,Northern Mindanao,PH,7521295.0,1.0,1.0,1.0
-2013-0340-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,1.0,1.0,1.0
+2013-0340-PHL,"davao, davao",Davao City,7.07306,125.61278,Davao Region,PH,1715348.0,0.0,1.0,1.0
 2013-0340-PHL,"soccsksargen, soccsksargen",Malingao,7.16083,124.475,Soccsksargen,PH,1978681.0,1.0,1.0,1.0
 2013-0341-CHN,hainan sheng,Hainan,19.25,109.75,Hainan,CN,1809054.0,1.0,1.0,1.0
 2013-0343-AFG,shakardara,Shakardarah,34.68616,69.00805,Kabul,AF,1125797.0,1.0,1.0,0.0
@@ -35891,7 +35891,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2013-0373-CHN,guangdong sheng,Guangdong,23.5,113.25,Guangdong,CN,1809935.0,1.0,1.0,1.0
 2013-0373-PHL,"cordillera administrative, car",,,,,,,,,
 2013-0373-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,0.0
-2013-0373-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,0.0
+2013-0373-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,0.0
 2013-0373-PHL,"central luzon, central luzon",Central Luzon,15.30714,120.79762,Central Luzon,PH,7521305.0,1.0,1.0,0.0
 2013-0373-PHL,"calabarzon, calabarzon",Calabarzon,14.31,121.09,Calabarzon,PH,7521303.0,0.0,1.0,1.0
 2013-0373-PHL,"southern tagalog, southern tagalog",,,,,,,,,
@@ -36195,9 +36195,9 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2013-0456-NPL,dang,Dang,27.96774,82.47822,Lumbini Province,NP,12095464.0,1.0,1.0,1.0
 2013-0456-NPL,pyuthan,Pyuthan,28.12018,82.83005,Lumbini Province,NP,12095503.0,1.0,1.0,1.0
 2013-0456-NPL,"rolpa  s, rapti",,,,,,,,,
-2013-0456-NPL,"nawalparasi, lumbini",Nawalparasi,27.52,83.738,Lumbini Province,NP,12095531.0,0.0,1.0,1.0
+2013-0456-NPL,"nawalparasi, lumbini",Nawalparasi,27.52,83.738,Lumbini Province,NP,12095531.0,1.0,1.0,1.0
 2013-0456-NPL,western  ),,,,,,,,,
-2013-0456-NPL,"mustang, dhawalagiri",Mustāng,28.91667,83.91667,Western Region,NP,1283023.0,0.0,1.0,1.0
+2013-0456-NPL,"mustang, dhawalagiri",Mustāng,28.91667,83.91667,Western Region,NP,1283023.0,1.0,1.0,1.0
 2013-0470-CHN,"changling, songyuan",Changling,44.27295,123.97559,Jilin,CN,2038158.0,1.0,1.0,1.0
 2013-0470-CHN,"changling, jilin sheng",Changling,44.27295,123.97559,Jilin,CN,2038158.0,1.0,1.0,1.0
 2013-0472-USA,oklahoma,Oklahoma,35.49209,-97.50328,Oklahoma,US,4544379.0,1.0,1.0,1.0
@@ -36276,7 +36276,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2013-0524-ISR,central,Central District,32.08333,34.91667,Central District,IL,294904.0,1.0,1.0,1.0
 2013-0524-ISR,haifa,Haifa,32.81303,34.99928,Haifa,IL,294801.0,1.0,1.0,1.0
 2013-0524-ISR,jerusalem,Jerusalem,31.76904,35.21633,Jerusalem,IL,281184.0,1.0,1.0,1.0
-2013-0524-ISR,northern,Northern District,32.86667,35.46667,Northern District,IL,294824.0,0.0,1.0,1.0
+2013-0524-ISR,northern,Northern District,32.86667,35.46667,Northern District,IL,294824.0,1.0,1.0,1.0
 2013-0524-ISR,southern,Southern District,30.66667,34.83333,Southern District,IL,294952.0,1.0,1.0,1.0
 2013-0524-ISR,tel aviv,Tel Aviv,32.08088,34.78057,Tel Aviv,IL,293397.0,1.0,1.0,1.0
 2013-0528-CAN,ontario,Ontario,49.25014,-84.49983,Ontario,CA,6093943.0,1.0,1.0,1.0
@@ -37185,8 +37185,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2014-0192-USA,massachusetts,Massachusetts,42.36565,-71.10832,Massachusetts,US,6254926.0,1.0,1.0,0.0
 2014-0192-USA,rhode,Rhome,33.05346,-97.47197,Texas,US,4722533.0,1.0,1.0,0.0
 2014-0192-USA,connecticut,Connecticut,41.66704,-72.66648,Connecticut,US,4831725.0,1.0,1.0,0.0
-2014-0193-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,1.0
-2014-0193-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,0.0,1.0,1.0
+2014-0193-RUS,altayskiy kray,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,1.0
+2014-0193-RUS,altay rep.,Altay Kray,52.60833,82.60833,Altai Krai,RU,1511732.0,1.0,1.0,1.0
 2014-0193-RUS,tyva rep.,,,,,,,,,
 2014-0193-RUS,khakasiya rep.,,,,,,,,,
 2014-0193-RUS,adygeya rep.,,,,,,,,,
@@ -37649,7 +37649,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2014-0400-CMR,"baksa villages, bibemi",,,,,,,,,
 2014-0400-CMR,"baksa villages, bénoue",,,,,,,,,
 2014-0400-CMR,"baksa villages, nord",,,,,,,,,
-2014-0404-BGR,sofia,Sofia,42.69751,23.32415,Sofia-Capital,BG,727011.0,1.0,1.0,0.0
+2014-0404-BGR,sofia,Sofia,42.69751,23.32415,Sofia-Capital,BG,727011.0,0.0,1.0,0.0
 2014-0405-PNG,gulf,Gulf Province,-7.7246,145.08545,Gulf Province,PG,2096633.0,1.0,1.0,1.0
 2014-0406-CHN,guangxi zhuangzu zizhiqu,Guangxi,24.0,109.0,Guangxi,CN,1809867.0,1.0,1.0,1.0
 2014-0406-CHN,yunnan sheng,Yunnan,25.0,101.5,Yunnan,CN,1785694.0,1.0,1.0,1.0
@@ -38667,7 +38667,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2015-0131-CHN,sichuan sheng,Sichuan,30.5,102.66667,Sichuan,CN,1794299.0,1.0,1.0,1.0
 2015-0131-CHN,shaanxi sheng,Shanxi,37.66667,112.25,Shanxi,CN,1795912.0,1.0,1.0,1.0
 2015-0132-CHN,xinjiang uygur zizhiqu,Xinjiang,41.5,85.5,Xinjiang,CN,1529047.0,1.0,1.0,1.0
-2015-0132-CHN,xizang zizhiqu,Tibet,31.66667,88.0,Tibet,CN,1279685.0,0.0,1.0,1.0
+2015-0132-CHN,xizang zizhiqu,Tibet,31.66667,88.0,Tibet,CN,1279685.0,1.0,1.0,1.0
 2015-0135-AUS,"carnarvon, western australia",,,,,,,,,
 2015-0135-AUS,"ashburton, western australia",,,,,,,,,
 2015-0135-AUS,"upper gascoyne, western australia",,,,,,,,,
@@ -38984,8 +38984,8 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2015-0226-IND,"dibrugarh, assam",Dibrugarh,27.47989,94.90837,Assam,IN,1272648.0,1.0,1.0,1.0
 2015-0226-IND,"nagaon, assam",Nagaon,26.35,92.66667,Assam,IN,1261163.0,1.0,1.0,1.0
 2015-0226-IND,"bongaigaon, assam",Bongaigaon,26.4603,90.6464,Assam,IN,7627076.0,1.0,1.0,1.0
-2015-0226-NPL,"taplejung, mechi",Taplejung,27.66667,87.83333,Eastern Region,NP,1282713.0,0.0,1.0,1.0
-2015-0226-NPL,"taplejung, eastern",Taplejung,27.66667,87.83333,Eastern Region,NP,1282713.0,0.0,1.0,1.0
+2015-0226-NPL,"taplejung, mechi",Taplejung,27.66667,87.83333,Eastern Region,NP,1282713.0,1.0,1.0,1.0
+2015-0226-NPL,"taplejung, eastern",Taplejung,27.66667,87.83333,Eastern Region,NP,1282713.0,1.0,1.0,1.0
 2015-0227-GEO,"vake, tbilissi",Vake,42.03222,44.43028,Tbilisi,GE,611240.0,0.0,0.0,0.0
 2015-0227-GEO,"vake, tbilisi",Vake,42.03222,44.43028,Tbilisi,GE,611240.0,0.0,0.0,0.0
 2015-0227-GEO,"saburtalo boroughs, tbilissi",,,,,,,,,
@@ -39015,7 +39015,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2015-0244-JPN,okinawa,Okinawa,26.50687,127.94581,Okinawa,JP,1854346.0,1.0,1.0,1.0
 2015-0244-PHL,"cordillera administrative, car",,,,,,,,,
 2015-0244-PHL,"ilocos, ilocos",Ilocos,16.97917,120.52083,Ilocos,PH,7521301.0,0.0,1.0,0.0
-2015-0244-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,0.0,1.0,1.0
+2015-0244-PHL,"cagayan valley, cagayan valley",Cagayan Valley,17.65667,121.73333,Cagayan Valley,PH,7521297.0,1.0,1.0,1.0
 2015-0245-USA,colorado,Colorado,39.00027,-105.50083,Colorado,US,5417618.0,1.0,1.0,1.0
 2015-0245-USA,illinois,Illinois,40.00032,-89.25037,Illinois,US,4896861.0,1.0,1.0,1.0
 2015-0247-CHN,guizhou sheng,Guizhou,27.0,107.0,Guizhou,CN,1809445.0,1.0,1.0,1.0
@@ -39482,7 +39482,7 @@ DisNo.,input_location,geoname_name,lat,lng,admin1_name,iso2,geoname_id,in_llm_ga
 2015-0391-LBN,north,Mohafazat Liban-Nord,34.33333,35.91667,Liban-Nord,LB,278297.0,1.0,1.0,0.0
 2015-0391-LBN,south,Soubh,33.18868,35.47244,Nabatîyé,LB,11805268.0,1.0,1.0,1.0
 2015-0392-SDN,gadaref,Gedaref,14.03493,35.38344,Al Qaḑārif,SD,379062.0,1.0,1.0,1.0
-2015-0392-SDN,nile,River Nile,19.0,33.2,River Nile,SD,408664.0,0.0,1.0,0.0
+2015-0392-SDN,nile,River Nile,19.0,33.2,River Nile,SD,408664.0,1.0,1.0,0.0
 2015-0392-SDN,western darfur,Western Darfūr,13.5,23.5,Western Darfur,SD,363841.0,0.0,1.0,1.0
 2015-0393-SDN,"wadi halfa, northern",Wadi Halfa,21.79577,31.37129,Northern State,SD,364132.0,1.0,1.0,1.0
 2015-0395-CHN,chongqing shi,Chongqing,30.08333,107.83333,Chongqing,CN,1814905.0,1.0,1.0,1.0
