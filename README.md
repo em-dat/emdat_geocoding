@@ -11,7 +11,10 @@ version, about 30% of the Admin1/Admin2 locations (13,579 of 45,256 with a
 GADM geometry) carried the name and polygon of a neighbouring GADM unit,
 because GADM units were selected by country name, which differs between
 EM-DAT and GADM for 26 countries. GADM units are now selected by ISO3 code and
-derived from the location names; locations without a name match are assigned
+derived from the location names. Admin1 names are matched on the GADM official
+and alternative names (`VARNAME_1`), after removing generic terms such as
+Province or Oblast; rerun `geocoding/gadm_preprocessing.py` to keep
+`VARNAME_1` in the GADM layers. Locations without a name match are assigned
 to the unit they overlap most (new column `gadm_source`). Location names,
 administrative levels, and OSM and Wikidata geometries are unchanged. The
 validation outputs, `reliability_db.csv` and the figures are updated
