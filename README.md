@@ -63,8 +63,6 @@ on the configuration settings in `config.toml`.
 - `input_emdat.csv`: EM-DAT input used for geoparsing reference.
 - `reliability_db.csv`: inputs of the reliability score (source availability
   and agreement between sources), built by `geocoding/compute_reliability_db.py`.
-- `synthetic_EMDAT_locations.csv` - synthetic examples used during development
-  (for reference/testing).
 - `geonames_points.csv`: GeoNames points of the EM-DAT locations of the
   validation subset (GeoDisasters method of Teber et al.), used by the GeoNames
   benchmark and shown in Figure 5 as "GeoDisasters (GeoNames)".
@@ -113,7 +111,6 @@ on the configuration settings in `config.toml`.
 - `main_figures.ipynb`: Dataset coverage and yearly trends.
 - `comparison_figures.ipynb`: Validation results analysis.
 - `compute_reliability.ipynb`: Reliability metrics and consensus.
-- `validate_geoparsing.ipynb`: Geoparsing accuracy checks.
 
 ##### Figure and Table Reproducibility
 
@@ -125,7 +122,6 @@ mapping below:
 | Table 1, Figure 1, Figure 2         | N.A.                        | Descriptive table/figure generated manually                                          |
 | Figure 3, 4, A1, A2, B1, B2, B3, B4 | `main_figures.ipynb`        | `input_emdat.csv`, `LLMGeoDis.csv` (or parts), `reliability_db.csv`, GADM 4.1 layers |
 | Figure 5, D1, D2                    | `comparison_figures.ipynb`  | `241204_emdat_archive.xlsx`, `validation_outputs/*.csv` (incl. GeoNames outputs)     |
-| Figure 6                            | `validate_geoparsing.ipynb` | GADM 4.1 layers (for synthetic sample generation)                                    |
 | Figure C1, C2                       | `compute_reliability.ipynb` | `reliability_db.csv`, GADM 4.1 layers                                                |
 
 *Note: Ensure all Zenodo data files are placed in the `data/` folder as
