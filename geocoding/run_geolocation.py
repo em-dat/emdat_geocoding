@@ -19,6 +19,7 @@ from shapely import wkt as sh_wkt
 from shapely.geometry import Point
 
 from gadm_utils import match_location_to_gadm, normalize_string, read_admin
+from wikidata_utils import country_qids
 
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
@@ -257,7 +258,7 @@ def wikidata_geocode(place_name):
     """
     sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
     query = f"""
-    SELECT ?item ?itemLabel ?coord ?countryLabel
+    SELECT ?item ?itemLabel ?coord ?country ?countryLabel
     WHERE {{
       ?item rdfs:label "{place_name}"@en .
       OPTIONAL {{ ?item wdt:P625 ?coord. }}
@@ -280,20 +281,29 @@ def wikidata_geocode(place_name):
                 "qid": r["item"]["value"].split("/")[-1],
                 "label": r["itemLabel"]["value"],
                 "country": r.get("countryLabel", {}).get("value"),
+                "country_qid": r.get("country", {}).get("value", "").split("/")[-1],
                 "coord": Point(lon, lat)
             })
     return matches
 
 
 # --- Candidate selection function ---
-def select_closest_candidate(candidates, parent_point=None, emdat_country=None):
+def select_closest_candidate(candidates, parent_point=None, emdat_country=None,
+                             allowed_country_qids=None):
     """
     Select the best candidate from Wikidata, ensuring it's in the EM-DAT country.
+    The country is tested on Wikidata entities when allowed_country_qids is
+    given (see wikidata_utils.country_qids), otherwise on country names.
     """
     if not candidates:
         return None
 
-    if emdat_country:
+    if allowed_country_qids is not None:
+        candidates = [c for c in candidates
+                      if c.get("country_qid") in allowed_country_qids]
+        if not candidates:
+            return None
+    elif emdat_country:
         emdat_norm = normalize_string(emdat_country)
         # Keep only candidates in the correct country
         candidates = [c for c in candidates if
@@ -336,18 +346,21 @@ def safe_wikidata_geocode(name, retries=3, delay=5, base_wait=1):
 
 
 # --- Hierarchical geolocation using Wikidata ---
-def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
+def wikidata_geolocate_hierarchy(parsed_json, emdat_country, emdat_iso3=None):
     """
     Hierarchically geolocate Admin1/Admin2/Admin3 using Wikidata.
-    Ensures points are only in the EM-DAT country.
+    Ensures points are only in the EM-DAT country (tested on Wikidata country
+    entities when the ISO3 code is given).
     """
     result = {"Admin1": [], "Admin2": [], "Admin3": []}
+    allowed = country_qids(emdat_iso3) if emdat_iso3 else None
 
     # --- Admin1 ---
     for admin1_name in parsed_json.get("Admin1", []):
         candidates = safe_wikidata_geocode(admin1_name)
         selected = select_closest_candidate(candidates, parent_point=None,
-                                            emdat_country=emdat_country)
+                                            emdat_country=emdat_country,
+                                            allowed_country_qids=allowed)
         geom = selected["coord"] if selected else None
         result["Admin1"].append({"name": admin1_name, "geometry": geom})
 
@@ -357,7 +370,8 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
                        a["name"] == admin2["Admin1"]), None)
         candidates = safe_wikidata_geocode(admin2["name"])
         selected = select_closest_candidate(candidates, parent_point=parent,
-                                            emdat_country=emdat_country)
+                                            emdat_country=emdat_country,
+                                            allowed_country_qids=allowed)
         geom = selected["coord"] if selected else None
         result["Admin2"].append({
             "name": admin2["name"],
@@ -372,7 +386,8 @@ def wikidata_geolocate_hierarchy(parsed_json, emdat_country):
                            "Admin1"]), None)
         candidates = safe_wikidata_geocode(admin3["name"])
         selected = select_closest_candidate(candidates, parent_point=parent,
-                                            emdat_country=emdat_country)
+                                            emdat_country=emdat_country,
+                                            allowed_country_qids=allowed)
         geom = selected["coord"] if selected else None
         result["Admin3"].append({
             "name": admin3["name"],
@@ -651,7 +666,8 @@ def process_skipped_rows(file, skipped_disnos=None, prefix="retry_"):
                 osm_json = geolocate_hierarchical(emdat_json, country)
                 gadm_json = gadm_geolocate_hierarchy(emdat_json, row["ISO"],
                                                      gadm1, gadm2)
-                wiki_json = wikidata_geolocate_hierarchy(emdat_json, country)
+                wiki_json = wikidata_geolocate_hierarchy(emdat_json, country,
+                                                         row["ISO"])
 
                 location_df = merge_location_geometries_strict(osm_json,
                                                                wiki_json,
