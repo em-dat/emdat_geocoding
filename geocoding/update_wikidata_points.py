@@ -1,9 +1,10 @@
 """Re-query the Wikidata points of the countries that got none.
 
-Until version 2 of the dataset, run_geolocation.select_closest_candidate kept a
-Wikidata candidate only if its country *name* equalled the EM-DAT country name.
-Countries whose names differ (e.g. "United States" / "United States of America",
-"Viet Nam", "Türkiye") got no Wikidata point at all. run_geolocation.py now tests
+In the dataset versions published before November 2026,
+run_geolocation.select_closest_candidate kept a Wikidata candidate only if its
+country *name* equalled the EM-DAT country name. Countries whose names differ
+(e.g. "United States" / "United States of America", "Viet Nam", "Türkiye") got
+no Wikidata point at all. run_geolocation.py now tests
 the country on Wikidata entities (wikidata_utils.country_qids).
 
 This script applies the corrected selection to an existing dataset without

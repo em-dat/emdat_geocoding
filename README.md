@@ -98,7 +98,8 @@ on the configuration settings in `config.toml`.
 - `wikidata_utils.py`: Wikidata country entities of an EM-DAT ISO3 code, used
   to keep Wikidata candidates in the event's country.
 - `update_wikidata_points.py`: Re-queries the Wikidata points of the countries
-  that got none with the country test on names (dataset versions 1 and 2).
+  that got none with the country test on names (dataset versions published
+  before November 2026).
 
 *GeoNames benchmark (conventional method of Teber et al.):*
 
@@ -186,7 +187,7 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
    the same names, to `projected_files_dir`. It can also be run on the
    published `LLMGeoDis_part*.csv` files to recompute their GADM columns.
    To correct the Wikidata points of a dataset produced before the country
-   test on Wikidata entities (versions 1 and 2), run
+   test on Wikidata entities (versions published before November 2026), run
    `python geocoding/update_wikidata_points.py <input_dir> <output_dir>`
    on the folder of the `LLMGeoDis_part*.csv` files.
 5. Compute the inputs of the reliability score (`reliability_db_path`):
