@@ -124,6 +124,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-0269-BLR,Minsk,Admin1,Minsk,,llm_wiki,GAUL,1,geodetic,0.0,207580660708.77283,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0269-BLR,Mogilev,Admin1,Mogilev,,llm_wiki,GAUL,1,geodetic,0.0,207580660708.77283,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0269-BLR,Vitebsk,Admin1,Vitebsk,,llm_wiki,GAUL,1,geodetic,0.0,207580660708.77283,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0270-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0270-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0270-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0274-JPN,Ibaraki,Admin1,Ibaraki,,llm_wiki,GAUL,1,geodetic,0.0,11328577341.642149,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2000-0275-URY,Artigas,Admin1,Artigas,,llm_wiki,GAUL,1,geodetic,0.0,177811418211.78635,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0275-URY,Canelones,Admin1,Canelones,,llm_wiki,GAUL,1,geodetic,0.0,177811418211.78635,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -157,7 +160,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-0299-GTM,Totonicapán,Admin1,Totonicapán,,llm_wiki,GAUL,1,geodetic,0.0,35746997755.956764,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0299-GTM,Zacapa,Admin1,Zacapa,,llm_wiki,GAUL,1,geodetic,0.0,35746997755.956764,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0317-MEX,Chalco,Admin2,México,Chalco,llm_wiki,GAUL,1,geodetic,0.0,220067814.31769568,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0326-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,658683578309.5845,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0326-CHN,Guizhou,Admin1,Guizhou,,llm_wiki,GAUL,1,geodetic,0.0,658683578309.5845,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0329-CYP,Larnaca,Admin1,Larnaca,,llm_wiki,GAUL,1,geodetic,0.0,1003320454.8034751,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0330-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,867179779520.3164,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0330-CHN,Yunnan,Admin1,Yunnan,,llm_wiki,GAUL,1,geodetic,0.0,867179779520.3164,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0332-IND,Assam,Admin1,Assam,,llm_wiki,GAUL,1,geodetic,0.0,31444163494.76677,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0333-MEX,Acatlán de Pérez Figueroa,Admin2,Oaxaca,Acatlán de Pérez Figueroa,llm_wiki,GAUL,1,geodetic,0.0,4306682441.812339,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0337-UKR,Chernihivska,Admin1,Chernihiv,,llm_wiki,GAUL,1,geodetic,0.0,600525557038.6072,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -263,6 +270,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-0539-THA,Sangkha,Admin2,Surin,Sangkha,llm_wiki,GAUL,1,geodetic,0.0,20081339401.670883,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0555-BGD,Cox's Bazar,Admin2,Chittagong,Cox'S Bazar,llm_wiki,GAUL,1,geodetic,0.0,8826106853.193657,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0555-BGD,Chittagong,Admin2,Chittagong,Chittagong,llm_wiki,GAUL,1,geodetic,0.0,8826106853.193657,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0557-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,388234676923.67267,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0557-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,388234676923.67267,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0576-JPN,Gifu,Admin1,Gifu,,llm_wiki,GAUL,1,geodetic,0.0,21566996847.018917,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0580-ESP,Galicia,Admin1,Galicia,,llm_wiki,GAUL,1,geodetic,0.0,155787544212.36508,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0586-PER,Cusco,Admin1,Cusco,,llm_wiki,GAUL,1,geodetic,0.0,31679501509.557217,0.0,0.0,0.0,0.0,0.0,False,False,False,False
@@ -274,6 +283,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-0595-SLV,San Vicente,Admin1,San Vicente,,llm_wiki,GAUL,1,geodetic,0.0,12699322053.441032,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0595-SLV,Usulután,Admin1,Usulután,,llm_wiki,GAUL,1,geodetic,0.0,12699322053.441032,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0596-NGA,Gusau,Admin2,Zamfara,Gusau,llm_wiki,GAUL,1,geodetic,0.0,3050564891.178852,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2000-0605-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,33809695049.820915,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0606-JPN,Aichi,Admin1,Aichi,,llm_wiki,GAUL,1,geodetic,0.0,29633568564.0416,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0606-JPN,Shizuoka,Admin1,Shizuoka,,llm_wiki,GAUL,1,geodetic,0.0,29633568564.0416,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0606-JPN,Gifu,Admin1,Gifu,,llm_wiki,GAUL,1,geodetic,0.0,29633568564.0416,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -382,6 +392,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-0671-ITA,Modena,Admin2,Emilia-Romagna,Modena,llm_wiki,GAUL,1,geodetic,0.0,37945912527.630585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0671-ITA,La Spezia,Admin2,Liguria,La Spezia,llm_wiki,GAUL,1,geodetic,0.0,37945912527.630585,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0671-ITA,Genova,Admin2,Liguria,Genova,llm_wiki,GAUL,1,geodetic,0.0,37945912527.630585,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-0677-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,46124816306.16807,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0679-IRL,Waterford,Admin1,Waterford,,llm_wiki,GAUL,1,geodetic,0.0,9235392476.36114,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0688-NOR,Oslo,Admin1,Oslo,,llm_wiki,GAUL,1,geodetic,0.0,3082879888.21711,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-0688-NOR,Enebakk,Admin2,Akershus,Enebakk,llm_wiki,GAUL,1,geodetic,0.0,3082879888.21711,0.0,0.0,0.0,0.0,0.0,False,False,False,False
@@ -567,6 +578,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2000-9496-CUB,Camagüey,Admin1,Camagüey,,llm_wiki,GAUL,1,geodetic,0.0,35143059683.712746,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-9537-BIH,Republika Srpska,Admin1,Repuplika Srpska,,llm_wiki,GAUL,1,geodetic,0.0,51145265360.30475,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-9604-MNG,Ömnögovi,Admin1,Ömnögovi,,llm_wiki,GAUL,1,geodetic,0.0,460789470000.2339,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2000-9626-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,177309661537.1216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-9788-BGR,Blagoevgrad,Admin1,Blagoevgrad,,llm_wiki,GAUL,1,geodetic,0.0,111300090915.71599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-9788-BGR,Burgas,Admin1,Burgas,,llm_wiki,GAUL,1,geodetic,0.0,111300090915.71599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2000-9788-BGR,Dobrich,Admin1,Dobrich,,llm_wiki,GAUL,1,geodetic,0.0,111300090915.71599,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -712,6 +724,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0146-AGO,Lubango,Admin2,Huíla,Lubango,llm_wiki,GAUL,1,geodetic,0.0,127834179738.31595,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0146-AGO,Caluquembe,Admin2,Huíla,Caluquembe,llm_wiki,GAUL,1,geodetic,0.0,127834179738.31595,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0147-ARG,Salta,Admin1,Salta,,llm_wiki,GAUL,1,geodetic,0.0,261863618777.3234,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0151-CHN,Baoshan,Admin2,Yunnan,Baoshan,llm_wiki,GAUL,1,geodetic,0.0,19662706606.00886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0155-MNG,Khövsgöl,Admin1,Hövsgöl,,llm_wiki,GAUL,1,geodetic,0.0,911100075618.1228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0155-MNG,Bulgan,Admin1,Bulgan,,llm_wiki,GAUL,1,geodetic,0.0,911100075618.1228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0155-MNG,Khovd,Admin1,Hovd,,llm_wiki,GAUL,1,geodetic,0.0,911100075618.1228,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -771,6 +784,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0288-ROU,Sibiu,Admin1,Sibiu,,llm_wiki,GAUL,1,geodetic,0.0,105228935635.9491,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0288-ROU,Teleorman,Admin1,Teleorman,,llm_wiki,GAUL,1,geodetic,0.0,105228935635.9491,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0288-ROU,Vâlcea,Admin1,Vâlcea,,llm_wiki,GAUL,1,geodetic,0.0,105228935635.9491,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0292-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0292-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0294-PER,Arequipa,Admin1,Arequipa,,llm_wiki,GAUL,1,geodetic,0.0,138548748482.08728,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0294-PER,Moquegua,Admin1,Moquegua,,llm_wiki,GAUL,1,geodetic,0.0,138548748482.08728,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0294-PER,Tacna,Admin1,Tacna,,llm_wiki,GAUL,1,geodetic,0.0,138548748482.08728,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -778,6 +793,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0298-NPL,Bagmati,Admin2,Central,Bagmati,llm_wiki,GAUL,1,geodetic,0.0,56647894410.18476,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2001-0299-CMR,Fako,Admin2,Sud-Ouest,Fako,llm_wiki,GAUL,1,geodetic,0.0,2032354556.9931567,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0301-AUS,Gold Coast,Admin2,Queensland,Gold Coast,llm_wiki,GAUL,1,geodetic,0.0,1331681795.2886467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0305-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,177309661537.1216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0332-IND,Chhattisgarh,Admin1,Chhattisgarh,,llm_wiki,GAUL,1,geodetic,0.0,88975519863.01321,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0332-IND,Dhamtari,Admin2,Chhattisgarh,Dhamtari,llm_wiki,GAUL,1,geodetic,0.0,88975519863.01321,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0332-IND,Raipur,Admin2,Chhattisgarh,Raipur,llm_wiki,GAUL,1,geodetic,0.0,88975519863.01321,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -801,6 +817,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0376-PAK,Rawalpindi,Admin2,Punjab,Rawalpindi,llm_wiki,GAUL,1,geodetic,0.0,80121031642.06813,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0377-ARG,Neuquén,Admin1,Neuquén,,llm_wiki,GAUL,1,geodetic,0.0,928839686302.2197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0377-ARG,Río Negro,Admin1,Río Negro,,llm_wiki,GAUL,1,geodetic,0.0,928839686302.2197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0385-CHN,Kunming,Admin2,Yunnan,Kunming,llm_wiki,GAUL,1,geodetic,0.0,20627516626.321568,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0386-ITA,Abruzzo,Admin1,Abruzzo,,llm_wiki,GAUL,1,geodetic,0.0,301651249596.38135,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0386-ITA,Basilicata,Admin1,Basilicata,,llm_wiki,GAUL,1,geodetic,0.0,301651249596.38135,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0386-ITA,Calabria,Admin1,Calabria,,llm_wiki,GAUL,1,geodetic,0.0,301651249596.38135,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -827,11 +844,15 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0401-ARG,General Roca,Admin2,Río Negro,General Roca,llm_wiki,GAUL,1,geodetic,0.0,90885750158.70789,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0401-ARG,Pichi Mahuida,Admin2,Río Negro,Pichi Mahuida,llm_wiki,GAUL,1,geodetic,0.0,90885750158.70789,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0402-YEM,Al Hudaydah,Admin1,Al Hudaydah,,llm_wiki,GAUL,1,geodetic,0.0,200216655699.93094,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0405-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0405-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0405-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0407-IDN,Nias,Admin2,Sumatera Utara,Nias,llm_wiki,GAUL,1,geodetic,0.0,5270520837.389856,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0414-IND,Rudraprayag,Admin2,Uttarakhand,Rudraprayag,llm_wiki,GAUL,1,geodetic,0.0,1214050659.1996734,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2001-0417-SDN,Kassala,Admin1,Kassala,,llm_wiki,GAUL,1,geodetic,0.0,758719805653.746,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0417-SDN,Sennar,Admin1,Sennar,,llm_wiki,GAUL,1,geodetic,0.0,758719805653.746,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0417-SDN,Khartoum,Admin1,Khartoum,,llm_wiki,GAUL,1,geodetic,0.0,758719805653.746,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0419-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,177309661537.1216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0442-ARG,La Rioja,Admin1,La Rioja,,llm_wiki,GAUL,1,geodetic,0.0,90957561033.60738,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0450-THA,Udon Thani,Admin1,Udon Thani,,llm_wiki,GAUL,1,geodetic,0.0,76785180631.08432,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0450-THA,Chiang Mai,Admin1,Chiang Mai,,llm_wiki,GAUL,1,geodetic,0.0,76785180631.08432,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -903,6 +924,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0527-IND,Madhubani,Admin2,Bihar,Madhubani,llm_wiki,GAUL,1,geodetic,0.0,252904465744.76566,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0528-THA,Ubon Ratchathani,Admin1,Ubon Ratchathani,,llm_wiki,GAUL,1,geodetic,0.0,19580937064.666462,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0528-THA,Yasothon,Admin1,Yasothon,,llm_wiki,GAUL,1,geodetic,0.0,19580937064.666462,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0540-CHN,Ya'an,Admin2,Sichuan,Ya'an,llm_wiki,GAUL,1,geodetic,0.0,15132532804.797869,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0544-BRA,Santa Catarina,Admin1,Santa Catarina,,llm_wiki,GAUL,1,geodetic,0.0,813614383054.8514,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0544-BRA,Rio Grande do Sul,Admin1,Rio Grande do Sul,,llm_wiki,GAUL,1,geodetic,0.0,813614383054.8514,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0544-BRA,São Paulo,Admin1,São Paulo,,llm_wiki,GAUL,1,geodetic,0.0,813614383054.8514,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -970,7 +992,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0620-DZA,Gdyel,Admin2,Oran,Gdyel,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0620-DZA,Mers El Hadjadj,Admin2,Oran,Marsat El Hadjadj,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0620-DZA,El Braya,Admin2,Oran,El Braya,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2001-0620-DZA,El Ancer,Admin2,Oran,El Ançar,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2001-0620-DZA,El Ancer,Admin2,Jijel,El Ancer,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2001-0620-DZA,Mers El Kebir,Admin2,Oran,Mers El Kebir,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0620-DZA,Hamri,Admin2,Relizane,Hamri,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0620-DZA,Sidi Khettab,Admin2,Relizane,Sidi Khettab,llm_wiki,GAUL,1,geodetic,0.0,14758180683.872467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1092,6 +1114,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0738-CRI,Parrita,Admin2,Puntarenas,Parrita,llm_wiki,GAUL,1,geodetic,0.0,11376278290.055563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0738-CRI,Osa,Admin2,Puntarenas,Osa,llm_wiki,GAUL,1,geodetic,0.0,11376278290.055563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0738-CRI,Puntarenas,Admin2,Puntarenas,Puntarenas,llm_wiki,GAUL,1,geodetic,0.0,11376278290.055563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0741-CHN,Shaoyang,Admin2,Hunan,Shaoyang,llm_wiki,GAUL,1,geodetic,0.0,20470855542.1812,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0746-MMR,Mandalay,Admin1,Mandalay,,llm_wiki,GAUL,1,geodetic,0.0,5867456716.306019,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2001-0746-MMR,Meiktila,Admin2,Mandalay,Meiktila,llm_wiki,GAUL,1,geodetic,0.0,5867456716.306019,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0753-GTM,El Progreso,Admin1,El Progreso,,llm_wiki,GAUL,1,geodetic,0.0,12331233651.851173,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1110,6 +1133,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-0779-NZL,Marlborough,Admin1,Marlborough,,llm_wiki,GAUL,1,geodetic,0.0,153812298539.7274,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2001-0779-NZL,West Coast,Admin1,West Coast,,llm_wiki,GAUL,1,geodetic,0.0,153812298539.7274,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-0794-IND,Gopalganj,Admin2,Bihar,Gopalganj,llm_wiki,GAUL,1,geodetic,0.0,4686176946.385316,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-0795-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,177309661537.1216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9044-MLI,Bamako,Admin1,Bamako,,llm_wiki,GAUL,1,geodetic,0.0,657044993110.2086,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9044-MLI,Gao,Admin1,Gao,,llm_wiki,GAUL,1,geodetic,0.0,657044993110.2086,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9044-MLI,Kayes,Admin1,Kayes,,llm_wiki,GAUL,1,geodetic,0.0,657044993110.2086,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1138,6 +1162,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2001-9122-ZWE,Hwange,Admin2,Matabeleland North,Hwange,llm_wiki,GAUL,1,geodetic,0.0,151874234966.76108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9122-ZWE,Kariba,Admin2,Mashonaland West,Kariba,llm_wiki,GAUL,1,geodetic,0.0,151874234966.76108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9122-ZWE,Guruve,Admin2,Mashonaland Central,Guruve,llm_wiki,GAUL,1,geodetic,0.0,151874234966.76108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9218-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,867179779520.3164,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2001-9218-CHN,Yunnan,Admin1,Yunnan,,llm_wiki,GAUL,1,geodetic,0.0,867179779520.3164,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9383-GTM,Chiquimula,Admin1,Chiquimula,,llm_wiki,GAUL,1,geodetic,0.0,2421561710.5063834,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9383-HND,Choluteca,Admin1,Choluteca,,llm_wiki,GAUL,1,geodetic,0.0,43014295321.01197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2001-9383-HND,El Paraíso,Admin1,El Paraíso,,llm_wiki,GAUL,1,geodetic,0.0,43014295321.01197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1248,6 +1274,17 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0160-URY,Montevideo,Admin1,Montevideo,,llm_wiki,GAUL,1,geodetic,0.0,5323670561.28871,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0162-ECU,Huaquillas,Admin2,El Oro,Huaquillas,llm_wiki,GAUL,1,geodetic,0.0,60947435.87987403,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0175-AFG,Nahrin,Admin2,Baghlan,Nahrin,llm_wiki,GAUL,1,geodetic,0.0,984611476.3712716,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Beijing,Admin1,Beijing,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Gansu,Admin1,Gansu,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Hebei,Admin1,Hebei,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Heilongjiang,Admin1,Heilongjiang,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Jilin,Admin1,Jilin,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Liaoning,Admin1,Liaoning,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Qinghai,Admin1,Qinghai,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Shaanxi,Admin1,Shaanxi,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Shandong,Admin1,Shandong,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Shanxi,Admin1,Shanxi,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0180-CHN,Tianjin,Admin1,Tianjin,,llm_wiki,GAUL,1,geodetic,0.0,5447044298335.177,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0181-JPN,Tokyo,Admin1,Tokyo,,llm_wiki,GAUL,1,geodetic,0.0,15561523194.11653,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0187-PER,Tumbes,Admin1,Tumbes,,llm_wiki,GAUL,1,geodetic,0.0,76116566580.56284,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0187-PER,Puno,Admin1,Puno,,llm_wiki,GAUL,1,geodetic,0.0,76116566580.56284,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1300,6 +1337,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0290-IND,Odisha,Admin1,Odisha,,llm_wiki,GAUL,1,geodetic,0.0,1502339564470.157,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0290-IND,West Bengal,Admin1,West Bengal,,llm_wiki,GAUL,1,geodetic,0.0,1502339564470.157,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0291-IDN,Kolaka,Admin2,Sulawesi Tenggara,Kolaka,llm_wiki,GAUL,1,geodetic,0.0,6774334877.102041,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0305-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,210925015386.55112,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0307-COL,Antioquia,Admin1,Antioquia,,llm_wiki,GAUL,1,geodetic,0.0,678014560112.8666,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0307-COL,Bolívar,Admin1,Bolívar,,llm_wiki,GAUL,1,geodetic,0.0,678014560112.8666,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0307-COL,Boyacá,Admin1,Boyacá,,llm_wiki,GAUL,1,geodetic,0.0,678014560112.8666,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1394,6 +1432,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0404-CAN,Ontario,Admin1,Ontario,,llm_wiki,GAUL,1,geodetic,0.0,465959465332.4636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2002-0404-CAN,Kenora,Admin2,Ontario,Kenora,llm_wiki,GAUL,1,geodetic,0.0,465959465332.4636,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0404-CAN,Rainy River,Admin2,Ontario,Rainy River,llm_wiki,GAUL,1,geodetic,0.0,465959465332.4636,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0406-CHN,Shanghai,Admin1,Shanghai,,llm_wiki,GAUL,1,geodetic,0.0,108659846253.23172,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0406-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,108659846253.23172,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0406-JPN,Okinawa,Admin1,Okinawa,,llm_wiki,GAUL,1,geodetic,0.0,2235487188.342032,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0409-CAN,Québec,Admin1,Québec,,llm_wiki,GAUL,1,geodetic,0.0,957183183097.259,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2002-0409-CAN,Lac-Saint-Jean-Est,Admin2,Québec,Lac-Saint-Jean-Est,llm_wiki,GAUL,1,geodetic,0.0,957183183097.259,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1453,6 +1493,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0495-CHL,Valparaíso,Admin1,Valparaíso,,llm_wiki,GAUL,1,geodetic,0.0,753384902857.153,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0497-NER,Agadez,Admin1,Agadez,,llm_wiki,GAUL,1,geodetic,0.0,622557792377.8256,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0506-HUN,Pest,Admin1,Pest,,llm_wiki,GAUL,1,geodetic,0.0,6974135978.069246,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0508-CHN,Yunnan,Admin1,Yunnan,,llm_wiki,GAUL,1,geodetic,0.0,383388155198.9517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0510-MEX,Durango,Admin1,Durango,,llm_wiki,GAUL,1,geodetic,0.0,135516771969.79807,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0510-MEX,Villa de Reyes,Admin2,San Luis Potosí,Villa de Reyes,llm_wiki,GAUL,1,geodetic,0.0,135516771969.79807,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0512-IDN,Poso,Admin2,Sulawesi Tengah,Poso,llm_wiki,GAUL,1,geodetic,0.0,7011860542.138451,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1493,12 +1534,18 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0553-FRA,Var,Admin2,Provence-Alpes-Côte d'Azur,Var,llm_wiki,GAUL,1,geodetic,0.0,27215685041.577488,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0568-IND,Bharuch,Admin2,Gujarat,Bharuch,llm_wiki,GAUL,1,geodetic,0.0,45339565020.7427,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0568-IND,Jalgaon,Admin2,Maharashtra,Jalgaon,llm_wiki,GAUL,1,geodetic,0.0,45339565020.7427,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0570-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,23966366938.611378,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0570-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,23966366938.611378,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0570-CHN,Wenzhou,Admin2,Zhejiang,Wenzhou,llm_wiki,GAUL,1,geodetic,0.0,23966366938.611378,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0570-CHN,Ningde,Admin2,Fujian,Ningde,llm_wiki,GAUL,1,geodetic,0.0,23966366938.611378,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0570-JPN,Okinawa,Admin1,Okinawa,,llm_wiki,GAUL,1,geodetic,0.0,2235487188.342032,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0574-FRA,Vaucluse,Admin2,Provence-Alpes-Côte d'Azur,Vaucluse,llm_wiki,GAUL,1,geodetic,0.0,31025597635.87846,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0576-YEM,Al Hudaydah,Admin1,Al Hudaydah,,llm_wiki,GAUL,1,geodetic,0.0,189934938521.064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0577-PNG,Wewak,Admin2,East Sepik,Wewak,llm_wiki,GAUL,1,geodetic,0.0,8039412643.934366,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2002-0583-GTM,Sololá,Admin2,Sololá,Sololá,llm_wiki,GAUL,1,geodetic,0.0,225012154.11918026,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0598-HND,Choluteca,Admin2,Choluteca,Choluteca,llm_wiki,GAUL,1,geodetic,0.0,1593052638.4159665,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0599-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,651764607478.8174,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-0599-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,651764607478.8174,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0604-CUB,Isla de la Juventud,Admin1,Isla de la Juventud,,llm_wiki,GAUL,1,geodetic,0.0,13553324959.011827,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0604-CUB,Pinar del Río,Admin1,Pinar del Río,,llm_wiki,GAUL,1,geodetic,0.0,13553324959.011827,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0607-ALB,Berat,Admin1,Berat,,llm_wiki,GAUL,1,geodetic,0.0,12318963667.705574,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1672,6 +1719,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-0790-LBN,Beirut,Admin1,Beirut,,llm_wiki,GAUL,1,geodetic,0.0,10135596684.054882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0790-LBN,Mount Lebanon,Admin1,Mount Lebanon,,llm_wiki,GAUL,1,geodetic,0.0,10135596684.054882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0798-AUS,Port Stephens,Admin2,New South Wales,Port Stephens,llm_wiki,GAUL,1,geodetic,0.0,4587521005.3522,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-0803-CHN,Zhanjiang,Admin2,Guangdong,Zhanjiang,llm_wiki,GAUL,1,geodetic,0.0,12315121256.347153,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2002-0805-MEX,Chihuahua,Admin1,Chihuahua,,llm_wiki,GAUL,1,geodetic,0.0,569583157233.0709,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0805-MEX,Sonora,Admin1,Sonora,,llm_wiki,GAUL,1,geodetic,0.0,569583157233.0709,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-0805-MEX,Baja California,Admin1,Baja California,,llm_wiki,GAUL,1,geodetic,0.0,569583157233.0709,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1715,6 +1763,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-9164-PHL,La Union,Admin1,La Union,,llm_wiki,GAUL,1,geodetic,0.0,12641033077.423763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9164-PHL,Ilocos Norte,Admin1,Ilocos Norte,,llm_wiki,GAUL,1,geodetic,0.0,12641033077.423763,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9164-PHL,Ilocos Sur,Admin1,Ilocos Sur,,llm_wiki,GAUL,1,geodetic,0.0,12641033077.423763,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2002-9203-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,536231219320.4205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9203-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,536231219320.4205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9203-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,536231219320.4205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9292-MEX,Baja California,Admin1,Baja California,,llm_wiki,GAUL,1,geodetic,0.0,680598619856.1931,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9292-MEX,Coahuila,Admin1,Coahuila,,llm_wiki,GAUL,1,geodetic,0.0,680598619856.1931,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9292-MEX,Tamaulipas,Admin1,Tamaulipas,,llm_wiki,GAUL,1,geodetic,0.0,680598619856.1931,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1760,6 +1811,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-9487-SEN,Tambacounda,Admin1,Tambacounda,,llm_wiki,GAUL,1,geodetic,0.0,196199959953.40854,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9487-SEN,Thiès,Admin1,Thiès,,llm_wiki,GAUL,1,geodetic,0.0,196199959953.40854,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9487-SEN,Ziguinchor,Admin1,Ziguinchor,,llm_wiki,GAUL,1,geodetic,0.0,196199959953.40854,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9564-CHN,Hebei,Admin1,Hebei,,llm_wiki,GAUL,1,geodetic,0.0,187903380497.08862,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9605-BRA,Minas Gerais,Admin1,Minas Gerais,,llm_wiki,GAUL,1,geodetic,0.0,1047011590670.0483,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9605-BRA,Paraíba,Admin1,Paraíba,,llm_wiki,GAUL,1,geodetic,0.0,1047011590670.0483,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9605-BRA,Rio Grande do Norte,Admin1,Rio Grande do Norte,,llm_wiki,GAUL,1,geodetic,0.0,1047011590670.0483,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1783,6 +1835,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2002-9843-PER,Puno,Admin1,Puno,,llm_wiki,GAUL,1,geodetic,0.0,1290639931262.0718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9843-PER,Tacna,Admin1,Tacna,,llm_wiki,GAUL,1,geodetic,0.0,1290639931262.0718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2002-9843-PER,Tumbes,Admin1,Tumbes,,llm_wiki,GAUL,1,geodetic,0.0,1290639931262.0718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2002-9854-CHN,Shandong,Admin1,Shandong,,llm_wiki,GAUL,1,geodetic,0.0,154935517029.18256,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0001-PRT,Águeda,Admin2,Aveiro,Águeda,llm_wiki,GAUL,1,geodetic,0.0,749745625.2229546,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0001-PRT,Anadia,Admin2,Aveiro,Anadia,llm_wiki,GAUL,1,geodetic,0.0,749745625.2229546,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0001-PRT,Mealhada,Admin2,Aveiro,Mealhada,llm_wiki,GAUL,1,geodetic,0.0,749745625.2229546,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1885,7 +1938,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0086-PAK,Sindh,Admin1,Sindh,,llm_wiki,GAUL,1,geodetic,0.0,771710796929.4209,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0086-PAK,Khyber Pakhtunkhwa,Admin1,Khyber-Pakhtunkhwa,,llm_wiki,GAUL,1,geodetic,0.0,771710796929.4209,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0086-PAK,Punjab,Admin1,Punjab,,llm_wiki,GAUL,1,geodetic,0.0,771710796929.4209,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2003-0087-CAN,Division No. 6,Admin2,Newfoundland and Labrador,Division No. 6,llm_wiki,GAUL,1,geodetic,0.0,17742086198.52278,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0087-CAN,Division No. 6,Admin2,Manitoba,Division No. 6,llm_wiki,GAUL,1,geodetic,0.0,17742086198.52278,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0089-IND,Betul,Admin2,Madhya Pradesh,Betul,llm_wiki,GAUL,1,geodetic,0.0,10068327008.879732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0098-MOZ,Nampula,Admin1,Nampula,,llm_wiki,GAUL,1,geodetic,0.0,211076875272.43414,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0098-MOZ,Manica,Admin1,Manica,,llm_wiki,GAUL,1,geodetic,0.0,211076875272.43414,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -1919,6 +1972,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0182-IND,Assam,Admin1,Assam,,llm_wiki,GAUL,1,geodetic,0.0,2826486597.2122116,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0184-ITA,Piemonte,Admin1,Piemonte,,llm_wiki,GAUL,1,geodetic,0.0,3560893057.602841,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0184-ITA,Alessandria,Admin2,Piemonte,Alessandria,llm_wiki,GAUL,1,geodetic,0.0,3560893057.602841,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2003-0185-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,279699394099.3685,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0185-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,279699394099.3685,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0191-GTM,San Pedro Sacatepéquez,Admin2,San Marcos,San Pedro Sacatepéquez,llm_wiki,GAUL,1,geodetic,0.0,77395602.2763508,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0196-ARG,General Obligado,Admin2,Santa Fe,General Obligado,llm_wiki,GAUL,1,geodetic,0.0,77022493805.23747,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0196-ARG,San Justo,Admin2,Santa Fe,San Justo,llm_wiki,GAUL,1,geodetic,0.0,77022493805.23747,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2001,6 +2056,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0343-JPN,Nagasaki,Admin1,Naoasaki,,llm_wiki,GAUL,1,geodetic,0.0,328579212.792415,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0343-JPN,Minamata,Admin2,Kumamoto,Minamata,llm_wiki,GAUL,1,geodetic,0.0,328579212.792415,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0343-JPN,Hishikari,Admin2,Kagoshima,Hishikari,llm_wiki,GAUL,1,geodetic,0.0,328579212.792415,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0346-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,414058768623.29767,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0346-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,414058768623.29767,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0351-MNG,Teshig,Admin2,Bulgan,Teshig,llm_wiki,GAUL,1,geodetic,0.0,317375001009.7202,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0351-MNG,Mogod,Admin2,Bulgan,Mogod,llm_wiki,GAUL,1,geodetic,0.0,317375001009.7202,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0351-MNG,Tsogt-Ovoo,Admin2,Ömnögovi,Tsogt-Ovoo,llm_wiki,GAUL,1,geodetic,0.0,317375001009.7202,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2119,6 +2176,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0391-SVN,Pomurska,Admin1,Pomurska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0391-SVN,Savinjska,Admin1,Savinjska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0391-SVN,Zasavska,Admin1,Zasavska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0394-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,156524154252.52814,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0394-CHN,Beijing,Admin1,Beijing,,llm_wiki,GAUL,1,geodetic,0.0,156524154252.52814,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0395-FRA,Nouvelle-Aquitaine,Admin1,Nouvelle-Aquitaine,,llm_wiki,GAUL,1,geodetic,0.0,40580305906.3271,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0395-FRA,Landes,Admin2,Nouvelle-Aquitaine,Landes,llm_wiki,GAUL,1,geodetic,0.0,40580305906.3271,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0395-FRA,Gironde,Admin2,Nouvelle-Aquitaine,Gironde,llm_wiki,GAUL,1,geodetic,0.0,40580305906.3271,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2127,9 +2186,14 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0396-DZA,Hidoussa,Admin2,Batna,Hidoussa,llm_wiki,GAUL,1,geodetic,0.0,727958490790.4165,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0408-ZAF,City of Cape Town,Admin2,Western Cape,City of Cape Town,llm_wiki,GAUL,1,geodetic,0.0,2787448710.802491,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0417-CAN,La Vallée-de-la-Gatineau,Admin2,Québec,La Vallée-de-la-Gatineau,llm_wiki,GAUL,1,geodetic,0.0,14142635133.852179,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0422-GMB,Fulladu East,Admin2,Upper River,Fulladu East,llm_wiki,GAUL,1,geodetic,0.0,761198501.6508362,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0423-SAU,Jizan,Admin1,Jizan,,llm_wiki,GAUL,1,geodetic,0.0,15673909672.382229,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0433-ITA,Udine,Admin2,Friuli-Venezia Giulia,Udine,llm_wiki,GAUL,1,geodetic,0.0,4830817889.799009,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0436-MEX,Santa Ana Ateixtlahuaca,Admin2,Oaxaca,Santa Ana Ateixtlahuaca,llm_wiki,GAUL,1,geodetic,0.0,1822010983.390806,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0441-CHN,Ziyang,Admin2,Sichuan,Ziyang,llm_wiki,GAUL,1,geodetic,0.0,170643343080.23328,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0441-CHN,Ya'an,Admin2,Sichuan,Ya'an,llm_wiki,GAUL,1,geodetic,0.0,170643343080.23328,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0443-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,299482112234.24426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0443-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,299482112234.24426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0447-SOM,Gebiley,Admin2,Woqooyi Galbeed,Gabiley,llm_wiki,GAUL,1,geodetic,0.0,17989399933.07636,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0452-BGD,Chittagong,Admin2,Chittagong,Chittagong,llm_wiki,GAUL,1,geodetic,0.0,12112717528.144121,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0452-BGD,Cox's Bazar,Admin2,Chittagong,Cox'S Bazar,llm_wiki,GAUL,1,geodetic,0.0,12112717528.144121,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2205,6 +2269,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0593-IDN,Batanghari,Admin2,Jambi,Batang Hari,llm_wiki,GAUL,1,geodetic,0.0,36414362201.136665,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2003-0593-IDN,Indragiri Hulu,Admin2,Riau,Indragiri Hulu,llm_wiki,GAUL,1,geodetic,0.0,36414362201.136665,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0593-IDN,Pelalawan,Admin2,Riau,Pelalawan,llm_wiki,GAUL,1,geodetic,0.0,36414362201.136665,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0594-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,33809695049.820915,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0596-CHN,Zhaotong,Admin2,Yunnan,Zhaotong,llm_wiki,GAUL,1,geodetic,0.0,22044489197.70014,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0599-DOM,Barahona,Admin1,Barahona,,llm_wiki,GAUL,1,geodetic,0.0,4961663658.794722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0599-DOM,Pedernales,Admin1,Pedernales,,llm_wiki,GAUL,1,geodetic,0.0,4961663658.794722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0604-MYS,Kota Bharu,Admin2,Kelantan,Kota Bharu,llm_wiki,GAUL,1,geodetic,0.0,10018882592.568596,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2272,6 +2338,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-0712-MEX,Nogales,Admin2,Veracruz,Nogales,llm_wiki,GAUL,1,geodetic,0.0,80385189.33985806,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0719-IND,Kullu,Admin2,Himachal Pradesh,Kullu,llm_wiki,GAUL,1,geodetic,0.0,5501935524.302435,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0720-IND,Kullu,Admin2,Himachal Pradesh,Kullu,llm_wiki,GAUL,1,geodetic,0.0,5501935524.302435,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-0724-CHN,Fuzhou,Admin2,Fujian,Fuzhou,llm_wiki,GAUL,1,geodetic,0.0,11628256829.332949,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0730-BRA,Rio de Janeiro,Admin1,Rio de Janeiro,,llm_wiki,GAUL,1,geodetic,0.0,4843505608.314294,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0730-BRA,Ribeirão das Neves,Admin2,Minas Gerais,Ribeirão das Neves,llm_wiki,GAUL,1,geodetic,0.0,4843505608.314294,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-0730-BRA,Petrópolis,Admin2,Rio de Janeiro,Petrópolis,llm_wiki,GAUL,1,geodetic,0.0,4843505608.314294,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2318,6 +2385,10 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2003-9035-MOZ,Moatize,Admin2,Tete,Moatize,llm_wiki,GAUL,1,geodetic,0.0,57982013953.809586,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-9035-MOZ,Chiuta,Admin2,Tete,Chiuta,llm_wiki,GAUL,1,geodetic,0.0,57982013953.809586,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-9035-MOZ,Mutarara,Admin2,Tete,Mutarara,llm_wiki,GAUL,1,geodetic,0.0,57982013953.809586,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-9360-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,603460181803.3732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-9360-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,603460181803.3732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-9360-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,603460181803.3732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2003-9360-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,603460181803.3732,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-9651-BDI,Kirundo,Admin1,Kirundo,,llm_wiki,GAUL,1,geodetic,0.0,15917191077.572205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-9651-BDI,Muyinga,Admin1,Muyinga,,llm_wiki,GAUL,1,geodetic,0.0,15917191077.572205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2003-9651-BDI,Ngozi,Admin1,Ngozi,,llm_wiki,GAUL,1,geodetic,0.0,15917191077.572205,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2404,6 +2475,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0178-IND,Manipur,Admin1,Manipur,,llm_wiki,GAUL,1,geodetic,0.0,1682819832.1142988,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0178-IND,Bishnupur,Admin2,Manipur,Bishnupur,llm_wiki,GAUL,1,geodetic,0.0,1682819832.1142988,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0178-IND,Thoubal,Admin2,Manipur,Thoubal,llm_wiki,GAUL,1,geodetic,0.0,1682819832.1142988,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0182-CHN,Hengyang,Admin2,Hunan,Hengyang,llm_wiki,GAUL,1,geodetic,0.0,14941827839.133669,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0200-PER,Bagua,Admin2,Amazonas,Bagua,llm_wiki,GAUL,1,geodetic,0.0,57710724915.348335,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0200-PER,Sihuas,Admin2,Ancash,Sihuas,llm_wiki,GAUL,1,geodetic,0.0,57710724915.348335,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0201-DZA,Adrar,Admin1,Adrar,,llm_wiki,GAUL,1,geodetic,0.0,544009433292.2675,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2453,6 +2525,14 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0276-JPN,Muroto,Admin2,Kochi,Muroto,llm_wiki,GAUL,1,geodetic,0.0,264525788.46726516,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0280-NIC,Río Blanco,Admin2,Matagalpa,Río Blanco,llm_wiki,GAUL,1,geodetic,0.0,62354089139.503716,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0280-NIC,Puerto Cabezas,Admin2,Atlántico Norte,Puerto Cabezas,llm_wiki,GAUL,1,geodetic,0.0,62354089139.503716,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Huaihua,Admin2,Hunan,Huaihua,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Yiyang,Admin2,Hunan,Yiyang,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Xiangxi Tujia and Miao,Admin2,Hunan,Xiangxi Tujia and Miao,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Changsha,Admin2,Hunan,Changsha,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Loudi,Admin2,Hunan,Loudi,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Hengyang,Admin2,Hunan,Hengyang,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0284-CHN,Yueyang,Admin2,Hunan,Yueyang,llm_wiki,GAUL,1,geodetic,0.0,105217990447.77132,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0286-BGD,Chittagong,Admin1,Chittagong,,llm_wiki,GAUL,1,geodetic,0.0,2043257306.1386788,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0286-BGD,Cox's Bazar,Admin2,Chittagong,Cox'S Bazar,llm_wiki,GAUL,1,geodetic,0.0,2043257306.1386788,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0289-NIC,Puerto Cabezas,Admin2,Atlántico Norte,Puerto Cabezas,llm_wiki,GAUL,1,geodetic,0.0,5324040894.522976,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2477,6 +2557,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0298-IND,Nalbari,Admin2,Assam,Nalbari,llm_wiki,GAUL,1,geodetic,0.0,317895880231.40424,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0298-IND,Dhemaji,Admin2,Assam,Dhemaji,llm_wiki,GAUL,1,geodetic,0.0,317895880231.40424,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0298-PAK,Punjab,Admin1,Punjab,,llm_wiki,GAUL,1,geodetic,0.0,286393639153.2437,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0299-CHN,Guizhou,Admin1,Guizhou,,llm_wiki,GAUL,1,geodetic,0.0,174891953988.21976,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0300-GMB,Fulladu East,Admin2,Upper River,Fulladu East,llm_wiki,GAUL,1,geodetic,0.0,761198501.6508362,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0301-CHN,Handan,Admin2,Hebei,Handan,llm_wiki,GAUL,1,geodetic,0.0,12169226011.20877,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0302-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,565826049661.6064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0302-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,565826049661.6064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0307-ARG,Río Negro,Admin1,Río Negro,,llm_wiki,GAUL,1,geodetic,0.0,520768365934.37946,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0307-ARG,Neuquén,Admin1,Neuquén,,llm_wiki,GAUL,1,geodetic,0.0,520768365934.37946,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0307-CHL,Llanquihue,Admin2,Los Lagos,Llanquihue,llm_wiki,GAUL,1,geodetic,0.0,24187825669.14752,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2486,6 +2571,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0315-NGA,Jigawa,Admin1,Jigawa,,llm_wiki,GAUL,1,geodetic,0.0,24001103444.06162,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0321-IND,Kannur,Admin2,Kerala,Kannur,llm_wiki,GAUL,1,geodetic,0.0,9164871952.959023,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0321-IND,Kasaragod,Admin2,Kerala,Kasaragod,llm_wiki,GAUL,1,geodetic,0.0,9164871952.959023,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0325-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,167972983157.45267,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0331-BRA,Santa Catarina,Admin1,Santa Catarina,,llm_wiki,GAUL,1,geodetic,0.0,293633327881.3572,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0331-BRA,Paraná,Admin1,Paraná,,llm_wiki,GAUL,1,geodetic,0.0,293633327881.3572,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0331-CHL,Antofagasta,Admin1,Antofagasta,,llm_wiki,GAUL,1,geodetic,0.0,753384902857.153,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2536,6 +2622,29 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0365-ROU,Bacău,Admin1,Bacău,,llm_wiki,GAUL,1,geodetic,0.0,23491882505.45941,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0365-ROU,Buzău,Admin1,Buzău,,llm_wiki,GAUL,1,geodetic,0.0,23491882505.45941,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0365-ROU,Hunedoara,Admin1,Hunedoara,,llm_wiki,GAUL,1,geodetic,0.0,23491882505.45941,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2004-0372-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Baoshan,Admin2,Yunnan,Baoshan,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Heze,Admin2,Shandong,Heze,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Jining,Admin2,Shandong,Jining,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Tai'an,Admin2,Shandong,Tai'an,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Linyi,Admin2,Shandong,Linyi,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Luohe,Admin2,Henan,Luohe,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Nanyang,Admin2,Henan,Nanyang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Pingdingshan,Admin2,Henan,Pingdingshan,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Sanmenxia,Admin2,Henan,Sanmenxia,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Xinxiang,Admin2,Henan,Xinxiang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Xuchang,Admin2,Henan,Xuchang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Zhoukou,Admin2,Henan,Zhoukou,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Huaihua,Admin2,Hunan,Huaihua,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Xiangxi Tujia and Miao,Admin2,Hunan,Xiangxi Tujia and Miao,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Zhangjiajie,Admin2,Hunan,Zhangjiajie,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Changde,Admin2,Hunan,Changde,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Yiyang,Admin2,Hunan,Yiyang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Yueyang,Admin2,Hunan,Yueyang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Loudi,Admin2,Hunan,Loudi,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0372-CHN,Shaoyang,Admin2,Hunan,Shaoyang,llm_wiki,GAUL,1,geodetic,0.0,798247879574.2063,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0383-PRT,Vila Real,Admin1,Vila Real,,llm_wiki,GAUL,1,geodetic,0.0,27503508026.199966,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0383-PRT,Santarém,Admin1,Santarém,,llm_wiki,GAUL,1,geodetic,0.0,27503508026.199966,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0383-PRT,Viseu,Admin1,Viseu,,llm_wiki,GAUL,1,geodetic,0.0,27503508026.199966,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2548,6 +2657,10 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0402-NGA,Ughelli South,Admin2,Delta,Ughelli South,llm_wiki,GAUL,1,geodetic,0.0,1598384165.2450383,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0403-MYS,Kedah,Admin1,Kedah,,llm_wiki,GAUL,1,geodetic,0.0,8966767112.378414,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0404-NZL,Bay of Plenty,Admin1,Bay of Plenty,,llm_wiki,GAUL,1,geodetic,0.0,12049907459.202053,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2004-0412-CHN,Taizhou,Admin2,Zhejiang,Taizhou,llm_wiki,GAUL,1,geodetic,0.0,36834970550.86254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0412-CHN,Wenzhou,Admin2,Zhejiang,Wenzhou,llm_wiki,GAUL,1,geodetic,0.0,36834970550.86254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0412-CHN,Ningbo,Admin2,Zhejiang,Ningbo,llm_wiki,GAUL,1,geodetic,0.0,36834970550.86254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0412-CHN,Shaoxing,Admin2,Zhejiang,Shaoxing,llm_wiki,GAUL,1,geodetic,0.0,36834970550.86254,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0415-CUB,Pinar del Río,Admin1,Pinar del Río,,llm_wiki,GAUL,1,geodetic,0.0,23957912397.460075,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0415-CUB,Cienfuegos,Admin1,Cienfuegos,,llm_wiki,GAUL,1,geodetic,0.0,23957912397.460075,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0415-CUB,Isla de la Juventud,Admin1,Isla de la Juventud,,llm_wiki,GAUL,1,geodetic,0.0,23957912397.460075,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2559,6 +2672,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0428-JPN,Kagawa,Admin1,Kagawa,,llm_wiki,GAUL,1,geodetic,0.0,23129460409.184536,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0428-JPN,Kochi,Admin1,Kochi,,llm_wiki,GAUL,1,geodetic,0.0,23129460409.184536,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0434-NGA,Gombe,Admin1,Gombe,,llm_wiki,GAUL,1,geodetic,0.0,18190434620.45785,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0435-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0435-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0435-JPN,Okinawa,Admin1,Okinawa,,llm_wiki,GAUL,1,geodetic,0.0,3051071638.0834284,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0435-JPN,Setouchi,Admin2,Kagoshima,Setouchi,llm_wiki,GAUL,1,geodetic,0.0,3051071638.0834284,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0435-JPN,Uken,Admin2,Kagoshima,Uken,llm_wiki,GAUL,1,geodetic,0.0,3051071638.0834284,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2601,6 +2716,15 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0455-DOM,Salcedo,Admin1,Salcedo,,llm_wiki,GAUL,1,geodetic,0.0,48098535116.62532,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0455-DOM,San José de Ocoa,Admin1,San José de Ocoa,,llm_wiki,GAUL,1,geodetic,0.0,48098535116.62532,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0455-DOM,Santo Domingo,Admin1,Santo Domingo,,llm_wiki,GAUL,1,geodetic,0.0,48098535116.62532,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Nanchong,Admin2,Sichuan,Nanchong,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Bazhong,Admin2,Sichuan,Bazhong,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Dazhou,Admin2,Sichuan,Dazhou,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Mianyang,Admin2,Sichuan,Mianyang,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Guang'an,Admin2,Sichuan,Guang'an,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Guangyuan,Admin2,Sichuan,Guangyuan,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Ya'an,Admin2,Sichuan,Ya'an,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0457-CHN,Liangshan,Admin2,Sichuan,Liangshan Yi,llm_wiki,GAUL,1,geodetic,0.0,241261225350.33127,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0459-JPN,Fukuoka,Admin1,Fukuoka,,llm_wiki,GAUL,1,geodetic,0.0,42355522526.67885,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0459-JPN,Kumamoto,Admin1,Kumamoto,,llm_wiki,GAUL,1,geodetic,0.0,42355522526.67885,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0459-JPN,Miyazaki,Admin1,Miyazaki,,llm_wiki,GAUL,1,geodetic,0.0,42355522526.67885,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2711,6 +2835,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0520-COL,Pereira,Admin2,Risaralda,Pereira,llm_wiki,GAUL,1,geodetic,0.0,55102654218.78247,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0520-COL,San Pedro,Admin2,Sucre,San Pedro,llm_wiki,GAUL,1,geodetic,0.0,55102654218.78247,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0520-COL,Bugalagrande,Admin2,Valle del Cauca,Bugalagrande,llm_wiki,GAUL,1,geodetic,0.0,55102654218.78247,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0522-CHN,Baoshan,Admin2,Yunnan,Baoshan,llm_wiki,GAUL,1,geodetic,0.0,19662706606.00886,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0524-JPN,Ibaraki,Admin1,Ibaraki,,llm_wiki,GAUL,1,geodetic,0.0,62268637719.217255,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0524-JPN,Kanagawa,Admin1,Kanagawa,,llm_wiki,GAUL,1,geodetic,0.0,62268637719.217255,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0524-JPN,Nagano,Admin1,Nagano,,llm_wiki,GAUL,1,geodetic,0.0,62268637719.217255,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2736,6 +2861,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0568-ITA,Toscana,Admin1,Toscana,,llm_wiki,GAUL,1,geodetic,0.0,38941239430.5494,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2004-0568-ITA,Umbria,Admin1,Umbria,,llm_wiki,GAUL,1,geodetic,0.0,38941239430.5494,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0568-ITA,Molise,Admin1,Molise,,llm_wiki,GAUL,1,geodetic,0.0,38941239430.5494,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0571-CHN,Gansu,Admin1,Gansu,,llm_wiki,GAUL,1,geodetic,0.0,405461329462.42865,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0575-COL,Bajo Baudó,Admin2,Chocó,Bajo Baudó,llm_wiki,GAUL,1,geodetic,0.0,19032635745.418262,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0582-DMA,Saint Joseph,Admin1,Saint Joseph,,llm_wiki,GAUL,1,geodetic,0.0,372184386.0608421,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0588-TTO,Tobago,Admin1,Tobago,,llm_wiki,GAUL,1,geodetic,0.0,301978459.3951416,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -2804,6 +2930,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2004-0662-AUS,Narrabri,Admin2,New South Wales,Narrabri,llm_wiki,GAUL,1,geodetic,0.0,51436581455.10483,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0669-DEU,Emmendingen,Admin2,Baden-Württemberg,Emmendingen,llm_wiki,GAUL,1,geodetic,0.0,9250029850.087482,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0674-AUS,Queensland,Admin1,Queensland,,llm_wiki,GAUL,1,geodetic,0.0,1957454036716.5742,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2004-0677-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,10291222712.328217,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2004-0677-CHN,Shanwei,Admin2,Guangdong,Shanwei,llm_wiki,GAUL,1,geodetic,0.0,10291222712.328217,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2004-0677-CHN,Jieyang,Admin2,Guangdong,Jieyang,llm_wiki,GAUL,1,geodetic,0.0,10291222712.328217,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0678-BGD,Sylhet,Admin1,Sylhet,,llm_wiki,GAUL,1,geodetic,0.0,12271019048.023321,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0679-BGD,Sunamganj,Admin2,Sylhet,Sunamganj,llm_wiki,GAUL,1,geodetic,0.0,3650284159.831868,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2004-0730-DEU,Baden-Württemberg,Admin1,Baden-Württemberg,,llm_wiki,GAUL,1,geodetic,0.0,357227190395.04755,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3001,6 +3130,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0101-AFG,Farah,Admin1,Farah,,llm_wiki,GAUL,1,geodetic,0.0,137563645926.61157,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0116-KAZ,Kyzylorda,Admin1,Qyzylorda,,llm_wiki,GAUL,1,geodetic,0.0,226624664810.35858,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0116-UZB,Navoiy,Admin1,Navoiy,,llm_wiki,GAUL,1,geodetic,0.0,16839003687.95335,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2005-0123-CHN,Yunnan,Admin1,Yunnan,,llm_wiki,GAUL,1,geodetic,0.0,383388155198.9517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0129-JPN,Fukuoka,Admin1,Fukuoka,,llm_wiki,GAUL,1,geodetic,0.0,4916829013.405729,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0130-BGD,Gaibandha,Admin2,Rangpur,Gaibandha,llm_wiki,GAUL,1,geodetic,0.0,15709425912.536978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0130-BGD,Chandpur,Admin2,Chittagong,Chandpur,llm_wiki,GAUL,1,geodetic,0.0,15709425912.536978,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3022,6 +3152,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0169-AFG,Shahrak,Admin2,Ghor,Shahrak,llm_wiki,GAUL,1,geodetic,0.0,122947894389.56012,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0169-AFG,Adraskan,Admin2,Hirat,Adraskan,llm_wiki,GAUL,1,geodetic,0.0,122947894389.56012,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0169-AFG,Farsi,Admin2,Hirat,Farsi,llm_wiki,GAUL,1,geodetic,0.0,122947894389.56012,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0188-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,565826049661.6064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0188-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,565826049661.6064,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0190-BGD,Manikganj,Admin2,Dhaka,Manikganj,llm_wiki,GAUL,1,geodetic,0.0,8193983139.458036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0190-BGD,Natore,Admin2,Rajshahi,Natore,llm_wiki,GAUL,1,geodetic,0.0,8193983139.458036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0190-BGD,Sirajganj,Admin2,Rajshahi,Sirajganj,llm_wiki,GAUL,1,geodetic,0.0,8193983139.458036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3065,6 +3197,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0297-MLI,Gao,Admin1,Gao,,llm_wiki,GAUL,1,geodetic,0.0,23326541407.739334,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2005-0297-MLI,Ansongo,Admin2,Gao,Ansongo,llm_wiki,GAUL,1,geodetic,0.0,23326541407.739334,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0303-THA,Lampang,Admin1,Lampang,,llm_wiki,GAUL,1,geodetic,0.0,24770233838.82756,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0311-CHN,Fuxin,Admin2,Liaoning,Fuxin,llm_wiki,GAUL,1,geodetic,0.0,10357252184.983994,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0314-IND,Mokokchung,Admin2,Nagaland,Mokokchung,llm_wiki,GAUL,1,geodetic,0.0,1605690609.5594306,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0319-GTM,Senahú,Admin2,Alta Verapaz,Senahú,llm_wiki,GAUL,1,geodetic,0.0,705446737.1672884,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0321-PER,Arequipa,Admin2,Arequipa,Arequipa,llm_wiki,GAUL,1,geodetic,0.0,45989176157.7127,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3210,6 +3343,12 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0393-CHL,Valparaíso,Admin1,Valparaíso,,llm_wiki,GAUL,1,geodetic,0.0,115317540021.27089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0393-CHL,Maule,Admin1,Maule,,llm_wiki,GAUL,1,geodetic,0.0,115317540021.27089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0394-JPN,Niigata,Admin1,Niigata,,llm_wiki,GAUL,1,geodetic,0.0,12550198725.06108,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Jiangsu,Admin1,Jiangsu,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Shandong,Admin1,Shandong,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0395-CHN,Guizhou,Admin1,Guizhou,,llm_wiki,GAUL,1,geodetic,0.0,1262890506821.623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0398-IND,Ashoknagar,Admin2,Madhya Pradesh,Ashoknagar,llm_wiki,GAUL,1,geodetic,0.0,67292973666.96642,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2005-0398-IND,Chhatarpur,Admin2,Madhya Pradesh,Chhatarpur,llm_wiki,GAUL,1,geodetic,0.0,67292973666.96642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0398-IND,Damoh,Admin2,Madhya Pradesh,Damoh,llm_wiki,GAUL,1,geodetic,0.0,67292973666.96642,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3233,6 +3372,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0409-IND,Karnataka,Admin1,Karnataka,,llm_wiki,GAUL,1,geodetic,0.0,1375889465030.5898,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0409-IND,Himachal Pradesh,Admin1,Himachal Pradesh,,llm_wiki,GAUL,1,geodetic,0.0,1375889465030.5898,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0409-IND,Jammu and Kashmir,Admin1,Jammu and Kashmir,,llm_wiki,GAUL,1,geodetic,0.0,1375889465030.5898,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0419-CHN,Shanghai,Admin1,Shanghai,,llm_wiki,GAUL,1,geodetic,0.0,501941759378.7192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0419-CHN,Jiangsu,Admin1,Jiangsu,,llm_wiki,GAUL,1,geodetic,0.0,501941759378.7192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0419-CHN,Shandong,Admin1,Shandong,,llm_wiki,GAUL,1,geodetic,0.0,501941759378.7192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0419-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,501941759378.7192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0419-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,501941759378.7192,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0423-NGA,Jigawa,Admin1,Jigawa,,llm_wiki,GAUL,1,geodetic,0.0,179064957283.87982,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0423-NGA,Bauchi,Admin1,Bauchi,,llm_wiki,GAUL,1,geodetic,0.0,179064957283.87982,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0425-CAF,Bakala,Admin2,Ouaka,Bakala,llm_wiki,GAUL,1,geodetic,0.0,19477977557.356243,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3315,6 +3459,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0473-SVN,Pomurska,Admin1,Pomurska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0473-SVN,Savinjska,Admin1,Savinjska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0473-SVN,Zasavska,Admin1,Zasavska,,llm_wiki,GAUL,1,geodetic,0.0,20320487100.783257,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0492-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,718633360902.9261,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0492-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,718633360902.9261,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0492-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,718633360902.9261,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0492-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,718633360902.9261,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0492-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,718633360902.9261,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0497-JPN,Okinawa,Admin1,Okinawa,,llm_wiki,GAUL,1,geodetic,0.0,23354774952.234627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0497-JPN,Kagawa,Admin1,Kagawa,,llm_wiki,GAUL,1,geodetic,0.0,23354774952.234627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0497-JPN,Tokyo,Admin1,Tokyo,,llm_wiki,GAUL,1,geodetic,0.0,23354774952.234627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3396,6 +3545,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0558-PER,Moyobamba,Admin2,San Martín,Moyobamba,llm_wiki,GAUL,1,geodetic,0.0,8805356610.620893,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0559-MRT,Assaba,Admin1,Assaba,,llm_wiki,GAUL,1,geodetic,0.0,150210948666.39236,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0559-MRT,M'Bout,Admin2,Gorgol,M'Bout,llm_wiki,GAUL,1,geodetic,0.0,150210948666.39236,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0565-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,299482112234.24426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0565-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,299482112234.24426,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0567-GTM,Escuintla,Admin1,Escuintla,,llm_wiki,GAUL,1,geodetic,0.0,40044611397.47154,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0567-GTM,Jutiapa,Admin1,Jutiapa,,llm_wiki,GAUL,1,geodetic,0.0,40044611397.47154,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0567-GTM,San Marcos,Admin1,San Marcos,,llm_wiki,GAUL,1,geodetic,0.0,40044611397.47154,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3513,6 +3664,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0627-IND,Visakhapatnam,Admin2,Andhra Pradesh,Visakhapatnam,llm_wiki,GAUL,1,geodetic,0.0,386017829381.0141,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0627-IND,Srikakulam,Admin2,Andhra Pradesh,Srikakulam,llm_wiki,GAUL,1,geodetic,0.0,386017829381.0141,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0627-IND,Vizianagaram,Admin2,Andhra Pradesh,Vizianagaram,llm_wiki,GAUL,1,geodetic,0.0,386017829381.0141,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0651-CHN,Jiujiang,Admin2,Jiangxi,Jiujiang,llm_wiki,GAUL,1,geodetic,0.0,19329565764.22703,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0655-FRA,Bretagne,Admin1,Bretagne,,llm_wiki,GAUL,1,geodetic,0.0,548784935020.03345,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0655-FRA,Corse,Admin1,Corse,,llm_wiki,GAUL,1,geodetic,0.0,548784935020.03345,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0655-FRA,Île-de-France,Admin1,Île-de-France,,llm_wiki,GAUL,1,geodetic,0.0,548784935020.03345,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3536,7 +3688,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0669-PHL,Mauban,Admin2,Quezon,Mauban,llm_wiki,GAUL,1,geodetic,0.0,67645378906.22882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0669-PHL,Candelaria,Admin2,Quezon,Candelaria,llm_wiki,GAUL,1,geodetic,0.0,67645378906.22882,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2005-0669-PHL,Dipaculao,Admin2,Aurora,Dipaculao,llm_wiki,GAUL,1,geodetic,0.0,67645378906.22882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2005-0669-PHL,Casiguran,Admin2,Aurora,Casiguran,llm_wiki,GAUL,1,geodetic,0.0,67645378906.22882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0669-PHL,Casiguran,Admin2,Sorsogon,Casiguran,llm_wiki,GAUL,1,geodetic,0.0,67645378906.22882,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0677-IND,Tamil Nadu,Admin1,Tamil Nadu,,llm_wiki,GAUL,1,geodetic,0.0,130269363109.8903,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0686-AFG,Alishang,Admin2,Laghman,Alishing,llm_wiki,GAUL,1,geodetic,0.0,44118622547.08411,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2005-0686-AFG,Jalalabad,Admin2,Nangarhar,Jalal abad,llm_wiki,GAUL,1,geodetic,0.0,44118622547.08411,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3621,6 +3773,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-0727-BGR,Plovdiv,Admin1,Plovdiv,,llm_wiki,GAUL,1,geodetic,0.0,25988225471.52831,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0727-BGR,Pleven,Admin1,Pleven,,llm_wiki,GAUL,1,geodetic,0.0,25988225471.52831,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0727-BGR,Sofia,Admin1,Sofia,,llm_wiki,GAUL,1,geodetic,0.0,25988225471.52831,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0730-CHN,Nanping,Admin2,Fujian,Nanping,llm_wiki,GAUL,1,geodetic,0.0,92451746508.7044,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0730-CHN,Ningde,Admin2,Fujian,Ningde,llm_wiki,GAUL,1,geodetic,0.0,92451746508.7044,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0730-CHN,Fuzhou,Admin2,Fujian,Fuzhou,llm_wiki,GAUL,1,geodetic,0.0,92451746508.7044,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0730-CHN,Longyan,Admin2,Fujian,Longyan,llm_wiki,GAUL,1,geodetic,0.0,92451746508.7044,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-0730-CHN,Sanming,Admin2,Fujian,Sanming,llm_wiki,GAUL,1,geodetic,0.0,92451746508.7044,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0732-SLV,Ahuachapán,Admin1,Ahuachapán,,llm_wiki,GAUL,1,geodetic,0.0,20731941268.233036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0732-SLV,Chalatenango,Admin1,Chalatenango,,llm_wiki,GAUL,1,geodetic,0.0,20731941268.233036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-0732-SLV,La Libertad,Admin1,La Libertad,,llm_wiki,GAUL,1,geodetic,0.0,20731941268.233036,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3759,6 +3916,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2005-9722-SOM,Gedo,Admin1,Gedo,,llm_wiki,GAUL,1,geodetic,0.0,215552217999.88406,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-9722-SOM,Bakool,Admin1,Bakool,,llm_wiki,GAUL,1,geodetic,0.0,215552217999.88406,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-9722-SOM,Bay,Admin1,Bay,,llm_wiki,GAUL,1,geodetic,0.0,215552217999.88406,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2005-9745-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,177309661537.1216,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-9747-ETH,Afder,Admin2,Somali,Afder,llm_wiki,GAUL,1,geodetic,0.0,183189065429.43692,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2005-9747-ETH,Liben,Admin2,Somali,Liben,llm_wiki,GAUL,1,geodetic,0.0,183189065429.43692,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2005-0713-BGR,Burgas,Admin1,Burgas,,llm_wiki,GAUL,1,geodetic,0.0,11424839313.239046,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3905,6 +4063,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0155-AUS,Ashburton,Admin2,Western Australia,Ashburton,llm_wiki,GAUL,1,geodetic,0.0,512378447953.7095,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0155-AUS,Port Hedland,Admin2,Western Australia,Port Hedland,llm_wiki,GAUL,1,geodetic,0.0,512378447953.7095,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0155-AUS,Roebourne,Admin2,Western Australia,Roebourne,llm_wiki,GAUL,1,geodetic,0.0,512378447953.7095,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0156-CZE,Znojmo,Admin2,Jihomoravský,Znojmo,llm_wiki,GAUL,1,geodetic,0.0,11313537352.369757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0156-CZE,Hodonín,Admin2,Jihomoravský,Hodonín,llm_wiki,GAUL,1,geodetic,0.0,11313537352.369757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0156-CZE,Břeclav,Admin2,Jihomoravský,Břeclav,llm_wiki,GAUL,1,geodetic,0.0,11313537352.369757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0156-DEU,Esslingen,Admin2,Baden-Württemberg,Esslingen,llm_wiki,GAUL,1,geodetic,0.0,57816372309.04351,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0156-DEU,Lörrach,Admin2,Baden-Württemberg,Lörrach,llm_wiki,GAUL,1,geodetic,0.0,57816372309.04351,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0156-HUN,Pest,Admin1,Pest,,llm_wiki,GAUL,1,geodetic,0.0,18795753612.11712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3926,6 +4087,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0196-IDN,Boyolali,Admin2,Jawa Tengah,Boyolali,llm_wiki,GAUL,1,geodetic,0.0,3512105797.200196,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0196-IDN,Magelang,Admin2,Jawa Tengah,Magelang,llm_wiki,GAUL,1,geodetic,0.0,3512105797.200196,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0196-IDN,Klaten,Admin2,Jawa Tengah,Klaten,llm_wiki,GAUL,1,geodetic,0.0,3512105797.200196,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0199-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,353981417461.236,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0199-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,353981417461.236,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0201-BRA,Marabá,Admin2,Pará,Marabá,llm_wiki,GAUL,1,geodetic,0.0,115193987934.77594,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0201-BRA,Porto de Moz,Admin2,Pará,Porto de Moz,llm_wiki,GAUL,1,geodetic,0.0,115193987934.77594,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0201-BRA,Capitão Poço,Admin2,Pará,Capitão Poço,llm_wiki,GAUL,1,geodetic,0.0,115193987934.77594,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3971,6 +4134,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0247-SUR,Kabalebo,Admin2,Sipaliwini,Kabalebo,llm_wiki,GAUL,1,geodetic,0.0,116790243102.96733,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0247-SUR,Coeroeni,Admin2,Sipaliwini,Coeroeni,llm_wiki,GAUL,1,geodetic,0.0,116790243102.96733,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0247-SUR,Sarakreek,Admin2,Brokopondo,Sarakreek,llm_wiki,GAUL,1,geodetic,0.0,116790243102.96733,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0250-CHN,Guizhou,Admin1,Guizhou,,llm_wiki,GAUL,1,geodetic,0.0,174891953988.21976,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0251-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,124132970869.21672,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0251-CHN,Shantou,Admin2,Guangdong,Shantou,llm_wiki,GAUL,1,geodetic,0.0,124132970869.21672,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0254-PAK,Punjab,Admin1,Punjab,,llm_wiki,GAUL,1,geodetic,0.0,686288020776.632,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0254-PAK,Sindh,Admin1,Sindh,,llm_wiki,GAUL,1,geodetic,0.0,686288020776.632,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0254-PAK,Balochistan,Admin1,Balochistan,,llm_wiki,GAUL,1,geodetic,0.0,686288020776.632,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -3982,6 +4148,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0262-IND,Assam,Admin1,Assam,,llm_wiki,GAUL,1,geodetic,0.0,88369591311.67725,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0262-IND,Tripura,Admin1,Tripura,,llm_wiki,GAUL,1,geodetic,0.0,88369591311.67725,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0263-IND,Kerala,Admin1,Kerala,,llm_wiki,GAUL,1,geodetic,0.0,37848515954.5524,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0264-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,122172450697.12291,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0265-IND,Maharashtra,Admin1,Maharashtra,,llm_wiki,GAUL,1,geodetic,0.0,476522571009.34705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0265-IND,Gujarat,Admin1,Gujarat,,llm_wiki,GAUL,1,geodetic,0.0,476522571009.34705,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0268-BDI,Songa,Admin2,Bururi,Songa,llm_wiki,GAUL,1,geodetic,0.0,220510678.45815256,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4036,7 +4203,15 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0343-IDN,Gorontalo,Admin2,Gorontalo,Gorontalo,llm_wiki,GAUL,1,geodetic,0.0,13495317129.417059,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0348-ROU,Galați,Admin1,Galați,,llm_wiki,GAUL,1,geodetic,0.0,11293382075.636936,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0352-DEU,Baden-Württemberg,Admin1,Baden-Württemberg,,llm_wiki,GAUL,1,geodetic,0.0,35815506666.12868,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0357-CHN,Shanxi,Admin1,Shanxi,,llm_wiki,GAUL,1,geodetic,0.0,155065845776.6857,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0362-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,1017518950426.6713,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0363-CHL,Maule,Admin1,Maule,,llm_wiki,GAUL,1,geodetic,0.0,67353264269.81433,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0364-CHN,Yichun,Admin2,Heilongjiang,Yichun,llm_wiki,GAUL,1,geodetic,0.0,32184194847.80591,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0365-AFG,Khost,Admin1,Khost,,llm_wiki,GAUL,1,geodetic,0.0,13274927371.070494,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0368-KHM,Koh Kong,Admin1,Kaôh Kong,,llm_wiki,GAUL,1,geodetic,0.0,12031019028.667974,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0369-IND,Navsari,Admin2,Gujarat,Navsari,llm_wiki,GAUL,1,geodetic,0.0,3803165852.4516253,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4081,10 +4256,19 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0383-PRT,Viana do Castelo,Admin1,Viana do Castelo,,llm_wiki,GAUL,1,geodetic,0.0,88750101287.4651,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0383-PRT,Vila Real,Admin1,Vila Real,,llm_wiki,GAUL,1,geodetic,0.0,88750101287.4651,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0383-PRT,Viseu,Admin1,Viseu,,llm_wiki,GAUL,1,geodetic,0.0,88750101287.4651,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0388-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0388-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0388-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0388-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0388-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0389-IND,Jammu and Kashmir,Admin1,Jammu and Kashmir,,llm_wiki,GAUL,1,geodetic,0.0,104834213369.6991,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0390-JPN,Kumamoto,Admin1,Kumamoto,,llm_wiki,GAUL,1,geodetic,0.0,280843991.3374693,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0390-JPN,Akune,Admin2,Kagoshima,Akune,llm_wiki,GAUL,1,geodetic,0.0,280843991.3374693,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0390-JPN,Minamata,Admin2,Kumamoto,Minamata,llm_wiki,GAUL,1,geodetic,0.0,280843991.3374693,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0397-CHN,Zhaotong,Admin2,Yunnan,Zhaotong,llm_wiki,GAUL,1,geodetic,0.0,22044489197.70014,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0410-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0410-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0410-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0413-MEX,Juárez,Admin2,Chihuahua,Juárez,llm_wiki,GAUL,1,geodetic,0.0,2999585333.253314,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0415-PHL,Zambales,Admin1,Zambales,,llm_wiki,GAUL,1,geodetic,0.0,11921360818.31981,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0415-PHL,Nueva Ecija,Admin1,Nueva Ecija,,llm_wiki,GAUL,1,geodetic,0.0,11921360818.31981,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4167,6 +4351,9 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0510-IND,Andhra Pradesh,Admin1,Andhra Pradesh,,llm_wiki,GAUL,1,geodetic,0.0,454594840289.014,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0510-IND,West Bengal,Admin1,West Bengal,,llm_wiki,GAUL,1,geodetic,0.0,454594840289.014,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0510-IND,Bihar,Admin1,Bihar,,llm_wiki,GAUL,1,geodetic,0.0,454594840289.014,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0517-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0517-CHN,Guangxi,Admin1,Guangxi,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0517-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,447868463673.1186,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0530-THA,Chiang Rai,Admin1,Chiang Rai,,llm_wiki,GAUL,1,geodetic,0.0,252812176716.3549,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0530-THA,Chiang Mai,Admin1,Chiang Mai,,llm_wiki,GAUL,1,geodetic,0.0,252812176716.3549,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0530-THA,Mae Hong Son,Admin1,Mae Hong Son,,llm_wiki,GAUL,1,geodetic,0.0,252812176716.3549,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4211,6 +4398,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-0573-FRA,Bretagne,Admin1,Bretagne,,llm_wiki,GAUL,1,geodetic,0.0,96376836798.26501,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2006-0573-FRA,Pays de la Loire,Admin1,Pays de la Loire,,llm_wiki,GAUL,1,geodetic,0.0,96376836798.26501,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0573-FRA,Vendée,Admin2,Pays de la Loire,Vendée,llm_wiki,GAUL,1,geodetic,0.0,96376836798.26501,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-0586-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,186008434303.78333,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0596-AFG,Ghormach,Admin2,Badghis,Ghormach,llm_wiki,GAUL,1,geodetic,0.0,6373334510.420282,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0601-IND,Tamil Nadu,Admin1,Tamil Nadu,,llm_wiki,GAUL,1,geodetic,0.0,404963071330.17883,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-0601-IND,Andhra Pradesh,Admin1,Andhra Pradesh,,llm_wiki,GAUL,1,geodetic,0.0,404963071330.17883,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4351,6 +4539,14 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2006-9570-AFG,Balkh,Admin1,Balkh,,llm_wiki,GAUL,1,geodetic,0.0,260328173550.45914,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-9570-AFG,Bamyan,Admin1,Bamyan,,llm_wiki,GAUL,1,geodetic,0.0,260328173550.45914,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2006-9570-AFG,Kunduz,Admin1,Kunduz,,llm_wiki,GAUL,1,geodetic,0.0,260328173550.45914,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Guizhou,Admin1,Guizhou,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2006-9741-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,1548103929242.181,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0003-BRA,Minas Gerais,Admin1,Minas Gerais,,llm_wiki,GAUL,1,geodetic,0.0,635928490108.4725,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0003-BRA,Espírito Santo,Admin1,Espírito Santo,,llm_wiki,GAUL,1,geodetic,0.0,635928490108.4725,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0003-BRA,Sumidouro,Admin2,Rio de Janeiro,Sumidouro,llm_wiki,GAUL,1,geodetic,0.0,635928490108.4725,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4517,6 +4713,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0135-URY,Durazno,Admin1,Durazno,,llm_wiki,GAUL,1,geodetic,0.0,47678366341.18087,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0135-URY,Florida,Admin1,Florida,,llm_wiki,GAUL,1,geodetic,0.0,47678366341.18087,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0135-URY,Río Negro,Admin1,Río Negro,,llm_wiki,GAUL,1,geodetic,0.0,47678366341.18087,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2007-0137-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,98791264180.32283,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0137-CHN,Dazhou,Admin2,Sichuan,Dazhou,llm_wiki,GAUL,1,geodetic,0.0,98791264180.32283,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0141-DZA,M'Sila,Admin1,M'Sila,,llm_wiki,GAUL,1,geodetic,0.0,17939123671.166767,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0142-THA,Yan Ta Khao,Admin2,Trang,Yan Ta Khao,llm_wiki,GAUL,1,geodetic,0.0,441694683.51317567,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0150-COL,Inza,Admin2,Cauca,Inzá,llm_wiki,GAUL,1,geodetic,0.0,6737174540.891728,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4533,6 +4731,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0162-COL,Bolívar,Admin1,Bolívar,,llm_wiki,GAUL,1,geodetic,0.0,217610889400.20465,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2007-0162-COL,Antioquia,Admin1,Antioquia,,llm_wiki,GAUL,1,geodetic,0.0,217610889400.20465,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0164-OMN,Muscat,Admin1,Muscat,,llm_wiki,GAUL,1,geodetic,0.0,4294090356.8897023,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0166-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,167972983157.45267,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0167-DOM,Dajabón,Admin1,Dajabón,,llm_wiki,GAUL,1,geodetic,0.0,7068501611.558506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0167-DOM,Castañuelas,Admin2,Monte Cristi,Castañuela,llm_wiki,GAUL,1,geodetic,0.0,7068501611.558506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0167-DOM,Arenoso,Admin2,Duarte,Arenoso,llm_wiki,GAUL,1,geodetic,0.0,7068501611.558506,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4542,6 +4741,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0171-BGR,Lovech,Admin1,Lovech,,llm_wiki,GAUL,1,geodetic,0.0,21645149112.23391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0171-BGR,Gabrovo,Admin1,Gabrovo,,llm_wiki,GAUL,1,geodetic,0.0,21645149112.23391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0171-BGR,Veliko Tarnovo,Admin2,Veliko Tarnovo,Veliko Tarnovo,llm_wiki,GAUL,1,geodetic,0.0,21645149112.23391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0172-CHN,Chongqing,Admin1,Chongqing,,llm_wiki,GAUL,1,geodetic,0.0,304237924544.75037,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0172-CHN,Ya'an,Admin2,Sichuan,Ya'an,llm_wiki,GAUL,1,geodetic,0.0,304237924544.75037,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0174-ESP,Extremadura,Admin1,Extremadura,,llm_wiki,GAUL,1,geodetic,0.0,236726154651.73627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0174-ESP,Ávila,Admin2,Castilla y León,Ávila,llm_wiki,GAUL,1,geodetic,0.0,236726154651.73627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0174-ESP,Ciudad Real,Admin2,Castilla-La Mancha,Ciudad Real,llm_wiki,GAUL,1,geodetic,0.0,236726154651.73627,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4666,7 +4867,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0250-IND,Anantapur,Admin2,Andhra Pradesh,Anantapur,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2007-0250-IND,Thrissur,Admin2,Kerala,Thrissur,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0250-IND,Belgaum,Admin2,Karnataka,Belgaum,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2007-0250-IND,Bijapur,Admin2,Karnataka,Bijapur,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2007-0250-IND,Bijapur,Admin2,Chhattisgarh,Bijapur,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2007-0250-IND,Bagalkot,Admin2,Karnataka,Bagalkot,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0250-IND,Mysore,Admin2,Karnataka,Mysore,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0250-IND,Pune,Admin2,Maharashtra,Pune,llm_wiki,GAUL,1,geodetic,0.0,184162281117.6515,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4712,6 +4913,13 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0263-URY,Maldonado,Admin1,Maldonado,,llm_wiki,GAUL,1,geodetic,0.0,67770792462.786125,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0263-URY,Montevideo,Admin1,Montevideo,,llm_wiki,GAUL,1,geodetic,0.0,67770792462.786125,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0263-URY,Rocha,Admin1,Rocha,,llm_wiki,GAUL,1,geodetic,0.0,67770792462.786125,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Hubei,Admin1,Hubei,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Shaanxi,Admin1,Shaanxi,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Henan,Admin1,Henan,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Jiangsu,Admin1,Jiangsu,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0268-CHN,Shandong,Admin1,Shandong,,llm_wiki,GAUL,1,geodetic,0.0,1434778498323.4824,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0275-MLI,Ségou,Admin1,Ségou,,llm_wiki,GAUL,1,geodetic,0.0,603097314237.2253,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0275-MLI,Kayes,Admin1,Kayes,,llm_wiki,GAUL,1,geodetic,0.0,603097314237.2253,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0275-MLI,Sikasso,Admin1,Sikasso,,llm_wiki,GAUL,1,geodetic,0.0,603097314237.2253,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4723,6 +4931,10 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0293-MLI,Bla,Admin2,Ségou,Bla,llm_wiki,GAUL,1,geodetic,0.0,6306568115.60823,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0294-ITA,Abruzzo,Admin1,Abruzzo,,llm_wiki,GAUL,1,geodetic,0.0,77307953223.88718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0294-ITA,Calabria,Admin1,Calabria,,llm_wiki,GAUL,1,geodetic,0.0,77307953223.88718,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0297-CHN,Anhui,Admin1,Anhui,,llm_wiki,GAUL,1,geodetic,0.0,20290586499.464954,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2007-0297-CHN,Jiangsu,Admin1,Jiangsu,,llm_wiki,GAUL,1,geodetic,0.0,20290586499.464954,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2007-0297-CHN,Chuzhou,Admin2,Anhui,Chuzhou,llm_wiki,GAUL,1,geodetic,0.0,20290586499.464954,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0297-CHN,Yangzhou,Admin2,Jiangsu,Yangzhou,llm_wiki,GAUL,1,geodetic,0.0,20290586499.464954,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0304-ETH,Addis Ababa,Admin1,Addis Abeba,,llm_wiki,GAUL,1,geodetic,0.0,754977922867.2046,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0305-BFA,Sahel,Admin1,Sahel,,llm_wiki,GAUL,1,geodetic,0.0,99900604399.6785,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2007-0305-BFA,Kadiogo,Admin2,Centre,Kadiogo,llm_wiki,GAUL,1,geodetic,0.0,99900604399.6785,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4855,6 +5067,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0366-BGR,Sofia,Admin1,Sofia,,llm_wiki,GAUL,1,geodetic,0.0,28170221967.553383,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0366-BGR,Smolyan,Admin1,Smolyan,,llm_wiki,GAUL,1,geodetic,0.0,28170221967.553383,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0366-BGR,Stara Zagora,Admin1,Stara Zagora,,llm_wiki,GAUL,1,geodetic,0.0,28170221967.553383,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0380-CHN,Hunan,Admin1,Hunan,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0380-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0380-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0380-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0380-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,780769843340.4952,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0389-NER,Zinder,Admin1,Zinder,,llm_wiki,GAUL,1,geodetic,0.0,1150669313606.367,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0389-NER,Maradi,Admin1,Maradi,,llm_wiki,GAUL,1,geodetic,0.0,1150669313606.367,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0389-NER,Agadez,Admin1,Agadez,,llm_wiki,GAUL,1,geodetic,0.0,1150669313606.367,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -4931,10 +5148,11 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0449-DZA,Khenchela,Admin1,Khenchela,,llm_wiki,GAUL,1,geodetic,0.0,142780807179.26276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0449-DZA,Djelfa,Admin1,Djelfa,,llm_wiki,GAUL,1,geodetic,0.0,142780807179.26276,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0454-PRY,Concepción,Admin1,Concepción,,llm_wiki,GAUL,1,geodetic,0.0,140208283459.1683,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0457-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,102389732562.2467,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0457-JPN,Iwate,Admin1,Iwate,,llm_wiki,GAUL,1,geodetic,0.0,26926532119.13084,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0457-JPN,Akita,Admin1,Akita,,llm_wiki,GAUL,1,geodetic,0.0,26926532119.13084,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2007-0458-SVN,Železniki,Admin2,Gorenjska,?elezniki,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,False,False,False
-2007-0458-SVN,Škofja Loka,Admin2,Gorenjska,?kofja Loka,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0458-SVN,Železniki,Admin2,Gorenjska,Železniki,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,False,False,False
+2007-0458-SVN,Škofja Loka,Admin2,Gorenjska,Škofja Loka,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0458-SVN,Cerklje na Gorenjskem,Admin2,Gorenjska,Cerklje na Gorenjskem,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0458-SVN,Velenje,Admin2,Savinjska,Velenje,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0458-SVN,Celje,Admin2,Savinjska,Celje,llm_wiki,GAUL,1,geodetic,0.0,708062098.6118089,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5048,7 +5266,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0524-IND,Andhra Pradesh,Admin1,Andhra Pradesh,,llm_wiki,GAUL,1,geodetic,0.0,404963071330.17883,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0524-IND,Tamil Nadu,Admin1,Tamil Nadu,,llm_wiki,GAUL,1,geodetic,0.0,404963071330.17883,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0525-PHL,Baao,Admin2,Camarines Sur,Baao,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2007-0525-PHL,Bato,Admin2,Camarines Sur,Bato,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0525-PHL,Bato,Admin2,Catanduanes,Bato,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0525-PHL,Nabua,Admin2,Camarines Sur,Nabua,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0525-PHL,Buhi,Admin2,Camarines Sur,Buhi,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0525-PHL,Bula,Admin2,Camarines Sur,Bula,llm_wiki,GAUL,1,geodetic,0.0,9256596137.081757,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5091,6 +5309,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0539-BDI,Bujumbura Mairie,Admin1,Bujumbura Mairie,,llm_wiki,GAUL,1,geodetic,0.0,6443088033.747864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0539-BDI,Cibitoke,Admin1,Cibitoke,,llm_wiki,GAUL,1,geodetic,0.0,6443088033.747864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0539-BDI,Bururi,Admin1,Bururi,,llm_wiki,GAUL,1,geodetic,0.0,6443088033.747864,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0552-CHN,Zhejiang,Admin1,Zhejiang,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0552-CHN,Fujian,Admin1,Fujian,,llm_wiki,GAUL,1,geodetic,0.0,224562183259.3697,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0554-BGR,Galabovo,Admin2,Stara Zagora,Galabovo,llm_wiki,GAUL,1,geodetic,0.0,1998160525.0022197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0554-BGR,Opan,Admin2,Stara Zagora,Opan,llm_wiki,GAUL,1,geodetic,0.0,1998160525.0022197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0554-BGR,Radnevo,Admin2,Stara Zagora,Radnevo,llm_wiki,GAUL,1,geodetic,0.0,1998160525.0022197,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5108,7 +5328,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2007-0556-IND,West Bengal,Admin1,West Bengal,,llm_wiki,GAUL,1,geodetic,0.0,241254201192.37384,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0556-IND,Odisha,Admin1,Odisha,,llm_wiki,GAUL,1,geodetic,0.0,241254201192.37384,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0562-SRB,Dimitrovgrad,Admin2,Pirotski,Dimitrovgrad,llm_wiki,GAUL,1,geodetic,0.0,8144238830.181712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
-2007-0562-SRB,Babušnica,Admin2,Pirotski,Babu?nica,llm_wiki,GAUL,1,geodetic,0.0,8144238830.181712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2007-0562-SRB,Babušnica,Admin2,Pirotski,Babušnica,llm_wiki,GAUL,1,geodetic,0.0,8144238830.181712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0562-SRB,Pirot,Admin2,Pirotski,Pirot,llm_wiki,GAUL,1,geodetic,0.0,8144238830.181712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0562-SRB,Bela Palanka,Admin2,Pirotski,Bela Palanka,llm_wiki,GAUL,1,geodetic,0.0,8144238830.181712,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2007-0565-IDN,Sumbawa,Admin2,Nusa Tenggara Barat,Sumbawa,llm_wiki,GAUL,1,geodetic,0.0,6590877771.805262,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5334,6 +5554,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2008-0064-PER,Lima,Admin1,Lima,,llm_wiki,GAUL,1,geodetic,0.0,1192519366412.4539,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0067-IDN,Situbondo,Admin2,Jawa Timur,Situbondo,llm_wiki,GAUL,1,geodetic,0.0,1673818608.1682563,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0070-MDG,Atsinanana,Admin1,Antsiranana,,llm_wiki,GAUL,1,geodetic,0.0,323468218985.1836,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0073-CHN,Yunnan,Admin1,Yunnan,,llm_wiki,GAUL,1,geodetic,0.0,383388155198.9517,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0074-PRT,Loures,Admin2,Lisboa,Loures,llm_wiki,GAUL,1,geodetic,0.0,361934884.10385007,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0074-PRT,Setúbal,Admin2,Setúbal,Setúbal,llm_wiki,GAUL,1,geodetic,0.0,361934884.10385007,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0077-PHL,Albay,Admin1,Albay,,llm_wiki,GAUL,1,geodetic,0.0,49757849482.52443,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5384,6 +5605,8 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2008-0130-IND,Tamil Nadu,Admin1,Tamil Nadu,,llm_wiki,GAUL,1,geodetic,0.0,321642022486.3807,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0130-IND,Karnataka,Admin1,Karnataka,,llm_wiki,GAUL,1,geodetic,0.0,321642022486.3807,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0142-BDI,Muhuta,Admin2,Bujumbura Rural,Muhuta,llm_wiki,GAUL,1,geodetic,0.0,129527553.05064541,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0155-CHN,Hainan,Admin1,Hainan,,llm_wiki,GAUL,1,geodetic,0.0,211119356586.9424,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0155-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,211119356586.9424,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0164-COL,Miranda,Admin2,Cauca,Miranda,llm_wiki,GAUL,1,geodetic,0.0,11198058867.256214,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2008-0164-COL,Inza,Admin2,Cauca,Inzá,llm_wiki,GAUL,1,geodetic,0.0,11198058867.256214,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0164-COL,Iquira,Admin2,Huila,Iquira,llm_wiki,GAUL,1,geodetic,0.0,11198058867.256214,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5450,10 +5673,16 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2008-0246-IND,Uttarakhand,Admin1,Uttarakhand,,llm_wiki,GAUL,1,geodetic,0.0,2385543589548.5977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0246-IND,Jharkhand,Admin1,Jharkhand,,llm_wiki,GAUL,1,geodetic,0.0,2385543589548.5977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0246-IND,Dhemaji,Admin2,Assam,Dhemaji,llm_wiki,GAUL,1,geodetic,0.0,2385543589548.5977,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0249-CHN,Sichuan,Admin1,Sichuan,,llm_wiki,GAUL,1,geodetic,0.0,829074269015.9391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0249-CHN,Guangdong,Admin1,Guangdong,,llm_wiki,GAUL,1,geodetic,0.0,829074269015.9391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0249-CHN,Jiangxi,Admin1,Jiangxi,,llm_wiki,GAUL,1,geodetic,0.0,829074269015.9391,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0257-SUR,Boven Suriname,Admin2,Sipaliwini,Boven Suriname,llm_wiki,GAUL,1,geodetic,0.0,98870931570.38281,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0257-SUR,Coeroeni,Admin2,Sipaliwini,Coeroeni,llm_wiki,GAUL,1,geodetic,0.0,98870931570.38281,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0257-SUR,Tapanahony,Admin2,Sipaliwini,Tapanahony,llm_wiki,GAUL,1,geodetic,0.0,98870931570.38281,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0257-SUR,Kabalebo,Admin2,Sipaliwini,Kabalebo,llm_wiki,GAUL,1,geodetic,0.0,98870931570.38281,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0263-CHN,Yichang,Admin2,Hubei,Yichang,llm_wiki,GAUL,1,geodetic,0.0,42277083986.78646,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0263-CHN,Jingmen,Admin2,Hubei,Jingmen,llm_wiki,GAUL,1,geodetic,0.0,42277083986.78646,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0263-CHN,Wuhan,Admin2,Hubei,Wuhan,llm_wiki,GAUL,1,geodetic,0.0,42277083986.78646,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0264-CAN,Cochrane,Admin2,Ontario,Cochrane,llm_wiki,GAUL,1,geodetic,0.0,591846717756.0159,0.0,0.0,0.0,0.0,0.0,False,False,False,False
 2008-0264-CAN,Kenora,Admin2,Ontario,Kenora,llm_wiki,GAUL,1,geodetic,0.0,591846717756.0159,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0268-GTM,Panzós,Admin2,Alta Verapaz,Panzós,llm_wiki,GAUL,1,geodetic,0.0,37405900127.5722,0.0,0.0,0.0,0.0,0.0,False,True,False,True
@@ -5508,6 +5737,7 @@ dis_no,name,admin_level,admin1,admin2,geom_type_a,geom_type_b,batch_number,area_
 2008-0306-UKR,Lviv,Admin1,L'viv,,llm_wiki,GAUL,1,geodetic,0.0,96811721506.08623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0306-UKR,Ternopil,Admin1,Ternopil',,llm_wiki,GAUL,1,geodetic,0.0,96811721506.08623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0306-UKR,Vinnytsia,Admin1,Vinnytsya,,llm_wiki,GAUL,1,geodetic,0.0,96811721506.08623,0.0,0.0,0.0,0.0,0.0,False,True,False,True
+2008-0325-CHN,Guangyuan,Admin2,Sichuan,Guangyuan,llm_wiki,GAUL,1,geodetic,0.0,16310772559.807207,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0329-THA,Chiang Rai,Admin1,Chiang Rai,,llm_wiki,GAUL,1,geodetic,0.0,92404094744.20772,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0329-THA,Loei,Admin1,Loei,,llm_wiki,GAUL,1,geodetic,0.0,92404094744.20772,0.0,0.0,0.0,0.0,0.0,False,True,False,True
 2008-0329-THA,Nakhon Phanom,Admin1,Nakhon Phanom,,llm_wiki,GAUL,1,geodetic,0.0,92404094744.20772,0.0,0.0,0.0,0.0,0.0,False,True,False,True

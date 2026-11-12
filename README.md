@@ -21,6 +21,16 @@ validation outputs, `reliability_db.csv` and the figures are updated
 accordingly, and a conventional benchmark (GeoDisasters method with GeoNames)
 is added. Details are in the commit history and in the Zenodo record.
 
+It also corrects the Wikidata points. Wikidata candidates were kept only if
+their country name equalled the EM-DAT country name, so the 42 countries and
+territories whose names differ (e.g. United States of America, China, Viet Nam,
+Türkiye) got no Wikidata point. The country is now tested on Wikidata entities
+from the ISO3 code (`geocoding/wikidata_utils.py`), and the locations of these
+countries were queried again with `geocoding/update_wikidata_points.py`: 57.3%
+of the locations now have a Wikidata point, against 37.1% before. The GeoNames
+benchmark now covers all events compared with EM-DAT GAUL (2000-2023), not only
+the GDIS events (up to 2018).
+
 ## Overview
 
 Code and data allow reproducing the following steps:
@@ -64,7 +74,8 @@ on the configuration settings in `config.toml`.
 - `reliability_db.csv`: inputs of the reliability score (source availability
   and agreement between sources), built by `geocoding/compute_reliability_db.py`.
 - `geonames_points.csv`: GeoNames points of the EM-DAT locations of the
-  validation subset (GeoDisasters method of Teber et al.), used by the GeoNames
+  validation events (GDIS events and EM-DAT GAUL events of 2000-2023;
+  GeoDisasters method of Teber et al.), used by the GeoNames
   benchmark and shown in Figure 5 as "GeoDisasters (GeoNames)".
 
 **Note—External sources (not redistributed here)**
@@ -84,6 +95,10 @@ on the configuration settings in `config.toml`.
 - `compute_reliability_db.py`: Builds `reliability_db.csv`, the inputs of the
   reliability score (source availability and agreement between sources).
 - `gadm_utils.py`: GADM helpers shared by the scripts above.
+- `wikidata_utils.py`: Wikidata country entities of an EM-DAT ISO3 code, used
+  to keep Wikidata candidates in the event's country.
+- `update_wikidata_points.py`: Re-queries the Wikidata points of the countries
+  that got none with the country test on names (dataset versions 1 and 2).
 
 *GeoNames benchmark (conventional method of Teber et al.):*
 
@@ -170,6 +185,10 @@ If you wish to reproduce the geocoding from raw EM-DAT files:
    The script reads the CSVs in `geolocated_files_dir` and writes them, under
    the same names, to `projected_files_dir`. It can also be run on the
    published `LLMGeoDis_part*.csv` files to recompute their GADM columns.
+   To correct the Wikidata points of a dataset produced before the country
+   test on Wikidata entities (versions 1 and 2), run
+   `python geocoding/update_wikidata_points.py <input_dir> <output_dir>`
+   on the folder of the `LLMGeoDis_part*.csv` files.
 5. Compute the inputs of the reliability score (`reliability_db_path`):
    ```bash
    python geocoding/compute_reliability_db.py
@@ -240,7 +259,7 @@ then each location is searched in GeoNames within the event's country.
       per method and benchmark, over all events and over the events located by
       both methods
 3. Compute the share of events located by each method (LLM-GeoDis sources and
-   GeoNames), on the events attempted by both, 2000-2018:
+   GeoNames), on the events attempted by both, 2000-2023:
    ```bash
    python run_coverage_statistics.py
    ```
