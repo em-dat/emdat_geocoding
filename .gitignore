@@ -21,5 +21,6 @@ data/geoemdat_part4.csv
 data/geoemdat_part5.csv
 data/llm_gadm_2000_2002.gpkg
 data/pend-gdis-1960-2018-disasterlocations.csv
+data/wb_income_groups.csv
 .log
 api_key
