@@ -5,10 +5,11 @@ strings are cleaned and split with regular expressions (geonames_cleaning.py),
 then each location is searched in GeoNames within the event's country. The
 result is one point per location, saved to [geonames].points_path.
 
-Events are those of the validation subset ([path].gdis_disno_path). The GeoNames
-free web service allows about 1,000 requests per hour, so the run takes days;
-results are saved every 100 locations and a new run resumes where the previous
-one stopped.
+Events are those compared in the validation: the GDIS events
+([path].gdis_disno_path) and the EM-DAT archive events of 2000-2023 with an
+EM-DAT GAUL footprint (Admin Units). The GeoNames free web service allows
+about 1,000 requests per hour, so the run takes days; results are saved every
+100 locations and a new run resumes where the previous one stopped.
 
 Run from the repository root: python geocoding/run_geonames_geocoding.py
 """
@@ -36,9 +37,10 @@ def main():
         raise ValueError("Set [geonames].username in config.toml (a GeoNames account with web services enabled)")
     points_path = Path(geonames["points_path"])
 
-    disnos = pd.read_csv(config["path"]["gdis_disno_path"], dtype=str)["DisNo."].dropna()
+    gdis = pd.read_csv(config["path"]["gdis_disno_path"], dtype=str)["DisNo."].dropna()
     emdat = pd.read_excel(config["path"]["emdat_archive_path"])
-    emdat = emdat[emdat["DisNo."].isin(set(disnos))]
+    gaul = emdat["Start Year"].between(2000, 2023) & emdat["Admin Units"].notna()
+    emdat = emdat[emdat["DisNo."].isin(set(gdis)) | gaul]
     logger.info(f"{len(emdat)} EM-DAT events in the validation subset")
 
     locations = process_emdat_locations(emdat)

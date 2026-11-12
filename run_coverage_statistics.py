@@ -1,9 +1,8 @@
 """Coverage of the geocoding methods: share of events each method locates.
 
 The scope is the events attempted by both LLM-GeoDis ([geocoding].location_file_path)
-and the GeoNames run ([geonames].points_path, GDIS-listed events), with an EM-DAT
-GAUL footprint, in the years covered by all sources (2000-2018: LLM-GeoDis starts
-in 2000, GDIS ends in 2018).
+and the GeoNames run ([geonames].points_path), with an EM-DAT GAUL footprint, in
+the years of the EM-DAT GAUL benchmark covered by LLM-GeoDis (2000-2023).
 
 An event is located by a method if at least one of its locations has a geometry
 from that method. The LLM-GeoDis files keep only located locations, so location
@@ -37,7 +36,7 @@ logging.basicConfig(
     datefmt=config["logging"]["datefmt"],
 )
 
-YEARS = (2000, 2018)
+YEARS = (2000, 2023)
 
 
 def main():
