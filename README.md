@@ -76,7 +76,7 @@ on the configuration settings in `config.toml`.
 - `geonames_points.csv`: GeoNames points of the EM-DAT locations of the
   validation events (GDIS events and EM-DAT GAUL events of 2000-2023;
   GeoDisasters method of Teber et al.), used by the GeoNames
-  benchmark and shown in Figure 5 as "GeoDisasters (GeoNames)".
+  benchmark and shown in Figure 5 as "GeoNames (GeoDisasters)".
 
 **Note—External sources (not redistributed here)**
 

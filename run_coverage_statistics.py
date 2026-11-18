@@ -59,7 +59,7 @@ def main():
         "LLM-GeoDis (GADM, matched by name)": gadm[gadm["gadm_source"] == "name_match"],
         "LLM-GeoDis (OSM)": rel[rel["osm_count"] > 0],
         "LLM-GeoDis (Wiki)": rel[rel["wiki_count"] > 0],
-        "GeoDisasters (GeoNames)": geonames[geonames["lat"].notna()],
+        "GeoNames (GeoDisasters)": geonames[geonames["lat"].notna()],
     }
     coverage = pd.DataFrame([
         dict(method=method, events_in_scope=len(scope), events_located=d["DisNo."].nunique(),
